@@ -10,11 +10,13 @@ import PrototypeSwitcher from './PrototypeSwitcher.vue'
 import VariantA from './VariantA.vue'
 import VariantB from './VariantB.vue'
 import VariantC from './VariantC.vue'
+import VariantD from './VariantD.vue'
 
 const variants: { key: string, name: string, component: Component }[] = [
   { key: 'A', name: 'Big-screen deck', component: VariantA },
   { key: 'B', name: 'Scroll-snap vertical', component: VariantB },
   { key: 'C', name: 'Overhead transparency', component: VariantC },
+  { key: 'D', name: 'Vertical big-screen (A+B)', component: VariantD },
 ]
 
 function initialVariant(): string {
