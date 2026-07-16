@@ -1,11 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// PROTOTYPE MOUNT — the app root temporarily hosts the slide-view prototype
+// (wayfinder issue #3). Revert this file when the prototype is settled.
+import SlideViewPrototype from './prototype-slide-view/SlideViewPrototype.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <SlideViewPrototype />
 </template>
 
 <style scoped></style>
