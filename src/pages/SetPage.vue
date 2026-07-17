@@ -112,7 +112,7 @@ function toggleFullscreen() {
           Thank you!
         </h2>
         <p class="thanks-line">
-          that's all the facts for today, eh — thanks for watching, bud
+          until next time eh?
         </p>
       </section>
     </div>
