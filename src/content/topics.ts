@@ -8,6 +8,12 @@ export const TOPICS = {
   hockey: { label: 'Hockey', color: '#b03dff' },
   weather: { label: 'Weather', color: '#ffe600' },
   inventions: { label: 'Inventions', color: '#ff3dc4' },
+  culture: { label: 'Culture', color: '#3dffe0' },
+  people: { label: 'People', color: '#4d7bff' },
+  sports: { label: 'Sports', color: '#a6ff3d' },
+  travel: { label: 'Travel', color: '#c04dff' },
+  business: { label: 'Business & Industry', color: '#ff7a3d' },
+  oddities: { label: 'Oddities', color: '#ff3d8f' },
 } as const
 
 export type Topic = keyof typeof TOPICS
