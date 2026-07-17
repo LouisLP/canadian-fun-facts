@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#f3fff8"/>
+  <rect x="60" y="50" width="34" height="60" rx="6" fill="#c9e8ff" stroke="#3db9ff" stroke-width="3"/>
+  <rect x="64" y="38" width="26" height="14" rx="3" fill="#c0c0c0" stroke="#808080" stroke-width="2"/>
+  <rect x="66" y="78" width="22" height="26" rx="2" fill="#fff" stroke="#3db9ff" stroke-width="2"/>
+  <rect x="112" y="66" width="50" height="14" rx="4" fill="#fff" stroke="#555" stroke-width="3" transform="rotate(-30 137 73)"/>
+  <line x1="108" y1="88" x2="96" y2="98" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <line x1="158" y1="46" x2="170" y2="38" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <text x="130" y="120" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="16" fill="#d4a017">$1</text>
+  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">the one-dollar patent</text>
+</svg>

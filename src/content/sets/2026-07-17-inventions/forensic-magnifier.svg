@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#f5f0ff"/>
+  <circle cx="90" cy="65" r="34" fill="#eefbff" stroke="#4a2a6a" stroke-width="6"/>
+  <line x1="115" y1="90" x2="145" y2="120" stroke="#8b5a2b" stroke-width="10" stroke-linecap="round"/>
+  <g fill="none" stroke="#4a2a6a" stroke-width="2.5">
+    <ellipse cx="90" cy="65" rx="6" ry="9"/>
+    <ellipse cx="90" cy="65" rx="12" ry="16"/>
+    <ellipse cx="90" cy="65" rx="18" ry="23"/>
+  </g>
+  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">Montréal cracked the case first</text>
+</svg>
