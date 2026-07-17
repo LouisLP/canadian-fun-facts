@@ -13,7 +13,8 @@ const set = computed(() => findSet(props.slug))
 
 const container = useTemplateRef('container')
 const current = ref(0)
-const sectionCount = computed(() => (set.value?.slides.length ?? 0) + 1)
+// Title panel + authored slides + auto-appended thank-you panel.
+const sectionCount = computed(() => (set.value?.slides.length ?? 0) + 2)
 
 function scrollTo(i: number) {
   const target = container.value?.children[i] as HTMLElement | undefined
@@ -111,6 +112,18 @@ function toggleFullscreen() {
         <div class="starburst" aria-hidden="true">
           WOW!
         </div>
+      </section>
+
+      <section class="panel thanks-panel" :data-index="set.slides.length + 1">
+        <div class="leaf-rain" aria-hidden="true">
+          🍁 🦫 🍁 🦫 🍁
+        </div>
+        <h2 class="wordart">
+          Thank you!
+        </h2>
+        <p class="thanks-line">
+          ⭐ that's all the facts for today, eh — thanks for watching, bud ⭐
+        </p>
       </section>
     </div>
 
@@ -216,6 +229,13 @@ function toggleFullscreen() {
   padding: 0.4rem 1.5rem;
   font-weight: bold;
   transform: rotate(3deg);
+}
+
+.thanks-line {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+  animation: bob 1.2s ease-in-out infinite alternate;
 }
 
 .hint {
