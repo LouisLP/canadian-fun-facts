@@ -9,15 +9,19 @@ One week's presentation: a dated, titled collection of at least one slide (three
 _Avoid_: Deck, presentation, week
 
 **Slide**:
-One fun fact within a set: a heading (the hook), a markdown body (the explanation), and an image — all three always present. May cite a source.
+One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and several images (4–5 by convention) scattered around it. May cite sources.
 _Avoid_: Fact, card, page
+
+**Fact**:
+One markdown nugget inside a slide — a single claim about the slide's subject.
+_Avoid_: Body, bullet, point
 
 **Topic**:
 The single theme a set belongs to, chosen from a curated registry (each with a label and colour). Sets have exactly one.
 _Avoid_: Category, tag, theme
 
 **Source**:
-A URL backing a slide's factual claim, shown as fine print. Optional per slide.
+A URL backing a slide's facts, shown as fine print. A slide may cite several or none.
 _Avoid_: Reference, citation
 
 **Credit**:

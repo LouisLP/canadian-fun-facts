@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#ffe9c9"/>
+  <ellipse cx="100" cy="95" rx="45" ry="35" fill="#8b5a2b"/>
+  <circle cx="100" cy="62" r="26" fill="#8b5a2b"/>
+  <path d="M74 58 Q100 30 126 58 L122 62 Q100 44 78 62 Z" fill="#ffcc00" stroke="#cc8800" stroke-width="3"/>
+  <rect x="94" y="36" width="12" height="8" rx="2" fill="#ffcc00" stroke="#cc8800" stroke-width="2"/>
+  <circle cx="90" cy="60" r="3" fill="#000"/>
+  <circle cx="110" cy="60" r="3" fill="#000"/>
+  <ellipse cx="100" cy="72" rx="8" ry="6" fill="#5c3317"/>
+  <rect x="95" y="74" width="4.5" height="9" fill="#ff8c00" stroke="#000" stroke-width="1"/>
+  <rect x="100.5" y="74" width="4.5" height="9" fill="#ff8c00" stroke="#000" stroke-width="1"/>
+  <line x1="140" y1="120" x2="165" y2="70" stroke="#6b3f1d" stroke-width="6" stroke-linecap="round"/>
+  <text x="100" y="143" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">safety first, eh</text>
+</svg>

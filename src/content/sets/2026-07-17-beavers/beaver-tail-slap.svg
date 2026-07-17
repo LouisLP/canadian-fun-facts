@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="80" fill="#87ceeb"/>
+  <rect y="80" width="200" height="70" fill="#3db9ff"/>
+  <ellipse cx="85" cy="72" rx="26" ry="16" fill="#8b5a2b"/>
+  <circle cx="105" cy="60" r="10" fill="#8b5a2b"/>
+  <circle cx="108" cy="58" r="2" fill="#000"/>
+  <path d="M60 74 Q35 60 30 85 Q45 95 62 82 Z" fill="#5c3317"/>
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round">
+    <line x1="25" y1="70" x2="18" y2="58"/>
+    <line x1="35" y1="62" x2="32" y2="48"/>
+    <line x1="45" y1="60" x2="50" y2="47"/>
+  </g>
+  <text x="140" y="40" font-family="Comic Sans MS, cursive" font-size="16" fill="#ff0000" transform="rotate(-8 140 40)">SLAP!</text>
+  <text x="100" y="143" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">the original alarm system</text>
+</svg>

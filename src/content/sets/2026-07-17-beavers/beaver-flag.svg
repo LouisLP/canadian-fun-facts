@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#cfe8ff"/>
+  <ellipse cx="80" cy="100" rx="34" ry="24" fill="#8b5a2b"/>
+  <circle cx="80" cy="68" r="18" fill="#8b5a2b"/>
+  <circle cx="74" cy="64" r="2.5" fill="#000"/>
+  <circle cx="86" cy="64" r="2.5" fill="#000"/>
+  <rect x="74" y="74" width="5" height="10" fill="#ff8c00" stroke="#000" stroke-width="1"/>
+  <rect x="80" y="74" width="5" height="10" fill="#ff8c00" stroke="#000" stroke-width="1"/>
+  <line x1="125" y1="130" x2="125" y2="30" stroke="#555" stroke-width="4"/>
+  <g stroke="#8e2418" stroke-width="1">
+    <rect x="125" y="30" width="14" height="34" fill="#ff0000"/>
+    <rect x="139" y="30" width="28" height="34" fill="#fff"/>
+    <rect x="167" y="30" width="14" height="34" fill="#ff0000"/>
+  </g>
+  <text x="153" y="53" text-anchor="middle" font-size="18">🍁</text>
+  <path d="M46 110 Q28 116 32 128 Q48 132 56 120 Z" fill="#5c3317"/>
+  <text x="100" y="147" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">extremely patriotic</text>
+</svg>

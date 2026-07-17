@@ -1,5 +1,7 @@
 # Sets are TypeScript modules, validated by the compiler
 
+> **Amended by [0002](0002-slides-hold-multiple-facts-and-images.md):** the `Slide` shape below (single `body`, single `image`, `source`) is superseded — slides now hold multiple `facts`, multiple `images`, and `sources`.
+
 A weekly fun-fact set is a TypeScript module (`src/content/sets/YYYY-MM-DD-slug/index.ts`, images co-located in the same folder), not markdown or JSON. `vue-tsc` is the schema validator: a typo'd topic, malformed date, missing field, or broken image path fails the build instead of surfacing during a live presentation. Sets are discovered with `import.meta.glob('./sets/*/index.ts', { eager: true })` — no hand-maintained registry.
 
 ## Considered Options
