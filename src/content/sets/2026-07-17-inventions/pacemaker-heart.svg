@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
-  <rect width="200" height="150" fill="#fff3f3"/>
-  <path d="M100 118 Q55 85 55 58 Q55 36 76 36 Q92 36 100 52 Q108 36 124 36 Q145 36 145 58 Q145 85 100 118" fill="#ff5c7a" stroke="#c22045" stroke-width="4"/>
-  <polyline points="62,74 82,74 90,58 100,90 110,66 116,74 138,74" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">keeping the beat since 1950</text>
-</svg>

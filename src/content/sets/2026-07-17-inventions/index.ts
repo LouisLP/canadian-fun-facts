@@ -1,19 +1,19 @@
 import { defineSet } from '../../schema'
-import blackberryImg from './blackberry-phone.svg'
-import rollImg from './california-roll.svg'
-import telephoneImg from './candlestick-telephone.svg'
-import magnifierImg from './forensic-magnifier.svg'
-import pizzaImg from './hawaiian-pizza.svg'
-import insulinImg from './insulin-vial.svg'
-import javaImg from './java-coffee.svg'
-import fogImg from './london-fog.svg'
-import appleImg from './mcintosh-apple.svg'
-import pacemakerImg from './pacemaker-heart.svg'
-import basketImg from './peach-basket.svg'
-import peanutImg from './peanut-butter-jar.svg'
-import poutineImg from './poutine-bowl.svg'
-import radioImg from './radio-tower.svg'
-import zipperImg from './zipper.svg'
+import bantingBestImg from './banting-best.jpg'
+import blackberryImg from './blackberry-bold.jpg'
+import rollImg from './california-roll.jpg'
+import telephoneImg from './candlestick-telephone.jpg'
+import fessendenImg from './fessenden.jpg'
+import fingerprintImg from './fingerprint.jpg'
+import pizzaImg from './hawaiian-pizza.jpg'
+import goslingImg from './james-gosling.jpg'
+import fogImg from './london-fog.jpg'
+import appleImg from './mcintosh-apple.jpg'
+import naismithImg from './naismith.jpg'
+import pacemakerImg from './pacemaker.jpg'
+import peanutImg from './peanut-butter.jpg'
+import poutineImg from './poutine.jpg'
+import zipperImg from './zipper.jpg'
 
 export default defineSet({
   slug: 'inventions',
@@ -33,33 +33,33 @@ export default defineSet({
       images: [
         {
           src: peanutImg,
-          alt: 'A proud jar of peanut butter flanked by two peanuts',
-          credit: 'in-house clip-art department',
+          alt: 'An open jar of peanut butter with a spoonful resting on top',
+          credit: 'Silar, CC0, via Wikimedia Commons',
         },
         {
           src: pizzaImg,
-          alt: 'A pizza slice defiantly topped with pineapple and ham',
-          credit: 'in-house clip-art department',
+          alt: 'A sliced Hawaiian pizza with ham and pineapple, photographed in Toronto no less',
+          credit: 'Avelludo, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: rollImg,
-          alt: 'Two California roll pieces with chopsticks at the ready',
-          credit: 'in-house clip-art department',
+          alt: 'California rolls arranged on a plate, seaweed successfully hidden inside',
+          credit: 'Tim Reckmann, CC BY 2.0, via Wikimedia Commons',
         },
         {
           src: fogImg,
-          alt: 'A steaming London Fog latte with a tea bag sneaking in',
-          credit: 'in-house clip-art department',
+          alt: 'A London Fog latte in a white cup, milk foam hiding the Earl Grey below',
+          credit: 'Andy Li, CC0, via Wikimedia Commons',
         },
         {
           src: poutineImg,
-          alt: 'A takeout box of fries, cheese curds, and gravy',
-          credit: 'in-house clip-art department',
+          alt: 'A plate of poutine from Windsor, Ontario — fries, squeaky curds, gravy',
+          credit: 'Antonydstevens, CC0, via Wikimedia Commons',
         },
         {
           src: appleImg,
-          alt: 'A shiny red McIntosh apple with a single leaf',
-          credit: 'in-house clip-art department',
+          alt: 'A McIntosh Red apple from a 1909 nursery catalogue plate',
+          credit: 'Brown Brothers Continental Nurseries catalogue (1909), public domain, via Wikimedia Commons',
         },
       ],
     },
@@ -74,28 +74,28 @@ export default defineSet({
       images: [
         {
           src: telephoneImg,
-          alt: 'An old-timey candlestick telephone mid-ring',
-          credit: 'in-house clip-art department',
+          alt: 'An early-1900s candlestick telephone with its earpiece hanging at the ready',
+          credit: 'Nuberger13, public domain, via Wikimedia Commons',
         },
         {
           src: zipperImg,
-          alt: 'A zipper zipped exactly halfway, as a compromise',
-          credit: 'in-house clip-art department',
+          alt: 'A brass zipper on denim, zipped exactly halfway, as a compromise',
+          credit: 'CC BY-SA 3.0, via Wikimedia Commons',
         },
         {
-          src: radioImg,
-          alt: 'A radio tower broadcasting music notes in every direction',
-          credit: 'in-house clip-art department',
+          src: fessendenImg,
+          alt: 'Reginald Fessenden posing with his oscillator, around 1914',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: javaImg,
-          alt: 'A mug of coffee containing curly braces, as code should be',
-          credit: 'in-house clip-art department',
+          src: goslingImg,
+          alt: 'James Gosling, father of Java, smiling like a man with good garbage collection',
+          credit: 'Peter Campbell, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: blackberryImg,
-          alt: 'A BlackBerry phone with its beloved tiny keyboard, beside an actual blackberry',
-          credit: 'in-house clip-art department',
+          alt: 'A BlackBerry Bold 9900 and its beloved tiny keyboard',
+          credit: 'P2u111, CC BY 4.0, via Wikimedia Commons',
         },
       ],
     },
@@ -109,24 +109,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: insulinImg,
-          alt: 'An insulin vial and syringe next to a one-dollar price tag',
-          credit: 'in-house clip-art department',
+          src: bantingBestImg,
+          alt: 'Charles Best and Frederick Banting in their office, around 1924',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: magnifierImg,
-          alt: 'A magnifying glass inspecting a suspicious fingerprint',
-          credit: 'in-house clip-art department',
+          src: fingerprintImg,
+          alt: 'A suspiciously crisp fingerprint on a fingertip, evidence-ready',
+          credit: 'Frettie, CC BY 3.0, via Wikimedia Commons',
         },
         {
-          src: basketImg,
-          alt: 'A basketball waiting below the original peach-basket hoop',
-          credit: 'in-house clip-art department',
+          src: naismithImg,
+          alt: 'James Naismith holding a ball and the original peach basket',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
           src: pacemakerImg,
-          alt: 'A cartoon heart with a steady pulse line running through it',
-          credit: 'in-house clip-art department',
+          alt: 'A modern pacemaker resting in the palm of a hand',
+          credit: 'Steven Fruitsmaak, CC BY 3.0, via Wikimedia Commons',
         },
       ],
     },

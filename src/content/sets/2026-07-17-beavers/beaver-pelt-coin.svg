@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
-  <rect width="200" height="150" fill="#f3e3c3"/>
-  <path d="M100 25 Q135 35 138 70 Q140 100 118 112 Q100 122 82 112 Q60 100 62 70 Q65 35 100 25 Z" fill="#8b5a2b" stroke="#5c3317" stroke-width="4"/>
-  <path d="M100 25 Q135 35 138 70 Q140 100 118 112 Q100 122 82 112 Q60 100 62 70 Q65 35 100 25 Z" fill="none" stroke="#5c3317" stroke-width="2" stroke-dasharray="3 5"/>
-  <circle cx="160" cy="45" r="18" fill="#ffd700" stroke="#b8860b" stroke-width="3"/>
-  <text x="160" y="51" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="14" fill="#8e2418">$</text>
-  <text x="100" y="78" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="12" fill="#ffe9c9" transform="rotate(-4 100 78)">1 pelt = money</text>
-  <text x="100" y="145" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">the original loonie</text>
-</svg>
