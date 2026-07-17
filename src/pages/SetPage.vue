@@ -175,7 +175,7 @@ function toggleFullscreen() {
   box-sizing: border-box;
   position: relative;
   border-block: 6px ridge red;
-  background: #2b2b2b;
+  background: #101010;
 }
 
 .wordart {
