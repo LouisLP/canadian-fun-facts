@@ -48,10 +48,6 @@ export default defineSet({
           credit: 'in-house clip-art department',
         },
       ],
-      sources: [
-        'https://en.wikipedia.org/wiki/Beaver_dam',
-        'https://www.pbs.org/wnet/nature/leave-it-to-beavers-infographic-beaver-dams/8847/',
-      ],
     },
     {
       heading: 'Built different',
@@ -83,10 +79,6 @@ export default defineSet({
           credit: 'in-house clip-art department',
         },
       ],
-      sources: [
-        'https://www.smithsonianmag.com/science-nature/new-insights-how-beaver-teeth-are-so-strong-180954513/',
-        'https://www.hww.ca/en/wildlife/mammals/beaver.html',
-      ],
     },
     {
       heading: 'A national icon',
@@ -117,10 +109,6 @@ export default defineSet({
           alt: 'A beaver pelt next to a gold coin, the original currency exchange',
           credit: 'in-house clip-art department',
         },
-      ],
-      sources: [
-        'https://www.canada.ca/en/canadian-heritage/services/official-symbols-canada.html',
-        'https://en.wikipedia.org/wiki/Three-Penny_Beaver',
       ],
     },
   ],
