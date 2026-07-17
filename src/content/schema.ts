@@ -15,8 +15,8 @@ export interface Slide {
   heading: string
   /** Full markdown per fact. At least one; 3–4 by convention. */
   facts: [string, ...string[]]
-  /** At least one; 4–5 by convention — scattered around the slide. */
-  images: [SlideImage, ...SlideImage[]]
+  /** Exactly four — evenly scattered around the slide's four spots. */
+  images: [SlideImage, SlideImage, SlideImage, SlideImage]
 }
 
 export interface FunFactSet {

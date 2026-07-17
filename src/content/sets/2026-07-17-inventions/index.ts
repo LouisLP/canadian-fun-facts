@@ -1,13 +1,10 @@
 import { defineSet } from '../../schema'
 import bantingBestImg from './banting-best.webp'
 import blackberryImg from './blackberry-bold.webp'
-import rollImg from './california-roll.webp'
 import telephoneImg from './candlestick-telephone.webp'
 import fessendenImg from './fessenden.webp'
 import fingerprintImg from './fingerprint.webp'
 import pizzaImg from './hawaiian-pizza.webp'
-import goslingImg from './james-gosling.webp'
-import fogImg from './london-fog.webp'
 import appleImg from './mcintosh-apple.webp'
 import naismithImg from './naismith.webp'
 import pacemakerImg from './pacemaker.webp'
@@ -40,16 +37,6 @@ export default defineSet({
           src: pizzaImg,
           alt: 'A sliced Hawaiian pizza with ham and pineapple',
           credit: 'Avelludo, CC BY-SA 4.0, via Wikimedia Commons',
-        },
-        {
-          src: rollImg,
-          alt: 'California rolls arranged on a plate',
-          credit: 'Tim Reckmann, CC BY 2.0, via Wikimedia Commons',
-        },
-        {
-          src: fogImg,
-          alt: 'A London Fog latte in a white cup',
-          credit: 'Andy Li, CC0, via Wikimedia Commons',
         },
         {
           src: poutineImg,
@@ -86,11 +73,6 @@ export default defineSet({
           src: fessendenImg,
           alt: 'Reginald Fessenden posing with his oscillator, around 1914',
           credit: 'public domain, via Wikimedia Commons',
-        },
-        {
-          src: goslingImg,
-          alt: 'James Gosling, creator of Java, smiling at the camera',
-          credit: 'Peter Campbell, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: blackberryImg,
