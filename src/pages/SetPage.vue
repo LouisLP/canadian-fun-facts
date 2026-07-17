@@ -155,6 +155,8 @@ function toggleFullscreen() {
 .scroller {
   height: 100%;
   overflow-y: auto;
+  /* Images intentionally spill past the panel edges; clip instead of scrolling sideways. */
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -261,7 +263,7 @@ function toggleFullscreen() {
 }
 
 .slide-figure img {
-  width: clamp(6rem, 14vw, 12rem);
+  width: clamp(10rem, 24vw, 22rem);
   border: 6px ridge gold;
   background: #fff;
   filter: drop-shadow(6px 6px 0 #00000055);
@@ -273,37 +275,38 @@ function toggleFullscreen() {
   margin-top: 0.2rem;
 }
 
-/* Scatter spots around the slide edges, stickered per the aesthetic. */
+/* Scatter spots pulled toward the vertical center; spilling off the
+   sides is intentional — presence beats tidy margins. */
 .spot-1 {
-  top: 9%;
-  left: 3%;
+  top: 18%;
+  left: -3%;
   rotate: -8deg;
 }
 
 .spot-2 {
-  top: 13%;
-  right: 4%;
+  top: 22%;
+  right: -4%;
   rotate: 7deg;
   animation-delay: 0.2s;
 }
 
 .spot-3 {
-  bottom: 11%;
-  left: 4%;
+  bottom: 16%;
+  left: -2%;
   rotate: 5deg;
   animation-delay: 0.4s;
 }
 
 .spot-4 {
-  bottom: 13%;
-  right: 5%;
+  bottom: 18%;
+  right: -3%;
   rotate: -6deg;
   animation-delay: 0.6s;
 }
 
 .spot-5 {
-  top: 42%;
-  left: 1.5%;
+  top: 40%;
+  left: -5%;
   rotate: -3deg;
   animation-delay: 0.3s;
 }
