@@ -1,16 +1,16 @@
 import { defineSet } from '../../schema'
-import chompImg from './beaver-chomp.svg'
-import damImg from './beaver-dam.svg'
-import flagImg from './beaver-flag.svg'
-import hardhatImg from './beaver-hardhat.svg'
-import lodgeImg from './beaver-lodge.svg'
-import nickelImg from './beaver-nickel.svg'
-import peltImg from './beaver-pelt-coin.svg'
-import satelliteImg from './beaver-satellite.svg'
-import scubaImg from './beaver-scuba.svg'
-import stampImg from './beaver-stamp.svg'
-import tailSlapImg from './beaver-tail-slap.svg'
-import teethImg from './beaver-teeth.svg'
+import carryingBranchImg from './beaver-carrying-branch.jpg'
+import chewedTreeImg from './beaver-chewing.jpg'
+import damImg from './beaver-dam.jpg'
+import emblemImg from './beaver-emblem.jpg'
+import cruisingImg from './beaver-in-water.jpg'
+import lodgeImg from './beaver-lodge.jpg'
+import peltImg from './beaver-pelt.jpg'
+import pondAerialImg from './beaver-pond-aerial.jpg'
+import swimmingImg from './beaver-swimming.jpg'
+import treeCuttingImg from './beaver-tree-cutting.jpg'
+import nickelImg from './canada-nickel-1937.jpg'
+import stampImg from './three-penny-beaver.jpg'
 
 export default defineSet({
   slug: 'beavers',
@@ -29,23 +29,23 @@ export default defineSet({
       images: [
         {
           src: damImg,
-          alt: 'Extremely sophisticated drawing of a beaver beside a stick dam',
-          credit: 'in-house clip-art department',
+          alt: 'A beaver dam of gnawed logs holding back a calm pond on a forest stream',
+          credit: 'Jakub Hałun, CC BY 4.0, via Wikimedia Commons',
         },
         {
-          src: satelliteImg,
-          alt: 'A satellite beaming down at a very long beaver dam',
-          credit: 'in-house clip-art department',
+          src: pondAerialImg,
+          alt: 'Aerial view of a beaver wetland strewn with dozens of felled tree trunks',
+          credit: 'Ermell, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: lodgeImg,
-          alt: 'A dome-shaped beaver lodge with a secret underwater entrance',
-          credit: 'in-house clip-art department',
+          alt: 'A snow-dusted beaver lodge of piled sticks rising out of an icy marsh',
+          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
         },
         {
-          src: hardhatImg,
-          alt: 'A beaver wearing a construction hard hat',
-          credit: 'in-house clip-art department',
+          src: carryingBranchImg,
+          alt: 'A beaver hauling a leafy branch across a pond to the construction site',
+          credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
         },
       ],
     },
@@ -59,24 +59,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: teethImg,
-          alt: 'A beaver face proudly displaying two big orange front teeth',
-          credit: 'in-house clip-art department',
+          src: treeCuttingImg,
+          alt: 'A beaver pressed against a half-gnawed tree trunk in the snow, mid-chew',
+          credit: 'D. Gordon E. Robertson, CC BY-SA 3.0, via Wikimedia Commons',
         },
         {
-          src: tailSlapImg,
-          alt: 'A beaver mid tail-slap, splashing water everywhere',
-          credit: 'in-house clip-art department',
+          src: swimmingImg,
+          alt: 'A swimming beaver with its broad flat tail floating at the surface, ready to slap',
+          credit: 'Bureau of Land Management Alaska, public domain, via Wikimedia Commons',
         },
         {
-          src: scubaImg,
-          alt: 'A beaver swimming underwater with goggle-like eyes',
-          credit: 'in-house clip-art department',
+          src: cruisingImg,
+          alt: 'A beaver cruising low through still water at dusk, only head and back showing',
+          credit: 'U.S. Fish and Wildlife Service, CC BY 2.0, via Wikimedia Commons',
         },
         {
-          src: chompImg,
-          alt: 'A beaver gnawing enthusiastically through a tree trunk',
-          credit: 'in-house clip-art department',
+          src: chewedTreeImg,
+          alt: 'A large tree trunk chewed most of the way through by beaver teeth',
+          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
         },
       ],
     },
@@ -91,23 +91,23 @@ export default defineSet({
       images: [
         {
           src: nickelImg,
-          alt: 'A Canadian nickel featuring a very smug beaver',
-          credit: 'in-house clip-art department',
+          alt: 'Both sides of a 1937 Canadian five-cent coin, the beaver perched on its rock',
+          credit: 'Awmcphee, CC0, via Wikimedia Commons',
         },
         {
           src: stampImg,
-          alt: 'The 1851 Three-Penny Beaver postage stamp, lovingly recreated',
-          credit: 'in-house clip-art department',
+          alt: 'The 1851 Three-Penny Beaver, Canada\'s first postage stamp',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: flagImg,
-          alt: 'A beaver standing proudly beside a Canadian flag',
-          credit: 'in-house clip-art department',
+          src: emblemImg,
+          alt: 'A wet-furred beaver at the water\'s edge, looking every bit the national emblem',
+          credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
         },
         {
           src: peltImg,
-          alt: 'A beaver pelt next to a gold coin, the original currency exchange',
-          credit: 'in-house clip-art department',
+          alt: 'A beaver pelt stretched on a round willow frame, fur-trade style',
+          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
         },
       ],
     },
