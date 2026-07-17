@@ -4,7 +4,6 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, useTemplateRef } from 'vue'
 import { findSet } from '../content/sets'
-import { TOPICS } from '../content/topics'
 import { renderMarkdown } from '../lib/markdown'
 
 const props = defineProps<{ slug: string }>()
@@ -68,20 +67,17 @@ function toggleFullscreen() {
   <div v-if="set" class="wrap">
     <div ref="container" class="scroller">
       <section class="panel title-panel" data-index="0">
-        <div class="leaf-rain" aria-hidden="true">
-          🍁 🍁 🍁 🍁 🍁
+        <div class="bobber" aria-hidden="true">
+          Louis' Fun Facts
         </div>
         <h1 class="wordart">
           {{ set.title }}
         </h1>
         <p class="subtitle">
-          ⭐ {{ set.date }} ⭐
+          (in Comic Sans)
         </p>
-        <p class="topic-badge">
-          {{ TOPICS[set.topic].label }}
-        </p>
-        <p class="hint">
-          (press ↓ to begin, eh)
+        <p class="date">
+          {{ set.date }}
         </p>
       </section>
 
@@ -106,23 +102,17 @@ function toggleFullscreen() {
         >
           <img :src="image.src" :alt="image.alt">
           <figcaption v-if="image.credit">
-            📷 {{ image.credit }}
+            <!-- 📷 {{ image.credit }} -->
           </figcaption>
         </figure>
-        <div class="starburst" aria-hidden="true">
-          WOW!
-        </div>
       </section>
 
       <section class="panel thanks-panel" :data-index="set.slides.length + 1">
-        <div class="leaf-rain" aria-hidden="true">
-          🍁 🦫 🍁 🦫 🍁
-        </div>
         <h2 class="wordart">
           Thank you!
         </h2>
         <p class="thanks-line">
-          ⭐ that's all the facts for today, eh — thanks for watching, bud ⭐
+          that's all the facts for today, eh — thanks for watching, bud
         </p>
       </section>
     </div>
@@ -184,13 +174,13 @@ function toggleFullscreen() {
   padding: 3rem clamp(2rem, 8vw, 6rem);
   box-sizing: border-box;
   position: relative;
-  border-block: 6px ridge gold;
+  border-block: 6px ridge red;
   background: #2b2b2b;
 }
 
 .wordart {
   font-size: clamp(1.6rem, 5vw, 3.8rem);
-  background: linear-gradient(180deg, #ff0000, #ff9900, #ffee00, #00cc00, #0066ff, #9900ff);
+  background: linear-gradient(180deg, #ff0000, white);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -201,9 +191,10 @@ function toggleFullscreen() {
   max-width: 24ch;
 }
 
-.leaf-rain {
+.bobber {
+  color: white;
   font-size: 2rem;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.2rem;
   animation: bob 1s ease-in-out infinite alternate;
 }
 
@@ -222,26 +213,16 @@ function toggleFullscreen() {
   text-shadow: 2px 2px 0 #000;
 }
 
-.topic-badge {
-  background: #ffee00;
-  border: 4px dotted #ff0000;
-  border-radius: 999px;
-  padding: 0.4rem 1.5rem;
-  font-weight: bold;
-  transform: rotate(3deg);
+.date {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  text-shadow: 2px 2px 0 #000;
 }
 
 .thanks-line {
   font-size: 1.6rem;
   color: #fff;
   text-shadow: 2px 2px 0 #000;
-  animation: bob 1.2s ease-in-out infinite alternate;
-}
-
-.hint {
-  color: #ffffffcc;
-  font-style: italic;
-  margin-top: 2rem;
   animation: bob 1.2s ease-in-out infinite alternate;
 }
 
@@ -329,20 +310,6 @@ function toggleFullscreen() {
   left: -5%;
   rotate: -3deg;
   animation-delay: 0.3s;
-}
-
-.starburst {
-  position: absolute;
-  top: 10%;
-  right: 26%;
-  background: #ffee00;
-  color: #ff0000;
-  font-weight: bold;
-  font-size: 1.4rem;
-  padding: 1.2rem;
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  transform: rotate(12deg) scale(1.4);
-  animation: pulse 0.6s ease-in-out infinite alternate;
 }
 
 @keyframes pulse {
