@@ -278,36 +278,42 @@ function toggleFullscreen() {
 
 /* Scatter spots pulled toward the vertical center; spilling off the
    sides is intentional — presence beats tidy margins. */
+
+/* Top left */
 .spot-1 {
-  top: 18%;
-  left: -3%;
+  top: 9%;
+  left: 5%;
   rotate: -8deg;
 }
 
+/* Top right */
 .spot-2 {
-  top: 22%;
-  right: -4%;
+  top: 7%;
+  right: 4%;
   rotate: 7deg;
   animation-delay: 0.2s;
 }
 
+/* Middle left */
 .spot-3 {
-  bottom: 16%;
-  left: -2%;
+  bottom: 18%;
+  left: 2%;
   rotate: 5deg;
   animation-delay: 0.4s;
 }
 
+/* Bottom right */
 .spot-4 {
   bottom: 18%;
-  right: -3%;
+  right: 3%;
   rotate: -6deg;
   animation-delay: 0.6s;
 }
 
+/* Bottom left */
 .spot-5 {
-  top: 40%;
-  left: -5%;
+  top: 72%;
+  left: 5%;
   rotate: -3deg;
   animation-delay: 0.3s;
 }
