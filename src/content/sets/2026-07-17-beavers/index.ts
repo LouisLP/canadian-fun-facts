@@ -21,10 +21,10 @@ export default defineSet({
     {
       heading: 'Dam fine engineering',
       facts: [
-        'Deep in **Wood Buffalo National Park**, Alberta, sits a beaver dam roughly **850 metres long** — about eight football fields. It was discovered on satellite imagery in 2007, and researchers think generations of beavers have been working on it since the 1970s.',
-        'Beavers build because they *hate the sound of running water* — play a recording of a trickling stream and they\'ll pile sticks on the speaker.',
-        'A beaver lodge has **underwater-only entrances**, a dry sleeping platform, and stays above freezing all winter — igloo engineering, but soggier.',
-        'All that damming creates wetlands that filter water and shelter fish, frogs, and birds — ecologists call beavers a **keystone species**.',
+        'World\'s longest beaver dam: **850 metres**, in Alberta\'s Wood Buffalo National Park, spotted via satellite in 2007.',
+        'Beavers hate the sound of **running water**: play a recording of a trickle and they\'ll pile sticks on the speaker.',
+        'Lodges have **underwater-only entrances**, a dry sleeping platform, and stay above freezing all winter.',
+        'Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a **keystone species**.',
       ],
       images: [
         {
@@ -44,7 +44,7 @@ export default defineSet({
         },
         {
           src: carryingBranchImg,
-          alt: 'A beaver hauling a leafy branch across a pond to the construction site',
+          alt: 'A beaver hauling a leafy branch across a pond',
           credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
         },
       ],
@@ -52,10 +52,10 @@ export default defineSet({
     {
       heading: 'Built different',
       facts: [
-        'Beaver incisors are orange because the enamel contains **iron**, which makes them harder and more resistant to acid than regular white enamel. They also *never stop growing* — all that wood-chewing is basically dental care.',
-        'The famous flat tail is a **rudder**, a **kickstand**, a winter **fat reserve**, and an alarm: one hard slap on the water sends the whole colony diving.',
-        'Beavers can stay underwater for up to **15 minutes**, with transparent eyelids that work like built-in goggles and lips that seal *behind* their teeth so they can chew while submerged.',
-        'At up to **30-odd kilograms**, the beaver is North America\'s largest rodent — second in the world only to the capybara.',
+        'Beaver incisors are orange from **iron** in the enamel: harder, more acid-resistant, and never stop growing.',
+        'The flat tail is a rudder, a kickstand, a winter **fat reserve**, and an alarm: one slap sends the whole colony diving.',
+        'Up to **15 minutes** underwater, with transparent eyelids for goggles and lips that seal behind the teeth for submerged chewing.',
+        'At up to **30 kilograms**, North America\'s largest rodent, second in the world only to the capybara.',
       ],
       images: [
         {
@@ -65,7 +65,7 @@ export default defineSet({
         },
         {
           src: swimmingImg,
-          alt: 'A swimming beaver with its broad flat tail floating at the surface, ready to slap',
+          alt: 'A swimming beaver with its broad flat tail floating at the surface',
           credit: 'Bureau of Land Management Alaska, public domain, via Wikimedia Commons',
         },
         {
@@ -83,10 +83,10 @@ export default defineSet({
     {
       heading: 'A national icon',
       facts: [
-        'The beaver became an **official emblem of Canada** on March 24, 1975, via the *National Symbol of Canada Act* — the paperwork just took a few decades to catch up.',
-        'It has starred on the **Canadian nickel since 1937**, one of the longest-running coin designs in the country.',
-        'Canada\'s very first postage stamp, the **Three-Penny Beaver of 1851**, put a rodent where every other country put a monarch.',
-        'During the fur trade, one prime pelt — a "**made beaver**" — was literally a unit of currency at Hudson\'s Bay Company posts.',
+        'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
+        'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
+        'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
+        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
       ],
       images: [
         {
@@ -101,12 +101,12 @@ export default defineSet({
         },
         {
           src: emblemImg,
-          alt: 'A wet-furred beaver at the water\'s edge, looking every bit the national emblem',
+          alt: 'A wet-furred beaver at the water\'s edge',
           credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
         },
         {
           src: peltImg,
-          alt: 'A beaver pelt stretched on a round willow frame, fur-trade style',
+          alt: 'A beaver pelt stretched on a round willow frame',
           credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
         },
       ],
