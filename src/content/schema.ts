@@ -1,0 +1,38 @@
+import type { Topic } from './topics'
+
+export type IsoDate = `${number}-${number}-${number}`
+
+export interface SlideImage {
+  /** Typed Vite import — a broken path fails the build. */
+  src: string
+  alt: string
+  /** Attribution for the image itself: a name or URL. */
+  credit?: string
+}
+
+export interface Slide {
+  /** The hook, big on screen. */
+  heading: string
+  /** Full markdown. */
+  body: string
+  /** Required — every slide gets an image, even glorious clip-art. */
+  image: SlideImage
+  /** URL backing the fact. */
+  source?: string
+}
+
+export interface FunFactSet {
+  /** Permalink identity; renaming the folder never changes it. */
+  slug: string
+  /** Hub sort key; the folder name mirrors it by convention only. */
+  date: IsoDate
+  title: string
+  topic: Topic
+  /** At least one; three by convention. */
+  slides: [Slide, ...Slide[]]
+}
+
+/** Identity helper so set modules get inference + excess-property checks. */
+export function defineSet(set: FunFactSet): FunFactSet {
+  return set
+}

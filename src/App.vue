@@ -1,11 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <RouterView />
 </template>
 
-<style scoped></style>
+<style>
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive;
+}
+</style>
