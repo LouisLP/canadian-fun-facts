@@ -11,7 +11,7 @@ One week's presentation: a dated, titled collection of at least one slide (three
 _Avoid_: Deck, presentation, week
 
 **Slide**:
-One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and several images (4–5 by convention) scattered around it.
+One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and exactly four images scattered around it.
 _Avoid_: Fact, card, page
 
 **Fact**:

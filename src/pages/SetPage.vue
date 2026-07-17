@@ -98,7 +98,7 @@ function toggleFullscreen() {
           v-for="(image, j) in slide.images"
           :key="image.src"
           class="slide-figure"
-          :class="`spot-${(j % 5) + 1}`"
+          :class="`spot-${(j % 4) + 1}`"
         >
           <img :src="image.src" :alt="image.alt">
           <figcaption v-if="image.credit">
@@ -281,7 +281,7 @@ function toggleFullscreen() {
   margin-top: 0.2rem;
 }
 
-/* Scatter spots pulled toward the vertical center; spilling off the
+/* Four spots, one per corner, for an even spread; spilling off the
    sides is intentional — presence beats tidy margins. */
 
 /* Top left */
@@ -299,28 +299,20 @@ function toggleFullscreen() {
   animation-delay: 0.2s;
 }
 
-/* Middle left */
+/* Bottom left */
 .spot-3 {
-  bottom: 18%;
-  left: 2%;
+  bottom: 12%;
+  left: 4%;
   rotate: 5deg;
   animation-delay: 0.4s;
 }
 
 /* Bottom right */
 .spot-4 {
-  bottom: 18%;
+  bottom: 12%;
   right: 3%;
   rotate: -6deg;
   animation-delay: 0.6s;
-}
-
-/* Bottom left */
-.spot-5 {
-  top: 72%;
-  left: 5%;
-  rotate: -3deg;
-  animation-delay: 0.3s;
 }
 
 @keyframes pulse {
