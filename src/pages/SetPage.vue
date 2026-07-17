@@ -189,7 +189,9 @@ function toggleFullscreen() {
   transform: rotate(-1deg);
   margin: 0;
   max-width: 24ch;
-  line-height: 0.9;
+  /* Keep above 1 so descenders (g, p, y) aren't clipped by the
+     background-clip: text box. */
+  line-height: 1.1;
 }
 
 .main-title {
