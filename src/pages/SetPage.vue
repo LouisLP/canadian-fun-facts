@@ -67,7 +67,7 @@ function toggleFullscreen() {
   <div v-if="set" class="wrap">
     <div ref="container" class="scroller">
       <section class="panel title-panel" data-index="0">
-        <div class="bobber" aria-hidden="true">
+        <div class="bobber main-title" aria-hidden="true">
           Louis' Fun Facts
         </div>
         <h1 class="wordart">
@@ -186,15 +186,20 @@ function toggleFullscreen() {
   color: transparent;
   -webkit-text-stroke: 2px #000;
   filter: drop-shadow(4px 4px 0 #00000088);
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
   margin: 0;
   max-width: 24ch;
+  line-height: 0.9;
+}
+
+.main-title {
+  padding-bottom: 1.25rem;
 }
 
 .bobber {
   color: white;
   font-size: 2rem;
-  letter-spacing: 1.2rem;
+  letter-spacing: 1.1rem;
   animation: bob 1s ease-in-out infinite alternate;
 }
 
@@ -209,7 +214,7 @@ function toggleFullscreen() {
 
 .subtitle {
   font-size: 1.6rem;
-  color: #fff;
+  color: #949494;
   text-shadow: 2px 2px 0 #000;
 }
 

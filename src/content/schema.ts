@@ -26,7 +26,7 @@ export interface FunFactSet {
   date: IsoDate
   title: string
   topic: Topic
-  /** At least one; three by convention. */
+  /** At least one; four by convention. */
   slides: [Slide, ...Slide[]]
 }
 
