@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#1b6fb0"/>
+  <g fill="none" stroke="#bfe9ff" stroke-width="2">
+    <circle cx="150" cy="40" r="5"/>
+    <circle cx="160" cy="25" r="3"/>
+    <circle cx="143" cy="58" r="4"/>
+  </g>
+  <ellipse cx="90" cy="90" rx="34" ry="20" fill="#8b5a2b"/>
+  <circle cx="120" cy="78" r="13" fill="#8b5a2b"/>
+  <circle cx="122" cy="75" r="7" fill="#bfe9ff" stroke="#ffcc00" stroke-width="2.5"/>
+  <circle cx="123" cy="75" r="2" fill="#000"/>
+  <path d="M58 95 Q38 100 40 115 Q58 118 64 103 Z" fill="#5c3317"/>
+  <g stroke="#5c3317" stroke-width="4" stroke-linecap="round">
+    <line x1="80" y1="108" x2="74" y2="118"/>
+    <line x1="100" y1="108" x2="106" y2="118"/>
+  </g>
+  <path d="M20 130 Q40 124 60 130 T100 130 T140 130 T180 130" fill="none" stroke="#bfe9ff" stroke-width="2"/>
+  <text x="100" y="146" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#ffee00">built-in goggles!!</text>
+</svg>

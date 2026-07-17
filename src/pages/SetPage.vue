@@ -55,6 +55,10 @@ onUnmounted(() => {
   observer?.disconnect()
 })
 
+function sourceHost(url: string): string {
+  return new URL(url).hostname
+}
+
 function toggleFullscreen() {
   if (document.fullscreenElement)
     document.exitFullscreen()
@@ -93,21 +97,33 @@ function toggleFullscreen() {
         <h2 class="wordart">
           {{ slide.heading }}
         </h2>
-        <div class="fact-body">
-          <figure class="slide-figure">
-            <img :src="slide.image.src" :alt="slide.image.alt">
-            <figcaption v-if="slide.image.credit">
-              📷 {{ slide.image.credit }}
-            </figcaption>
-          </figure>
+        <ul class="facts">
           <!-- eslint-disable-next-line vue/no-v-html — repo-authored markdown, trusted -->
-          <div class="slide-text" v-html="renderMarkdown(slide.body)" />
-        </div>
+          <li v-for="(fact, j) in slide.facts" :key="j" class="fact-card" v-html="renderMarkdown(fact)" />
+        </ul>
+        <figure
+          v-for="(image, j) in slide.images"
+          :key="image.src"
+          class="slide-figure"
+          :class="`spot-${(j % 5) + 1}`"
+        >
+          <img :src="image.src" :alt="image.alt">
+          <figcaption v-if="image.credit">
+            📷 {{ image.credit }}
+          </figcaption>
+        </figure>
         <div class="starburst" aria-hidden="true">
           WOW!
         </div>
-        <p v-if="slide.source" class="source">
-          source: <a :href="slide.source" target="_blank" rel="noopener">{{ slide.source }}</a>
+        <p v-if="slide.sources?.length" class="source">
+          sources:
+          <a
+            v-for="src in slide.sources"
+            :key="src"
+            :href="src"
+            target="_blank"
+            rel="noopener"
+          >{{ sourceHost(src) }}</a>
         </p>
       </section>
     </div>
@@ -224,51 +240,96 @@ function toggleFullscreen() {
   animation: bob 1.2s ease-in-out infinite alternate;
 }
 
-.fact-body {
+.facts {
+  position: relative;
+  z-index: 1;
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1.5vh, 1rem);
+  margin: 1.2rem 0 0;
+  padding: 0;
+  max-width: min(56vw, 62ch);
+}
+
+.fact-card {
+  text-align: left;
+  font-size: clamp(0.9rem, 1.4vh + 0.5vw, 1.4rem);
+  color: #1a1a1a;
+  background: #ffffffdd;
+  border: 4px dashed #ff0000;
+  padding: clamp(0.4rem, 1vh, 0.9rem) 1.4rem;
+  transform: rotate(-0.8deg);
+}
+
+.fact-card:nth-child(even) {
+  transform: rotate(0.8deg);
+  border-color: #003399;
+}
+
+.fact-card :deep(p) {
+  margin-block: 0.2rem;
 }
 
 .slide-figure {
+  position: absolute;
   margin: 0;
   animation: bob 0.8s ease-in-out infinite alternate;
 }
 
 .slide-figure img {
-  width: clamp(10rem, 24vw, 18rem);
+  width: clamp(6rem, 14vw, 12rem);
   border: 6px ridge gold;
   background: #fff;
   filter: drop-shadow(6px 6px 0 #00000055);
 }
 
 .slide-figure figcaption {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #333;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
+  background: #ffffffbb;
 }
 
-.slide-text {
-  text-align: left;
-  font-size: clamp(1rem, 2.2vw, 1.6rem);
-  color: #1a1a1a;
-  background: #ffffffdd;
-  border: 4px dashed #ff0000;
-  padding: 1.2rem 1.8rem;
-  max-width: 42ch;
+/* Scatter spots around the slide edges, stickered per the aesthetic. */
+.spot-1 {
+  top: 9%;
+  left: 3%;
+  rotate: -8deg;
 }
 
-.slide-text :deep(p) {
-  margin-block: 0.6rem;
+.spot-2 {
+  top: 13%;
+  right: 4%;
+  rotate: 7deg;
+  animation-delay: 0.2s;
+}
+
+.spot-3 {
+  bottom: 11%;
+  left: 4%;
+  rotate: 5deg;
+  animation-delay: 0.4s;
+}
+
+.spot-4 {
+  bottom: 13%;
+  right: 5%;
+  rotate: -6deg;
+  animation-delay: 0.6s;
+}
+
+.spot-5 {
+  top: 42%;
+  left: 1.5%;
+  rotate: -3deg;
+  animation-delay: 0.3s;
 }
 
 .starburst {
   position: absolute;
   top: 10%;
-  right: 8%;
+  right: 26%;
   background: #ffee00;
   color: #ff0000;
   font-weight: bold;
@@ -302,6 +363,7 @@ function toggleFullscreen() {
 
 .source a {
   color: #003399;
+  margin-left: 0.6ch;
 }
 
 .rail {

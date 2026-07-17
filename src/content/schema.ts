@@ -11,14 +11,14 @@ export interface SlideImage {
 }
 
 export interface Slide {
-  /** The hook, big on screen. */
+  /** The subject hook, big on screen. */
   heading: string
-  /** Full markdown. */
-  body: string
-  /** Required — every slide gets an image, even glorious clip-art. */
-  image: SlideImage
-  /** URL backing the fact. */
-  source?: string
+  /** Full markdown per fact. At least one; 3–4 by convention. */
+  facts: [string, ...string[]]
+  /** At least one; 4–5 by convention — scattered around the slide. */
+  images: [SlideImage, ...SlideImage[]]
+  /** URLs backing the facts. */
+  sources?: string[]
 }
 
 export interface FunFactSet {
