@@ -191,7 +191,7 @@ function toggleFullscreen() {
   max-width: 24ch;
   /* Keep above 1 so descenders (g, p, y) aren't clipped by the
      background-clip: text box. */
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .main-title {
