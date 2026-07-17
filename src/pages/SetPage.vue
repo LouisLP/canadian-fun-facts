@@ -184,10 +184,7 @@ function toggleFullscreen() {
   box-sizing: border-box;
   position: relative;
   border-block: 6px ridge gold;
-  background:
-    radial-gradient(circle at 20% 20%, #ff00aa22 0 25%, transparent 25%),
-    radial-gradient(circle at 80% 70%, #00ffee22 0 20%, transparent 20%),
-    linear-gradient(135deg, #ff0000, #ffffff 45%, #ff0000);
+  background: #2b2b2b;
 }
 
 .wordart {
@@ -286,9 +283,8 @@ function toggleFullscreen() {
 
 .slide-figure figcaption {
   font-size: 0.7rem;
-  color: #333;
+  color: #cccccc;
   margin-top: 0.2rem;
-  background: #ffffffbb;
 }
 
 /* Scatter spots around the slide edges, stickered per the aesthetic. */
@@ -354,7 +350,7 @@ function toggleFullscreen() {
   bottom: 1rem;
   right: 1.5rem;
   font-size: 0.8rem;
-  color: #333;
+  color: #cccccc;
   max-width: 60ch;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -362,7 +358,7 @@ function toggleFullscreen() {
 }
 
 .source a {
-  color: #003399;
+  color: #99bbff;
   margin-left: 0.6ch;
 }
 
