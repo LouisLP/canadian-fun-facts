@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#fff8e7"/>
+  <path d="M50 80 L150 80 L138 120 Q100 128 62 120 Z" fill="#e05c5c" stroke="#a33" stroke-width="3"/>
+  <rect x="70" y="45" width="9" height="40" rx="3" fill="#ffd24d" stroke="#d4a017" stroke-width="2" transform="rotate(-12 74 65)"/>
+  <rect x="88" y="40" width="9" height="45" rx="3" fill="#ffd24d" stroke="#d4a017" stroke-width="2"/>
+  <rect x="106" y="43" width="9" height="42" rx="3" fill="#ffd24d" stroke="#d4a017" stroke-width="2" transform="rotate(10 110 64)"/>
+  <rect x="122" y="50" width="9" height="35" rx="3" fill="#ffd24d" stroke="#d4a017" stroke-width="2" transform="rotate(20 126 67)"/>
+  <ellipse cx="80" cy="80" rx="8" ry="6" fill="#fffdf0" stroke="#e0d8b8" stroke-width="2"/>
+  <ellipse cx="103" cy="84" rx="8" ry="6" fill="#fffdf0" stroke="#e0d8b8" stroke-width="2"/>
+  <ellipse cx="124" cy="79" rx="8" ry="6" fill="#fffdf0" stroke="#e0d8b8" stroke-width="2"/>
+  <path d="M62 76 Q100 92 138 76" fill="none" stroke="#8b5a2b" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">Québec's gift to the world</text>
+</svg>

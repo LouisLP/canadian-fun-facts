@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#f5f0ff"/>
+  <path d="M65 60 L135 60 L128 115 Q100 122 72 115 Z" fill="#fffdf5" stroke="#8a7aa8" stroke-width="4"/>
+  <path d="M135 68 Q158 70 152 88 Q147 100 130 96" fill="none" stroke="#8a7aa8" stroke-width="4"/>
+  <ellipse cx="100" cy="60" rx="35" ry="8" fill="#e8d9c4" stroke="#8a7aa8" stroke-width="3"/>
+  <path d="M85 45 Q88 35 85 28" fill="none" stroke="#b0a0c8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 43 Q103 33 100 26" fill="none" stroke="#b0a0c8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M115 45 Q118 35 115 28" fill="none" stroke="#b0a0c8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="112" y="72" width="16" height="12" rx="2" fill="#d4a017" stroke="#8b5a2b" stroke-width="2" transform="rotate(8 120 78)"/>
+  <line x1="120" y1="72" x2="126" y2="58" stroke="#8b5a2b" stroke-width="2"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">not actually from London</text>
+</svg>

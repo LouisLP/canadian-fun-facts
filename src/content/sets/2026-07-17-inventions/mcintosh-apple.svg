@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#f3fff3"/>
+  <circle cx="88" cy="82" r="34" fill="#e03d3d" stroke="#a32020" stroke-width="3"/>
+  <circle cx="116" cy="82" r="34" fill="#e03d3d" stroke="#a32020" stroke-width="3"/>
+  <circle cx="102" cy="92" r="33" fill="#e03d3d"/>
+  <path d="M102 50 Q100 35 108 28" fill="none" stroke="#5c3317" stroke-width="4" stroke-linecap="round"/>
+  <path d="M108 38 Q130 28 138 42 Q120 52 108 38" fill="#3dbb5e" stroke="#2a8a44" stroke-width="2"/>
+  <circle cx="90" cy="70" r="6" fill="#ff8f8f" opacity="0.7"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="10" fill="#003399">one Ontario tree started it all</text>
+</svg>
