@@ -24,11 +24,11 @@ export default defineSet({
     {
       heading: 'Invented it, ate it',
       facts: [
-        '**Peanut butter** was patented by Montréal chemist **Marcellus Gilmore Edson in 1884** — his "peanut candy" paste was pitched as food for people who couldn\'t chew. You\'re welcome, every sandwich since.',
-        'Canada keeps inventing *other countries\'* food: the **Hawaiian pizza** was born at a Greek-run restaurant in **Chatham, Ontario in 1962**, and Vancouver chef **Hidekazu Tojo** created the inside-out **California roll** to sneak seaweed past skeptical Western diners.',
-        'The **London Fog** — Earl Grey, steamed milk, vanilla — has nothing to do with London. It was invented in a **Vancouver café** in the 1990s, reportedly for a pregnant customer who couldn\'t have her usual latte.',
-        'Québec gave the world **poutine** (late-1950s snack-bar experiment, now national treasure) and **tourtière**, the spiced meat pie that has anchored réveillon feasts for centuries.',
-        'Every single **McIntosh apple** on Earth descends from *one tree* John McIntosh found on his Ontario farm in **1811** — and yes, Apple\'s **Macintosh** computer was named after the fruit.',
+        '**Peanut butter**: patented in 1884 by Montréal chemist Marcellus Gilmore Edson, pitched as food for people who couldn\'t chew.',
+        'Canada invents other countries\' food: the **Hawaiian pizza** (Chatham, Ontario, 1962) and the inside-out **California roll** (Vancouver chef Hidekazu Tojo).',
+        'The **London Fog** latte comes from a 1990s Vancouver café, not London.',
+        'Québec gave the world **poutine**, a late-1950s snack-bar experiment, and **tourtière**, centuries on réveillon tables.',
+        'Every **McIntosh apple** on Earth descends from one tree found in Ontario in 1811; Apple\'s Macintosh computer is named after the fruit.',
       ],
       images: [
         {
@@ -38,22 +38,22 @@ export default defineSet({
         },
         {
           src: pizzaImg,
-          alt: 'A sliced Hawaiian pizza with ham and pineapple, photographed in Toronto no less',
+          alt: 'A sliced Hawaiian pizza with ham and pineapple',
           credit: 'Avelludo, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: rollImg,
-          alt: 'California rolls arranged on a plate, seaweed successfully hidden inside',
+          alt: 'California rolls arranged on a plate',
           credit: 'Tim Reckmann, CC BY 2.0, via Wikimedia Commons',
         },
         {
           src: fogImg,
-          alt: 'A London Fog latte in a white cup, milk foam hiding the Earl Grey below',
+          alt: 'A London Fog latte in a white cup',
           credit: 'Andy Li, CC0, via Wikimedia Commons',
         },
         {
           src: poutineImg,
-          alt: 'A plate of poutine from Windsor, Ontario — fries, squeaky curds, gravy',
+          alt: 'A plate of poutine with fries, cheese curds, and gravy',
           credit: 'Antonydstevens, CC0, via Wikimedia Commons',
         },
         {
@@ -66,20 +66,20 @@ export default defineSet({
     {
       heading: 'Calling, zipping, computing',
       facts: [
-        'Alexander Graham Bell insisted the **telephone** was "invented in Canada, made in the United States" — he dreamed it up at his family home in **Brantford, Ontario**, and the first true long-distance call ran from Brantford to Paris… *Ontario*, in 1876.',
-        'The modern **zipper** was perfected by Gideon Sundback, who patented it in **1917** and manufactured it in **St. Catharines, Ontario** — where his Lightning Fastener Company zipped up the world for decades.',
-        'Québec-born **Reginald Fessenden** made the first **voice transmission by radio** in 1900, then on Christmas Eve 1906 delivered the world\'s first broadcast — reading scripture and playing *O Holy Night* on his violin to stunned ship operators expecting Morse code.',
-        'The **Java programming language** was created by Calgary-born **James Gosling**, and the **BlackBerry** — the phone that invented the mobile inbox and ran the White House — came out of **Waterloo, Ontario**.',
+        'The **telephone** was conceived at Bell\'s family home in Brantford, Ontario; the first long-distance call ran from Brantford to Paris, Ontario in 1876.',
+        'The modern **zipper**: patented by Gideon Sundback in 1917 and manufactured in St. Catharines, Ontario for decades.',
+        'Québec-born **Reginald Fessenden** made the first radio voice transmission in 1900 and the world\'s first broadcast on Christmas Eve 1906.',
+        'Calgary-born **James Gosling** created Java; Waterloo, Ontario built the **BlackBerry**, the phone that ran the White House.',
       ],
       images: [
         {
           src: telephoneImg,
-          alt: 'An early-1900s candlestick telephone with its earpiece hanging at the ready',
+          alt: 'An early-1900s candlestick telephone with its earpiece on the hook',
           credit: 'Nuberger13, public domain, via Wikimedia Commons',
         },
         {
           src: zipperImg,
-          alt: 'A brass zipper on denim, zipped exactly halfway, as a compromise',
+          alt: 'A brass zipper on denim, zipped halfway',
           credit: 'CC BY-SA 3.0, via Wikimedia Commons',
         },
         {
@@ -89,23 +89,23 @@ export default defineSet({
         },
         {
           src: goslingImg,
-          alt: 'James Gosling, father of Java, smiling like a man with good garbage collection',
+          alt: 'James Gosling, creator of Java, smiling at the camera',
           credit: 'Peter Campbell, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
           src: blackberryImg,
-          alt: 'A BlackBerry Bold 9900 and its beloved tiny keyboard',
+          alt: 'A BlackBerry Bold 9900 with its physical keyboard',
           credit: 'P2u111, CC BY 4.0, via Wikimedia Commons',
         },
       ],
     },
     {
-      heading: 'Life-savers and game-changers',
+      heading: 'Life-savers and peach baskets',
       facts: [
-        '**Insulin** was discovered at the University of Toronto in **1921–22** by Frederick Banting and Charles Best. Banting sold the patent for **$1**, saying *"insulin does not belong to me, it belongs to the world"* — and became the youngest-ever Medicine Nobel laureate.',
-        'North America\'s **first forensic science laboratory** opened in **Montréal in 1914** under Wilfrid Derome — beating the FBI\'s famous crime lab by nearly two decades.',
-        '**Basketball** was invented by **James Naismith** of Almonte, Ontario, in 1891 — 13 rules, a soccer ball, and two peach baskets nailed to a gym balcony. Someone had to climb up and fetch the ball after every point.',
-        'Bonus beat: the world\'s first **artificial pacemaker** was built in **1950** by John Hopps, a National Research Council engineer who stumbled into cardiology while researching hypothermia.',
+        '**Insulin**: discovered at the University of Toronto in 1921–22; Banting sold the patent for **$1**, saying it belonged to the world.',
+        'North America\'s first **forensic science lab** opened in Montréal in 1914, nearly two decades before the FBI\'s.',
+        '**Basketball**: invented in 1891 by James Naismith of Almonte, Ontario, with 13 rules, a soccer ball, and two peach baskets.',
+        'The first **artificial pacemaker** was built in 1950 by John Hopps, a National Research Council engineer researching hypothermia.',
       ],
       images: [
         {
@@ -115,7 +115,7 @@ export default defineSet({
         },
         {
           src: fingerprintImg,
-          alt: 'A suspiciously crisp fingerprint on a fingertip, evidence-ready',
+          alt: 'A close-up of a fingerprint on a fingertip',
           credit: 'Frettie, CC BY 3.0, via Wikimedia Commons',
         },
         {

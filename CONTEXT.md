@@ -2,6 +2,8 @@
 
 A public site of weekly Canadian fun-fact slide sets, authored as files in this repo and presented from a browser instead of Google Slides.
 
+All reader-facing copy (facts, headings, titles) follows [docs/copy-style.md](docs/copy-style.md).
+
 ## Language
 
 **Set**:
