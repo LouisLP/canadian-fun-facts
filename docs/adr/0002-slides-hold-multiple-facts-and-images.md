@@ -1,5 +1,7 @@
 # Slides hold multiple facts and multiple images
 
+> **Amended by [0003](0003-slides-carry-no-sources.md):** `sources?: string[]` below is gone — slides no longer carry sources at all.
+
 Amends the `Slide` shape in [0001](0001-sets-are-typescript-modules.md). Everything else there (TypeScript modules, `vue-tsc` as validator, glob discovery, topics registry) stands.
 
 A slide is one **subject**, not one fact. The original shape — exactly one `body` and one `image` — forced a "Mythical creatures" set to spend a whole slide per Ogopogo tidbit. Instead a slide carries a cluster of facts and a scatter of images about its subject:

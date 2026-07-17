@@ -9,7 +9,7 @@ One week's presentation: a dated, titled collection of at least one slide (three
 _Avoid_: Deck, presentation, week
 
 **Slide**:
-One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and several images (4–5 by convention) scattered around it. May cite sources.
+One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and several images (4–5 by convention) scattered around it.
 _Avoid_: Fact, card, page
 
 **Fact**:
@@ -20,12 +20,8 @@ _Avoid_: Body, bullet, point
 The single theme a set belongs to, chosen from a curated registry (each with a label and colour). Sets have exactly one.
 _Avoid_: Category, tag, theme
 
-**Source**:
-A URL backing a slide's facts, shown as fine print. A slide may cite several or none.
-_Avoid_: Reference, citation
-
 **Credit**:
-Attribution for where a slide's image came from (name or URL). Optional per image; distinct from Source, which backs the fact itself.
+Attribution for where a slide's image came from (name or URL). Optional per image.
 _Avoid_: Attribution, courtesy
 
 **Slug**:

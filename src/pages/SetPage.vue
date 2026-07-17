@@ -55,10 +55,6 @@ onUnmounted(() => {
   observer?.disconnect()
 })
 
-function sourceHost(url: string): string {
-  return new URL(url).hostname
-}
-
 function toggleFullscreen() {
   if (document.fullscreenElement)
     document.exitFullscreen()
@@ -115,16 +111,6 @@ function toggleFullscreen() {
         <div class="starburst" aria-hidden="true">
           WOW!
         </div>
-        <p v-if="slide.sources?.length" class="source">
-          sources:
-          <a
-            v-for="src in slide.sources"
-            :key="src"
-            :href="src"
-            target="_blank"
-            rel="noopener"
-          >{{ sourceHost(src) }}</a>
-        </p>
       </section>
     </div>
 
@@ -343,23 +329,6 @@ function toggleFullscreen() {
   to {
     transform: rotate(18deg) scale(1.5);
   }
-}
-
-.source {
-  position: absolute;
-  bottom: 1rem;
-  right: 1.5rem;
-  font-size: 0.8rem;
-  color: #cccccc;
-  max-width: 60ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.source a {
-  color: #99bbff;
-  margin-left: 0.6ch;
 }
 
 .rail {

@@ -17,8 +17,6 @@ export interface Slide {
   facts: [string, ...string[]]
   /** At least one; 4–5 by convention — scattered around the slide. */
   images: [SlideImage, ...SlideImage[]]
-  /** URLs backing the facts. */
-  sources?: string[]
 }
 
 export interface FunFactSet {
