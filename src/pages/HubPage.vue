@@ -28,7 +28,7 @@ function toggleTopic(topic: Topic) {
     <header class="banner">
       <h1>🍁 Canadian Fun Facts 🍁</h1>
       <p class="tagline">
-        ✨ your weekly dose of maple-flavoured knowledge ✨
+        your weekly dose of maple-flavoured knowledge
       </p>
     </header>
 
@@ -71,7 +71,7 @@ function toggleTopic(topic: Topic) {
     </main>
 
     <footer class="feed-footer">
-      <p>~*~ made with 🧡 and zero design skill, on purpose ~*~</p>
+      <p>~*~ made with zero design skill (on purpose) ~*~</p>
     </footer>
   </div>
 </template>
@@ -81,7 +81,7 @@ function toggleTopic(topic: Topic) {
   max-width: 46rem;
   margin: 0 auto;
   padding: 1rem 1rem 8rem;
-  background: repeating-linear-gradient(180deg, #fffbe6 0, #fffbe6 40px, #fff3f3 40px, #fff3f3 80px);
+  background: #101010;
   min-height: 100vh;
 }
 
@@ -101,7 +101,7 @@ function toggleTopic(topic: Topic) {
 }
 
 .tagline {
-  color: #b03dff;
+  color: red;
   font-weight: bold;
   margin: 0.5rem 0 0;
 }
@@ -196,7 +196,7 @@ function toggleTopic(topic: Topic) {
 
 .feed-footer {
   text-align: center;
-  color: #ff9d00;
+  color: red;
   font-weight: bold;
   margin-top: 2rem;
 }
