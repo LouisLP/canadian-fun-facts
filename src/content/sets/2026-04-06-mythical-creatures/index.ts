@@ -1,15 +1,21 @@
 import { defineSet } from '../../schema'
 import deadOfWinterImg from './dead-of-winter.webp'
+import legendPosterImg from './ogopogo-legend-poster.webp'
+import ogopogoPaintingImg from './ogopogo-painting.webp'
 import sheetMusicImg from './ogopogo-sheet-music.webp'
 import ogopogoStatueImg from './ogopogo-statue.webp'
 import okanaganLakeImg from './okanagan-lake.webp'
 import rattlesnakeIslandImg from './rattlesnake-island.webp'
 import dioramaImg from './sasquatch-diorama.webp'
 import sasquatchForestImg from './sasquatch-forest.webp'
+import moviePosterImg from './sasquatch-movie-poster.webp'
+import sasquatchPhotoImg from './sasquatch-photo.webp'
 import provincialParkImg from './sasquatch-provincial-park.webp'
 import roadsideFigureImg from './sasquatch-roadside-figure.webp'
+import wendigoClassicImg from './wendigo-classic-illustration.webp'
 import wendigoCostumeImg from './wendigo-costume.webp'
 import wendigoArtImg from './wendigo-modern-art.webp'
+import wendigoRenderingImg from './wendigo-rendering.webp'
 import winterForestImg from './winter-forest.webp'
 
 export default defineSet({
@@ -47,6 +53,12 @@ export default defineSet({
           alt: 'Cover of the 1924 sheet music "The Ogo-Pogo: The Funny Fox-Trot", showing a cartoon creature playing a banjo',
           credit: 'Fred Low, public domain, via Wikimedia Commons',
         },
+        {
+          src: ogopogoPaintingImg,
+        },
+        {
+          src: legendPosterImg,
+        },
       ],
     },
     {
@@ -78,6 +90,12 @@ export default defineSet({
           alt: 'A dark Sasquatch silhouette sculpture standing on a dry hillside beside pine trees',
           credit: 'public domain, via Wikimedia Commons',
         },
+        {
+          src: sasquatchPhotoImg,
+        },
+        {
+          src: moviePosterImg,
+        },
       ],
     },
     {
@@ -108,6 +126,12 @@ export default defineSet({
           src: wendigoArtImg,
           alt: 'A modern digital illustration of a gaunt, antlerless Wendigo figure in a grey forest',
           credit: 'Віщун, CC BY-SA 4.0, via Wikimedia Commons',
+        },
+        {
+          src: wendigoClassicImg,
+        },
+        {
+          src: wendigoRenderingImg,
         },
       ],
     },
