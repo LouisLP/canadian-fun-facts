@@ -651,8 +651,8 @@ _Beavers: Nature's Construction Crew_
 - Lodges have underwater-only entrances, a dry sleeping platform, and stay above freezing all winter.
 - Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a keystone species.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `beaver-on-dam-bank.webp`
+- [x] image 6 — `beaver-resting-on-dam.webp`
 
 ### Built different — has 4, need 2
 
@@ -661,8 +661,8 @@ _Beavers: Nature's Construction Crew_
 - Up to 15 minutes underwater, with transparent eyelids for goggles and lips that seal behind the teeth for submerged chewing.
 - At up to 30 kilograms, North America's largest rodent, second in the world only to the capybara.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `beaver-gripping-log.webp`
+- [x] image 6 — `beaver-portrait-tail.webp`
 
 ### A national icon — has 4, need 2
 
@@ -671,8 +671,8 @@ _Beavers: Nature's Construction Crew_
 - Canada's first postage stamp, the Three-Penny Beaver of 1851, featured a rodent where other countries put a monarch.
 - In the fur trade, one prime pelt, a "made beaver", served as currency at Hudson's Bay Company posts.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `beaver-canada-day-flag.webp`
+- [x] image 6 — `beavers-animated-film.webp`
 
 ---
 

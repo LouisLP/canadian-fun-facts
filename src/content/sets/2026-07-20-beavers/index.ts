@@ -1,14 +1,20 @@
 import { defineSet } from '../../schema'
+import canadaDayImg from './beaver-canada-day-flag.webp'
 import carryingBranchImg from './beaver-carrying-branch.webp'
 import chewedTreeImg from './beaver-chewing.webp'
 import damImg from './beaver-dam.webp'
 import emblemImg from './beaver-emblem.webp'
+import grippingLogImg from './beaver-gripping-log.webp'
 import cruisingImg from './beaver-in-water.webp'
 import lodgeImg from './beaver-lodge.webp'
+import damBankImg from './beaver-on-dam-bank.webp'
 import peltImg from './beaver-pelt.webp'
 import pondAerialImg from './beaver-pond-aerial.webp'
+import portraitTailImg from './beaver-portrait-tail.webp'
+import restingOnDamImg from './beaver-resting-on-dam.webp'
 import swimmingImg from './beaver-swimming.webp'
 import treeCuttingImg from './beaver-tree-cutting.webp'
+import animatedFilmImg from './beavers-animated-film.webp'
 import nickelImg from './canada-nickel-1937.webp'
 import stampImg from './three-penny-beaver.webp'
 
@@ -47,6 +53,14 @@ export default defineSet({
           alt: 'A beaver hauling a leafy branch across a pond',
           credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
         },
+        {
+          src: damBankImg,
+          alt: 'A beaver sitting upright on a bank of stripped sticks at the edge of blue water',
+        },
+        {
+          src: restingOnDamImg,
+          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
+        },
       ],
     },
     {
@@ -78,6 +92,14 @@ export default defineSet({
           alt: 'A large tree trunk chewed most of the way through by beaver teeth',
           credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
         },
+        {
+          src: grippingLogImg,
+          alt: 'A soaking-wet beaver clambering along a debarked log, webbed hind feet and scaly tail in full view',
+        },
+        {
+          src: portraitTailImg,
+          alt: 'A beaver sitting back on its broad paddle tail, front paws held together at its chest',
+        },
       ],
     },
     {
@@ -108,6 +130,14 @@ export default defineSet({
           src: peltImg,
           alt: 'A beaver pelt stretched on a round willow frame',
           credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: canadaDayImg,
+          alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
+        },
+        {
+          src: animatedFilmImg,
+          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
         },
       ],
     },
