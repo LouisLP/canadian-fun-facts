@@ -3,6 +3,7 @@
 <script setup lang="ts">
 import type { Topic } from '../content/topics'
 import { computed, ref } from 'vue'
+import TopicBadge from '../components/TopicBadge.vue'
 import { ALL_SETS } from '../content/sets'
 import { TOPICS } from '../content/topics'
 
@@ -49,13 +50,19 @@ function toggleTopic(topic: Topic) {
     </nav>
 
     <main>
-      <article v-for="set in visibleSets" :key="set.slug" class="set-block">
+      <article
+        v-for="set in visibleSets"
+        :key="set.slug"
+        class="set-block"
+        :style="{ borderColor: TOPICS[set.topic].color }"
+      >
         <div class="set-header">
           <span v-if="set.slug === newestSlug" class="new-badge">NEW!!</span>
           <h2>{{ set.title }}</h2>
+          <TopicBadge :topic="set.topic" />
         </div>
         <p class="meta">
-          📅 {{ set.date }} &nbsp;•&nbsp; 🏷️ {{ TOPICS[set.topic].label }} &nbsp;•&nbsp;
+          📅 {{ set.date }} &nbsp;•&nbsp;
           🖼️ {{ set.slides.length }} slide{{ set.slides.length === 1 ? '' : 's' }}
         </p>
         <p class="teaser">
@@ -130,15 +137,12 @@ function toggleTopic(topic: Topic) {
   outline: 3px dashed #000;
 }
 
+/* Border colour comes from the set's topic, inline. */
 .set-block {
   background: #fff;
-  border: 4px dashed #0066ff;
+  border: 4px dashed;
   padding: 1rem;
   margin-bottom: 1.25rem;
-}
-
-.set-block:nth-child(even) {
-  border-color: #ff3dc4;
 }
 
 .set-header {
