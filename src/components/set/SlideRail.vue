@@ -55,10 +55,31 @@ const emit = defineEmits<{
   cursor: pointer;
   line-height: 1;
   padding: var(--space-2xs);
+  transition: transform var(--motion-hover);
+}
+
+/* Dots are tiny, so scale is the only legible response. */
+.rail-dot:hover {
+  transform: scale(1.4);
+}
+
+.rail-dot:active {
+  transform: scale(1.1);
+  transition-duration: var(--motion-press);
+}
+
+.rail-dot:focus-visible {
+  outline: var(--outline-focus);
+  outline-color: var(--accent-trim);
 }
 
 .rail-dot.active {
   transform: scale(1.3);
+}
+
+/* The current slide's leaf is already big; nudge it a little further. */
+.rail-dot.active:hover {
+  transform: scale(1.5);
 }
 
 .rail-dot.fs {

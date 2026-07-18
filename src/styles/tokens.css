@@ -23,6 +23,7 @@
   --puck-000: #ffffff;
   --puck-050: #f4f4f4;
   --puck-100: #eeeeee;
+  --puck-200: #e0e0e0;
   --puck-300: #cccccc;
   --puck-400: #999999;
   --puck-500: #555555;
@@ -49,6 +50,7 @@
   --gold-500: #ffd700;
 
   /* Green ramp — turf, jersey, and the dark side of the pines. */
+  --jersey-200: #7dff95;
   --jersey-300: #3dff5e;
   --jersey-600: #00aa00;
   --jersey-900: #003300;
@@ -84,6 +86,10 @@
   --surface-fact: var(--scrim-frost); /* fact card over a photo */
   --surface-chrome: var(--scrim-heavy); /* rail, back link */
   --surface-button: var(--puck-100);
+  --surface-button-hover: var(--puck-200);
+  --surface-card-hover: var(--butter-tart-050);
+  --surface-go: var(--accent-go);
+  --surface-go-hover: var(--jersey-200);
   --surface-lost: var(--butter-tart-050);
 
   /* The hub feed's ruled-paper stripes. */
@@ -173,6 +179,23 @@
   --shadow-photo: 6px 6px 0 var(--scrim-soft);
   --shadow-collage: 0 1vmin 2.4vmin rgb(0 0 0 / 55%);
 
+  /* Interaction — a hovered thing lifts off the page and drops a hard shadow
+     down-right; a pressed thing goes back down into the hole it came from.
+     The offsets and the lift always match, so the object looks like it moved
+     rather than grew a shadow. */
+  --lift-hover: -2px;
+  --lift-press: 1px;
+  --shadow-lift: 4px 4px 0 var(--scrim-soft);
+  --shadow-lift-sm: 2px 2px 0 var(--scrim-soft);
+  --shadow-press: 0 0 0 var(--scrim-soft);
+
+  /* Stepped, not smooth: two frames of animation, like a 1998 rollover GIF. */
+  --motion-press: 60ms steps(2, end);
+  --motion-hover: 100ms steps(2, end);
+
+  --outline-focus: var(--border-hairline) dashed var(--puck-999);
+  --outline-focus-offset: var(--space-2xs);
+
   /* The signature red-to-white gradient behind every big heading. */
   --gradient-wordart: linear-gradient(180deg, var(--maple-500), var(--puck-000));
   --stroke-wordart: 2px var(--puck-999);
@@ -192,4 +215,18 @@
   /* Layers */
   --layer-behind: -1;
   --layer-content: 1;
+}
+
+/**
+ * Reduced motion, handled at the token layer so components don't each need
+ * their own media query. Hover and press states still *change* — colour,
+ * border and outline all survive — they just stop moving.
+ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --lift-hover: 0;
+    --lift-press: 0;
+    --motion-press: 1ms;
+    --motion-hover: 1ms;
+  }
 }
