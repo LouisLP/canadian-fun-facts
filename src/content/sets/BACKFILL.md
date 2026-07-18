@@ -532,24 +532,24 @@ _Canadian Heroes: North Stars_
 - Chris Hadfield was the first Canadian to command the International Space Station, and the first Canadian to walk in space.
 - Canada's first woman in space, Roberta Bondar flew aboard Discovery in 1992, and she is also the world's first neurologist to leave the planet.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `hadfield-guitar.webp`
+- [x] image 6 — `bondar-in-space.webp`
 
 ### Nobel pursuits — has 4, need 2
 
 - Frederick Banting co-discovered insulin, and at 32 he became the youngest person ever to win the Nobel Prize in medicine.
 - Geneticist David Suzuki hosted CBC's The Nature of Things for 44 years, from 1979 until he stepped down in 2023.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `banting-insulin.webp`
+- [x] image 6 — `suzuki-speaking-crowd.webp`
 
 ### Standing their ground — has 4, need 2
 
 - Running on one leg, Terry Fox covered 5,373 km in 143 days in 1980; the run named for him has since raised over C$1 billion.
 - Viola Desmond refused a whites-only cinema seat in 1946 and was convicted over a one-cent tax gap; she now fronts Canada's $10 bill.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `terry-fox-running.webp`
+- [x] image 6 — `viola-desmond-elderly.webp`
 
 ## 2026-06-15-music
 

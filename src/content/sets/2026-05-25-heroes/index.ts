@@ -1,15 +1,21 @@
 import { defineSet } from '../../schema'
 import bantingBestImg from './banting-and-best.webp'
 import bantingHouseImg from './banting-house.webp'
+import bantingInsulinImg from './banting-insulin.webp'
+import bondarInSpaceImg from './bondar-in-space.webp'
 import bondarImg from './bondar-portrait.webp'
 import cupolaImg from './hadfield-cupola.webp'
+import hadfieldGuitarImg from './hadfield-guitar.webp'
 import hadfieldImg from './hadfield-portrait.webp'
 import sts42Img from './sts-42-crew.webp'
 import suzukiImg from './suzuki-portrait.webp'
+import suzukiSpeakingCrowdImg from './suzuki-speaking-crowd.webp'
 import suzukiSpeakingImg from './suzuki-speaking.webp'
 import mileZeroImg from './terry-fox-mile-zero.webp'
 import monumentImg from './terry-fox-monument.webp'
+import terryFoxRunningImg from './terry-fox-running.webp'
 import clarionImg from './the-clarion.webp'
+import violaElderlyImg from './viola-desmond-elderly.webp'
 import violaImg from './viola-desmond-portrait.webp'
 
 export default defineSet({
@@ -45,6 +51,12 @@ export default defineSet({
           alt: 'The seven STS-42 crew members, including Roberta Bondar, in orange flight suits with a shuttle launch behind them',
           credit: 'NASA, public domain, via Wikimedia Commons',
         },
+        {
+          src: hadfieldGuitarImg,
+        },
+        {
+          src: bondarInSpaceImg,
+        },
       ],
     },
     {
@@ -74,6 +86,12 @@ export default defineSet({
           alt: 'David Suzuki speaking at a podium microphone in a red shirt',
           credit: 'Stephen Michael Barnett, CC BY 2.0, via Wikimedia Commons',
         },
+        {
+          src: bantingInsulinImg,
+        },
+        {
+          src: suzukiSpeakingCrowdImg,
+        },
       ],
     },
     {
@@ -102,6 +120,12 @@ export default defineSet({
           src: clarionImg,
           alt: 'Front page of The Clarion newspaper from 1946 reporting Viola Desmond taking action against segregation',
           credit: 'Nova Scotia Archives, no known copyright restrictions, via Wikimedia Commons',
+        },
+        {
+          src: terryFoxRunningImg,
+        },
+        {
+          src: violaElderlyImg,
         },
       ],
     },
