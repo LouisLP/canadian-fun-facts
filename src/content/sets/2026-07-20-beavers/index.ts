@@ -105,10 +105,10 @@ export default defineSet({
     {
       heading: 'A national icon',
       facts: [
+        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
         'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
         'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
         'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
-        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
         'Go watch "Hoppers"! A new Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
@@ -118,9 +118,18 @@ export default defineSet({
           credit: 'Awmcphee, CC0, via Wikimedia Commons',
         },
         {
+          src: peltImg,
+          alt: 'A beaver pelt stretched on a round willow frame',
+          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
           src: stampImg,
           alt: 'The 1851 Three-Penny Beaver, Canada\'s first postage stamp',
           credit: 'public domain, via Wikimedia Commons',
+        },
+        {
+          src: animatedFilmImg,
+          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
         },
         {
           src: emblemImg,
@@ -128,17 +137,8 @@ export default defineSet({
           credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
         },
         {
-          src: peltImg,
-          alt: 'A beaver pelt stretched on a round willow frame',
-          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
-        },
-        {
           src: canadaDayImg,
           alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
-        },
-        {
-          src: animatedFilmImg,
-          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
         },
       ],
     },
