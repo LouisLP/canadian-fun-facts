@@ -1,14 +1,15 @@
 # Authoring a set (the backlog → set recipe)
 
 The repeatable process for turning one `docs/backlog/*.md` note into a published set.
-Proven end-to-end on the Maple set (`src/content/sets/2025-10-27-maple`); the 14
-remaining backlog sets follow it verbatim.
+Proven end-to-end across all 17 published sets, starting with Maple
+(`src/content/sets/2025-10-27-maple`); every new set follows it verbatim.
 
 ## 1. Read the backlog note, pick the topic
 
-Read `docs/backlog/Fun Facts NN <Name>.md`. All 22 of those are published; new sets now
-start from an entry in [future-topics.md](backlog/future-topics.md), promoted to its own
-backlog note first. Confirm the [topic](../src/content/topics.ts)
+Sets start from an entry in [future-topics.md](backlog/future-topics.md), promoted to its
+own `docs/backlog/<slug>.md` note first — the entry's three candidate slide subjects are a
+starting point, not the finished grouping. (The original Fun Facts 01–22 notes are all
+published and have been deleted.) Confirm the [topic](../src/content/topics.ts)
 already exists; if it doesn't, that is a separate one-line change to the registry.
 
 ## 2. Group into slides

@@ -72,7 +72,9 @@ Two things carry most of the weight:
   the slow part, and it shapes the slides: a subject you can't illustrate with four free
   images is the wrong subject.
 
-Raw material for future sets lives in `docs/backlog/`, which is gitignored and stays local.
+Raw material for future sets lives in `docs/backlog/`.
+[future-topics.md](docs/backlog/future-topics.md) is the standing idea bank — 48 candidate
+sets grouped by topic, each rated on how hard it is to illustrate with free images.
 
 ## Further reading
 
