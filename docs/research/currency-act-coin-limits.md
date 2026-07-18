@@ -42,14 +42,14 @@ Amendment history in the source: R.S., 1985, c. C-52, s. 8; R.S., 1985, c. 35 (3
 The backlog note (`docs/backlog/Fun Facts 21.md`) claimed 5¢→$5, 10¢→$10, $1→$25, $2→$40.
 **All four check out**, with one nuance worth writing correctly.
 
-| Denomination | Limit | Subsection |
-| --- | --- | --- |
-| 1¢ | 25¢ | 8(2)(e) |
-| 5¢ | $5 | 8(2)(d) |
-| 10¢, 25¢, 50¢ | $10 (shared tier) | 8(2)(c) |
-| $1 | $25 | 8(2)(b) |
-| $2 (through $10) | $40 (shared tier) | 8(2)(a) |
-| over $10 | one coin only | 8(2.1) |
+| Denomination     | Limit             | Subsection |
+| ---------------- | ----------------- | ---------- |
+| 1¢               | 25¢               | 8(2)(e)    |
+| 5¢               | $5                | 8(2)(d)    |
+| 10¢, 25¢, 50¢    | $10 (shared tier) | 8(2)(c)    |
+| $1               | $25               | 8(2)(b)    |
+| $2 (through $10) | $40 (shared tier) | 8(2)(a)    |
+| over $10         | one coin only     | 8(2.1)     |
 
 ## Nuances the copy must respect
 
@@ -62,5 +62,5 @@ The backlog note (`docs/backlog/Fun Facts 21.md`) claimed 5¢→$5, 10¢→$10, 
   8(2)(e) still caps it at 25¢.
 - **8(3) blocks the obvious workaround**: splitting one debt into several same-day payments does
   not reset the cap.
-- This limits what counts as *legal tender*, i.e. what a creditor must accept to discharge a debt.
+- This limits what counts as _legal tender_, i.e. what a creditor must accept to discharge a debt.
   A merchant is free to accept more coins voluntarily.
