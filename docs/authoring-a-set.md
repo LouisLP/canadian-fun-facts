@@ -45,7 +45,7 @@ Prefer files **≥ ~1200 px** wide (the optimizer caps at 1600 and never upscale
 thumbnail (`Special:FilePath/<name>?width=320`) and confirm it shows what you'll claim in
 the alt text.
 
-When a subject has no dedicated free imagery (there is *no* Commons photo of the syrup
+When a subject has no dedicated free imagery (there is _no_ Commons photo of the syrup
 reserve or the heist), illustrate with the closest concrete stand-in — the heist slide uses
 finished-syrup product shots. Note the substitution in the alt text honestly.
 

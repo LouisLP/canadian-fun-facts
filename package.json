@@ -13,6 +13,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
+    "lint": "eslint .",
     "optimize-images": "node scripts/optimize-images.ts"
   },
   "dependencies": {
