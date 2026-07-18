@@ -17,7 +17,7 @@ body::before {
   background-image: url('/maple-leaf-pattern.avif');
   background-repeat: repeat;
   background-size: 420px 420px;
-  opacity: 0.05;
+  opacity: 0.9;
   z-index: -1;
   pointer-events: none;
 }
