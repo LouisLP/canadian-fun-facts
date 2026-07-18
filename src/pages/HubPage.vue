@@ -88,7 +88,7 @@ function toggleTopic(topic: Topic) {
   max-width: 46rem;
   margin: 0 auto;
   padding: 1rem 1rem 8rem;
-  background: #321321;
+  background: repeating-linear-gradient(180deg, #fffbe6 0, #fffbe6 40px, #fff3f3 40px, #fff3f3 80px);
   min-height: 100vh;
 }
 
