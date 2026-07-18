@@ -1,7 +1,7 @@
 # Authoring a set (the backlog → set recipe)
 
 The repeatable process for turning one `docs/backlog/*.md` note into a published set.
-Proven end-to-end on the Maple set (`src/content/sets/2026-07-17-maple`); the 14
+Proven end-to-end on the Maple set (`src/content/sets/2025-10-27-maple`); the 14
 remaining backlog sets follow it verbatim.
 
 ## 1. Read the backlog note, pick the topic
@@ -54,7 +54,7 @@ finished-syrup product shots. Note the substitution in the alt text honestly.
 ```sh
 curl -sL -H "User-Agent: $UA" \
   "https://commons.wikimedia.org/wiki/Special:FilePath/Traditional%20maple%20tap.jpg" \
-  -o src/content/sets/2026-07-17-maple/traditional-tap.jpg
+  -o src/content/sets/2025-10-27-maple/traditional-tap.jpg
 ```
 
 ## 5. Convert to WebP

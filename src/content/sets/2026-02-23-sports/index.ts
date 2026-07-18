@@ -18,7 +18,7 @@ import streetCelebrationImg from './street-celebration.webp'
 
 export default defineSet({
   slug: 'sports',
-  date: '2026-08-03',
+  date: '2026-02-23',
   title: 'Sports: Canada\'s Home Field Advantage',
   topic: 'sports',
   slides: [

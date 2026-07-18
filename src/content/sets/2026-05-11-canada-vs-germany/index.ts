@@ -18,7 +18,7 @@ import transitImg from './transit-interior.webp'
 
 export default defineSet({
   slug: 'canada-vs-germany',
-  date: '2026-08-03',
+  date: '2026-05-11',
   title: 'Cultural Shifts: My Notes From Both Sides',
   topic: 'culture',
   slides: [

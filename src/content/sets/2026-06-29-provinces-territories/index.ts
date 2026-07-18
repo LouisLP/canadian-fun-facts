@@ -18,7 +18,7 @@ import auroraImg from './yukon-aurora.webp'
 
 export default defineSet({
   slug: 'provinces-territories',
-  date: '2026-08-03',
+  date: '2026-06-29',
   title: 'Coast to Coast to Coast: All 13 of Us',
   topic: 'geography',
   slides: [

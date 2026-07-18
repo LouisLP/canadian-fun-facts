@@ -14,7 +14,7 @@ import toonieImg from './toonie.webp'
 
 export default defineSet({
   slug: 'weird-laws',
-  date: '2026-08-03',
+  date: '2026-03-16',
   title: 'Weird Laws: Mind the Fine Print',
   topic: 'oddities',
   slides: [

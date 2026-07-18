@@ -14,7 +14,7 @@ import winterForestImg from './winter-forest.webp'
 
 export default defineSet({
   slug: 'mythical-creatures',
-  date: '2026-07-27',
+  date: '2026-04-06',
   title: 'Mythical Creatures: Canada\'s Cryptid Roll Call',
   topic: 'oddities',
   slides: [
