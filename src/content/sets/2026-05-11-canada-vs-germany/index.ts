@@ -1,20 +1,28 @@
 import { defineSet } from '../../schema'
 import algonquinImg from './algonquin-autumn.webp'
+import bacharachImg from './bacharach-germany.webp'
 import beerGardenImg from './beer-garden.webp'
 import cafeImg from './cafe-conversation.webp'
+import canadianNatureImg from './canadian-nature.webp'
+import sushiImg from './canadian-sushi.webp'
 import cardTerminalImg from './card-terminal.webp'
 import coconutImg from './coconut.webp'
 import cologneImg from './cologne-station.webp'
 import countingImg from './counting-fingers.webp'
+import threeGlassesImg from './counting-three-glasses.webp'
 import dinnerTableImg from './dinner-table.webp'
 import euroCashImg from './euro-cash.webp'
 import farmersMarketImg from './farmers-market.webp'
 import departuresImg from './frankfurt-departures.webp'
+import germanTramImg from './german-tram.webp'
 import moraineImg from './moraine-lake.webp'
 import munichImg from './munich-pedestrian-zone.webp'
 import peachImg from './peach.webp'
 import poutineImg from './poutine.webp'
+import smallTalkImg from './small-talk-drinks.webp'
+import staringImg from './staring-eye-contact.webp'
 import transitImg from './transit-interior.webp'
+import cambieImg from './vancouver-cambie-smalltalk.webp'
 
 export default defineSet({
   slug: 'canada-vs-germany',
@@ -51,6 +59,12 @@ export default defineSet({
           alt: 'A card payment terminal displaying a prompt to insert or tap a card',
           credit: 'Daylon124, CC0, via Wikimedia Commons',
         },
+        {
+          src: threeGlassesImg,
+        },
+        {
+          src: staringImg,
+        },
       ],
     },
     {
@@ -82,6 +96,12 @@ export default defineSet({
           alt: 'A dining table set with plates, glasses, and crackers for a holiday meal',
           credit: 'daryl_mitchell, CC BY-SA 2.0, via Wikimedia Commons',
         },
+        {
+          src: smallTalkImg,
+        },
+        {
+          src: cambieImg,
+        },
       ],
     },
     {
@@ -111,6 +131,12 @@ export default defineSet({
           src: farmersMarketImg,
           alt: 'Shoppers and a produce vendor inside the St. Jacobs Farmers Market in Ontario',
           credit: 'Allie_Caulfield, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: sushiImg,
+        },
+        {
+          src: canadianNatureImg,
         },
       ],
     },
@@ -142,6 +168,12 @@ export default defineSet({
           src: departuresImg,
           alt: 'Travellers below the large departures board at Frankfurt Airport',
           credit: 'Erica Fischer, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: germanTramImg,
+        },
+        {
+          src: bacharachImg,
         },
       ],
     },
