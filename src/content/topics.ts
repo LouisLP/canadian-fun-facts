@@ -5,7 +5,6 @@ export const TOPICS = {
   food: { label: 'Food & Drink', color: '#ff9d00' },
   history: { label: 'History', color: '#ff3d3d' },
   geography: { label: 'Geography', color: '#3db9ff' },
-  hockey: { label: 'Hockey', color: '#b03dff' },
   weather: { label: 'Weather', color: '#ffe600' },
   inventions: { label: 'Inventions', color: '#ff3dc4' },
   culture: { label: 'Culture', color: '#3dffe0' },
