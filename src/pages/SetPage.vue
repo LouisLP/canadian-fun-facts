@@ -2,6 +2,7 @@
      Full-viewport scroll-snap panels, ↓/↑/space snap, maple-leaf rail,
      whole-page fullscreen, aesthetic at maximum. -->
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 import BackLink from '../components/set/BackLink.vue'
 import FactPanel from '../components/set/FactPanel.vue'
@@ -49,9 +50,11 @@ const { toggle: toggleFullscreen } = useFullscreen()
   </div>
 
   <div v-else class="wrap missing">
-    <p>🦫 no set called "{{ props.slug }}", sorry bud</p>
+    <p>
+      <Icon icon="twemoji:beaver" class="icon" /> no set called "{{ props.slug }}", sorry bud
+    </p>
     <RouterLink :to="{ name: 'hub' }">
-      ⬅ back to the hub
+      <Icon icon="lucide:arrow-left" class="icon" /> back to the hub
     </RouterLink>
   </div>
 </template>

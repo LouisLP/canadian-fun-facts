@@ -2,6 +2,7 @@
      chronological feed, rainbow topic-filter buttons, blinking NEW badge. -->
 <script setup lang="ts">
 import type { Topic } from '../content/topics'
+import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
 import SetCard from '../components/hub/SetCard.vue'
 import TopicFilter from '../components/hub/TopicFilter.vue'
@@ -21,7 +22,9 @@ const newestSlug = ALL_SETS[0]?.slug
 <template>
   <div class="feed">
     <header class="banner">
-      <h1>🍁 Canadian Fun Facts 🍁</h1>
+      <h1>
+        <Icon icon="twemoji:maple-leaf" class="icon" /> Canadian Fun Facts <Icon icon="twemoji:maple-leaf" class="icon" />
+      </h1>
       <p class="tagline">
         your weekly dose of maple-flavoured knowledge
       </p>
@@ -37,7 +40,7 @@ const newestSlug = ALL_SETS[0]?.slug
         :is-newest="set.slug === newestSlug"
       />
       <p v-if="visibleSets.length === 0" class="empty">
-        no facts here yet, sorry bud 🦫
+        no facts here yet, sorry bud <Icon icon="twemoji:beaver" class="icon" />
       </p>
     </main>
 

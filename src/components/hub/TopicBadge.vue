@@ -1,6 +1,7 @@
 <!-- The topic's registry colour, worn as a badge. Used on the hub feed. -->
 <script setup lang="ts">
 import type { Topic } from '../../content/topics'
+import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 import { TOPICS } from '../../content/topics'
 
@@ -11,7 +12,7 @@ const entry = computed(() => TOPICS[props.topic])
 
 <template>
   <span class="topic-badge" :style="{ backgroundColor: entry.color }">
-    🏷️ {{ entry.label }}
+    <Icon icon="lucide:tag" class="icon" /> {{ entry.label }}
   </span>
 </template>
 

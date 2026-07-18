@@ -1,5 +1,7 @@
 <!-- The maple-leaf rail: one dot per panel, plus the fullscreen toggle. -->
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
 defineProps<{ count: number, current: number }>()
 
 const emit = defineEmits<{
@@ -19,10 +21,13 @@ const emit = defineEmits<{
       :aria-label="`Go to slide ${n}`"
       @click="emit('go', n - 1)"
     >
-      {{ n - 1 === current ? '🍁' : '·' }}
+      <Icon v-if="n - 1 === current" icon="twemoji:maple-leaf" class="icon" />
+      <template v-else>
+        ·
+      </template>
     </button>
     <button type="button" class="rail-dot fs" title="Fullscreen" @click="emit('toggleFullscreen')">
-      ⛶
+      <Icon icon="lucide:maximize" class="icon" />
     </button>
   </nav>
 </template>

@@ -1,9 +1,15 @@
+<script setup lang="ts">
+import { Icon } from '@iconify/vue'
+</script>
+
 <template>
   <div class="lost">
     <h1>404, eh?</h1>
-    <p>this page went out for a rip and never came back 🛻</p>
+    <p>
+      this page went out for a rip and never came back <Icon icon="twemoji:pickup-truck" class="icon" />
+    </p>
     <RouterLink :to="{ name: 'hub' }">
-      ⬅ back to the hub
+      <Icon icon="lucide:arrow-left" class="icon" /> back to the hub
     </RouterLink>
   </div>
 </template>

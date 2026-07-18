@@ -1,7 +1,11 @@
 <!-- The way out of a presentation, pinned to the top-left. -->
+<script setup lang="ts">
+import { Icon } from '@iconify/vue'
+</script>
+
 <template>
   <RouterLink class="back-link" :to="{ name: 'hub' }">
-    ⬅ back to the hub
+    <Icon icon="lucide:arrow-left" class="icon" /> back to the hub
   </RouterLink>
 </template>
 
