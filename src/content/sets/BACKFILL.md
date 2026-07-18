@@ -651,8 +651,8 @@ _Beavers: Nature's Construction Crew_
 - Lodges have underwater-only entrances, a dry sleeping platform, and stay above freezing all winter.
 - Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a keystone species.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `beaver-on-dam-bank.webp` (credit unconfirmed)
+- [x] image 6 — `beaver-resting-on-dam.webp` (credit unconfirmed)
 
 ### Built different — has 4, need 2
 
@@ -661,8 +661,8 @@ _Beavers: Nature's Construction Crew_
 - Up to 15 minutes underwater, with transparent eyelids for goggles and lips that seal behind the teeth for submerged chewing.
 - At up to 30 kilograms, North America's largest rodent, second in the world only to the capybara.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `beaver-gripping-log.webp` (credit unconfirmed)
+- [x] image 6 — `beaver-portrait-tail.webp` (credit unconfirmed)
 
 ### A national icon — has 4, need 2
 

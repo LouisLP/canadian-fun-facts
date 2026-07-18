@@ -3,10 +3,14 @@ import carryingBranchImg from './beaver-carrying-branch.webp'
 import chewedTreeImg from './beaver-chewing.webp'
 import damImg from './beaver-dam.webp'
 import emblemImg from './beaver-emblem.webp'
+import grippingLogImg from './beaver-gripping-log.webp'
 import cruisingImg from './beaver-in-water.webp'
 import lodgeImg from './beaver-lodge.webp'
+import damBankImg from './beaver-on-dam-bank.webp'
 import peltImg from './beaver-pelt.webp'
 import pondAerialImg from './beaver-pond-aerial.webp'
+import portraitTailImg from './beaver-portrait-tail.webp'
+import restingOnDamImg from './beaver-resting-on-dam.webp'
 import swimmingImg from './beaver-swimming.webp'
 import treeCuttingImg from './beaver-tree-cutting.webp'
 import nickelImg from './canada-nickel-1937.webp'
@@ -47,6 +51,18 @@ export default defineSet({
           alt: 'A beaver hauling a leafy branch across a pond',
           credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
         },
+        {
+          src: damBankImg,
+          alt: 'A beaver sitting upright on a bank of stripped sticks at the edge of blue water',
+          // TODO: confirm source and licence before publishing
+          credit: 'unknown',
+        },
+        {
+          src: restingOnDamImg,
+          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
+          // TODO: confirm source and licence before publishing
+          credit: 'unknown',
+        },
       ],
     },
     {
@@ -77,6 +93,18 @@ export default defineSet({
           src: chewedTreeImg,
           alt: 'A large tree trunk chewed most of the way through by beaver teeth',
           credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
+        },
+        {
+          src: grippingLogImg,
+          alt: 'A soaking-wet beaver clambering along a debarked log, webbed hind feet and scaly tail in full view',
+          // TODO: confirm source and licence before publishing
+          credit: 'unknown',
+        },
+        {
+          src: portraitTailImg,
+          alt: 'A beaver sitting back on its broad paddle tail, front paws held together at its chest',
+          // TODO: confirm source and licence before publishing
+          credit: 'unknown',
         },
       ],
     },
