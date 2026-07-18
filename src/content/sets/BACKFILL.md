@@ -562,8 +562,8 @@ _Music: Canada on Repeat_
 - At 16, Justin Bieber topped the Billboard 200 with My World 2.0, the youngest solo male to do so since Stevie Wonder in 1963.
 - Shawn Mendes built his audience on Vine, posting six-second song covers from Pickering, Ontario, before any label signed him.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `bieber-baby-era.webp`
+- [x] image 6 — `weeknd-red-jacket.webp`
 
 ### Winning by a single point — has 4, need 2
 
@@ -572,8 +572,8 @@ _Music: Canada on Repeat_
 - She grew up in Charlemagne, Quebec, the youngest of 14 children, and barely spoke English when she won.
 - My Heart Will Go On, her Titanic theme, became one of the best-selling singles ever recorded.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `eurovision-song-contest.webp`
+- [x] image 6 — `titanic-bow-scene.webp`
 
 ### Punk, house, and heavy rotation — has 4, need 2
 
@@ -583,8 +583,8 @@ _Music: Canada on Repeat_
 - Arcade Fire took Album of the Year at the 2011 Grammys for The Suburbs, beating Eminem, Katy Perry, and Lady Gaga.
 - The roster runs deep: Alanis Morissette, Rush, Avril Lavigne, Nelly Furtado, Nickelback, Feist, and Michael Bublé.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `avril-lavigne-complicated.webp`
+- [x] image 6 — `michael-buble-portrait.webp`
 
 ### Doot doola doot doo — has 4, need 2
 
@@ -593,8 +593,8 @@ _Music: Canada on Repeat_
 - Every guest gets hand-picked gifts tied to their own history, from rare records to local oddities.
 - He closes each interview with a call and response: he sings "doot doola doot doo" and the guest answers "doot doo!"
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `nardwuar-sabrina-carpenter.webp`
+- [x] image 6 — `nardwuar-timothee-chalamet.webp`
 
 ## 2026-06-29-provinces-territories
 
@@ -676,4 +676,4 @@ _Beavers: Nature's Construction Crew_
 
 ---
 
-**Total outstanding: 120 images.**
+**Total outstanding: 112 images.**

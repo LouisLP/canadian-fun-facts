@@ -1,5 +1,7 @@
 import { defineSet } from '../../schema'
 import arcadeFireImg from './arcade-fire.webp'
+import avrilLavigneImg from './avril-lavigne-complicated.webp'
+import bieberBabyEraImg from './bieber-baby-era.webp'
 import bieberImg from './bieber.webp'
 import celineConciertoImg from './celine-concierto.webp'
 import celinePortraitImg from './celine-im-alive.webp'
@@ -7,13 +9,19 @@ import celineLaserImg from './celine-laser.webp'
 import celineTakingChancesImg from './celine-taking-chances.webp'
 import deadmau5Img from './deadmau5.webp'
 import drakeImg from './drake.webp'
+import eurovisionImg from './eurovision-song-contest.webp'
 import kaytranadaImg from './kaytranada.webp'
+import michaelBubleImg from './michael-buble-portrait.webp'
 import nardwuar2019Img from './nardwuar-2019.webp'
 import nardwuarPortraitImg from './nardwuar-portrait.webp'
+import nardwuarSabrinaImg from './nardwuar-sabrina-carpenter.webp'
 import nardwuarTedx2Img from './nardwuar-tedx-2.webp'
 import nardwuarTedxImg from './nardwuar-tedx.webp'
+import nardwuarTimotheeImg from './nardwuar-timothee-chalamet.webp'
 import shawnMendesImg from './shawn-mendes.webp'
 import sum41Img from './sum41.webp'
+import titanicImg from './titanic-bow-scene.webp'
+import weekndRedJacketImg from './weeknd-red-jacket.webp'
 import weekndImg from './weeknd.webp'
 
 export default defineSet({
@@ -51,6 +59,12 @@ export default defineSet({
           alt: 'Shawn Mendes playing a black electric guitar and singing at a microphone under spotlights',
           credit: 'Josiah VanDien, CC BY-SA 4.0, via Wikimedia Commons',
         },
+        {
+          src: bieberBabyEraImg,
+        },
+        {
+          src: weekndRedJacketImg,
+        },
       ],
     },
     {
@@ -81,6 +95,12 @@ export default defineSet({
           src: celineLaserImg,
           alt: 'A packed arena during a Celine Dion concert, green lasers sweeping above the stage',
           credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: eurovisionImg,
+        },
+        {
+          src: titanicImg,
         },
       ],
     },
@@ -114,6 +134,12 @@ export default defineSet({
           alt: 'Arcade Fire performing in the round on a central arena stage under blue lights',
           credit: 'swimfinfan, CC BY-SA 2.0, via Wikimedia Commons',
         },
+        {
+          src: avrilLavigneImg,
+        },
+        {
+          src: michaelBubleImg,
+        },
       ],
     },
     {
@@ -144,6 +170,12 @@ export default defineSet({
           src: nardwuar2019Img,
           alt: 'Nardwuar holding a microphone, wearing a tartan cap and a patterned sweater',
           credit: 'SUPA CINDY, CC BY 3.0, via Wikimedia Commons',
+        },
+        {
+          src: nardwuarSabrinaImg,
+        },
+        {
+          src: nardwuarTimotheeImg,
         },
       ],
     },
