@@ -1,7 +1,11 @@
 import { defineSet } from '../../schema'
+import ratPosterImg from './alberta-rat-poster.webp'
+import autumnLakeImg from './autumn-lake-reflection.webp'
+import borealForestImg from './boreal-forest-bridge.webp'
 import frontenacImg from './chateau-frontenac.webp'
 import polarBearImg from './churchill-polar-bear.webp'
 import bridgeImg from './confederation-bridge.webp'
+import fishingVillageImg from './fishing-village-harbour.webp'
 import greatSlaveImg from './great-slave-lake.webp'
 import hopewellImg from './hopewell-rocks.webp'
 import howeSoundImg from './howe-sound.webp'
@@ -10,10 +14,14 @@ import jellybeanImg from './jellybean-row.webp'
 import notreDameImg from './montreal-notre-dame.webp'
 import moraineImg from './moraine-lake.webp'
 import niagaraImg from './niagara-horseshoe.webp'
+import quebecDuskImg from './old-quebec-dusk.webp'
+import quebecWinterImg from './old-quebec-winter.webp'
 import peggysCoveImg from './peggys-cove.webp'
 import prairieImg from './prairie-horizon.webp'
 import klondikeImg from './ss-klondike.webp'
 import torontoImg from './toronto-skyline.webp'
+import tenPeaksImg from './valley-of-ten-peaks.webp'
+import whitePassImg from './white-pass-railway.webp'
 import auroraImg from './yukon-aurora.webp'
 
 export default defineSet({
@@ -51,6 +59,14 @@ export default defineSet({
           alt: 'A polar bear walking across mossy tundra near Churchill, Manitoba',
           credit: 'TravelingOtter, CC BY 2.0, via Wikimedia Commons',
         },
+        {
+          src: tenPeaksImg,
+          alt: 'The snow-capped Valley of the Ten Peaks above the turquoise water of Moraine Lake',
+        },
+        {
+          src: ratPosterImg,
+          alt: 'A vintage Alberta public health poster reading "You can\'t ignore the rat", above the slogan "Let\'s keep Alberta rat-free"',
+        },
       ],
     },
     {
@@ -81,6 +97,14 @@ export default defineSet({
           src: notreDameImg,
           alt: 'The twin-towered stone facade of Notre-Dame Basilica in Old Montreal, lit at night',
           credit: 'Diego Delso, CC BY-SA 4.0, via Wikimedia Commons',
+        },
+        {
+          src: quebecWinterImg,
+          alt: 'Aerial view of Old Quebec at blue hour in winter, snow on the rooftops and ice on the St. Lawrence',
+        },
+        {
+          src: quebecDuskImg,
+          alt: 'Panorama of Quebec City at dusk under a pink sky, the Château Frontenac rising above the old town',
         },
       ],
     },
@@ -113,6 +137,14 @@ export default defineSet({
           alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
           credit: 'miketnorton, CC BY 2.0, via Wikimedia Commons',
         },
+        {
+          src: fishingVillageImg,
+          alt: 'A red fishing shack and clapboard houses reflected in the calm water of a Nova Scotia harbour, with a red dory moored alongside',
+        },
+        {
+          src: autumnLakeImg,
+          alt: 'Autumn foliage in red and gold along a forested shoreline, mirrored in a still lake',
+        },
       ],
     },
     {
@@ -143,6 +175,14 @@ export default defineSet({
           src: inukshukImg,
           alt: 'A large stone inukshuk with outstretched arms standing against a clear blue sky',
           credit: 'Fabian Roudra Baroi, CC BY-SA 4.0, via Wikimedia Commons',
+        },
+        {
+          src: whitePassImg,
+          alt: 'A vintage White Pass railway train winding along a mountainside above fields of pink fireweed',
+        },
+        {
+          src: borealForestImg,
+          alt: 'A wooden footbridge crossing a creek in dense, mossy northern forest',
         },
       ],
     },
