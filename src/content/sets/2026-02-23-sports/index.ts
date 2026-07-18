@@ -1,8 +1,11 @@
 import { defineSet } from '../../schema'
+import daviesSmilingImg from './alphonso-davies-smiling.webp'
 import daviesImg from './alphonso-davies.webp'
 import bcPlaceImg from './bc-place-world-cup.webp'
 import bilodeauImg from './bilodeau-gold.webp'
 import bmoFieldImg from './bmo-field.webp'
+import fifaTeamImg from './canadian-fifa-team.webp'
+import hockeyWinImg from './canadian-hockey-win.webp'
 import howeImg from './gordie-howe.webp'
 import gretzkyPortraitImg from './gretzky-portrait.webp'
 import gretzkyRangersImg from './gretzky-rangers.webp'
@@ -10,11 +13,16 @@ import gretzkyStatueImg from './gretzky-statue.webp'
 import victoryCeremonyImg from './hockey-victory-ceremony.webp'
 import davidImg from './jonathan-david.webp'
 import lacrosseImg from './lacrosse-goalie.webp'
+import lacrosseTeamsImg from './lacrosse-teams-usa-vs-canada.webp'
+import olympicCanadaTeamImg from './olympic-canada-team.webp'
 import cauldronImg from './olympic-cauldron.webp'
+import olympicFansImg from './olympic-fans-cheering.webp'
 import olympicHockeyImg from './olympic-hockey-game.webp'
 import outdoorRinkImg from './outdoor-rink-fort-chipewyan.webp'
 import pondHockeyImg from './pond-hockey.webp'
 import streetCelebrationImg from './street-celebration.webp'
+import gretzkyNumberImg from './wayne-gretzky-number.webp'
+import gretzkyPointsImg from './wayne-gretzky-points.webp'
 
 export default defineSet({
   slug: 'sports',
@@ -51,6 +59,12 @@ export default defineSet({
           alt: 'The exterior of BMO Field in Toronto under a clear sky',
           credit: 'Wladyslaw, CC BY-SA 3.0, via Wikimedia Commons',
         },
+        {
+          src: fifaTeamImg,
+        },
+        {
+          src: daviesSmilingImg,
+        },
       ],
     },
     {
@@ -81,6 +95,12 @@ export default defineSet({
           src: streetCelebrationImg,
           alt: 'Crowds in hockey jerseys filling a Vancouver street at night to celebrate a gold medal',
           credit: 'Duncan Rawlinson, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: olympicFansImg,
+        },
+        {
+          src: olympicCanadaTeamImg,
         },
       ],
     },
@@ -113,6 +133,12 @@ export default defineSet({
           alt: 'A black and white photo of a hockey game on an outdoor rink at Fort Chipewyan, Alberta',
           credit: 'Provincial Archives of Alberta, no known copyright restrictions, via Wikimedia Commons',
         },
+        {
+          src: lacrosseTeamsImg,
+        },
+        {
+          src: hockeyWinImg,
+        },
       ],
     },
     {
@@ -143,6 +169,12 @@ export default defineSet({
           src: howeImg,
           alt: 'Gordie Howe standing at a rink holding a paper cup',
           credit: 'Arnie Lee, CC BY 3.0, via Wikimedia Commons',
+        },
+        {
+          src: gretzkyPointsImg,
+        },
+        {
+          src: gretzkyNumberImg,
         },
       ],
     },
