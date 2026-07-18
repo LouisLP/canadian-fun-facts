@@ -107,11 +107,11 @@ body::before {
 }
 
 .scatter__gutter--left {
-  left: 0;
+  left: 5%;
 }
 
 .scatter__gutter--right {
-  right: 0;
+  right: 5%;
 }
 
 .scatter__item {
@@ -119,7 +119,7 @@ body::before {
   top: var(--top);
   left: var(--left);
   width: var(--size);
-  aspect-ratio: 1;
+  aspect-ratio: 5/4;
   object-fit: cover;
   border: 0.6vmin solid #f4f4f4;
   border-radius: 0.4vmin;
