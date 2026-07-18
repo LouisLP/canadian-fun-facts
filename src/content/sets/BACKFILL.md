@@ -389,8 +389,8 @@ _Weird Laws: Mind the Fine Print_
 - Loonies stop counting past $25, and toonies past $40.
 - The penny had the tightest cap of all at 25¢, and the rule survives even though Canada quit minting them in 2012.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `dime.webp`
+- [x] image 6 — `cash-bills.webp`
 
 ### The rat race Alberta won — has 4, need 2
 
@@ -399,8 +399,8 @@ _Weird Laws: Mind the Fine Print_
 - Pet rats are out. Permits go only to research facilities and zoos, so tameness is no defence.
 - Every landowner and municipality in the province is legally required to help keep rats from settling in.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `rat-propaganda-poster.webp`
+- [x] image 6 — `pet-rat.webp`
 
 ### Shovel it or pay for it — has 4, need 2
 
@@ -409,8 +409,8 @@ _Weird Laws: Mind the Fine Print_
 - Sidewalks usually count too, with most cities giving you a fixed window after a snowfall to clear the walk.
 - These rules are municipal, not national, so the same frozen roof can be fine in one city and an offence in the next.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `shovelling-snow-roof.webp`
+- [x] image 6 — `roof-icicles.webp`
 
 ## 2026-04-06-mythical-creatures
 
