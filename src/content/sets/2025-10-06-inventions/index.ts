@@ -14,7 +14,7 @@ import zipperImg from './zipper.webp'
 
 export default defineSet({
   slug: 'inventions',
-  date: '2026-07-17',
+  date: '2025-10-06',
   title: 'Canadian Inventions: You\'re Welcome, World',
   topic: 'inventions',
   slides: [

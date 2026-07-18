@@ -14,7 +14,7 @@ import stampImg from './three-penny-beaver.webp'
 
 export default defineSet({
   slug: 'beavers',
-  date: '2026-07-17',
+  date: '2026-07-20',
   title: 'Beavers: Nature\'s Construction Crew',
   topic: 'wildlife',
   slides: [
