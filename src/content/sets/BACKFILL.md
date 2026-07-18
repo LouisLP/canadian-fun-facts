@@ -457,8 +457,8 @@ _Some Assembly Required_
 - Vancouver's Sanctuary AI builds general-purpose humanoid robots aimed at doing the physical work people do.
 - Robotiq, out of Lévis, Quebec, makes the grippers and sensors that let collaborative robot arms handle real objects.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `sanctuary-ai-robot.webp`
+- [x] image 6 — `robotiq-gripper-box.webp`
 
 ### Press start — has 4, need 2
 
@@ -467,8 +467,8 @@ _Some Assembly Required_
 - Dead by Daylight comes out of Montreal's Behaviour Interactive, the largest independent game studio in Canada.
 - Balatro, the poker roguelike that sold millions of copies, came from a single anonymous Saskatchewan developer called LocalThunk.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `ea-office.webp`
+- [x] image 6 — `balatro-title.webp`
 
 ### Ship it — has 4, need 2
 
@@ -477,8 +477,8 @@ _Some Assembly Required_
 - BlackBerry ruled the smartphone from Waterloo, then pivoted to cybersecurity and the QNX software now running inside millions of cars.
 - The Obsidian note-taking app was built by two University of Waterloo grads who started it while quarantined in 2020.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `blackberry-classic.webp`
+- [x] image 6 — `obsidian-logo.webp`
 
 ## 2026-05-11-canada-vs-germany
 
