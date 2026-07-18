@@ -109,6 +109,7 @@ export default defineSet({
         'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
         'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
         'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
+        'Go watch "Hoppers"! A new Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
         {
