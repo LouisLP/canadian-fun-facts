@@ -6,7 +6,9 @@ remaining backlog sets follow it verbatim.
 
 ## 1. Read the backlog note, pick the topic
 
-Read `docs/backlog/Fun Facts NN <Name>.md`. Confirm the [topic](../src/content/topics.ts)
+Read `docs/backlog/Fun Facts NN <Name>.md`. All 22 of those are published; new sets now
+start from an entry in [future-topics.md](backlog/future-topics.md), promoted to its own
+backlog note first. Confirm the [topic](../src/content/topics.ts)
 already exists; if it doesn't, that is a separate one-line change to the registry.
 
 ## 2. Group into slides
