@@ -423,8 +423,8 @@ _Mythical Creatures: Canada's Cryptid Roll Call_
 - The name "Ogopogo" isn't Indigenous at all: it came from a 1924 British music-hall song.
 - Over 200 sightings are on record. None have ever been verified.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `ogopogo-painting.webp`
+- [x] image 6 — `ogopogo-legend-poster.webp`
 
 ### Big feet, bigger reputation — has 4, need 2
 
@@ -433,8 +433,8 @@ _Mythical Creatures: Canada's Cryptid Roll Call_
 - Stories of large forest beings run through many Pacific Northwest Indigenous cultures, each with its own name and meaning.
 - BC named a provincial park after the legend; thousands of sightings have been reported across the region.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `sasquatch-photo.webp`
+- [x] image 6 — `sasquatch-movie-poster.webp`
 
 ### The hunger that never ends — has 4, need 2
 
@@ -443,8 +443,8 @@ _Mythical Creatures: Canada's Cryptid Roll Call_
 - The antlered movie monster is a modern invention. Traditional descriptions vary and often have no antlers.
 - For the communities the stories belong to, this is living tradition, not a Halloween costume.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
+- [x] image 5 — `wendigo-classic-illustration.webp`
+- [x] image 6 — `wendigo-rendering.webp`
 
 ## 2026-04-20-industry-tech
 
