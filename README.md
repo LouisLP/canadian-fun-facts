@@ -60,17 +60,18 @@ pnpm optimize-images --check # CI gate: fails on unoptimized or oversized images
 
 ## Writing a set
 
+Pick a topic, drop pictures in `inbox/<slug>/`, ask Claude to build the set.
 [docs/authoring-a-set.md](docs/authoring-a-set.md) is the recipe, start to finish: grouping
-a backlog note into slides, writing the copy, sourcing images from Wikimedia Commons with
-the right licenses, and verifying it all builds.
+a topic into slides, writing the copy, choosing images, and verifying it all builds.
 
 Two things carry most of the weight:
 
 - **Copy** follows [docs/copy-style.md](docs/copy-style.md) — one sentence per fact, lead
   with the surprising bit, bold the key figure.
-- **Images** must be Public Domain or CC, four per slide, credited in the set file. This is
-  the slow part, and it shapes the slides: a subject you can't illustrate with four free
-  images is the wrong subject.
+- **Images** are four per slide, credited in the set file. First choice is whatever is in
+  [`inbox/<slug>/`](inbox/README.md) (gitignored; originals stay out of the repo); gaps get
+  filled from Wikimedia Commons, Public Domain or CC only. This shapes the slides: a
+  subject you can't illustrate four times over is the wrong subject.
 
 Raw material for future sets lives in `docs/backlog/`.
 [future-topics.md](docs/backlog/future-topics.md) is the standing idea bank — 48 candidate

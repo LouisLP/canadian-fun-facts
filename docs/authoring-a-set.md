@@ -1,24 +1,39 @@
-# Authoring a set (the backlog → set recipe)
+# Authoring a set (the topic → set recipe)
 
-The repeatable process for turning one `docs/backlog/*.md` note into a published set.
-Proven end-to-end across all 17 published sets, starting with Maple
-(`src/content/sets/2025-10-27-maple`); every new set follows it verbatim.
+The repeatable process for turning a topic into a published set. Proven end-to-end across
+all 17 published sets, starting with Maple (`src/content/sets/2025-10-27-maple`); every new
+set follows it verbatim.
 
-## 1. Read the backlog note, pick the topic
+**The short version:** pick a topic → drop pictures in `inbox/<slug>/` → say "build the
+`<slug>` set". Steps 2–7 are then Claude's job.
 
-Sets start from an entry in [future-topics.md](backlog/future-topics.md), promoted to its
-own `docs/backlog/<slug>.md` note first — the entry's three candidate slide subjects are a
-starting point, not the finished grouping. (The original Fun Facts 01–22 notes are all
-published and have been deleted.) Confirm the [topic](../src/content/topics.ts)
-already exists; if it doesn't, that is a separate one-line change to the registry.
+## 1. Pick the topic
+
+Two entry points, both fine:
+
+- **Louis names one.** Any topic, backlog or not.
+- **From the backlog.** An entry in [future-topics.md](backlog/future-topics.md), promoted
+  to its own `docs/backlog/<slug>.md` note first — the entry's three candidate slide
+  subjects are a starting point, not the finished grouping. (The original Fun Facts 01–22
+  notes are all published and have been deleted.)
+
+Either way: pick the `<slug>` early, since `inbox/<slug>/` is named after it. Confirm the
+[topic](../src/content/topics.ts) already exists; if it doesn't, that is a separate
+one-line change to the registry.
+
+Louis may also hand over a rough list of facts he wants in. Treat those as the spine of the
+set — verify and rewrite them to [copy-style](copy-style.md), then fill out the rest around
+them.
 
 ## 2. Group into slides
 
 A slide is one **subject**, not one fact ([ADR 0002](adr/0002-slides-hold-multiple-facts-and-images.md)).
 Aim for **3–4 slides**, **3–4 facts each**. Group by the natural sub-themes in the note,
-and let image availability inform the grouping: a slide you can't illustrate with four
-freely-licensed images is the wrong slide. Maple grouped as: the industry's scale + the
-tree → tapping → the sugar shack / boiling → the strategic reserve and the 2012 heist.
+and let image availability inform the grouping: **look in `inbox/<slug>/` before settling
+the slides**, and let what's actually there pull the grouping toward it. A slide you can't
+illustrate with four images — inbox or freely-licensed — is the wrong slide. Maple grouped
+as: the industry's scale + the tree → tapping → the sugar shack / boiling → the strategic
+reserve and the 2012 heist.
 
 ## 3. Write the copy
 
@@ -27,10 +42,38 @@ All reader-facing prose follows [docs/copy-style.md](copy-style.md): one sentenc
 em-dashes, no rhetorical questions, no lead-ins. Headings and the title get playful puns.
 Verify every number against a primary source before committing it.
 
-## 4. Source images — exactly four freely-licensed per slide
+## 4. Source images — exactly four per slide
 
-This is the real work. Only **Public Domain / CC / "no known copyright restrictions"**
-images qualify. [Wikimedia Commons](https://commons.wikimedia.org) is the source of record.
+Two sources, in order: **the inbox first, Commons for the gaps.**
+
+### 4a. The inbox (`inbox/<slug>/`)
+
+Louis drops raw pictures into a gitignored `inbox/<slug>/` folder — see
+[inbox/README.md](../inbox/README.md). These are first-choice imagery and take precedence
+over anything on Commons.
+
+Work through them like this:
+
+1. **Look at every file.** Read each image; filenames are a hint, not a description.
+2. **Group them against the slides from step 2.** Image availability is allowed to reshape
+   the grouping — if the inbox has six great shots of one sub-theme and none of another,
+   the slides should follow the pictures.
+3. **Pick the best four per slide** when there's a surplus. Judge on: sharpness and
+   resolution, how directly it illustrates that slide's facts, and variety within the
+   slide (four near-identical frames of the same subject is a weak slide).
+4. **Copy the winners** into the set folder under stable kebab-case names describing the
+   subject (`boiling-pan.webp`, not `IMG_4471.webp`). Leave the inbox untouched — it is
+   the archive of what wasn't used.
+
+Don't ask which to pick. Choose, then say in the summary which slides came from the inbox
+and which images were left out, so the call is reviewable.
+
+### 4b. Filling the gaps from Commons
+
+When the inbox doesn't cover a slide's four, top it up. Only **Public Domain / CC / "no
+known copyright restrictions"** images qualify; [Wikimedia
+Commons](https://commons.wikimedia.org) is the source of record. Mixing inbox and Commons
+images within one slide is fine.
 
 **Find candidates** via the Commons API — search and category listing both work:
 
@@ -62,7 +105,8 @@ curl -sL -H "User-Agent: $UA" \
 
 ## 5. Convert to WebP
 
-Drop the `.jpg`/`.png` files in the set folder, then:
+Once every chosen image — inbox copies and Commons downloads alike — is sitting in the set
+folder as `.jpg`/`.png`/`.webp`:
 
 ```sh
 pnpm optimize-images        # converts to .webp (≤1600px, q80), deletes originals,
@@ -79,7 +123,10 @@ Copy the beavers set's structure. `slug` is stable and unique (renaming the fold
 changes it); `date` is the publish date and the folder name mirrors it by convention.
 
 - **Alt text**: plainly descriptive, no jokes, no flourishes (per copy-style scope note).
-- **Credit**: `"<Author>, <LICENSE>, via Wikimedia Commons"`, e.g.
+- **Credit**: optional in the schema, and currently not rendered (the `<figcaption>` in
+  `SetPage.vue` is commented out) — but always fill it in, since it's the only record of
+  where a file came from. **Inbox images** get `"Louis Lascelles-Palys"`. **Commons
+  images** get `"<Author>, <LICENSE>, via Wikimedia Commons"`, e.g.
   `"Jomegat, CC BY-SA 4.0, via Wikimedia Commons"`. Public-domain / no-restrictions files:
   `"public domain, via Wikimedia Commons"` or `"<Institution>, no known copyright restrictions, via Wikimedia Commons"`.
   Take the author and license short-name from the same `extmetadata` the search returned.
