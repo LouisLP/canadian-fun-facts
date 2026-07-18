@@ -36,5 +36,16 @@ import { Icon } from '@iconify/vue'
 .lost a {
   color: var(--ink-heading);
   font-weight: bold;
+  transition: color var(--motion-hover);
+}
+
+.lost a:hover {
+  color: var(--ink-shout);
+  text-decoration: underline wavy;
+}
+
+.lost a:focus-visible {
+  outline: var(--outline-focus);
+  outline-offset: var(--outline-focus-offset);
 }
 </style>
