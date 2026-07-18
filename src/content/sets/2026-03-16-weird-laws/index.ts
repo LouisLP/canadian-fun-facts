@@ -1,14 +1,20 @@
 import { defineSet } from '../../schema'
+import cashBillsImg from './cash-bills.webp'
 import coinsPileImg from './coins-pile.webp'
+import dimeImg from './dime.webp'
 import iciclesImg from './icicles.webp'
 import loonieImg from './loonie.webp'
 import nickelImg from './nickel-beaver.webp'
 import ratAtWaterImg from './rat-at-water.webp'
 import ratByFenceImg from './rat-by-fence.webp'
 import ratEatingImg from './rat-eating.webp'
+import petRatImg from './pet-rat.webp'
 import ratOnGravelImg from './rat-on-gravel.webp'
+import ratPropagandaImg from './rat-propaganda-poster.webp'
+import roofIciclesImg from './roof-icicles.webp'
 import shovellingRoofImg from './shovelling-roof.webp'
 import snowCurlImg from './snow-curl-roof.webp'
+import shovellingSnowRoofImg from './shovelling-snow-roof.webp'
 import snowPiledImg from './snow-piled-roof.webp'
 import toonieImg from './toonie.webp'
 
@@ -47,6 +53,12 @@ export default defineSet({
           alt: 'A Canadian two-dollar coin standing on edge, its polar bear side lit against a dark background',
           credit: 'Carol VanHook, CC BY-SA 2.0, via Wikimedia Commons',
         },
+        {
+          src: dimeImg,
+        },
+        {
+          src: cashBillsImg,
+        },
       ],
     },
     {
@@ -78,6 +90,12 @@ export default defineSet({
           alt: 'A brown rat standing on gravel in bright sunlight',
           credit: 'AnemoneProjectors, CC BY-SA 2.0, via Wikimedia Commons',
         },
+        {
+          src: ratPropagandaImg,
+        },
+        {
+          src: petRatImg,
+        },
       ],
     },
     {
@@ -108,6 +126,12 @@ export default defineSet({
           src: iciclesImg,
           alt: 'Long icicles dripping from a snowy edge against a clear blue sky',
           credit: 'Hsoosalu, CC BY-SA 4.0, via Wikimedia Commons',
+        },
+        {
+          src: shovellingSnowRoofImg,
+        },
+        {
+          src: roofIciclesImg,
         },
       ],
     },
