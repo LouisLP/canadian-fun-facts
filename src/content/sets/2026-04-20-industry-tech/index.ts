@@ -1,13 +1,19 @@
 import { defineSet } from '../../schema'
+import balatroImg from './balatro-title.webp'
+import blackberryClassicImg from './blackberry-classic.webp'
 import blackberryImg from './blackberry-phones.webp'
 import jackalImg from './clearpath-jackal.webp'
 import gripperImg from './cobot-gripper.webp'
+import eaOfficeImg from './ea-office.webp'
 import controllerImg from './game-controller.webp'
 import gamingLoungeImg from './gaming-lounge.webp'
 import humanoidImg from './humanoid-robots.webp'
 import goslingImg from './james-gosling.webp'
+import obsidianImg from './obsidian-logo.webp'
 import pokerImg from './poker-hand.webp'
 import lerdorfImg from './rasmus-lerdorf.webp'
+import robotiqImg from './robotiq-gripper-box.webp'
+import sanctuaryImg from './sanctuary-ai-robot.webp'
 import shopifyImg from './shopify-office.webp'
 import ubisoftImg from './ubisoft-montreal.webp'
 import agvImg from './warehouse-agv.webp'
@@ -47,6 +53,12 @@ export default defineSet({
           alt: 'A collaborative robot arm with a gripper picking parts from a tray on a workbench',
           credit: 'Jeff Green/Rethink Robotics, CC BY 4.0, via Wikimedia Commons',
         },
+        {
+          src: sanctuaryImg,
+        },
+        {
+          src: robotiqImg,
+        },
       ],
     },
     {
@@ -78,6 +90,12 @@ export default defineSet({
           alt: 'A fanned poker hand of five hearts on a green felt table, standing in for the card game Balatro',
           credit: 'Guts Gaming, CC BY 2.0, via Wikimedia Commons',
         },
+        {
+          src: eaOfficeImg,
+        },
+        {
+          src: balatroImg,
+        },
       ],
     },
     {
@@ -108,6 +126,12 @@ export default defineSet({
           src: lerdorfImg,
           alt: 'Portrait of Rasmus Lerdorf, creator of PHP, in front of a metal wall',
           credit: 'William Stadtwald Demchick, CC BY-SA 4.0, via Wikimedia Commons',
+        },
+        {
+          src: blackberryClassicImg,
+        },
+        {
+          src: obsidianImg,
         },
       ],
     },
