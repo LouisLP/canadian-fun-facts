@@ -55,6 +55,14 @@ onUnmounted(() => {
   observer?.disconnect()
 })
 
+// Corners first, mid-gutter slots last, so a slide that is still short of a
+// full six photos stays balanced instead of going top-heavy.
+const SPOT_ORDER = [1, 2, 5, 6, 3, 4] as const
+
+function spotFor(index: number) {
+  return `spot-${SPOT_ORDER[index % SPOT_ORDER.length]}`
+}
+
 function toggleFullscreen() {
   if (document.fullscreenElement)
     document.exitFullscreen()
@@ -98,7 +106,7 @@ function toggleFullscreen() {
           v-for="(image, j) in slide.images"
           :key="image.src"
           class="slide-figure"
-          :class="`spot-${(j % 4) + 1}`"
+          :class="spotFor(j)"
         >
           <img :src="image.src" :alt="image.alt">
           <figcaption v-if="image.credit">
@@ -270,8 +278,16 @@ function toggleFullscreen() {
   animation: bob 0.8s ease-in-out infinite alternate;
 }
 
+/* Every photo renders in an identical 5:4 frame, sized by *height* so that
+   three of them always stack inside one gutter regardless of the source
+   image's orientation. Portraits and panoramas both get cropped to fit;
+   a uniform grid beats preserving every last pixel. */
 .slide-figure img {
-  width: clamp(10rem, 24vw, 22rem);
+  height: clamp(6rem, 25vh, 15rem);
+  width: auto;
+  max-width: 22vw;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
   border: 6px ridge gold;
   background: #fff;
   filter: drop-shadow(6px 6px 0 #00000055);
@@ -283,38 +299,58 @@ function toggleFullscreen() {
   margin-top: 0.2rem;
 }
 
-/* Four spots, one per corner, for an even spread; spilling off the
-   sides is intentional — presence beats tidy margins. */
+/* Six spots: a column of three down each gutter. Spilling off the sides is
+   intentional — presence beats tidy margins. The mid spots use `translate`
+   rather than `transform` so they compose with the `bob` animation, which
+   owns `transform`. */
 
 /* Top left */
 .spot-1 {
-  top: 9%;
+  top: 4%;
   left: 5%;
   rotate: -8deg;
 }
 
 /* Top right */
 .spot-2 {
-  top: 7%;
+  top: 3%;
   right: 4%;
   rotate: 7deg;
   animation-delay: 0.2s;
 }
 
-/* Bottom left */
+/* Mid left */
 .spot-3 {
-  bottom: 12%;
-  left: 4%;
-  rotate: 5deg;
+  top: 50%;
+  left: 2%;
+  translate: 0 -50%;
+  rotate: 4deg;
   animation-delay: 0.4s;
 }
 
-/* Bottom right */
+/* Mid right — inset further than the corners to clear the maple-leaf rail. */
 .spot-4 {
-  bottom: 12%;
+  top: 50%;
+  right: 6%;
+  translate: 0 -50%;
+  rotate: -5deg;
+  animation-delay: 0.6s;
+}
+
+/* Bottom left */
+.spot-5 {
+  bottom: 4%;
+  left: 4%;
+  rotate: 5deg;
+  animation-delay: 0.8s;
+}
+
+/* Bottom right */
+.spot-6 {
+  bottom: 3%;
   right: 3%;
   rotate: -6deg;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 
 @keyframes pulse {
