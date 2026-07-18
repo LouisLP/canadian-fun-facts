@@ -14,7 +14,7 @@ import agvImg from './warehouse-agv.webp'
 
 export default defineSet({
   slug: 'industry-tech',
-  date: '2026-07-27',
+  date: '2026-04-20',
   title: 'Some Assembly Required',
   topic: 'business',
   slides: [

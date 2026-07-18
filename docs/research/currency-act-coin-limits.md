@@ -1,7 +1,7 @@
 # Currency Act coin-payment limits
 
 Verification of the coin legal-tender figures used in the Weird Laws set
-(`src/content/sets/2026-08-03-weird-laws`), per issue #45.
+(`src/content/sets/2026-03-16-weird-laws`), per issue #45.
 
 **Primary source**: Currency Act, R.S.C. 1985, c. C-52, s. 8 —
 <https://laws-lois.justice.gc.ca/eng/acts/C-52/page-1.html> (Justice Laws Website,

@@ -14,7 +14,7 @@ import toqueImg from './toque.webp'
 
 export default defineSet({
   slug: 'language',
-  date: '2026-07-20',
+  date: '2025-12-15',
   title: 'Talk Canadian to Me',
   topic: 'culture',
   slides: [

@@ -18,7 +18,7 @@ import totemPoleImg from './yvr-totem-pole.webp'
 
 export default defineSet({
   slug: 'travel',
-  date: '2026-07-27',
+  date: '2026-02-09',
   title: 'Travel: Gate Expectations',
   topic: 'travel',
   slides: [
