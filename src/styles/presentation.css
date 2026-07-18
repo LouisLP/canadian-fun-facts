@@ -1,0 +1,56 @@
+/**
+ * Presentation primitives, shared by every panel in the set view.
+ *
+ * These are global rather than scoped because the panels are separate
+ * components that must render identically — a scoped `@keyframes bob` would be
+ * duplicated per component and drift.
+ */
+
+/* A full-viewport scroll-snap section. */
+.panel {
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-panel);
+  box-sizing: border-box;
+  position: relative;
+  border-block: var(--border-panel);
+  background: var(--surface-stage);
+}
+
+/* The house heading treatment: red-to-white fill, black stroke, hard shadow. */
+.wordart {
+  font-size: var(--text-wordart);
+  background: var(--gradient-wordart);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: var(--stroke-wordart);
+  filter: drop-shadow(var(--shadow-wordart));
+  transform: rotate(-1deg);
+  margin: 0;
+  max-width: 24ch;
+  /* Keep above 1 so descenders (g, p, y) aren't clipped by the
+     background-clip: text box. */
+  line-height: 1.4;
+}
+
+/* Everything that floats. Owns `transform`, so anything positioned alongside
+   it must use `translate`/`rotate` instead. */
+.bob {
+  animation: bob var(--motion-bob) ease-in-out infinite alternate;
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(-6px);
+  }
+
+  to {
+    transform: translateY(6px);
+  }
+}

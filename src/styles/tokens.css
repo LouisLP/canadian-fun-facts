@@ -1,0 +1,195 @@
+/**
+ * Design tokens.
+ *
+ * The house style is deliberately Geocities-bad (see the hub footer). These
+ * tokens exist to make that ugliness *consistent and intentional* — ridge
+ * borders, Comic Sans and blinking badges are the spec, not a bug to fix.
+ *
+ * Two layers, and the rule between them:
+ *   1. Primitives  — raw values, Canadiana-named ramps. Never used directly
+ *                    in a component.
+ *   2. Semantics   — what a thing is *for*. Components only ever use these.
+ *
+ * A component reaching past a semantic token to a primitive means a semantic
+ * token is missing. Add it here instead.
+ */
+
+:root {
+  /* ---------------------------------------------------------------- *
+   * 1. PRIMITIVES
+   * ---------------------------------------------------------------- */
+
+  /* Neutral ramp — snow at the top of the hill, hockey puck at the bottom. */
+  --puck-000: #ffffff;
+  --puck-050: #f4f4f4;
+  --puck-100: #eeeeee;
+  --puck-300: #cccccc;
+  --puck-400: #999999;
+  --puck-500: #555555;
+  --puck-600: #4a4a4a;
+  --puck-800: #1a1a1a;
+  --puck-950: #101010;
+  --puck-999: #000000;
+
+  /* Red ramp — sap runs pale, the leaf is the flag, syrup is the dark end. */
+  --maple-050: #fff3f3;
+  --maple-400: #ff3d3d;
+  --maple-500: #ff0000;
+  --maple-600: #d00000;
+
+  /* Blue ramp — meltwater to the deep end of the lake. */
+  --glacier-300: #3db9ff;
+  --glacier-500: #4d7bff;
+  --glacier-800: #003399;
+
+  /* Warm ramp — butter tart filling through to podium gold. */
+  --butter-tart-050: #fffbe6;
+  --butter-tart-300: #ffe600;
+  --butter-tart-400: #ffff00;
+  --gold-500: #ffd700;
+
+  /* Green ramp — turf, jersey, and the dark side of the pines. */
+  --jersey-300: #3dff5e;
+  --jersey-600: #00aa00;
+  --jersey-900: #003300;
+
+  /* Scrims — layered over photos and panels, never a flat fill. */
+  --scrim-frost: #ffffffdd;
+  --scrim-soft: #00000055;
+  --scrim-medium: #00000088;
+  --scrim-heavy: #000000cc;
+
+  /* Topic registry colours. Consumed from TS via var() so the palette has a
+     single home; see src/content/topics.ts. */
+  --topic-wildlife: var(--jersey-300);
+  --topic-food: #ff9d00;
+  --topic-history: var(--maple-400);
+  --topic-geography: var(--glacier-300);
+  --topic-weather: var(--butter-tart-300);
+  --topic-inventions: #ff3dc4;
+  --topic-culture: #3dffe0;
+  --topic-people: var(--glacier-500);
+  --topic-sports: #a6ff3d;
+  --topic-travel: #c04dff;
+  --topic-business: #ff7a3d;
+  --topic-oddities: #ff3d8f;
+
+  /* ---------------------------------------------------------------- *
+   * 2. SEMANTICS
+   * ---------------------------------------------------------------- */
+
+  /* Surfaces */
+  --surface-stage: var(--puck-950); /* presentation backdrop */
+  --surface-card: var(--puck-000); /* hub cards, banner */
+  --surface-fact: var(--scrim-frost); /* fact card over a photo */
+  --surface-chrome: var(--scrim-heavy); /* rail, back link */
+  --surface-button: var(--puck-100);
+  --surface-lost: var(--butter-tart-050);
+
+  /* The hub feed's ruled-paper stripes. */
+  --surface-feed: repeating-linear-gradient(
+    180deg,
+    var(--butter-tart-050) 0,
+    var(--butter-tart-050) 40px,
+    var(--maple-050) 40px,
+    var(--maple-050) 80px
+  );
+
+  /* Ink */
+  --ink-body: var(--puck-800);
+  --ink-heading: var(--glacier-800);
+  --ink-shout: var(--maple-500);
+  --ink-banner: var(--maple-600);
+  --ink-muted: var(--puck-500);
+  --ink-faint: var(--puck-600);
+  --ink-subtle: var(--puck-400);
+  --ink-caption: var(--puck-300);
+  --ink-on-stage: var(--puck-000);
+  --ink-chrome: var(--gold-500);
+  --ink-go: var(--jersey-900);
+
+  /* Accents */
+  --accent-flag: var(--maple-500);
+  --accent-trim: var(--gold-500);
+  --accent-go: var(--jersey-300);
+  --accent-alarm: var(--maple-500);
+  --accent-alarm-ink: var(--butter-tart-400);
+
+  /* Type — one family, on purpose. */
+  --font-display: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive;
+
+  --text-xs: 0.7rem;
+  --text-sm: 0.85rem;
+  --text-md: 1rem;
+  --text-lg: 1.35rem;
+  --text-xl: 1.6rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.4rem;
+  --text-4xl: 3rem;
+
+  /* Fluid sizes for the presentation view, which must fill any screen. */
+  --text-wordart: clamp(1.6rem, 5vw, 3.8rem);
+  --text-fact: clamp(0.9rem, 1.4vh + 0.5vw, 1.4rem);
+
+  --tracking-shout: 1.1rem;
+
+  /* Space */
+  --space-3xs: 0.15rem;
+  --space-2xs: 0.2rem;
+  --space-xs: 0.3rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.8rem;
+  --space-lg: 1rem;
+  --space-xl: 1.25rem;
+  --space-2xl: 1.5rem;
+  --space-3xl: 2rem;
+  --space-4xl: 3rem;
+  --space-5xl: 8rem;
+
+  --space-panel: var(--space-4xl) clamp(2rem, 8vw, 6rem);
+  --space-fact-gap: clamp(0.5rem, 1.5vh, 1rem);
+  --space-fact-pad: clamp(0.4rem, 1vh, 0.9rem) var(--space-2xl);
+
+  /* Borders — the 3D revival set. Widths are deliberately chunky. */
+  --border-hairline: 3px;
+  --border-thick: 4px;
+  --border-chunky: 6px;
+
+  --border-banner: var(--border-chunky) ridge var(--accent-flag);
+  --border-card: var(--border-thick) dashed;
+  --border-button: var(--border-thick) outset var(--puck-400);
+  --border-badge: var(--border-hairline) outset var(--puck-400);
+  --border-panel: var(--border-chunky) ridge var(--accent-flag);
+  --border-chrome: var(--border-hairline) ridge var(--accent-trim);
+  --border-frame: var(--border-chunky) ridge var(--accent-trim);
+  --border-go: var(--border-hairline) outset var(--jersey-600);
+
+  --radius-pill: 999px;
+
+  /* Shadows — hard offsets, never a soft blur. */
+  --shadow-text: 2px 2px 0 var(--puck-999);
+  --shadow-text-lg: 3px 3px 0 var(--gold-500);
+  --shadow-wordart: 4px 4px 0 var(--scrim-medium);
+  --shadow-photo: 6px 6px 0 var(--scrim-soft);
+  --shadow-collage: 0 1vmin 2.4vmin rgb(0 0 0 / 55%);
+
+  /* The signature red-to-white gradient behind every big heading. */
+  --gradient-wordart: linear-gradient(180deg, var(--maple-500), var(--puck-000));
+  --stroke-wordart: 2px var(--puck-999);
+
+  /* Motion — stepped and jittery, not smooth and tasteful. */
+  --motion-bob: 1s;
+  --motion-bob-slow: 1.2s;
+  --motion-bob-fast: 0.8s;
+  --motion-blink: 0.9s;
+  --motion-sway: 1600ms;
+  --motion-sway-offset: -800ms;
+
+  /* Layout */
+  --layout-hub-width: 46rem;
+  --layout-collage-inset: 5%;
+
+  /* Layers */
+  --layer-behind: -1;
+  --layer-content: 1;
+}
