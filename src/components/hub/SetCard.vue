@@ -1,6 +1,7 @@
 <!-- One set in the hub feed: title, topic, meta, teaser, and the way in. -->
 <script setup lang="ts">
 import type { FunFactSet } from '../../content/schema'
+import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 import { TOPICS } from '../../content/topics'
 import TopicBadge from './TopicBadge.vue'
@@ -22,8 +23,8 @@ const slideCount = computed(() => props.set.slides.length)
       <TopicBadge :topic="set.topic" />
     </div>
     <p class="meta">
-      📅 {{ set.date }} &nbsp;•&nbsp;
-      🖼️ {{ slideCount }} slide{{ slideCount === 1 ? '' : 's' }}
+      <Icon icon="lucide:calendar" class="icon" /> {{ set.date }} &nbsp;•&nbsp;
+      <Icon icon="lucide:image" class="icon" /> {{ slideCount }} slide{{ slideCount === 1 ? '' : 's' }}
     </p>
     <p class="teaser">
       {{ set.slides[0].heading }}

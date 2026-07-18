@@ -8,6 +8,12 @@
 @import './tokens.css';
 @import './presentation.css';
 
+/* Iconify SVGs are 1em and inherit currentColor; this only fixes the baseline
+   sit so an icon lines up with the text it sits beside. */
+.icon {
+  vertical-align: -0.125em;
+}
+
 body {
   margin: 0;
   font-family: var(--font-display);
