@@ -1,0 +1,34 @@
+/**
+ * Global element defaults. Everything else is component-scoped.
+ *
+ * The tiled maple leaf lives here rather than in a component because it backs
+ * every route, including the ones that render nothing else.
+ */
+
+@import './tokens.css';
+@import './presentation.css';
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  background-color: var(--surface-stage);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('/maple-leaf-pattern.avif');
+  background-repeat: repeat;
+  background-size: 420px 420px;
+  opacity: 0.175;
+  z-index: var(--layer-behind);
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: 260px 260px;
+  }
+}

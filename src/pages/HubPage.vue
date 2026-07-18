@@ -3,9 +3,9 @@
 <script setup lang="ts">
 import type { Topic } from '../content/topics'
 import { computed, ref } from 'vue'
-import TopicBadge from '../components/TopicBadge.vue'
+import SetCard from '../components/hub/SetCard.vue'
+import TopicFilter from '../components/hub/TopicFilter.vue'
 import { ALL_SETS } from '../content/sets'
-import { TOPICS } from '../content/topics'
 
 const activeTopic = ref<Topic | null>(null)
 
@@ -16,12 +16,6 @@ const visibleSets = computed(() =>
 )
 
 const newestSlug = ALL_SETS[0]?.slug
-
-const topicEntries = Object.entries(TOPICS) as [Topic, (typeof TOPICS)[Topic]][]
-
-function toggleTopic(topic: Topic) {
-  activeTopic.value = activeTopic.value === topic ? null : topic
-}
 </script>
 
 <template>
@@ -33,45 +27,15 @@ function toggleTopic(topic: Topic) {
       </p>
     </header>
 
-    <nav class="topic-buttons" aria-label="Filter by topic">
-      <button type="button" :class="{ active: activeTopic === null }" @click="activeTopic = null">
-        ALL OF IT
-      </button>
-      <button
-        v-for="[key, topic] in topicEntries"
-        :key="key"
-        type="button"
-        :style="{ backgroundColor: topic.color }"
-        :class="{ active: activeTopic === key }"
-        @click="toggleTopic(key)"
-      >
-        {{ topic.label }}
-      </button>
-    </nav>
+    <TopicFilter v-model="activeTopic" />
 
     <main>
-      <article
+      <SetCard
         v-for="set in visibleSets"
         :key="set.slug"
-        class="set-block"
-        :style="{ borderColor: TOPICS[set.topic].color }"
-      >
-        <div class="set-header">
-          <span v-if="set.slug === newestSlug" class="new-badge">NEW!!</span>
-          <h2>{{ set.title }}</h2>
-          <TopicBadge :topic="set.topic" />
-        </div>
-        <p class="meta">
-          📅 {{ set.date }} &nbsp;•&nbsp;
-          🖼️ {{ set.slides.length }} slide{{ set.slides.length === 1 ? '' : 's' }}
-        </p>
-        <p class="teaser">
-          {{ set.slides[0].heading }}
-        </p>
-        <RouterLink class="present-link" :to="{ name: 'set', params: { slug: set.slug } }">
-          ▶▶ PRESENT THIS ONE ◀◀
-        </RouterLink>
-      </article>
+        :set="set"
+        :is-newest="set.slug === newestSlug"
+      />
       <p v-if="visibleSets.length === 0" class="empty">
         no facts here yet, sorry bud 🦫
       </p>
@@ -85,123 +49,43 @@ function toggleTopic(topic: Topic) {
 
 <style scoped>
 .feed {
-  max-width: 46rem;
+  max-width: var(--layout-hub-width);
   margin: 0 auto;
-  padding: 1rem 1rem 8rem;
-  background: repeating-linear-gradient(180deg, #fffbe6 0, #fffbe6 40px, #fff3f3 40px, #fff3f3 80px);
+  padding: var(--space-lg) var(--space-lg) var(--space-5xl);
+  background: var(--surface-feed);
   min-height: 100vh;
 }
 
 .banner {
   text-align: center;
-  border: 6px ridge #ff0000;
-  background: #ffffff;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border: var(--border-banner);
+  background: var(--surface-card);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
 .banner h1 {
-  font-size: 2.4rem;
-  color: #d00000;
-  text-shadow: 3px 3px 0 #ffd700;
+  font-size: var(--text-3xl);
+  color: var(--ink-banner);
+  text-shadow: var(--shadow-text-lg);
   margin: 0;
 }
 
 .tagline {
-  color: red;
+  color: var(--ink-shout);
   font-weight: bold;
-  margin: 0.5rem 0 0;
-}
-
-.topic-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.topic-buttons button {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.4rem 0.9rem;
-  border: 4px outset #999;
-  background: #eee;
-  cursor: pointer;
-}
-
-.topic-buttons button:active,
-.topic-buttons button.active {
-  border-style: inset;
-  outline: 3px dashed #000;
-}
-
-/* Border colour comes from the set's topic, inline. */
-.set-block {
-  background: #fff;
-  border: 4px dashed;
-  padding: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.set-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.set-header h2 {
-  font-size: 1.35rem;
-  color: #003399;
-  margin: 0;
-}
-
-.new-badge {
-  background: #ff0000;
-  color: #ffff00;
-  font-weight: bold;
-  padding: 0.15rem 0.5rem;
-  transform: rotate(-8deg);
-  animation: blink 0.9s step-start infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.meta {
-  color: #555;
-  font-size: 0.85rem;
-  margin: 0.4rem 0;
-}
-
-.teaser {
-  margin: 0.4rem 0 0.8rem;
-}
-
-.present-link {
-  display: inline-block;
-  background: #3dff5e;
-  border: 3px outset #0a0;
-  padding: 0.3rem 0.8rem;
-  color: #003300;
-  font-weight: bold;
-  text-decoration: none;
+  margin: var(--space-sm) 0 0;
 }
 
 .empty {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: var(--text-lg);
 }
 
 .feed-footer {
   text-align: center;
-  color: red;
+  color: var(--ink-shout);
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: var(--space-3xl);
 }
 </style>

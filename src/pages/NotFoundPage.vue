@@ -15,20 +15,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
-  background: #fffbe6;
+  gap: var(--space-md);
+  background: var(--surface-lost);
   text-align: center;
 }
 
 .lost h1 {
-  color: #d00000;
-  text-shadow: 3px 3px 0 #ffd700;
-  font-size: 3rem;
+  color: var(--ink-banner);
+  text-shadow: var(--shadow-text-lg);
+  font-size: var(--text-4xl);
   margin: 0;
 }
 
 .lost a {
-  color: #003399;
+  color: var(--ink-heading);
   font-weight: bold;
 }
 </style>
