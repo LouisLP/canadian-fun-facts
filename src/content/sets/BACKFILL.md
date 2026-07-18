@@ -484,44 +484,32 @@ _Some Assembly Required_
 
 _Cultural Shifts: My Notes From Both Sides_
 
-### Small gestures, big gaps — has 4, need 2
+### Small gestures, big gaps — has 6, complete
 
 - Canadians start counting on the index finger; Germans start with the thumb and work outwards.
 - Order one beer with a raised index finger in Germany and the thumb-first habit can land you two.
 - A held gaze reads as intense in Canada; in Germany longer eye contact is ordinary, transit included.
 - Canada taps a card almost everywhere, while plenty of German shops and restaurants still expect cash.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
-
-### Peaches and coconuts — has 4, need 2
+### Peaches and coconuts — has 6, complete
 
 - The old metaphor sorts them: Canadians as peaches, soft outside with a firm core; Germans as coconuts, hard shell around a soft centre.
 - Canadian conversation runs on polite back-and-forth; German conversation goes straight to the point, and rules carry weight.
 - "We should hang out" can be a friendly nothing in Canada, while a German invitation is literal and comes with a date.
 - Coconut friendships take longer to crack open and tend to last; peach friendliness arrives instantly and can stay light.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
-
-### Where Canada pulls ahead — has 4, need 2
+### Where Canada pulls ahead — has 6, complete
 
 - Food culture goes to Canada: poutine at one end, kitchens from every community the country has taken in at the other.
 - Nature is the easy call, with Banff and Algonquin putting real wilderness within a drive.
 - Strangers chat in Canada, and that everyday friendliness is genuine even when it stays on the surface.
 
-- [ ] TODO: image 5
-- [ ] TODO: image 6
-
-### Where Germany pulls ahead — has 4, need 2
+### Where Germany pulls ahead — has 6, complete
 
 - German law caps working time and guarantees paid holiday, with a statutory floor of 20 days on a five-day week.
 - Public infrastructure goes to Germany: trains, trams, and city centres built around walking rather than driving.
 - Neighbouring countries sit hours away by train, so international travel is a weekend plan instead of an expedition.
 - Neither country wins outright; the honest answer depends on whether nature or infrastructure matters more to you.
-
-- [ ] TODO: image 5
-- [ ] TODO: image 6
 
 ## 2026-05-25-heroes
 
