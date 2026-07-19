@@ -15,7 +15,7 @@ import restingOnDamImg from './beaver-resting-on-dam.webp'
 import swimmingImg from './beaver-swimming.webp'
 import treeCuttingImg from './beaver-tree-cutting.webp'
 import animatedFilmImg from './beavers-animated-film.webp'
-import nickelImg from './canada-nickel-1937.webp'
+import nickelImg from './canadian-nickel.webp'
 import stampImg from './three-penny-beaver.webp'
 
 export default defineSet({
@@ -25,41 +25,42 @@ export default defineSet({
   topic: 'wildlife',
   slides: [
     {
-      heading: 'Dam fine engineering',
+      heading: 'A national icon',
       facts: [
-        'World\'s longest beaver dam: **850 metres**, in Alberta\'s Wood Buffalo National Park, spotted via satellite in 2007.',
-        'Beavers hate the sound of **running water**: play a recording of a trickle and they\'ll pile sticks on the speaker.',
-        'Lodges have **underwater-only entrances**, a dry sleeping platform, and stay above freezing all winter.',
-        'Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a **keystone species**.',
+        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
+        'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
+        'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
+        'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
+        'Go watch "**Hoppers**"! A newer Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
         {
-          src: damImg,
-          alt: 'A beaver dam of gnawed logs holding back a calm pond on a forest stream',
-          credit: 'Jakub Hałun, CC BY 4.0, via Wikimedia Commons',
+          src: nickelImg,
+          alt: 'Both sides of a 1937 Canadian five-cent coin, the beaver perched on its rock',
+          credit: 'Awmcphee, CC0, via Wikimedia Commons',
         },
         {
-          src: pondAerialImg,
-          alt: 'Aerial view of a beaver wetland strewn with dozens of felled tree trunks',
-          credit: 'Ermell, CC BY-SA 4.0, via Wikimedia Commons',
+          src: peltImg,
+          alt: 'A beaver pelt stretched on a round willow frame',
+          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
         },
         {
-          src: lodgeImg,
-          alt: 'A snow-dusted beaver lodge of piled sticks rising out of an icy marsh',
-          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
+          src: stampImg,
+          alt: 'The 1851 Three-Penny Beaver, Canada\'s first postage stamp',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: carryingBranchImg,
-          alt: 'A beaver hauling a leafy branch across a pond',
-          credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
+          src: animatedFilmImg,
+          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
         },
         {
-          src: damBankImg,
-          alt: 'A beaver sitting upright on a bank of stripped sticks at the edge of blue water',
+          src: emblemImg,
+          alt: 'A wet-furred beaver at the water\'s edge',
+          credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
         },
         {
-          src: restingOnDamImg,
-          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
+          src: canadaDayImg,
+          alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
         },
       ],
     },
@@ -103,42 +104,41 @@ export default defineSet({
       ],
     },
     {
-      heading: 'A national icon',
+      heading: 'Dam fine engineering',
       facts: [
-        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
-        'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
-        'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
-        'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
-        'Go watch "Hoppers"! A new Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
+        'World\'s longest beaver dam: **850 metres**, in Alberta\'s Wood Buffalo National Park, spotted via satellite in 2007.',
+        'Beavers hate the sound of **running water**: play a recording of a trickle and they\'ll pile sticks on the speaker.',
+        'Lodges have **underwater-only entrances**, a dry sleeping platform, and stay above freezing all winter.',
+        'Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a **keystone species**.',
       ],
       images: [
         {
-          src: nickelImg,
-          alt: 'Both sides of a 1937 Canadian five-cent coin, the beaver perched on its rock',
-          credit: 'Awmcphee, CC0, via Wikimedia Commons',
+          src: damImg,
+          alt: 'A beaver dam of gnawed logs holding back a calm pond on a forest stream',
+          credit: 'Jakub Hałun, CC BY 4.0, via Wikimedia Commons',
         },
         {
-          src: peltImg,
-          alt: 'A beaver pelt stretched on a round willow frame',
-          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
+          src: pondAerialImg,
+          alt: 'Aerial view of a beaver wetland strewn with dozens of felled tree trunks',
+          credit: 'Ermell, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
-          src: stampImg,
-          alt: 'The 1851 Three-Penny Beaver, Canada\'s first postage stamp',
-          credit: 'public domain, via Wikimedia Commons',
+          src: lodgeImg,
+          alt: 'A snow-dusted beaver lodge of piled sticks rising out of an icy marsh',
+          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
         },
         {
-          src: animatedFilmImg,
-          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
+          src: carryingBranchImg,
+          alt: 'A beaver hauling a leafy branch across a pond',
+          credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
-          src: emblemImg,
-          alt: 'A wet-furred beaver at the water\'s edge',
-          credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
+          src: damBankImg,
+          alt: 'A beaver sitting upright on a bank of stripped sticks at the edge of blue water',
         },
         {
-          src: canadaDayImg,
-          alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
+          src: restingOnDamImg,
+          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
         },
       ],
     },
