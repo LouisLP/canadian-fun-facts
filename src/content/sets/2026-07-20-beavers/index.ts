@@ -14,7 +14,7 @@ import portraitTailImg from './beaver-portrait-tail.webp'
 import restingOnDamImg from './beaver-resting-on-dam.webp'
 import swimmingImg from './beaver-swimming.webp'
 import treeCuttingImg from './beaver-tree-cutting.webp'
-import animatedFilmImg from './beavers-animated-film.webp'
+import hoppersImg from './beavers-animated-film.webp'
 import nickelImg from './canadian-nickel.webp'
 import stampImg from './three-penny-beaver.webp'
 
@@ -31,7 +31,6 @@ export default defineSet({
         'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
         'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
         'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
-        'Go watch "**Hoppers**"! A newer Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
         {
@@ -50,10 +49,6 @@ export default defineSet({
           credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: animatedFilmImg,
-          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
-        },
-        {
           src: emblemImg,
           alt: 'A wet-furred beaver at the water\'s edge',
           credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
@@ -61,6 +56,10 @@ export default defineSet({
         {
           src: canadaDayImg,
           alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
+        },
+        {
+          src: restingOnDamImg,
+          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
         },
       ],
     },
@@ -110,6 +109,7 @@ export default defineSet({
         'Beavers hate the sound of **running water**: play a recording of a trickle and they\'ll pile sticks on the speaker.',
         'Lodges have **underwater-only entrances**, a dry sleeping platform, and stay above freezing all winter.',
         'Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a **keystone species**.',
+        'Go watch "**Hoppers**"! A newer Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
         {
@@ -128,6 +128,10 @@ export default defineSet({
           credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
         },
         {
+          src: hoppersImg,
+          alt: 'Two cartoon beavers sitting on a riverbank in an animated film',
+        },
+        {
           src: carryingBranchImg,
           alt: 'A beaver hauling a leafy branch across a pond',
           credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
@@ -135,10 +139,6 @@ export default defineSet({
         {
           src: damBankImg,
           alt: 'A beaver sitting upright on a bank of stripped sticks at the edge of blue water',
-        },
-        {
-          src: restingOnDamImg,
-          alt: 'A beaver dozing against a branch on its dam, mirrored in the still pond below',
         },
       ],
     },
