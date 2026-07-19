@@ -3,7 +3,7 @@ import canadaDayImg from './beaver-canada-day-flag.webp'
 import carryingBranchImg from './beaver-carrying-branch.webp'
 import chewedTreeImg from './beaver-chewing.webp'
 import damImg from './beaver-dam.webp'
-import emblemImg from './beaver-emblem.webp'
+// import emblemImg from './beaver-emblem.webp'
 import grippingLogImg from './beaver-gripping-log.webp'
 import cruisingImg from './beaver-in-water.webp'
 import lodgeImg from './beaver-lodge.webp'
@@ -15,6 +15,7 @@ import restingOnDamImg from './beaver-resting-on-dam.webp'
 import swimmingImg from './beaver-swimming.webp'
 import treeCuttingImg from './beaver-tree-cutting.webp'
 import hoppersImg from './beavers-animated-film.webp'
+import beavertailImg from './beavertail.webp'
 import nickelImg from './canadian-nickel.webp'
 import stampImg from './three-penny-beaver.webp'
 
@@ -27,10 +28,11 @@ export default defineSet({
     {
       heading: 'A national icon',
       facts: [
-        'In the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
+        'Francis cover your ears: in the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
         'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
         'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
         'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
+        'We even have a dessert named after them: the **beaver tail**, a fried dough pastry with sweet toppings.',
       ],
       images: [
         {
@@ -49,9 +51,8 @@ export default defineSet({
           credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: emblemImg,
-          alt: 'A wet-furred beaver at the water\'s edge',
-          credit: 'Joanne Clifford, CC BY 2.0, via Wikimedia Commons',
+          src: beavertailImg,
+          alt: 'A beaver tail-shaped fried dough pastry with sweet toppings',
         },
         {
           src: canadaDayImg,
