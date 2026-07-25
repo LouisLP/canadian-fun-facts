@@ -42,6 +42,10 @@ All reader-facing prose follows [docs/copy-style.md](copy-style.md): one sentenc
 em-dashes, no rhetorical questions, no lead-ins. Headings and the title get playful puns.
 Verify every number against a primary source before committing it.
 
+Personal connections to Louis are welcome and worth hunting for — hometown, family, school,
+jobs, trips, teams — one clause inside a fact, third person, only where it's true. Ask him
+for one if a slide looks like it has an obvious hook you don't know the answer to.
+
 ## 4. Source images — exactly four per slide
 
 Two sources, in order: **the inbox first, Commons for the gaps.**
