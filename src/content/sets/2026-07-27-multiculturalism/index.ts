@@ -98,9 +98,10 @@ export default defineSet({
       heading: 'Cooked up in Canada',
       facts: [
         '**Hawaiian pizza** was invented in **Chatham, Ontario, 1962**: a Greek immigrant putting Hawaiian-branded pineapple on an Italian dish in Canada.',
-        '**Ginger beef** is Calgarian, not Chinese: chef George Wong battered it at the Silver Inn in **1975** for Albertans who wanted beef crisp, not chewy.',
-        'Montreal bagels are hand-rolled, boiled in **honey water**, and wood-fired. Fairmount has been turning them out since **1919**.',
+        '**Ginger beef** is Calgarian, not Chinese: chef George Wong battered it at the Silver Inn in **1975** for Albertans who wanted some _crispy_ beef.',
+        'A love letter to **Asian food in Vancouver**: Chinese, Japanese, Thai, and Vietnamese restaurants are some of the best in the world.',
         'Vancouver chef **Hidekazu Tojo** says he invented the **California roll**, flipping the rice outside for diners who wanted the seaweed hidden.',
+        'Montreal bagels are hand-rolled, boiled in **honey water**, and wood-fired. Fairmount has been turning them out since **1919**.',
       ],
       images: [
         {

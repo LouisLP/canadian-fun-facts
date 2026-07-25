@@ -4,7 +4,6 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
-import BackLink from '../components/set/BackLink.vue'
 import FactPanel from '../components/set/FactPanel.vue'
 import SlideRail from '../components/set/SlideRail.vue'
 import ThanksPanel from '../components/set/ThanksPanel.vue'
@@ -45,8 +44,6 @@ const { toggle: toggleFullscreen } = useFullscreen()
       @go="scrollTo"
       @toggle-fullscreen="toggleFullscreen"
     />
-
-    <BackLink />
   </div>
 
   <div v-else class="wrap missing">
