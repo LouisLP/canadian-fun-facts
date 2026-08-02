@@ -202,9 +202,6 @@ easy._
 **Roadside giants** — the Sudbury nickel; the several towns each claiming the world's
 largest something; Vegreville's mathematically notable pysanka. _Images: easy._
 
-**Place names** — Dildo, Newfoundland; Head-Smashed-In Buffalo Jump; the towns named after
-clerical errors. _Images: medium — signage photos exist for the famous ones._
-
 **Unexplained sites** — the Oak Island money pit and two centuries of digging; Falcon Lake
 and the country's most documented UFO case; the Shag Harbour incident. _Images: hard —
 few free photographs of any of it._
