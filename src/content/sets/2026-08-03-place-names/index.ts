@@ -116,7 +116,7 @@ export default defineSet({
       heading: 'Ha! Ha! and the Sunset Capital',
       facts: [
         '**Saint-Louis-du-Ha! Ha!** holds a Guinness record for **the most exclamation marks in a place name**, at two. Nowhere else manages more than one.',
-        'The ha ha is not laughter: it is archaic French for a dead end, in this case Lake Témiscouata blocking the way.',
+        'The ha ha is not laughter but archaic French for a dead end, here Lake Témiscouata; Louis shares the saint\'s name, not the punctuation.',
         '**Climax, Saskatchewan** (population **137**) is named for Climax, Minnesota, which was itself named for a brand of chewing tobacco.',
         'The old welcome sign read "Welcome to Climax, Go Slow, speed limit 10 miles per hour"; the current one claims **Sunset Capital of Canada**.',
       ],
