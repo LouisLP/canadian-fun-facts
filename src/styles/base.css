@@ -5,6 +5,7 @@
  * every route, including the ones that render nothing else.
  */
 
+@import './fonts.css';
 @import './tokens.css';
 @import './presentation.css';
 

@@ -121,7 +121,8 @@
   --accent-alarm: var(--maple-500);
   --accent-alarm-ink: var(--butter-tart-400);
 
-  /* Type — one family, on purpose. */
+  /* Type — one family, on purpose. Real Comic Sans where the OS has it,
+     otherwise the self-hosted Comic Neue from fonts.css (see it for why). */
   --font-display: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive;
 
   --text-xs: 0.7rem;
