@@ -32,11 +32,23 @@ src/
 ```
 
 Adding a set means adding a folder. Nothing registers it — the glob in
-`src/content/sets/index.ts` picks it up, and the hub lists it newest-first.
+`src/content/sets/index.ts` picks it up, the hub lists it newest-first, and it goes out on
+the RSS feed.
 
 `slug` (declared inside the set) is the permalink identity, so renaming a folder never
 breaks a URL. `date` is the publish date and only sorts the hub; the folder name mirrors
 it by convention.
+
+## Subscribing
+
+The site publishes an RSS feed at
+**https://louislp.github.io/canadian-fun-facts/feed.xml** — one item per set, newest
+first, carrying every slide's heading and facts so a reader shows the whole thing.
+
+`plugins/rss-feed.ts` builds it. Sets are TypeScript modules with image imports, so the
+plugin loads them through a throwaway Vite server rather than parsing files: the feed is
+generated from the same `ALL_SETS` the hub renders. It is emitted into `dist/` at build
+time and served live at `/canadian-fun-facts/feed.xml` by `pnpm dev`.
 
 ## Project setup
 

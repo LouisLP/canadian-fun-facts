@@ -19,6 +19,7 @@
   },
   "include": [
     "vite.config.*",
+    "plugins/**/*.ts",
     "vitest.config.*",
     "cypress.config.*",
     "playwright.config.*",
