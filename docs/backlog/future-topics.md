@@ -126,9 +126,6 @@ easy — NASA imagery is public domain._
 **Québec** — language law and the sign rules; the two referendums and the 1995 margin;
 Carnaval and Bonhomme. _Images: medium._
 
-**Multiculturalism** — the 1971 policy, a world first; the share of the population born
-abroad; the neighbourhood-scale results in Toronto and Vancouver. _Images: medium._
-
 **Screen** — the National Film Board's animation Oscars; the Vancouver and Toronto
 production booms; the CanCon quota that reshaped radio. _Images: hard — modern film
 stills are almost never freely licensed._
