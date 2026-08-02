@@ -17,6 +17,9 @@ const visibleSets = computed(() =>
 )
 
 const newestSlug = ALL_SETS[0]?.slug
+
+// Emitted at build time by the rss-feed plugin, so it is not a router route.
+const feedUrl = `${import.meta.env.BASE_URL}feed.xml`
 </script>
 
 <template>
@@ -45,6 +48,11 @@ const newestSlug = ALL_SETS[0]?.slug
     </main>
 
     <footer class="feed-footer">
+      <p>
+        <a class="rss-link" :href="feedUrl">
+          <Icon icon="lucide:rss" class="icon" /> subscribe by RSS
+        </a>
+      </p>
       <p>~*~ made with zero design skill (on purpose) ~*~</p>
     </footer>
   </div>
@@ -90,5 +98,9 @@ const newestSlug = ALL_SETS[0]?.slug
   color: var(--ink-shout);
   font-weight: bold;
   margin-top: var(--space-3xl);
+}
+
+.rss-link {
+  color: inherit;
 }
 </style>
