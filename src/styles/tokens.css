@@ -177,6 +177,11 @@
   --shadow-text: 2px 2px 0 var(--puck-999);
   --shadow-text-lg: 3px 3px 0 var(--gold-500);
   --shadow-wordart: 4px 4px 0 var(--scrim-medium);
+
+  /* The one soft shadow in the set: a halo that lifts a heading off whatever
+     photo happens to be behind it. Hard offsets alone vanish against a busy
+     image, and on mobile the photos crowd right up to the heading. */
+  --shadow-wordart-halo: 0 0 0.5em var(--scrim-heavy);
   --shadow-photo: 6px 6px 0 var(--scrim-soft);
   --shadow-collage: 0 1vmin 2.4vmin rgb(0 0 0 / 55%);
 
@@ -200,6 +205,11 @@
   /* The signature red-to-white gradient behind every big heading. */
   --gradient-wordart: linear-gradient(180deg, var(--maple-500), var(--puck-000));
   --stroke-wordart: 2px var(--puck-999);
+  /* The gradient is tiled one line tall, so a heading that wraps (which is
+     most of them on a phone) sweeps red-to-white on every line instead of
+     stretching one sweep over the whole block and leaving the last line
+     nearly white. Must match .wordart's line-height. */
+  --leading-wordart: 1.4;
 
   /* Motion — stepped and jittery, not smooth and tasteful. */
   --motion-bob: 1s;
