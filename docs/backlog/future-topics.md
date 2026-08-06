@@ -14,7 +14,7 @@ recipe. Delete the entry from this file once its set publishes.
 Already published, do not re-propose: beavers, inventions, maple, filming & celebrities,
 brands, language & slang, the cold, Indigenous peoples, travel, sports, weird laws,
 mythical creatures, industry & tech, Canada vs Germany, heroes, music, provinces &
-territories.
+territories, birds.
 
 ---
 
@@ -23,10 +23,6 @@ territories.
 **Polar bears** — Churchill as the self-declared polar bear capital and its tundra buggies;
 the bear jail that holds problem bears before release; how sea-ice loss shifts the hunting
 season. _Images: easy._
-
-**Loons and the birds on the money** — the loon's four distinct calls and why it can't walk
-on land; the Canada goose's reputation as a national menace abroad; snowy owls wintering
-far south of the Arctic. _Images: easy._
 
 **Whales of three oceans** — the St. Lawrence beluga population stranded from the Arctic;
 Bay of Fundy right whales and the shipping-lane speed limits; resident orca pods off
