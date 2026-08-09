@@ -1,6 +1,9 @@
 import { defineSet } from '../../schema'
-import crowCloseUpImg from './crow-close-up.webp'
+import canuckWithKnifeImg from './canuck-with-knife.webp'
 import crowOnWireImg from './crow-on-wire.webp'
+import eagleCarvingImg from './eagle-carving.webp'
+import eagleCatchingFishImg from './eagle-catching-fish.webp'
+import eagleOnBoatBowImg from './eagle-on-boat-bow.webp'
 import feedingGeeseImg from './feeding-geese-2006.webp'
 import geeseInFlightImg from './geese-in-flight.webp'
 import geeseStanleyParkImg from './geese-stanley-park.webp'
@@ -13,10 +16,7 @@ import heronNestPairImg from './heron-nest-pair.webp'
 import heronStanleyParkImg from './heron-over-stanley-park.webp'
 import loonAndChickImg from './loon-and-chick.webp'
 import loonOnLakeImg from './loon-on-lake.webp'
-import loonWinterImg from './loon-winter-plumage.webp'
-import loonsMountainLakeImg from './loons-mountain-lake.webp'
 import snowyOwlLandingImg from './snowy-owl-landing.webp'
-import snowyOwlsBoundaryBayImg from './snowy-owls-boundary-bay.webp'
 
 export default defineSet({
   slug: 'birds',
@@ -25,12 +25,12 @@ export default defineSet({
   topic: 'wildlife',
   slides: [
     {
-      heading: 'Loonie by accident',
+      heading: 'Loonies, lemmings, and eagle feathers',
       facts: [
-        'The dollar coin was meant to show a voyageur. The master dies vanished in transit in 1986 after the Mint shipped them by local courier to save **$43.50**.',
-        'Loons can barely walk: their legs sit so far back they shove themselves along on their bellies, and takeoff needs up to **400 metres** of open water.',
-        'The 1986 **Birds of Canada** notes gave every denomination a bird: robin on the $2, loon on the $20, snowy owl on the $50, Canada goose on the $100.',
-        'Quebec adopted the snowy owl as its official bird in **1987**, the same year the loonie entered circulation. It is North America\'s heaviest owl.',
+        'I hope you all remember our dollar coin is called a **loonie** because it has a common loon on one side.',
+        'Loons can barely walk: their legs sit so far back they shove themselves along on their bellies, and takeoff needs up to **400 metres** of open water. That\'s why they\'re actually related to penguins, not ducks!',
+        'Snowy owls swallow lemmings whole, **three to five a day** and over **1,600 a year** for one adult. They hear them moving under the snow.',
+        'Nova Scotia courtrooms have stocked **eagle feathers** since **2018**, offered like a Bible to anyone who would rather affirm the truth holding one.',
       ],
       images: [
         {
@@ -44,34 +44,34 @@ export default defineSet({
           credit: 'Cephas, CC BY-SA 3.0, via Wikimedia Commons',
         },
         {
-          src: loonsMountainLakeImg,
-          alt: 'Two common loons on a calm lake backed by spruce forest and distant mountains',
-          credit: 'Trougnouf, CC BY 4.0, via Wikimedia Commons',
-        },
-        {
-          src: loonWinterImg,
-          alt: 'A common loon in plain grey winter plumage swimming close to the camera',
-          credit: 'Mike\'s Birds, CC BY-SA 2.0, via Wikimedia Commons',
-        },
-        {
           src: snowyOwlLandingImg,
           alt: 'A snowy owl dropping onto a snowbank with wings spread and talons forward against a blue sky',
           credit: 'Bert de Tilly, CC BY-SA 4.0, via Wikimedia Commons',
         },
         {
-          src: snowyOwlsBoundaryBayImg,
-          alt: 'Two snowy owls perched on driftwood in a winter marsh at Boundary Bay, British Columbia',
-          credit: 'Ingrid Taylar, CC BY 2.0, via Wikimedia Commons',
+          src: eagleOnBoatBowImg,
+          alt: 'A bald eagle perched on the bow of a moored aluminum boat, snow-covered mountains behind',
+          credit: 'inbox, source unverified',
+        },
+        {
+          src: eagleCatchingFishImg,
+          alt: 'A bald eagle skimming open water with its talons down, snatching a fish from the surface',
+          credit: 'Lorie Shaull, CC BY-SA 2.0, via Wikimedia Commons',
+        },
+        {
+          src: eagleCarvingImg,
+          alt: 'A carved and painted wooden eagle with outstretched wings on top of a Northwest Coast pole in British Columbia',
+          credit: 'Chris English, CC BY-SA 3.0, via Wikimedia Commons',
         },
       ],
     },
     {
       heading: 'Honk if you\'re Canadian',
       facts: [
-        'Britain did this to itself: Canada geese joined a royal waterfowl collection in London\'s St James\'s Park in the late 1600s, and the UK population now tops **150,000**.',
+        'Britain did this to itself: Canada geese joined a royal waterfowl collection in London\'s St James\'s Park in the late 1600s, and the UK population now tops **150,000**. Oops.',
         'The giant Canada goose was written off as extinct until a flock turned up wintering in Rochester, Minnesota, in **1962**.',
         'A flock took out both engines of US Airways 1549 shortly after takeoff in 2009, which is how the plane ended up in the **Hudson River**.',
-        'Louis was hand-feeding them out of his palm in **2006**; adult geese hiss, charge, and beat intruders with their wings.',
+        'I was hand-feeding them out of my palm back in **2006**; adult geese hiss, charge, and beat intruders with their wings. Only clueless tourists and kids are this brave',
       ],
       images: [
         {
@@ -121,9 +121,9 @@ export default defineSet({
           credit: 'Louis Lascelles-Palys',
         },
         {
-          src: crowCloseUpImg,
-          alt: 'A crow standing on a white railing in sunlight, its feathers showing a blue sheen',
-          credit: 'Gordon Leggett, CC BY-SA 4.0, via Wikimedia Commons',
+          src: canuckWithKnifeImg,
+          alt: 'A crow standing on gravel with a serrated wooden-handled kitchen knife gripped in its beak, a red band on one leg',
+          credit: 'inbox, source unverified',
         },
         {
           src: heronStanleyParkImg,
