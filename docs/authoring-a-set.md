@@ -42,6 +42,10 @@ All reader-facing prose follows [docs/copy-style.md](copy-style.md): one sentenc
 em-dashes, no rhetorical questions, no lead-ins. Headings and the title get playful puns.
 Verify every number against a primary source before committing it.
 
+A fact does not have to be surprising. Description, context and "here is what is on the
+$20" are all in scope; the bar is true, punchy and illustratable. See
+[what counts as a fact](copy-style.md#what-counts-as-a-fact).
+
 Personal connections to Louis are welcome and worth hunting for — hometown, family, school,
 jobs, trips, teams — one clause inside a fact, third person, only where it's true. Ask him
 for one if a slide looks like it has an obvious hook you don't know the answer to.

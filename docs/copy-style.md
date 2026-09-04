@@ -4,6 +4,22 @@ Rules for reader-facing prose in sets: **facts**, slide **headings**, set **titl
 
 Out of scope: **alt text** (plainly descriptive, no jokes, no flourishes) and **credits** (attribution strings only).
 
+## What counts as a fact
+
+The bar is **true, punchy, and illustratable**. It is not **surprising**.
+
+Any factual claim about Canada or something Canadian qualifies: description, context,
+history, numbers, how a thing works, what is printed on the money. A fact does not have to
+be trivia nobody in the room knew. Plenty of the strongest slides are plain description,
+written punchily.
+
+"Lead with the surprising bit" below is about ordering **within** a fact you have already
+chosen. It is not a filter on which facts make the cut. If a slide's subject only supports
+straight description, write the straight description.
+
+The two real gates are elsewhere: every claim is verified before it ships
+([authoring-a-set](authoring-a-set.md) step 3), and the subject has to carry four images.
+
 ## Facts
 
 - Soft cap **~25 words**, one sentence. Fragments welcome; sacrifice grammar for concision ("**Basketball**: invented 1891, Almonte, Ontario").
