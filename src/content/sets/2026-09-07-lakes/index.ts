@@ -25,7 +25,6 @@ export default defineSet({
         'Canada shares four of the five. Lake Michigan is entirely American, and the largest lake on Earth sitting inside a single country.',
         'Trump signed an executive order on **27 August 2026** renaming Lake Ontario "Lake America"; swap it in and HOMES rearranges to **SHAME**.',
         '**Lake Superior**: the world\'s largest freshwater lake by surface area at **82,100 km²**, more than New Brunswick and PEI combined.',
-        'Point Pelee reaches into Lake Erie at the southern tip of mainland Canada, level with **Rome** and **Barcelona**.',
       ],
       images: [
         {
@@ -67,7 +66,6 @@ export default defineSet({
         '**Great Slave Lake** in the Northwest Territories is the deepest lake in North America, dropping to **614 m** in Christie Bay.',
         'Lake Louise and Moraine Lake get their colour from **rock flour**: glacier-ground silt hanging in the meltwater, scattering blue and green back out.',
         'BC\'s **Spotted Lake**, Kłlil\'xʷ to the Syilx Okanagan, evaporates into dozens of mineral pools each summer and has long been treated as a healing site.',
-        '**Abraham Lake** is artificial, dammed in 1972, and freezes over stacks of trapped **methane bubbles** rising off rotting plants on the bed.',
       ],
       images: [
         {
