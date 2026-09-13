@@ -1,17 +1,11 @@
 import { defineSet } from '../../schema'
-import bankNoteCollectionImg from './bank-note-collection.webp'
-import bluenose1921Img from './bluenose-1921.webp'
-import devilsHead1000Img from './devils-head-1000.webp'
 import dimeBluenoseImg from './dime-bluenose.webp'
 import fiftyDollarNoteImg from './fifty-dollar-note.webp'
 import fiveDollarNoteImg from './five-dollar-note.webp'
 import hundredDollarNoteImg from './hundred-dollar-note.webp'
 import loonieImg from './loonie.webp'
 import nickelBeaverImg from './nickel-beaver.webp'
-import note251935Img from './note-25-1935.webp'
-import penny1952Img from './penny-1952.webp'
 import penny2012Img from './penny-2012.webp'
-import pennyPileImg from './penny-pile.webp'
 import quarterCaribouImg from './quarter-caribou.webp'
 import tenDollarNoteImg from './ten-dollar-note.webp'
 import toonieImg from './toonie.webp'
@@ -21,7 +15,7 @@ import violaDesmondImg from './viola-desmond.webp'
 export default defineSet({
   slug: 'money',
   date: '2026-08-17',
-  title: 'Canadian Money: Making Change',
+  title: 'Money: Making Change',
   topic: 'business',
   slides: [
     {

@@ -21,7 +21,7 @@ import snowyOwlLandingImg from './snowy-owl-landing.webp'
 export default defineSet({
   slug: 'birds',
   date: '2026-08-10',
-  title: 'Birds of Canada: Loonie Tunes',
+  title: 'Birds: Loonie Tunes',
   topic: 'wildlife',
   slides: [
     {

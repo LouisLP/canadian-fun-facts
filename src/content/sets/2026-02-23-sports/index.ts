@@ -27,7 +27,7 @@ import gretzkyPointsImg from './wayne-gretzky-points.webp'
 export default defineSet({
   slug: 'sports',
   date: '2026-02-23',
-  title: 'Sports: Canada\'s Home Field Advantage',
+  title: 'Sports: Home Field Advantage',
   topic: 'sports',
   slides: [
     {

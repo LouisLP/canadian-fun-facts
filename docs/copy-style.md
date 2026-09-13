@@ -34,7 +34,7 @@ one wherever it's genuinely there: his hometown, family, schools, jobs, trips, t
 he played, the brands he grew up on.
 
 - Keep it to a clause inside the fact, not a second sentence. The surprising bit still leads.
-- Third person, like the rest of the copy ("**Louis' hometown**: ...", "Louis' family still tapped trees here"), never "I" or "my". The site is public and read without him narrating.
+- First person ("where I was born and raised", "my family still tapped trees here"). Never name Louis in the copy.
 - Only where it's true. Don't manufacture a connection to fill a slide, and don't put one on every fact.
 - Personal connections often come from an image in the inbox (which he'll tell you about).
 
@@ -50,6 +50,10 @@ he played, the brands he grew up on.
 ## Headings and titles
 
 Puns and playful hooks welcome ("Dam fine engineering"). The banned list above still applies.
+
+Titles skip "Canada" / "Canadian": every set is Canadian, so the word is noise ("Booze & Bud: High Spirits", not "Canadian Booze & Bud: High Spirits").
+
+A slide's first fact can be a personal, texture-of-the-country observation rather than a hard stat; it sets the scene for the harder facts after it.
 
 ## Example
 

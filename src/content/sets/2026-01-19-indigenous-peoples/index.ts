@@ -15,7 +15,7 @@ import welcomeFigureImg from './welcome-figure.webp'
 export default defineSet({
   slug: 'indigenous-peoples',
   date: '2026-01-19',
-  title: 'Canada\'s First Peoples',
+  title: 'First Peoples',
   topic: 'people',
   slides: [
     {

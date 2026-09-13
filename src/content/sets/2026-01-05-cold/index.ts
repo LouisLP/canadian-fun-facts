@@ -19,7 +19,7 @@ import whitehorseWinterTreesImg from './whitehorse-winter-trees.webp'
 export default defineSet({
   slug: 'cold',
   date: '2026-01-05',
-  title: 'The Cold: Canada\'s Deep Freeze',
+  title: 'The Cold: Deep Freeze',
   topic: 'weather',
   slides: [
     {

@@ -13,7 +13,7 @@ away from the edges.
 
 ## 2025-10-06-inventions
 
-_Canadian Inventions: You're Welcome, World_
+_Inventions: You're Welcome, World_
 
 ### Invented it, ate it — has 4, need 2
 
@@ -48,7 +48,7 @@ _Canadian Inventions: You're Welcome, World_
 
 ## 2025-10-27-maple
 
-_Maple: Canada's Liquid Gold_
+_Maple: Liquid Gold_
 
 ### The sweetest superpower — has 4, need 2
 
@@ -92,7 +92,7 @@ _Maple: Canada's Liquid Gold_
 
 ## 2025-11-10-filming-celebrities
 
-_Hollywood North: Canada's Star Factory_
+_Hollywood North: The Star Factory_
 
 ### Hollywood North — has 4, need 2
 
@@ -136,7 +136,7 @@ _Hollywood North: Canada's Star Factory_
 
 ## 2025-12-01-brands
 
-_Retail Therapy, Canadian Style_
+_Brands: Retail Therapy_
 
 ### Stretch goals — has 4, need 2
 
@@ -180,7 +180,7 @@ _Retail Therapy, Canadian Style_
 
 ## 2025-12-15-language
 
-_Talk Canadian to Me_
+_Language: Talk Eh to Me_
 
 ### The everyday, eh? — has 4, need 2
 
@@ -214,7 +214,7 @@ _Talk Canadian to Me_
 
 ## 2026-01-05-cold
 
-_The Cold: Canada's Deep Freeze_
+_The Cold: Deep Freeze_
 
 ### The world's biggest winter party — has 4, need 2
 
@@ -258,7 +258,7 @@ _The Cold: Canada's Deep Freeze_
 
 ## 2026-01-19-indigenous-peoples
 
-_Canada's First Peoples_
+_First Peoples_
 
 ### A country named "village" — has 4, need 2
 
@@ -336,7 +336,7 @@ _Travel: Gate Expectations_
 
 ## 2026-02-23-sports
 
-_Sports: Canada's Home Field Advantage_
+_Sports: Home Field Advantage_
 
 ### Three's company — has 4, need 2
 
@@ -414,7 +414,7 @@ _Weird Laws: Mind the Fine Print_
 
 ## 2026-04-06-mythical-creatures
 
-_Mythical Creatures: Canada's Cryptid Roll Call_
+_Mythical Creatures: Cryptid Roll Call_
 
 ### Something in the lake — has 4, need 2
 
@@ -513,7 +513,7 @@ _Cultural Shifts: My Notes From Both Sides_
 
 ## 2026-05-25-heroes
 
-_Canadian Heroes: North Stars_
+_Heroes: North Stars_
 
 ### Canadians in orbit — has 4, need 2
 
@@ -541,7 +541,7 @@ _Canadian Heroes: North Stars_
 
 ## 2026-06-15-music
 
-_Music: Canada on Repeat_
+_Music: On Repeat_
 
 ### Born to chart — has 4, need 2
 

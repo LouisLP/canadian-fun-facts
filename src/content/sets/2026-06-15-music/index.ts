@@ -27,7 +27,7 @@ import weekndImg from './weeknd.webp'
 export default defineSet({
   slug: 'music',
   date: '2026-06-15',
-  title: 'Music: Canada on Repeat',
+  title: 'Music: On Repeat',
   topic: 'culture',
   slides: [
     {

@@ -47,9 +47,6 @@ butter tart and Nanaimo bar photos exist; fewer of the arguments._
 moratorium and the town it emptied; PEI mussels and oyster farming. _Images: easy —
 strong historical fishery archive material._
 
-**The Canadian bar** — the Caesar and the clamato problem; rye whisky's legal definition;
-Okanagan and Niagara icewine made from frozen grapes. _Images: medium._
-
 ## History
 
 **The fur trade** — the Hudson's Bay Company chartered in 1670 and once holding a

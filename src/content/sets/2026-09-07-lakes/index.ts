@@ -15,7 +15,7 @@ import spottedLakeImg from './spotted-lake.webp'
 export default defineSet({
   slug: 'lakes',
   date: '2026-09-07',
-  title: 'Canada\'s Lakes: In Too Deep',
+  title: 'Lakes: In Too Deep',
   topic: 'geography',
   slides: [
     {
