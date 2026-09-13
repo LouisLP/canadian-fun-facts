@@ -19,7 +19,7 @@ import sportChekEdmontonImg from './sportchek-edmonton.webp'
 export default defineSet({
   slug: 'brands',
   date: '2025-12-01',
-  title: 'Retail Therapy, Canadian Style',
+  title: 'Brands: Retail Therapy',
   topic: 'business',
   slides: [
     {

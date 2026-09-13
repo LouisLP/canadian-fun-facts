@@ -19,7 +19,7 @@ import tubingTapImg from './tubing-tap.webp'
 export default defineSet({
   slug: 'maple',
   date: '2025-10-27',
-  title: 'Maple: Canada\'s Liquid Gold',
+  title: 'Maple: Liquid Gold',
   topic: 'food',
   slides: [
     {

@@ -19,7 +19,7 @@ import wayneGretzkyImg from './wayne-gretzky.webp'
 export default defineSet({
   slug: 'filming-celebrities',
   date: '2025-11-10',
-  title: 'Hollywood North: Canada\'s Star Factory',
+  title: 'Hollywood North: The Star Factory',
   topic: 'culture',
   slides: [
     {

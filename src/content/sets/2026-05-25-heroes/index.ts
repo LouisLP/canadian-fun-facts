@@ -21,7 +21,7 @@ import violaImg from './viola-desmond-portrait.webp'
 export default defineSet({
   slug: 'heroes',
   date: '2026-05-25',
-  title: 'Canadian Heroes: North Stars',
+  title: 'Heroes: North Stars',
   topic: 'people',
   slides: [
     {
