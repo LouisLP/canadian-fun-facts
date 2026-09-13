@@ -15,15 +15,15 @@ import tofinoBrewingGrowlersImg from './tofino-brewing-growlers.webp'
 export default defineSet({
   slug: 'drugs-and-alcohol',
   date: '2026-09-14',
-  title: 'Canadian Booze & Bud: High Spirits',
+  title: 'Booze & Bud: High Spirits',
   topic: 'culture',
   slides: [
     {
       heading: 'True north, strong and tipsy',
       facts: [
-        '**Kitchener-Waterloo Oktoberfest**, billed as the biggest outside Munich, has run since **1969** and draws around 700,000 people a year.',
+        'Canada runs on cheap, easy-drinking lagers, but the craft beer scene is serious too, and surprisingly, there are **860 wineries** from the Okanagan to Niagara.',
         '**Molson**, founded in Montreal in **1786**, is North America\'s oldest brewery; **Moosehead** (1867) is Canada\'s oldest independent one.',
-        'Canada\'s first craft brewery poured its first pint in **1982** at Horseshoe Bay, just outside Vancouver, where Louis was born and raised.',
+        'Canada\'s first craft brewery poured its first pint in **1982** at Horseshoe Bay, just outside Vancouver, where I was born and raised.',
         'The **Caesar** was invented in Calgary in **1969**: vodka, clam and tomato juice. Canadians now drink about 400 million a year.',
         'American booze has been off most provincial shelves since **March 2025** over Trump\'s tariffs; Ontario still refuses to restock without a trade deal.',
       ],
@@ -66,7 +66,7 @@ export default defineSet({
         'Legal since **17 October 2018**: Canada was the second country to legalize recreational cannabis nationwide, after Uruguay, and the first in the G7.',
         'In Vancouver, a joint after work gets the same shrug as a glass of wine: **31%** of BC adults used cannabis in the past year.',
         'Legal age: **18** in Alberta, **21** in Quebec, 19 everywhere else. A Quebecer can buy a beer three years before a joint.',
-        'Edibles hit legal shelves in **December 2019**, but brownies were always homemade: Louis stirred a bag into a batch for his music video Superfast at 19.',
+        'Edibles hit legal shelves in **December 2019**, but brownies were always homemade: I stirred a bag into a batch for my music video Superfast at 19.',
         'Canopy Growth grew weed inside an abandoned **Hershey chocolate factory** in Smiths Falls, Ontario, then sold it back to Hershey in 2023 for **$53 million**.',
       ],
       images: [
@@ -77,7 +77,7 @@ export default defineSet({
         },
         {
           src: superfastBrowniesImg,
-          alt: 'Black-and-white video still of Louis leaning into frame beside a mixing bowl of brownie batter, holding up a small bag of dried cannabis',
+          alt: 'Black-and-white video still of a young man leaning into frame beside a mixing bowl of brownie batter, holding up a small bag of dried cannabis',
           credit: 'Louis Lascelles-Palys',
         },
         {

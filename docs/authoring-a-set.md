@@ -47,7 +47,7 @@ $20" are all in scope; the bar is true, punchy and illustratable. See
 [what counts as a fact](copy-style.md#what-counts-as-a-fact).
 
 Personal connections to Louis are welcome and worth hunting for — hometown, family, school,
-jobs, trips, teams — one clause inside a fact, third person, only where it's true. Ask him
+jobs, trips, teams — one clause inside a fact, first person, only where it's true. Ask him
 for one if a slide looks like it has an obvious hook you don't know the answer to.
 
 ## 4. Source images — exactly four per slide
