@@ -15,6 +15,21 @@
   vertical-align: -0.125em;
 }
 
+/* Headings even their lines out so a two-line title isn't one long line and a
+   stray word; prose just avoids leaving one word alone on its last line.
+   Browsers without support fall back to normal wrapping. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+}
+
 body {
   margin: 0;
   font-family: var(--font-display);
