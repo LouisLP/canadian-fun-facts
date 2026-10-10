@@ -1,14 +1,18 @@
 import bantingBestImg from '../2025-10-06-inventions/banting-best.webp'
 import naismithImg from '../2025-10-06-inventions/naismith.webp'
+import syrupBottleImg from '../2025-10-27-maple/syrup-bottle.webp'
 import productsImg from '../2025-10-27-maple/syrup-products.webp'
 import frozenYukonRiverImg from '../2026-01-05-cold/frozen-yukon-river.webp'
 import ratPosterImg from '../2026-06-29-provinces-territories/alberta-rat-poster.webp'
 import polarBearImg from '../2026-06-29-provinces-territories/churchill-polar-bear.webp'
 import hopewellImg from '../2026-06-29-provinces-territories/hopewell-rocks.webp'
+import beaverFlagImg from '../2026-07-20-beavers/beaver-canada-day-flag.webp'
+import parliamentHillImg from '../2026-07-27-multiculturalism/canada-day-parliament-hill.webp'
 import tojoImg from '../2026-07-27-multiculturalism/chef-tojo.webp'
 import sushiPlatterImg from '../2026-07-27-multiculturalism/sushi-platter.webp'
 import dildoSignImg from '../2026-08-03-place-names/dildo-hillside-sign.webp'
 import canuckWithKnifeImg from '../2026-08-10-birds/canuck-with-knife.webp'
+import eagleCarvingImg from '../2026-08-10-birds/eagle-carving.webp'
 import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import { defineSet } from '../../schema'
@@ -114,6 +118,37 @@ export default defineSet({
           src: moraineLakeImg,
           alt: 'Moraine Lake at sunrise, its blue water below the Valley of the Ten Peaks lit orange along the summits',
           credit: 'inbox, source unverified',
+        },
+      ],
+    },
+    {
+      heading: 'Close to home',
+      facts: [
+        'My dad, **Ted Palys**, is a criminology professor who often teaches a course on Aboriginal justice, and was honoured with an **eagle feather**.',
+        'I have never been prouder of home: **Mark Carney** is doing a great job representing us and standing up to the big evil below. **Elbows up!**',
+        'Reach out any time for **Canada recommendations**, or when you just want to hear some good old Canadian **politeness**.',
+        'And for the record: **maple syrup** is the most incredible thing.',
+      ],
+      // TODO: the four images below are stand-ins borrowed from earlier sets;
+      // swap in personal photos (Dad / the feather, Carney or Elbows up, etc.).
+      images: [
+        {
+          src: eagleCarvingImg,
+          alt: 'A carved and painted wooden eagle with outstretched wings on top of a Northwest Coast pole in British Columbia',
+          credit: 'Chris English, CC BY-SA 3.0, via Wikimedia Commons',
+        },
+        {
+          src: parliamentHillImg,
+          alt: 'A packed Canada Day crowd with flags and raised arms on Parliament Hill in Ottawa',
+        },
+        {
+          src: syrupBottleImg,
+          alt: 'A maple-leaf-shaped glass bottle of Canadian maple syrup beside pancakes',
+          credit: 'Jan Smith, CC BY 2.0, via Wikimedia Commons',
+        },
+        {
+          src: beaverFlagImg,
+          alt: 'A beaver holding a small Canadian flag and wearing a red maple-leaf hat',
         },
       ],
     },
