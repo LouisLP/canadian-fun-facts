@@ -47,8 +47,8 @@ const prettyDate = computed(() =>
 }
 
 .kicker {
-  margin-bottom: var(--space-lg);
-  font-size: var(--text-2xl);
+  margin-bottom: var(--space-md);
+  font-size: var(--text-lg);
 }
 
 /* Bigger than a slide heading: this is the one place the set's name gets the
@@ -123,7 +123,7 @@ const prettyDate = computed(() =>
   }
 
   .kicker {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
   }
 
   .byline {

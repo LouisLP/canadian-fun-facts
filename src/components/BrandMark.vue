@@ -3,8 +3,8 @@
      font-size of wherever it's used.
 
      Two variants of the same mark: `colour` (red, gold shadow, emoji leaves)
-     for light backgrounds, `mono` (all white) for the dark presentation stage,
-     where the red and gold turn to mud. -->
+     for light backgrounds, `mono` (all white, regular weight) for the dark
+     presentation stage, where the red and gold turn to mud. -->
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
@@ -38,8 +38,10 @@ const leaf = computed(() => props.variant === 'mono' ? 'mdi:leaf-maple' : 'twemo
   text-shadow: var(--shadow-brand);
 }
 
+/* A quiet sign-off rather than a headline: the stage's heading should win. */
 .mono {
   color: var(--ink-brand-mono);
+  font-weight: normal;
   text-shadow: var(--shadow-brand-mono);
 }
 </style>
