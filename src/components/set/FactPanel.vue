@@ -44,10 +44,13 @@ defineProps<{ slide: Slide }>()
   text-align: left;
 }
 
-/* Overriding the token rather than line-height keeps .wordart's one-sweep-
-   per-line gradient in step with the tighter lines. */
+/* Slide headings drop the gradient fill for a solid one: the gradient clips
+   descenders once the lines are tightened, and two-line headings read as one
+   block better without it. */
 .wordart {
-  --leading-wordart: var(--leading-wordart-tight);
+  background: none;
+  color: var(--ink-shout);
+  line-height: var(--leading-wordart-tight);
 }
 
 .facts {
