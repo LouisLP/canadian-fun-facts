@@ -22,7 +22,7 @@ const prettyDate = computed(() =>
 <template>
   <section class="panel title-panel">
     <div class="copy">
-      <BrandMark class="kicker" />
+      <BrandMark variant="mono" class="kicker" />
       <h1 class="wordart">
         {{ title }}
       </h1>

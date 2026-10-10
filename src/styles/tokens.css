@@ -105,7 +105,8 @@
   --ink-heading: var(--glacier-800);
   --ink-fact: var(--puck-200); /* fact text on the dark stage */
   --ink-shout: var(--maple-500);
-  --ink-brand: var(--maple-600); /* the show's name, wherever it appears */
+  --ink-brand: var(--maple-600); /* the show's name, on a light background */
+  --ink-brand-mono: var(--puck-000); /* the show's name, on the dark stage */
   --ink-muted: var(--puck-500);
   --ink-faint: var(--puck-600);
   --ink-subtle: var(--puck-400);
@@ -176,6 +177,7 @@
   /* Shadows — hard offsets, never a soft blur. */
   --shadow-text: 2px 2px 0 var(--puck-999);
   --shadow-brand: 3px 3px 0 var(--gold-500);
+  --shadow-brand-mono: 3px 3px 0 var(--scrim-medium);
   --shadow-wordart: 4px 4px 0 var(--scrim-medium);
 
   /* The one soft shadow in the set: a halo that lifts a heading off whatever
