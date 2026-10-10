@@ -5,7 +5,7 @@ Every colour, size, border and duration was a literal, repeated across five comp
 Tokens now live in `src/styles/tokens.css` as CSS custom properties, in two layers:
 
 1. **Primitives** — raw values in Canadiana-named ramps: `--puck-*` (neutrals, snow down to hockey puck), `--maple-*` (reds), `--glacier-*` (blues), `--butter-tart-*`/`--gold-*` (warms), `--jersey-*` (greens).
-2. **Semantics** — what a value is _for_: `--surface-stage`, `--ink-heading`, `--border-chrome`, `--motion-bob`.
+2. **Semantics** — what a value is _for_: `--surface-stage`, `--ink-heading`, `--border-chrome`, `--motion-hover`.
 
 **Components only ever use semantic tokens.** A component reaching past a semantic to a primitive means a semantic token is missing; the fix is to add one here, not to reach through.
 
@@ -19,7 +19,7 @@ This site is deliberately Geocities-bad — ridge borders, Comic Sans, blinking 
 
 ## Shared presentation primitives are global, not scoped
 
-`.panel`, `.wordart` and the `bob` keyframes are used by three separate panel components that must render identically. Scoped `@keyframes bob` would be duplicated per component and drift, so these live in `src/styles/presentation.css` as global classes.
+`.panel` and `.wordart` are used by several separate panel components that must render identically. Scoped copies would be duplicated per component and drift, so these live in `src/styles/presentation.css` as global classes. (The `bob` keyframes used to live here too, before the floating animation was dropped.)
 
 ## Consequences
 

@@ -44,15 +44,6 @@ defineProps<{ slide: Slide }>()
   text-align: left;
 }
 
-/* Slide headings drop the gradient fill for a solid one: the gradient clips
-   descenders once the lines are tightened, and two-line headings read as one
-   block better without it. */
-.wordart {
-  background: none;
-  color: var(--ink-on-stage);
-  line-height: var(--leading-wordart-tight);
-}
-
 .facts {
   list-style: none;
   display: flex;

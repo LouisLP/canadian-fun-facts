@@ -1,5 +1,6 @@
 <!-- The opening panel of a set: the show's name and the set's own down the
-     left, a fan of the set's photos on the right — the same split as a slide. -->
+     left, a fan of each slide's lead photo on the right — the same split as a
+     slide. -->
 <script setup lang="ts">
 import type { IsoDate, SlideImage } from '../../content/schema'
 import { computed } from 'vue'
@@ -26,7 +27,7 @@ const prettyDate = computed(() =>
       <h1 class="wordart">
         {{ title }}
       </h1>
-      <p class="meta">
+      <p class="byline">
         <time :datetime="date">{{ prettyDate }}</time>
         <span class="subtitle">(in Comic Sans)</span>
       </p>
@@ -56,18 +57,15 @@ const prettyDate = computed(() =>
   text-shadow: var(--shadow-text);
 }
 
-/* Solid white rather than the house gradient, matching the slide headings, and
-   bigger: this is the one place the set's name gets the whole stage. */
+/* Bigger than a slide heading: this is the one place the set's name gets the
+   whole stage. */
 .wordart {
-  background: none;
-  color: var(--ink-on-stage);
   font-size: var(--text-title);
-  line-height: var(--leading-wordart-tight);
   max-width: 16ch;
 }
 
 /* The date and the joke sit under a red rule, like a byline. */
-.meta {
+.byline {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -118,7 +116,7 @@ const prettyDate = computed(() =>
 }
 
 /* Phones and portrait screens: the copy alone, centred. A fan squeezed under
-   the title would only crowd it. */
+   the heading would only crowd it. */
 @media (max-width: 1000px) {
   .title-panel {
     grid-template-columns: minmax(0, 1fr);
@@ -126,11 +124,11 @@ const prettyDate = computed(() =>
   }
 
   .wordart,
-  .meta {
+  .byline {
     margin-inline: auto;
   }
 
-  .meta {
+  .byline {
     justify-content: center;
   }
 

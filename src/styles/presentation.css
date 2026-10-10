@@ -2,8 +2,7 @@
  * Presentation primitives, shared by every panel in the set view.
  *
  * These are global rather than scoped because the panels are separate
- * components that must render identically — a scoped `@keyframes bob` would be
- * duplicated per component and drift.
+ * components that must render identically.
  */
 
 /* A full-viewport scroll-snap section. */
@@ -22,32 +21,14 @@
   background: var(--surface-stage);
 }
 
-/* The house heading treatment: red-to-white fill, black stroke, hard shadow. */
+/* The house heading treatment: solid white fill, black stroke, hard shadow. */
 .wordart {
   font-size: var(--text-wordart);
-  background: var(--gradient-wordart);
-  /* One sweep per line rather than one per block — see --leading-wordart. */
-  background-size: 100% calc(var(--leading-wordart) * 1em);
-  background-repeat: repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--ink-on-stage);
   -webkit-text-stroke: var(--stroke-wordart);
   filter: drop-shadow(var(--shadow-wordart)) drop-shadow(var(--shadow-wordart-halo));
   transform: rotate(-1deg);
   margin: 0;
   max-width: 24ch;
-  /* Keep above 1 so descenders (g, p, y) aren't clipped by the
-     background-clip: text box. */
   line-height: var(--leading-wordart);
-}
-
-@keyframes bob {
-  from {
-    transform: translateY(-6px);
-  }
-
-  to {
-    transform: translateY(6px);
-  }
 }
