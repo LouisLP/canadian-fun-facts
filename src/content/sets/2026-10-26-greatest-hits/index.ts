@@ -23,7 +23,7 @@ export default defineSet({
   slug: 'greatest-hits',
   date: '2026-10-26',
   title: 'Greatest Hits: One for the Road',
-  topic: 'culture',
+  topic: 'people',
   slides: [
     {
       heading: 'Made here, loved everywhere',
