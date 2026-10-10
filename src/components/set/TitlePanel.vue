@@ -1,44 +1,141 @@
-<!-- The opening panel of a set: the show's name, then the set's own. -->
+<!-- The opening panel of a set: the show's name and the set's own down the
+     left, a fan of the set's photos on the right — the same split as a slide. -->
 <script setup lang="ts">
-import type { IsoDate } from '../../content/schema'
+import type { IsoDate, SlideImage } from '../../content/schema'
+import { computed } from 'vue'
 
-defineProps<{ title: string, date: IsoDate }>()
+const props = defineProps<{ title: string, date: IsoDate, covers: SlideImage[] }>()
+
+// Parsed as UTC and printed as UTC so the day never slips across a timezone.
+const prettyDate = computed(() =>
+  new Date(`${props.date}T00:00:00Z`).toLocaleDateString('en-CA', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }),
+)
 </script>
 
 <template>
   <section class="panel title-panel">
-    <div class="bob main-title" aria-hidden="true">
-      Louis' Fun Facts
+    <div class="copy">
+      <p class="kicker">
+        Louis' Fun Facts
+      </p>
+      <h1 class="wordart">
+        {{ title }}
+      </h1>
+      <p class="meta">
+        <time :datetime="date">{{ prettyDate }}</time>
+        <span class="subtitle">(in Comic Sans)</span>
+      </p>
     </div>
-    <h1 class="wordart">
-      {{ title }}
-    </h1>
-    <p class="subtitle">
-      (in Comic Sans)
-    </p>
-    <p class="date">
-      {{ date }}
-    </p>
+    <div class="fan" aria-hidden="true">
+      <img v-for="cover in covers" :key="cover.src" :src="cover.src" alt="" class="fan-photo">
+    </div>
   </section>
 </template>
 
 <style scoped>
-.main-title {
+.title-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: var(--space-4xl);
+  align-items: center;
+  text-align: left;
+}
+
+.kicker {
+  margin: 0 0 var(--space-lg);
+  color: var(--ink-chrome);
+  font-size: var(--text-lg);
+  font-weight: bold;
+  letter-spacing: var(--tracking-kicker);
+  text-transform: uppercase;
+  text-shadow: var(--shadow-text);
+}
+
+/* Solid white rather than the house gradient, matching the slide headings, and
+   bigger: this is the one place the set's name gets the whole stage. */
+.wordart {
+  background: none;
   color: var(--ink-on-stage);
-  font-size: var(--text-2xl);
-  letter-spacing: var(--tracking-shout);
-  padding-bottom: var(--space-xl);
+  font-size: var(--text-title);
+  line-height: var(--leading-wordart-tight);
+  max-width: 16ch;
+}
+
+/* The date and the joke sit under a red rule, like a byline. */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-sm) var(--space-xl);
+  margin: var(--space-2xl) 0 0;
+  padding-top: var(--space-lg);
+  border-top: var(--border-thick) dashed var(--accent-flag);
+  max-width: 32rem;
+  font-size: var(--text-lg);
+  color: var(--ink-on-stage);
+  text-shadow: var(--shadow-text);
 }
 
 .subtitle {
-  font-size: var(--text-xl);
   color: var(--ink-subtle);
-  text-shadow: var(--shadow-text);
 }
 
-.date {
-  font-size: var(--text-sm);
-  color: var(--ink-faint);
-  text-shadow: var(--shadow-text);
+/* The photos stack in one grid cell and fan out by rotation alone, so the
+   pile stays centred however many covers there are. */
+.fan {
+  display: grid;
+  place-items: center;
+}
+
+.fan-photo {
+  grid-area: 1 / 1;
+  width: min(70%, 20rem);
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border: var(--border-frame);
+  background: var(--puck-000);
+  filter: drop-shadow(var(--shadow-photo));
+}
+
+.fan-photo:nth-child(1) {
+  rotate: -10deg;
+  translate: -30% 12%;
+}
+
+.fan-photo:nth-child(2) {
+  rotate: 8deg;
+  translate: 24% -14%;
+}
+
+.fan-photo:nth-child(3) {
+  rotate: -2deg;
+  translate: 0 22%;
+}
+
+/* Phones and portrait screens: the copy alone, centred. A fan squeezed under
+   the title would only crowd it. */
+@media (max-width: 1000px) {
+  .title-panel {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+  }
+
+  .wordart,
+  .meta {
+    margin-inline: auto;
+  }
+
+  .meta {
+    justify-content: center;
+  }
+
+  .fan {
+    display: none;
+  }
 }
 </style>

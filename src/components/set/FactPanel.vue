@@ -49,7 +49,7 @@ defineProps<{ slide: Slide }>()
    block better without it. */
 .wordart {
   background: none;
-  color: var(--ink-shout);
+  color: var(--ink-on-stage);
   line-height: var(--leading-wordart-tight);
 }
 

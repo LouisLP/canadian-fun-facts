@@ -42,12 +42,6 @@
   line-height: var(--leading-wordart);
 }
 
-/* Everything that floats. Owns `transform`, so anything positioned alongside
-   it must use `translate`/`rotate` instead. */
-.bob {
-  animation: bob var(--motion-bob) ease-in-out infinite alternate;
-}
-
 @keyframes bob {
   from {
     transform: translateY(-6px);

@@ -137,9 +137,10 @@
 
   /* Fluid sizes for the presentation view, which must fill any screen. */
   --text-wordart: clamp(1.6rem, 5vw, 3.8rem);
+  --text-title: clamp(2.6rem, 6vw + 1rem, 6rem);
   --text-fact: clamp(0.9rem, 1.4vh + 0.5vw, 1.4rem);
 
-  --tracking-shout: 1.1rem;
+  --tracking-kicker: 0.3em;
 
   /* Space */
   --space-3xs: 0.15rem;
@@ -220,7 +221,6 @@
   --leading-wordart-tight: 1.1;
 
   /* Motion — stepped and jittery, not smooth and tasteful. */
-  --motion-bob: 1s;
   --motion-bob-slow: 1.2s;
   --motion-blink: 0.9s;
   --motion-sway: 1600ms;
