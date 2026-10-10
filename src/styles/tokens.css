@@ -216,6 +216,8 @@
      stretching one sweep over the whole block and leaving the last line
      nearly white. Must match .wordart's line-height. */
   --leading-wordart: 1.4;
+  /* Slide headings sit tighter so a two-line heading reads as one block. */
+  --leading-wordart-tight: 1.1;
 
   /* Motion — stepped and jittery, not smooth and tasteful. */
   --motion-bob: 1s;

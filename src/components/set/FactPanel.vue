@@ -44,6 +44,12 @@ defineProps<{ slide: Slide }>()
   text-align: left;
 }
 
+/* Overriding the token rather than line-height keeps .wordart's one-sweep-
+   per-line gradient in step with the tighter lines. */
+.wordart {
+  --leading-wordart: var(--leading-wordart-tight);
+}
+
 .facts {
   list-style: none;
   display: flex;
