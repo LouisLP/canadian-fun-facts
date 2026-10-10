@@ -17,6 +17,9 @@ const props = defineProps<{ slug: string }>()
 const set = computed(() => findSet(props.slug))
 
 // Title panel + authored slides + auto-appended thank-you panel.
+// The title panel fans out the lead photo of the first three slides.
+const covers = computed(() => set.value?.slides.slice(0, 3).map(slide => slide.images[0]) ?? [])
+
 const sectionCount = computed(() => (set.value?.slides.length ?? 0) + 2)
 
 const { container, current, scrollTo } = useSlideNavigation(sectionCount)
@@ -26,7 +29,7 @@ const { toggle: toggleFullscreen } = useFullscreen()
 <template>
   <div v-if="set" class="wrap">
     <div ref="container" class="scroller">
-      <TitlePanel :title="set.title" :date="set.date" :data-index="0" />
+      <TitlePanel :title="set.title" :date="set.date" :covers="covers" :data-index="0" />
 
       <FactPanel
         v-for="(slide, i) in set.slides"
