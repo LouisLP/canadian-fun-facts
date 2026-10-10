@@ -56,7 +56,6 @@
   --jersey-900: #003300;
 
   /* Scrims — layered over photos and panels, never a flat fill. */
-  --scrim-frost: #ffffffdd;
   --scrim-soft: #00000055;
   --scrim-medium: #00000088;
   --scrim-heavy: #000000cc;
@@ -83,7 +82,7 @@
   /* Surfaces */
   --surface-stage: var(--puck-950); /* presentation backdrop */
   --surface-card: var(--puck-000); /* hub cards, banner */
-  --surface-fact: var(--scrim-frost); /* fact card over a photo */
+  --surface-fact: var(--surface-stage); /* fact card, flush with the slide */
   --surface-chrome: var(--scrim-heavy); /* rail, back link */
   --surface-button: var(--puck-100);
   --surface-button-hover: var(--puck-200);
@@ -104,6 +103,7 @@
   /* Ink */
   --ink-body: var(--puck-800);
   --ink-heading: var(--glacier-800);
+  --ink-fact: var(--puck-200); /* fact text on the dark stage */
   --ink-shout: var(--maple-500);
   --ink-banner: var(--maple-600);
   --ink-muted: var(--puck-500);
@@ -118,6 +118,7 @@
   --accent-flag: var(--maple-500);
   --accent-trim: var(--gold-500);
   --accent-go: var(--jersey-300);
+  --accent-fact-alt: var(--glacier-500); /* every other fact card's border */
   --accent-alarm: var(--maple-500);
   --accent-alarm-ink: var(--butter-tart-400);
 
@@ -183,6 +184,7 @@
      image, and on mobile the photos crowd right up to the heading. */
   --shadow-wordart-halo: 0 0 0.5em var(--scrim-heavy);
   --shadow-photo: 6px 6px 0 var(--scrim-soft);
+  --shadow-photo-lift: 10px 10px 0 var(--scrim-medium);
   --shadow-collage: 0 1vmin 2.4vmin rgb(0 0 0 / 55%);
 
   /* Interaction — a hovered thing lifts off the page and drops a hard shadow
@@ -194,6 +196,10 @@
   --shadow-lift: 4px 4px 0 var(--scrim-soft);
   --shadow-lift-sm: 2px 2px 0 var(--scrim-soft);
   --shadow-press: 0 0 0 var(--scrim-soft);
+
+  /* A hovered slide photo grows a touch and the rest of the grid goes dim. */
+  --scale-photo-hover: 1.05;
+  --filter-photo-dimmed: brightness(0.55) grayscale(0.6);
 
   /* Stepped, not smooth: two frames of animation, like a 1998 rollover GIF. */
   --motion-press: 60ms steps(2, end);
@@ -214,7 +220,6 @@
   /* Motion — stepped and jittery, not smooth and tasteful. */
   --motion-bob: 1s;
   --motion-bob-slow: 1.2s;
-  --motion-bob-fast: 0.8s;
   --motion-blink: 0.9s;
   --motion-sway: 1600ms;
   --motion-sway-offset: -800ms;
@@ -225,7 +230,7 @@
 
   /* Layers */
   --layer-behind: -1;
-  --layer-content: 1;
+  --layer-raised: 1;
 }
 
 /**
@@ -237,6 +242,7 @@
   :root {
     --lift-hover: 0;
     --lift-press: 0;
+    --scale-photo-hover: 1;
     --motion-press: 1ms;
     --motion-hover: 1ms;
   }

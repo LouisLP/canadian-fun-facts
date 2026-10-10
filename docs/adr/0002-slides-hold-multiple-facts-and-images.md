@@ -25,4 +25,4 @@ Clean break — the old `body`/`image` fields are gone, not accepted alongside. 
 
 - Minimums are still compiler-enforced only at ≥1; the 3–4 facts / 4–5 images convention is editorial, like "3 slides per set" was.
 - Every image still requires `alt` and benefits from house clip-art; a slide now needs several, so the clip-art habit gets more exercise.
-- The presentation view lays facts out as a cluster and scatters images around the slide edges — one viewport, no intra-slide scrolling, so conventions above are also a legibility budget: many more than 4 facts or 5 images will not fit a projector legibly.
+- The presentation view lays facts out down the left and tiles images in a grid on the right (originally they were scattered, bobbing, around the slide edges) — one viewport, no intra-slide scrolling, so conventions above are also a legibility budget: many more than 4 facts or 5 images will not fit a projector legibly.

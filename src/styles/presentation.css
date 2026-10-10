@@ -40,10 +40,6 @@
   /* Keep above 1 so descenders (g, p, y) aren't clipped by the
      background-clip: text box. */
   line-height: var(--leading-wordart);
-  /* The slide photos are absolutely positioned siblings, so they'd otherwise
-     paint over the heading on narrow screens where the spots crowd inward. */
-  position: relative;
-  z-index: var(--layer-content);
 }
 
 /* Everything that floats. Owns `transform`, so anything positioned alongside
