@@ -27,8 +27,8 @@ import { Icon } from '@iconify/vue'
 }
 
 .lost h1 {
-  color: var(--ink-banner);
-  text-shadow: var(--shadow-text-lg);
+  color: var(--ink-brand);
+  text-shadow: var(--shadow-brand);
   font-size: var(--text-4xl);
   margin: 0;
 }

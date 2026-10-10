@@ -4,6 +4,7 @@
 import type { Topic } from '../content/topics'
 import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
+import BrandMark from '../components/BrandMark.vue'
 import SetCard from '../components/hub/SetCard.vue'
 import TopicFilter from '../components/hub/TopicFilter.vue'
 import { ALL_SETS } from '../content/sets'
@@ -25,9 +26,7 @@ const feedUrl = `${import.meta.env.BASE_URL}feed.xml`
 <template>
   <div class="feed">
     <header class="banner">
-      <h1>
-        <Icon icon="twemoji:maple-leaf" class="icon" /> Canadian Fun Facts <Icon icon="twemoji:maple-leaf" class="icon" />
-      </h1>
+      <BrandMark as="h1" class="banner-title" />
       <p class="tagline">
         your weekly dose of maple-flavoured knowledge
       </p>
@@ -75,11 +74,8 @@ const feedUrl = `${import.meta.env.BASE_URL}feed.xml`
   margin-bottom: var(--space-lg);
 }
 
-.banner h1 {
+.banner-title {
   font-size: var(--text-3xl);
-  color: var(--ink-banner);
-  text-shadow: var(--shadow-text-lg);
-  margin: 0;
 }
 
 .tagline {

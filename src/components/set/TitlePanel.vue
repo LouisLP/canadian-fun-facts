@@ -4,6 +4,7 @@
 <script setup lang="ts">
 import type { IsoDate, SlideImage } from '../../content/schema'
 import { computed } from 'vue'
+import BrandMark from '../BrandMark.vue'
 
 const props = defineProps<{ title: string, date: IsoDate, covers: SlideImage[] }>()
 
@@ -21,9 +22,7 @@ const prettyDate = computed(() =>
 <template>
   <section class="panel title-panel">
     <div class="copy">
-      <p class="kicker">
-        Louis' Fun Facts
-      </p>
+      <BrandMark class="kicker" />
       <h1 class="wordart">
         {{ title }}
       </h1>
@@ -48,13 +47,8 @@ const prettyDate = computed(() =>
 }
 
 .kicker {
-  margin: 0 0 var(--space-lg);
-  color: var(--ink-chrome);
-  font-size: var(--text-lg);
-  font-weight: bold;
-  letter-spacing: var(--tracking-kicker);
-  text-transform: uppercase;
-  text-shadow: var(--shadow-text);
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-2xl);
 }
 
 /* Bigger than a slide heading: this is the one place the set's name gets the
@@ -126,6 +120,10 @@ const prettyDate = computed(() =>
   .wordart,
   .byline {
     margin-inline: auto;
+  }
+
+  .kicker {
+    font-size: var(--text-lg);
   }
 
   .byline {
