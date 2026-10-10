@@ -61,12 +61,12 @@ defineProps<{ slide: Slide }>()
   background: var(--surface-fact);
   border: var(--border-thick) dashed var(--accent-flag);
   padding: var(--space-fact-pad);
-  transform: rotate(-0.8deg);
+  transform: rotate(-0.4deg);
 }
 
 /* Alternating tilt and colour so a stack never looks like a tidy list. */
 .fact-card:nth-child(even) {
-  transform: rotate(0.8deg);
+  transform: rotate(0.4deg);
   border-color: var(--accent-fact-alt);
 }
 
