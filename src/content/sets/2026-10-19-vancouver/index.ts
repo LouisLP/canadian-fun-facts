@@ -1,11 +1,22 @@
-import type { SlideImage } from '../../schema'
 import { defineSet } from '../../schema'
-import placeholderImg from './placeholder.webp'
-
-// TODO: swap for real photos. Each alt doubles as the shot to find.
-function placeholder(shot: string): SlideImage {
-  return { src: placeholderImg, alt: `Placeholder: ${shot}`, credit: 'placeholder' }
-}
+import canadaPlaceImg from './canada-place.webp'
+import councilTentImg from './council-tent.webp'
+import cypressSkiRunImg from './cypress-ski-run.webp'
+import englishBayInukshukImg from './english-bay-inukshuk.webp'
+import expo86LogoImg from './expo-86-logo.webp'
+import expo86MonorailImg from './expo-86-monorail.webp'
+import greyBeachImg from './grey-beach.webp'
+import grouseViewImg from './grouse-view.webp'
+import mainStreetImg from './main-street.webp'
+import phyllisCormackImg from './phyllis-cormack.webp'
+import rainyWindshieldImg from './rainy-windshield.webp'
+import robsonUmbrellasImg from './robson-umbrellas.webp'
+import scienceWorldImg from './science-world.webp'
+import seawallImg from './seawall.webp'
+import snowySkylineImg from './snowy-skyline.webp'
+import stanleyParkAerialImg from './stanley-park-aerial.webp'
+import steamClockImg from './steam-clock.webp'
+import whistlerSkierImg from './whistler-skier.webp'
 
 export default defineSet({
   slug: 'vancouver',
@@ -22,12 +33,36 @@ export default defineSet({
         'On a clear day, you can ski the North Shore in the morning and walk the beach at English Bay in the afternoon.',
       ],
       images: [
-        placeholder('umbrellas on Robson or Granville Street in the rain'),
-        placeholder('the Seawall on a grey, drizzly day'),
-        placeholder('rain on a window, with the North Shore mountains hidden in cloud'),
-        placeholder('downtown skyline under low cloud'),
-        placeholder('a rare snow day in the city'),
-        placeholder('English Bay beach on a sunny day'),
+        {
+          src: robsonUmbrellasImg,
+          alt: 'Two people with umbrellas walking along a wet downtown Vancouver sidewalk past a bubble tea shop',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: rainyWindshieldImg,
+          alt: 'Rain-streaked windshield view of traffic on a grey bridge into downtown Vancouver',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: greyBeachImg,
+          alt: 'Black-and-white photo of a misty Vancouver beach with driftwood, freighters anchored offshore',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: snowySkylineImg,
+          alt: 'Downtown Vancouver towers and snow-dusted trees, with snowy North Shore mountains behind',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: cypressSkiRunImg,
+          alt: 'Snow-covered ski runs on Cypress Mountain',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: englishBayInukshukImg,
+          alt: 'The Inukshuk at English Bay on a sunny day, with people on the grass and ships in the bay',
+          credit: 'Wikimedia Commons',
+        },
       ],
     },
     {
@@ -40,12 +75,36 @@ export default defineSet({
         'My hill of choice is **Whistler**, two hours up the Sea-to-Sky Highway: North America\'s biggest ski resort, at **8,171 acres**.',
       ],
       images: [
-        placeholder('Main Street in Mount Pleasant'),
-        placeholder('aerial of Stanley Park and downtown'),
-        placeholder('cyclists and walkers on the Seawall, Lions Gate Bridge behind'),
-        placeholder('the Gastown steam clock, steaming'),
-        placeholder('city view from the top of Grouse Mountain'),
-        placeholder('Whistler Blackcomb ski runs'),
+        {
+          src: mainStreetImg,
+          alt: 'Main Street in Mount Pleasant in spring, with cherry blossoms, a street clock and low-rise shops',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: stanleyParkAerialImg,
+          alt: 'Aerial view of Stanley Park\'s forest and Coal Harbour, with downtown Vancouver beyond',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: seawallImg,
+          alt: 'Cyclists and walkers on the Stanley Park Seawall, with the marina and downtown towers across Coal Harbour',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: steamClockImg,
+          alt: 'The Gastown steam clock on a brick-paved corner, surrounded by tourists',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: grouseViewImg,
+          alt: 'View from Grouse Mountain over forest to Vancouver, Stanley Park and the Strait of Georgia',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: whistlerSkierImg,
+          alt: 'A skier in a red jacket on a wide open bowl at Whistler, with snowy peaks behind',
+          credit: 'Wikimedia Commons',
+        },
       ],
     },
     {
@@ -58,12 +117,36 @@ export default defineSet({
         '**Greenpeace** was born here: in **1971**, activists sailed a chartered fishing boat out of Vancouver to protest a US nuclear test in Alaska.',
       ],
       images: [
-        placeholder('the 1886 photo of city council meeting in a tent after the fire'),
-        placeholder('Expo 86 poster or Expo Ernie, the mascot'),
-        placeholder('archive crowd shot at Expo 86'),
-        placeholder('Canada Place sails from the water'),
-        placeholder('Science World dome on False Creek'),
-        placeholder('the Greenpeace boat leaving Vancouver in 1971'),
+        {
+          src: councilTentImg,
+          alt: 'Vancouver\'s first city council meeting after the 1886 fire, held at tables outside a tent signed City Hall',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: expo86LogoImg,
+          alt: 'The Expo 86 logo',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: expo86MonorailImg,
+          alt: 'Crowds walking beneath the monorail on the Expo 86 grounds',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: canadaPlaceImg,
+          alt: 'Canada Place and its white sail-shaped roof on the Vancouver waterfront',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: scienceWorldImg,
+          alt: 'Science World\'s geodesic dome, built as the Expo 86 Expo Centre, on False Creek',
+          credit: 'Wikimedia Commons',
+        },
+        {
+          src: phyllisCormackImg,
+          alt: 'The Phyllis Cormack, the fishing boat Greenpeace sailed in 1971, docked in Tahsis, BC, in 1975',
+          credit: 'Wikimedia Commons',
+        },
       ],
     },
   ],
