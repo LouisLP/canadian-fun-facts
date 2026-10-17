@@ -1,25 +1,18 @@
 import { defineSet } from '../../schema'
 import brocktonPointLighthouseImg from './brockton-point-lighthouse.webp'
 import coalHarbourNorthShoreImg from './coal-harbour-north-shore.webp'
-import cypressSkiRunImg from './cypress-ski-run.webp'
 import duskBeachImg from './dusk-beach.webp'
 import englishBayInukshukImg from './english-bay-inukshuk.webp'
 import greyBeachImg from './grey-beach.webp'
 import grouseViewImg from './grouse-view.webp'
 import jerichoBeachImg from './jericho-beach.webp'
-import kitsilanoBeachImg from './kitsilano-beach.webp'
-import mainStreetImg from './main-street.webp'
-import mistyInletImg from './misty-inlet.webp'
 import mountPleasantRainImg from './mount-pleasant-rain.webp'
 import mountainBoulderImg from './mountain-boulder.webp'
 import rainyStreetImg from './rainy-street.webp'
-import rainyWindshieldImg from './rainy-windshield.webp'
 import robsonUmbrellasImg from './robson-umbrellas.webp'
 import seawallSunsetImg from './seawall-sunset.webp'
-import seawallImg from './seawall.webp'
 import snowySkylineImg from './snowy-skyline.webp'
 import stanleyParkAerialImg from './stanley-park-aerial.webp'
-import stanleyParkLagoonImg from './stanley-park-lagoon.webp'
 import steamClockImg from './steam-clock.webp'
 import whistlerSkierImg from './whistler-skier.webp'
 import winterBeachImg from './winter-beach.webp'
@@ -48,11 +41,6 @@ export default defineSet({
           src: winterBeachImg,
           alt: 'Me bundled up in a toque and scarf on a pebble beach on a grey winter day, forest behind',
           credit: 'Louis Lascelles-Palys',
-        },
-        {
-          src: rainyWindshieldImg,
-          alt: 'Rain-streaked windshield view of traffic on a grey bridge into downtown Vancouver',
-          credit: 'Wikimedia Commons',
         },
         {
           src: greyBeachImg,
@@ -86,19 +74,9 @@ export default defineSet({
           credit: 'Louis Lascelles-Palys',
         },
         {
-          src: mainStreetImg,
-          alt: 'Main Street in Mount Pleasant in spring, with cherry blossoms, a street clock and low-rise shops',
-          credit: 'Wikimedia Commons',
-        },
-        {
           src: stanleyParkAerialImg,
           alt: 'Aerial view of Stanley Park\'s forest and Coal Harbour, with downtown Vancouver beyond',
           credit: 'Wikimedia Commons',
-        },
-        {
-          src: stanleyParkLagoonImg,
-          alt: 'A still lake in Stanley Park reflecting the forest, with a snowy North Shore peak behind',
-          credit: 'Louis Lascelles-Palys',
         },
         {
           src: brocktonPointLighthouseImg,
@@ -141,16 +119,6 @@ export default defineSet({
           alt: 'Me on a wide sandy beach at dusk, looking down at my camera, with mountains across the water',
           credit: 'Louis Lascelles-Palys',
         },
-        {
-          src: kitsilanoBeachImg,
-          alt: 'Kitsilano Beach on a sunny day, with downtown and the North Shore mountains across the water',
-          credit: 'Wikimedia Commons',
-        },
-        {
-          src: seawallImg,
-          alt: 'Cyclists and walkers on the Stanley Park Seawall, with the marina and downtown towers across Coal Harbour',
-          credit: 'Wikimedia Commons',
-        },
       ],
     },
     {
@@ -175,16 +143,6 @@ export default defineSet({
         {
           src: grouseViewImg,
           alt: 'View from Grouse Mountain over forest to Vancouver, Stanley Park and the Strait of Georgia',
-          credit: 'Wikimedia Commons',
-        },
-        {
-          src: mistyInletImg,
-          alt: 'Me looking out over a misty inlet ringed by forested mountains',
-          credit: 'Louis Lascelles-Palys',
-        },
-        {
-          src: cypressSkiRunImg,
-          alt: 'Snow-covered ski runs on Cypress Mountain',
           credit: 'Wikimedia Commons',
         },
         {
