@@ -2,9 +2,11 @@
      Full-viewport scroll-snap panels, ↓/↑/space snap, maple-leaf rail,
      whole-page fullscreen, aesthetic at maximum. -->
 <script setup lang="ts">
+import type { SlideImage } from '../content/schema'
 import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 import FactPanel from '../components/set/FactPanel.vue'
+import QuestionPanel from '../components/set/QuestionPanel.vue'
 import SlideRail from '../components/set/SlideRail.vue'
 import ThanksPanel from '../components/set/ThanksPanel.vue'
 import TitlePanel from '../components/set/TitlePanel.vue'
@@ -17,10 +19,34 @@ const props = defineProps<{ slug: string }>()
 const set = computed(() => findSet(props.slug))
 
 // Title panel + authored slides + auto-appended thank-you panel.
-// The title panel fans out the lead photo of the first three slides.
-const covers = computed(() => set.value?.slides.slice(0, 3).map(slide => slide.images[0]) ?? [])
+// The title panel fans out the set's covers, else the lead photo of the first three slides.
+const covers = computed(() =>
+  set.value?.covers?.map(src => ({ src }))
+  ?? set.value?.slides.slice(0, 3).map(slide => slide.images[0])
+  ?? [],
+)
 
-const sectionCount = computed(() => (set.value?.slides.length ?? 0) + 2)
+// A quiz slide splits in two: its question, then its answer as a fact panel.
+type Panel
+  = | { kind: 'facts', heading: string, facts: string[], images: SlideImage[] }
+    | { kind: 'question', question: string, choices?: string[], number: number }
+
+const questionCount = computed(() => set.value?.slides.filter(slide => slide.kind === 'quiz').length ?? 0)
+
+const panels = computed<Panel[]>(() => {
+  let number = 0
+  return set.value?.slides.flatMap((slide): Panel[] => {
+    if (slide.kind !== 'quiz')
+      return [{ ...slide, kind: 'facts' }]
+    number++
+    return [
+      { kind: 'question', question: slide.question, choices: slide.choices, number },
+      { kind: 'facts', heading: slide.answer, facts: slide.facts, images: slide.images },
+    ]
+  }) ?? []
+})
+
+const sectionCount = computed(() => panels.value.length + 2)
 
 const { container, current, scrollTo } = useSlideNavigation(sectionCount)
 const { toggle: toggleFullscreen } = useFullscreen()
@@ -31,14 +57,25 @@ const { toggle: toggleFullscreen } = useFullscreen()
     <div ref="container" class="scroller">
       <TitlePanel :title="set.title" :date="set.date" :covers="covers" :data-index="0" />
 
-      <FactPanel
-        v-for="(slide, i) in set.slides"
-        :key="slide.heading"
-        :slide="slide"
-        :data-index="i + 1"
-      />
+      <template v-for="(panel, i) in panels" :key="i">
+        <QuestionPanel
+          v-if="panel.kind === 'question'"
+          :question="panel.question"
+          :choices="panel.choices"
+          :number="panel.number"
+          :total="questionCount"
+          :data-index="i + 1"
+        />
+        <FactPanel
+          v-else
+          :heading="panel.heading"
+          :facts="panel.facts"
+          :images="panel.images"
+          :data-index="i + 1"
+        />
+      </template>
 
-      <ThanksPanel :data-index="set.slides.length + 1" />
+      <ThanksPanel :data-index="panels.length + 1" />
     </div>
 
     <SlideRail

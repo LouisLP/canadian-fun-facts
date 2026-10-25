@@ -14,6 +14,10 @@ _Avoid_: Deck, presentation, week
 One subject within a set: a heading (the hook), several facts (markdown each; 3–4 by convention), and exactly four images tiled beside it.
 _Avoid_: Fact, card, page
 
+**Quiz slide**:
+A slide that asks instead of tells: a question (optionally multiple choice) on its own panel, then the answer and a fact or two on the next.
+_Avoid_: Question slide, trivia card
+
 **Fact**:
 One markdown nugget inside a slide — a single claim about the slide's subject.
 _Avoid_: Body, bullet, point
