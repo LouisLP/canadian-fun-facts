@@ -3,6 +3,7 @@
 import type { FunFactSet } from '../../content/schema'
 import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
+import { slideHeading } from '../../content/schema'
 import { TOPICS } from '../../content/topics'
 import TopicBadge from './TopicBadge.vue'
 
@@ -27,7 +28,7 @@ const slideCount = computed(() => props.set.slides.length)
       <Icon icon="lucide:image" class="icon" /> {{ slideCount }} slide{{ slideCount === 1 ? '' : 's' }}
     </p>
     <p class="teaser">
-      {{ set.slides[0].heading }}
+      {{ slideHeading(set.slides[0]) }}
     </p>
     <RouterLink class="present-link" :to="{ name: 'set', params: { slug: set.slug } }">
       ▶▶ PRESENT THIS ONE ◀◀

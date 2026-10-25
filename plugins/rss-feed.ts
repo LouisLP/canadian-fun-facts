@@ -7,6 +7,7 @@
 import type { Plugin, ResolvedConfig } from 'vite'
 import type { FunFactSet } from '../src/content/schema'
 import { createServer } from 'vite'
+import { slideHeading } from '../src/content/schema'
 import { TOPICS } from '../src/content/topics'
 import { renderMarkdown } from '../src/lib/markdown'
 
@@ -119,9 +120,13 @@ function renderItem(set: FunFactSet, siteUrl: string): string {
  */
 function renderSummary(set: FunFactSet): string {
   return set.slides
-    .map(slide => `<h2>${escapeXml(slide.heading)}</h2>\n${
-      slide.facts.map(fact => renderMarkdown(fact).trim()).join('\n')
-    }`)
+    .map((slide) => {
+      // A quiz slide reads as its question, then its answer up front.
+      const answer = slide.kind === 'quiz' ? `<p><strong>${escapeXml(slide.answer)}</strong></p>\n` : ''
+      return `<h2>${escapeXml(slideHeading(slide))}</h2>\n${answer}${
+        slide.facts.map(fact => renderMarkdown(fact).trim()).join('\n')
+      }`
+    })
     .join('\n')
 }
 

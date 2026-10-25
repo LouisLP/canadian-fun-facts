@@ -1,24 +1,25 @@
-<!-- One slide: the heading and its facts down the left, the photos tiled on the right. -->
+<!-- One slide: the heading and its facts down the left, the photos tiled on the
+     right. Also reveals a quiz slide's answer, with the answer as the heading. -->
 <script setup lang="ts">
-import type { Slide } from '../../content/schema'
+import type { SlideImage } from '../../content/schema'
 import { renderMarkdown } from '../../lib/markdown'
 
-defineProps<{ slide: Slide }>()
+defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
 </script>
 
 <template>
   <section class="panel fact-panel">
     <div class="copy">
       <h2 class="wordart">
-        {{ slide.heading }}
+        {{ heading }}
       </h2>
       <ul class="facts">
         <!-- eslint-disable-next-line vue/no-v-html — repo-authored markdown, trusted -->
-        <li v-for="(fact, j) in slide.facts" :key="j" class="fact-card" v-html="renderMarkdown(fact)" />
+        <li v-for="(fact, j) in facts" :key="j" class="fact-card" v-html="renderMarkdown(fact)" />
       </ul>
     </div>
     <div class="photos">
-      <figure v-for="image in slide.images" :key="image.src" class="slide-figure">
+      <figure v-for="image in images" :key="image.src" class="slide-figure">
         <img :src="image.src" :alt="image.alt">
         <figcaption v-if="image.credit">
           <!-- 📷 {{ image.credit }} -->
