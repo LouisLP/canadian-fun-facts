@@ -108,6 +108,12 @@ defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
   grid-column: 1 / -1;
 }
 
+/* Just two photos (a quiz answer): stack them, since side by side they'd be
+   squeezed into tall slivers. */
+.photos:has(> .slide-figure:nth-child(2):last-child) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 /* Every photo is cropped to fill its cell; a uniform grid beats preserving
    every last pixel. */
 .slide-figure img {
