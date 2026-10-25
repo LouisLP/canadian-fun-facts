@@ -19,8 +19,12 @@ const props = defineProps<{ slug: string }>()
 const set = computed(() => findSet(props.slug))
 
 // Title panel + authored slides + auto-appended thank-you panel.
-// The title panel fans out the lead photo of the first three slides.
-const covers = computed(() => set.value?.slides.slice(0, 3).map(slide => slide.images[0]) ?? [])
+// The title panel fans out the set's covers, else the lead photo of the first three slides.
+const covers = computed(() =>
+  set.value?.covers?.map(src => ({ src }))
+  ?? set.value?.slides.slice(0, 3).map(slide => slide.images[0])
+  ?? [],
+)
 
 // A quiz slide splits in two: its question, then its answer as a fact panel.
 type Panel

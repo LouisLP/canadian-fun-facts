@@ -1,6 +1,5 @@
 import bantingBestImg from '../2025-10-06-inventions/banting-best.webp'
 import naismithImg from '../2025-10-06-inventions/naismith.webp'
-import syrupJugsImg from '../2025-10-27-maple/syrup-jugs.webp'
 import syrupProductsImg from '../2025-10-27-maple/syrup-products.webp'
 import timHortonsCupImg from '../2025-12-15-language/tim-hortons-cup.webp'
 import auroraYukonImg from '../2026-01-05-cold/aurora-yukon.webp'
@@ -25,6 +24,7 @@ import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
 import { defineSet } from '../../schema'
+import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
 
 // A farewell quiz: every answer is a fact from an earlier set, so images are
@@ -34,13 +34,15 @@ export default defineSet({
   date: '2026-10-26',
   title: 'Last Call Trivia',
   topic: 'people',
+  // Every slide image is an answer, so the title fan sticks to ones that give nothing away.
+  covers: [torontoSkylineImg, oldQuebecWinterImg, jellybeanRowImg],
   slides: [
     {
       kind: 'quiz',
       question: 'How many states are there in Canada?',
       answer: 'Zero! We have provinces',
       facts: [
-        '**10 provinces** and **3 territories**; the newest, Nunavut, was carved out of the Northwest Territories in **1999**.',
+        '**10 provinces** and **3 territories**. Our newest one, **Nunavut**, is the opposite of all of it!',
       ],
       images: [
         {
@@ -127,10 +129,10 @@ export default defineSet({
     },
     {
       kind: 'quiz',
-      question: 'Which sport did a Canadian invent with a soccer ball and two peach baskets?',
+      question: 'What sport was invented in Canada in 1891?',
       answer: 'Basketball',
       facts: [
-        'Invented in **1891** by James Naismith of Almonte, Ontario, with just **13 rules**.',
+        'James Naismith of Almonte, Ontario wrote **13 rules** and nailed up **two peach baskets** for a soccer ball.',
       ],
       images: [
         {
@@ -143,7 +145,7 @@ export default defineSet({
     {
       kind: 'quiz',
       question: 'How much did Banting sell the insulin patent for?',
-      choices: ['$1', '$1,000', '$1 million'],
+      choices: ['$1', '$1 million', '$1 billion'],
       answer: 'One dollar',
       facts: [
         'Insulin was discovered at the University of Toronto in **1921–22**; Banting sold the patent for **$1**, saying it belonged to the world.',
@@ -171,16 +173,16 @@ export default defineSet({
           credit: 'Ross Dunn, CC BY-SA 2.0, via Wikimedia Commons',
         },
         {
-          src: syrupJugsImg,
-          alt: 'A leaf-shaped bottle of Grade A maple syrup',
-          credit: 'Willis Lam, CC BY-SA 2.0, via Wikimedia Commons',
+          src: mapleSyrupLineupImg,
+          alt: 'A row of maple-leaf-shaped bottles of syrup on a wooden railing, shading from dark amber to golden in the sun',
+          credit: 'inbox, source unverified',
         },
       ],
     },
     {
       kind: 'quiz',
       question: 'What\'s the coldest temperature ever recorded in North America?',
-      choices: ['−43°C', '−53°C', '−63°C'],
+      choices: ['−53°C', '−63°C', '−73°C'],
       answer: '−63°C',
       facts: [
         '**Snag, Yukon**, in February **1947**.',
@@ -221,10 +223,10 @@ export default defineSet({
     },
     {
       kind: 'quiz',
-      question: 'Which sushi roll was invented in Vancouver?',
-      answer: 'The California roll',
+      question: 'Which sushi rolls were invented in Vancouver?',
+      answer: 'The inside-out roll and the California roll',
       facts: [
-        'Chef **Hidekazu Tojo** says he flipped the rice to the outside for diners who wanted the seaweed hidden.',
+        'Chef **Hidekazu Tojo** says he invented both, flipping the rice to the outside for diners who wanted the seaweed hidden.',
       ],
       images: [
         {
@@ -260,7 +262,7 @@ export default defineSet({
     {
       kind: 'quiz',
       question: 'What did Canuck the Crow steal from a Vancouver crime scene?',
-      choices: ['A badge', 'A knife', 'A donut'],
+      choices: ['A badge', 'A knife', 'A Tim Hortons donut'],
       answer: 'A knife',
       facts: [
         'Made news worldwide in **May 2016**, with a police officer chasing after him.',
@@ -299,7 +301,7 @@ export default defineSet({
       choices: ['Toronto', 'Montreal', 'Vancouver'],
       answer: 'Vancouver!',
       facts: [
-        'Mild winters, ocean, mountains, and plenty of rain: in October 2016 it rained **28 of 31** days.',
+        'Mild winters, the Pacific Ocean, mountains, forests, and plenty of rain. One of the most beautiful places in the world.',
         'Thanks for having me, and reach out any time for **Canada recommendations**.',
       ],
       images: [

@@ -51,6 +51,8 @@ export interface FunFactSet {
   date: IsoDate
   title: string
   topic: Topic
+  /** Title-panel photos; defaults to each of the first three slides' lead image. */
+  covers?: string[]
   /** At least one; four by convention. */
   slides: [Slide, ...Slide[]]
 }
