@@ -4,8 +4,7 @@ Promoted from [future-topics](future-topics.md) (History). Slug `canada-at-war`,
 `history` (first History set), inbox `inbox/canada-at-war/`. Target date **2026-11-09**,
 the Monday before Remembrance Day (Wednesday 11 November 2026).
 
-Three slides. Slide 3 is a family slide (first person, true). The draft below predates the
-2–3 facts and four pictures per slide convention, so trim it when building.
+Three slides, three facts each. Slide 3 is a family slide (first person, true).
 
 Draft title: **Lest We Forget** (alternatives: _Poppy Season_, _Remembrance Days_).
 
@@ -18,8 +17,6 @@ the $20 back (money).
 
 ### 1. Poppy culture — Remembrance Day and the poppy
 
-- Every November, red felt **poppies** show up on nearly every coat, pinned on the left over
-  the heart; this set lands the Monday before **11 November**.
 - **Remembrance Day**: two minutes of silence at the **11th hour of the 11th day of the 11th
   month**, when the First World War armistice took effect in 1918.
 - The poppy comes from **"In Flanders Fields"**, written by Canadian army doctor **John
@@ -34,39 +31,36 @@ the $20 back (money).
 - **D-Day**: some **14,000** Canadians came ashore at **Juno Beach** on 6 June 1944.
 - Canadians led the **liberation of the Netherlands** in 1945; the Dutch still send
   Ottawa **tulips** every year, which grew into the Canadian Tulip Festival (1953).
-- **Princess Margriet** was born in Ottawa in 1943; Canada declared her hospital room
-  **extraterritorial** so she'd be born on Dutch soil.
 
 ### 3. Pole position — how my family got here
 
-- My dad was born in Canada, but both his parents were **Polish**: my grandpa was a
-  **paramedic**, my grandma a **nurse**.
-- They met in a hospital after my grandpa took **grenade shrapnel** to the cheek.
-- After the war, Poland fell under Soviet control; Polish veterans of the Allied forces
-  were offered resettlement across the **Commonwealth**, and they chose **Canada**.
-- Canada took in about **4,500** Polish veterans in 1946–47, each signed to **two years**
-  of farm labour on arrival.
+- Both my dad's parents were **Polish**: my grandpa a **paramedic**, my grandma a **nurse**;
+  they met in a hospital after he took **grenade shrapnel** to the cheek.
+- After the war, Poland fell under Soviet control; Polish veterans of the Allied forces were
+  offered resettlement across the **Commonwealth**, and they chose **Canada**.
+- They settled in **Winnipeg**, where my dad was born; one of the best decisions he ever made
+  was leaving for **Vancouver**.
+
+## Cut, easy to swap back
+
+- Red felt poppies on nearly every coat, pinned on the left over the heart.
+- Princess Margriet was born in Ottawa in 1943; Canada declared her hospital room
+  extraterritorial so she'd be born on Dutch soil.
+- Canada took in about 4,500 Polish veterans in 1946–47, each signed to two years of farm
+  labour. Cut because we don't know whether my grandpa came on this scheme.
 
 ## Questions for you
 
-1. Slide 3: do you know which force your grandparents served in (Anders' Army / 2nd Polish
-   Corps in Italy, 1st Armoured Division in Normandy, the RAF squadrons)? A battle name
-   (e.g. Monte Cassino) would make the slide land harder.
-2. Where in Canada did they settle first, and did your grandpa come over on the farm
-   scheme? If so, the 4,500 fact can become personal; if not, it stays as context.
-3. Anything else family-side: medals, photos, a uniform?
+1. Do you have any family photos for slide 3? It needs at least two pictures.
 
-## Shot list for `inbox/canada-at-war/` (6 per slide, a few spares each)
+## Shot list for `inbox/canada-at-war/` (10 total)
 
-1. **Poppy:** poppy pinned on a coat; a poppy box/tray at a store till; the Tomb of the
-   Unknown Soldier covered in poppies; a Remembrance Day ceremony / National War Memorial;
-   McCrae portrait or the handwritten poem.
-2. **Battles:** Vimy Memorial (the twin white pylons); Vimy archive photo; Juno Beach
-   landing archive photo; Dutch crowds greeting Canadian troops, 1945; Ottawa tulips on
-   Parliament Hill.
-3. **Family:** any photos of your grandparents (wartime, wedding, arrival in Canada);
-   their uniforms, medals or papers; a Polish veteran ID card or similar; your dad as a kid.
-   Commons gap-fillers: Polish Armed Forces in the West, the Polish eagle insignia.
+1. **Poppy:** poppy pinned on a coat; Tomb of the Unknown Soldier covered in poppies; McCrae
+   portrait or the handwritten poem.
+2. **Battles:** Vimy Memorial; Juno Beach landing archive photo; Dutch crowds greeting
+   Canadian troops, 1945; Ottawa tulips on Parliament Hill.
+3. **Family:** your grandparents (wartime, wedding or arrival in Canada); Winnipeg, ideally a
+   family photo; your dad as a kid in Winnipeg or later in Vancouver.
 
 Archive war photos (Library and Archives Canada, Imperial War Museum) are mostly public
 domain on Commons, so slides 1–2 are easy to fill if the inbox is thin.
