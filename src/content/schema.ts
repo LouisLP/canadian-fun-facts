@@ -14,9 +14,9 @@ export interface FactSlide {
   kind?: 'facts'
   /** The subject hook, big on screen. */
   heading: string
-  /** Full markdown per fact. At least one; 3–4 by convention. */
+  /** Full markdown per fact. At least one; 2–3 by convention. */
   facts: [string, ...string[]]
-  /** Four while a set is mid-backfill; six fills the slide's gutters. */
+  /** Four by convention; six fills the slide's gutters. */
   images: [SlideImage, SlideImage, SlideImage, SlideImage, ...SlideImage[]]
 }
 

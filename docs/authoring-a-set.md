@@ -28,7 +28,9 @@ them.
 ## 2. Group into slides
 
 A slide is one **subject**, not one fact ([ADR 0002](adr/0002-slides-hold-multiple-facts-and-images.md)).
-Aim for **3–4 slides**, **3–4 facts each**. Group by the natural sub-themes in the note,
+Aim for **3–4 slides**, **2–3 facts each**, with four pictures per slide. Louis prefers fewer
+facts and pictures: slides should stay visually interesting without information overload, so
+keep shot lists minimal, with no spares. Group by the natural sub-themes in the note,
 and let image availability inform the grouping: **look in `inbox/<slug>/` before settling
 the slides**, and let what's actually there pull the grouping toward it. A slide you can't
 illustrate with four images — inbox or freely-licensed — is the wrong slide. Maple grouped

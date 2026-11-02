@@ -9,8 +9,8 @@ every push to `main`.
 ## How it works
 
 Each week is a **set**: a dated, titled collection of **slides** on one **topic**. A slide
-is one subject — a punchy heading, three or four **facts** in markdown, and exactly four
-freely-licensed images tiled beside it.
+is one subject — a punchy heading, two or three **facts** in markdown, and four images tiled
+beside it.
 
 Sets are TypeScript modules, not a CMS ([ADR 0001](docs/adr/0001-sets-are-typescript-modules.md)).
 That means the type checker is the content validator: a broken image path, an unknown
