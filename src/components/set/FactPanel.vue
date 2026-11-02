@@ -108,7 +108,7 @@ defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
   grid-column: 1 / -1;
 }
 
-/* Just two photos (a quiz answer): stack them, since side by side they'd be
+/* Just two photos: stack them, since side by side they'd be
    squeezed into tall slivers. */
 .photos:has(> .slide-figure:nth-child(2):last-child) {
   grid-template-columns: minmax(0, 1fr);
@@ -181,6 +181,11 @@ defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
 
   .slide-figure:last-child:nth-child(odd) {
     grid-column: auto;
+  }
+
+  /* The photo row is short here, so a two-photo stack would be thin strips. */
+  .photos:has(> .slide-figure:nth-child(2):last-child) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 </style>

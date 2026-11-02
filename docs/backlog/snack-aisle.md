@@ -4,7 +4,8 @@ Promoted from [future-topics](future-topics.md) (Food & Drink). Slug `snack-aisl
 `food`, inbox `inbox/snack-aisle/`. Target date **2026-11-02**, a light set before
 [Lest We Forget](canada-at-war.md) on 2026-11-09.
 
-Three slides: 2–3 facts and four pictures each.
+Built as four slides on `new-set/snack-aisle`; `src/content/sets/2026-11-02-snack-aisle/`
+holds the final copy, and slide 3 below was split into KD and milk.
 
 Draft title: **The Snack Aisle: Aisle Be Back** (alternatives: _Snack Attack_, _Junk Mail_).
 

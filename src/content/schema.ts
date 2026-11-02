@@ -16,8 +16,8 @@ export interface FactSlide {
   heading: string
   /** Full markdown per fact. At least one; 2–3 by convention. */
   facts: [string, ...string[]]
-  /** Four by convention; six fills the slide's gutters. */
-  images: [SlideImage, SlideImage, SlideImage, SlideImage, ...SlideImage[]]
+  /** At least two; four is typical, six fills the slide's gutters. */
+  images: [SlideImage, SlideImage, ...SlideImage[]]
 }
 
 /**

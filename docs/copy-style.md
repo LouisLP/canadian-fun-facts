@@ -18,7 +18,7 @@ chosen. It is not a filter on which facts make the cut. If a slide's subject onl
 straight description, write the straight description.
 
 The two real gates are elsewhere: every claim is verified before it ships
-([authoring-a-set](authoring-a-set.md) step 3), and the subject has to carry four images.
+([authoring-a-set](authoring-a-set.md) step 3), and the subject has to carry at least two images.
 
 ## Facts
 

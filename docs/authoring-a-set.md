@@ -28,12 +28,12 @@ them.
 ## 2. Group into slides
 
 A slide is one **subject**, not one fact ([ADR 0002](adr/0002-slides-hold-multiple-facts-and-images.md)).
-Aim for **3–4 slides**, **2–3 facts each**, with four pictures per slide. Louis prefers fewer
-facts and pictures: slides should stay visually interesting without information overload, so
-keep shot lists minimal, with no spares. Group by the natural sub-themes in the note,
+Aim for **3–4 slides**, **2–3 facts each**, with **2–4 pictures** per slide. Louis prefers
+fewer facts and pictures: slides should stay visually interesting without information
+overload, so keep shot lists minimal, with no spares. Group by the natural sub-themes in the note,
 and let image availability inform the grouping: **look in `inbox/<slug>/` before settling
 the slides**, and let what's actually there pull the grouping toward it. A slide you can't
-illustrate with four images — inbox or freely-licensed — is the wrong slide. Maple grouped
+illustrate with two images — inbox or freely-licensed — is the wrong slide. Maple grouped
 as: the industry's scale + the tree → tapping → the sugar shack / boiling → the strategic
 reserve and the 2012 heist.
 
@@ -52,7 +52,7 @@ Personal connections to Louis are welcome and worth hunting for — hometown, fa
 jobs, trips, teams — one clause inside a fact, first person, only where it's true. Ask him
 for one if a slide looks like it has an obvious hook you don't know the answer to.
 
-## 4. Source images — exactly four per slide
+## 4. Source images — two to four per slide
 
 Two sources, in order: **the inbox first, Commons for the gaps.**
 
@@ -68,7 +68,7 @@ Work through them like this:
 2. **Group them against the slides from step 2.** Image availability is allowed to reshape
    the grouping — if the inbox has six great shots of one sub-theme and none of another,
    the slides should follow the pictures.
-3. **Pick the best four per slide** when there's a surplus. Judge on: sharpness and
+3. **Pick the best two to four per slide** when there's a surplus. Judge on: sharpness and
    resolution, how directly it illustrates that slide's facts, and variety within the
    slide (four near-identical frames of the same subject is a weak slide).
 4. **Copy the winners** into the set folder under stable kebab-case names describing the
@@ -80,7 +80,7 @@ and which images were left out, so the call is reviewable.
 
 ### 4b. Filling the gaps from Commons
 
-When the inbox doesn't cover a slide's four, top it up. Only **Public Domain / CC / "no
+When the inbox doesn't cover a slide, top it up. Only **Public Domain / CC / "no
 known copyright restrictions"** images qualify; [Wikimedia
 Commons](https://commons.wikimedia.org) is the source of record. Mixing inbox and Commons
 images within one slide is fine.

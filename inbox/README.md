@@ -26,8 +26,7 @@ Then say "build the sugar-shacks set" (or just "the pictures are in"). The rest 
   looked at regardless, but names speed up the grouping.
 - **Big originals.** The optimizer caps at 1600px wide and never upscales, so anything
   under ~1200px stays soft. Straight-off-the-camera files are ideal.
-- **Just enough.** A set is 3–4 slides × 4 images = **12–16 used**. Extras are fine but not
-  needed. Anything short of a full slide gets topped up from Wikimedia Commons.
+- **Just enough.** A set is 3–4 slides × 2–4 images each. Extras are fine but not needed. Anything short of a full slide gets topped up from Wikimedia Commons.
 - **Any format.** `.jpg`, `.png`, `.webp` all convert. `.heic` needs converting first
   (`sips -s format jpeg *.HEIC --out .` on macOS).
 
