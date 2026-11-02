@@ -8,7 +8,8 @@ import kdBoxImg from './kd-box.webp'
 import ketchupBrandsImg from './ketchup-chip-brands.webp'
 import ketchupCloseupImg from './ketchup-chip-closeup.webp'
 import ketchupBagImg from './ketchup-chips-bag.webp'
-import milkBagHeldImg from './milk-bag-held.webp'
+import milkBagCuttingImg from './milk-bag-cutting.webp'
+import milkBagHandImg from './milk-bag-hand.webp'
 import milkBagPitcherImg from './milk-bag-pitcher.webp'
 import smartiesChocolateImg from './smarties-chocolate.webp'
 import smartiesUsImg from './smarties-us.webp'
@@ -100,7 +101,7 @@ export default defineSet({
         },
         {
           src: kdBowlImg,
-          alt: 'A hand lifting a forkful of orange macaroni and cheese from a white bowl',
+          alt: 'A white bowl of orange macaroni and cheese on a wooden board beside a green checked cloth, seen from above',
           credit: INBOX_CREDIT,
         },
       ],
@@ -114,13 +115,18 @@ export default defineSet({
       ],
       images: [
         {
-          src: milkBagHeldImg,
-          alt: 'A man in a kitchen holding up a bag of milk beside a white pitcher',
+          src: milkBagHandImg,
+          alt: 'A hand holding a full bag of milk over a wooden floor',
           credit: INBOX_CREDIT,
         },
         {
           src: milkBagPitcherImg,
           alt: 'A 4-litre pack of Neilson milk next to a white pitcher holding one milk bag',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: milkBagCuttingImg,
+          alt: 'A milk bag in a white pitcher, with hand-drawn labels marking a corner cut for the milk to pour out and another to let air in',
           credit: INBOX_CREDIT,
         },
       ],
