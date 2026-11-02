@@ -15,7 +15,8 @@ Promote an entry by writing it up as its own `docs/backlog/<slug>.md` note, then
 Already published, do not re-propose: beavers, inventions, maple, filming & celebrities,
 brands, language & slang, the cold, Indigenous peoples, travel, sports, weird laws,
 mythical creatures, industry & tech, Canada vs Germany, heroes, music, provinces &
-territories, birds, multiculturalism, weird place names, money, lakes, drugs & alcohol.
+territories, birds, multiculturalism, weird place names, money, lakes, drugs & alcohol,
+the snack aisle.
 
 Already covered inside a published set, so dropped from here: the Great Lakes (lakes),
 aurora borealis and the Rideau Canal skateway (the cold), astronauts and Nobel laureates
@@ -55,9 +56,6 @@ Nanaimo bars and their three-layer construction; the Beavertail.
 
 **Atlantic seafood** — lobster's shift from prison food to luxury; the Grand Banks cod
 moratorium and the towns it emptied; PEI mussels and oyster farming.
-
-**The snack aisle** — ketchup and all-dressed chips; Coffee Crisp, Smarties, Caramilk and
-the chocolate bars Americans can't get; Kraft Dinner and how much of it we eat; bagged milk.
 
 **Coffee and doughnuts** — Tim Hortons founded by an NHL defenceman; Roll Up the Rim; more
 doughnut shops per capita than anywhere; the "double-double" in the dictionary. (Language
