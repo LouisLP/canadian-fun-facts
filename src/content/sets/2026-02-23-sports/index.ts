@@ -61,9 +61,11 @@ export default defineSet({
         },
         {
           src: fifaTeamImg,
+          alt: 'Canada\'s men\'s soccer team in white kits posing for a team photo on the pitch before a World Cup match',
         },
         {
           src: daviesSmilingImg,
+          alt: 'Alphonso Davies smiling with both hands raised, in a black Canada number 19 shirt',
         },
       ],
     },
@@ -98,9 +100,11 @@ export default defineSet({
         },
         {
           src: olympicFansImg,
+          alt: 'A fan in a Canada hockey jersey holding a Canada scarf overhead in a cheering crowd dressed in red',
         },
         {
           src: olympicCanadaTeamImg,
+          alt: 'Team Canada athletes in red jackets and toques at an Olympic ceremony, one waving a large Canadian flag',
         },
       ],
     },
@@ -135,9 +139,11 @@ export default defineSet({
         },
         {
           src: lacrosseTeamsImg,
+          alt: 'Canadian players in red and American players in white battling for the ball in a box lacrosse game',
         },
         {
           src: hockeyWinImg,
+          alt: 'Team Canada hockey players in red celebrating on the ice, the captain lifting a trophy as fireworks go off',
         },
       ],
     },
@@ -172,9 +178,11 @@ export default defineSet({
         },
         {
           src: gretzkyPointsImg,
+          alt: 'A graphic ranking the players with the most points in NHL history, Gretzky first with 2857, beside a photo of him in an Oilers jersey',
         },
         {
           src: gretzkyNumberImg,
+          alt: 'Wayne Gretzky seen from behind in a blue New York Rangers jersey with his name and the number 99',
         },
       ],
     },

@@ -61,9 +61,11 @@ export default defineSet({
         },
         {
           src: threeGlassesImg,
+          alt: 'A film still of a uniformed German officer holding up three fingers beside a woman in a hat, subtitled "Three glasses."',
         },
         {
           src: staringImg,
+          alt: 'A film still of a grey-haired man in a white tank top staring wide-eyed straight at the camera',
         },
       ],
     },
@@ -98,9 +100,11 @@ export default defineSet({
         },
         {
           src: smallTalkImg,
+          alt: 'A bearded man and a woman chatting and smiling outside a café, each holding an iced drink',
         },
         {
           src: cambieImg,
+          alt: 'A busy Vancouver street with cars and pedestrians, downtown towers and snow-capped mountains behind',
         },
       ],
     },
@@ -134,9 +138,11 @@ export default defineSet({
         },
         {
           src: sushiImg,
+          alt: 'A slate platter of nigiri and sushi rolls with chopsticks, soy sauce and a cast-iron teapot, seen from above',
         },
         {
           src: canadianNatureImg,
+          alt: 'A red kayak on a turquoise mountain lake beneath rocky, snow-streaked peaks',
         },
       ],
     },
@@ -171,9 +177,11 @@ export default defineSet({
         },
         {
           src: germanTramImg,
+          alt: 'A yellow tram stopped at a glass-roofed platform on a German city street',
         },
         {
           src: bacharachImg,
+          alt: 'The town of Bacharach, Germany from above: a red church tower among slate roofs, the Rhine and wooded hills beyond',
         },
       ],
     },

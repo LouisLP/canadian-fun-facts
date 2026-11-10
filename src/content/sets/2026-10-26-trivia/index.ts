@@ -42,7 +42,7 @@ export default defineSet({
       question: 'How many states are there in Canada?',
       answer: 'Zero! We have provinces',
       facts: [
-        '**10 provinces** and **3 territories**. Our newest one, **Nunavut**, is the opposite of all of it!',
+        '**10 provinces** and **3 territories**. Our newest one, Nunavut, is the opposite of all of it!',
       ],
       images: [
         {
@@ -71,7 +71,7 @@ export default defineSet({
       question: 'What\'s the name of our Prime Minister?',
       answer: 'Mark Carney',
       facts: [
-        'Prime Minister since **March 2025**, after running both the **Bank of Canada** and the **Bank of England**.',
+        'Prime Minister since March 2025, after running both the **Bank of Canada** and the **Bank of England**.',
         'I have never been prouder of home: he is standing up for us to the big neighbour below. **Elbows up!**',
       ],
       images: [

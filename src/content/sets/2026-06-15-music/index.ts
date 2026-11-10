@@ -61,9 +61,11 @@ export default defineSet({
         },
         {
           src: bieberBabyEraImg,
+          alt: 'A young Justin Bieber with a side-swept fringe and a plaid shirt, leaning on a guitar',
         },
         {
           src: weekndRedJacketImg,
+          alt: 'The Weeknd in profile wearing a red jacket and dark sunglasses, lit in warm gold light',
         },
       ],
     },
@@ -98,9 +100,11 @@ export default defineSet({
         },
         {
           src: eurovisionImg,
+          alt: 'The Eurovision Song Contest logo over a crowd in an arena lit with blue stage lights',
         },
         {
           src: titanicImg,
+          alt: 'The bow scene from the film Titanic: a man holding a woman by the waist as she spreads her arms at the ship\'s railing at sunset',
         },
       ],
     },
@@ -136,9 +140,11 @@ export default defineSet({
         },
         {
           src: avrilLavigneImg,
+          alt: 'Avril Lavigne at a microphone in the Complicated music video, a drummer behind her',
         },
         {
           src: michaelBubleImg,
+          alt: 'Michael Bublé in a camel coat on a city rooftop, looking off to the side',
         },
       ],
     },
@@ -173,9 +179,11 @@ export default defineSet({
         },
         {
           src: nardwuarSabrinaImg,
+          alt: 'Sabrina Carpenter and Nardwuar, in a tartan cap and polka-dot shirt, posing in a record shop',
         },
         {
           src: nardwuarTimotheeImg,
+          alt: 'A thumbnail reading "Nardwuar vs. Timothée Chalamet" beside the two of them pointing at the camera in a record shop',
         },
       ],
     },

@@ -26,7 +26,7 @@ export default defineSet({
       heading: 'All Dressed Up',
       facts: [
         '**All-dressed**, one of my two favourite chips, stacks four flavours: ketchup, BBQ, sour cream and onion, salt and vinegar.',
-        'The name started on pizza (**toute garnie** in French: the works); Quebec\'s **Yum Yum** had a chip version by **1978**.',
+        'The name started on pizza (**toute garnie** in French: the works); Quebec\'s **Yum Yum** had a chip version by 1978.',
         '**Ketchup chips**, my other favourite, were mainly a **Hostess** product through the 1970s and 80s, before Frito-Lay bought the brand.',
       ],
       images: [
@@ -57,7 +57,7 @@ export default defineSet({
       facts: [
         'Our **Smarties** are chocolate; America\'s chalky candy rolls with the same name are sold here as **Rockets**.',
         '**Coffee Crisp**, a favourite of mine, dates to **1938** and is made at Nestlé\'s Toronto factory.',
-        '**Caramilk** launched in **1968**, and its ads spent about **40 years** teasing how the caramel gets inside.',
+        '**Caramilk** launched in 1968, and its ads spent about **40 years** teasing how the caramel gets inside.',
       ],
       images: [
         {

@@ -27,4 +27,4 @@ The recipe is the single source of truth for these; the schema only enforces min
 
 ## Done means
 
-`pnpm lint --fix`, `pnpm type-check`, `pnpm optimize-images --check` and `pnpm build` all pass.
+`pnpm lint --fix`, `pnpm type-check`, `pnpm check-sets`, `pnpm optimize-images --check` and `pnpm build` all pass.

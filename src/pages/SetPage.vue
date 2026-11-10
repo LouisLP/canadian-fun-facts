@@ -23,7 +23,8 @@ const set = computed(() => findSet(props.slug))
 // Title panel + authored slides + auto-appended thank-you panel.
 // The title panel fans out the set's covers, else the lead photo of the first three slides.
 const covers = computed(() =>
-  set.value?.covers?.map(src => ({ src }))
+  // Covers are bare files with no description, and the fan is decoration.
+  set.value?.covers?.map(src => ({ src, alt: '' }))
   ?? set.value?.slides.slice(0, 3).map(slide => slide.images[0])
   ?? [],
 )

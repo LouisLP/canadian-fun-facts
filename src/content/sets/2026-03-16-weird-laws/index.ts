@@ -27,7 +27,7 @@ export default defineSet({
     {
       heading: 'Nickel and dimed',
       facts: [
-        'Canada\'s **Currency Act** caps how much of a bill a store has to accept in coins, so a jar of change is not always legal tender.',
+        'Canada\'s **Currency Act** caps how much of a bill a store must accept in coins, so a jar of change is not always legal tender.',
         'Nickels count for only **$5** per payment; dimes, quarters and 50¢ pieces share a single **$10** ceiling.',
         'Loonies stop counting past **$25**, and toonies past **$40**.',
         'The penny had the tightest cap of all at **25¢**, and the rule survives even though Canada quit minting them in **2012**.',
@@ -55,9 +55,11 @@ export default defineSet({
         },
         {
           src: dimeImg,
+          alt: 'The reverse of a 2015 Canadian dime, showing the Bluenose schooner under sail',
         },
         {
           src: cashBillsImg,
+          alt: 'Canadian polymer banknotes fanned out: a $100, $50, $20, $10 and $5',
         },
       ],
     },
@@ -92,9 +94,11 @@ export default defineSet({
         },
         {
           src: ratPropagandaImg,
+          alt: 'A vintage Alberta public health poster of a large rat, reading "You can\'t ignore the rat. He\'s a menace to health, home, industry. Kill him!"',
         },
         {
           src: petRatImg,
+          alt: 'Close-up of a brown rat peering over the edge of a rock',
         },
       ],
     },
@@ -129,9 +133,11 @@ export default defineSet({
         },
         {
           src: shovellingSnowRoofImg,
+          alt: 'Two men shovelling deep snow off the roof of a house',
         },
         {
           src: roofIciclesImg,
+          alt: 'A row of long icicles hanging from the snow-covered eaves of a house above its windows',
         },
       ],
     },

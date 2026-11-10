@@ -28,7 +28,8 @@ export default defineSet({
       heading: 'Loonies, lemmings, and eagle feathers',
       facts: [
         'I hope you all remember our dollar coin is called a **loonie** because it has a common loon on one side.',
-        'Loons can barely walk: their legs sit so far back they shove themselves along on their bellies, and takeoff needs up to **400 metres** of open water. That\'s why they\'re actually related to penguins, not ducks!',
+        'Loons can barely walk: legs set so far back they shove along on their bellies, and takeoff needs up to **400 metres** of open water.',
+        'They\'re actually more closely related to penguins than to ducks!',
         'Snowy owls swallow lemmings whole, **three to five a day** and over **1,600 a year** for one adult. They hear them moving under the snow.',
         'Nova Scotia courtrooms have stocked **eagle feathers** since **2018**, offered like a Bible to anyone who would rather affirm the truth holding one.',
       ],
@@ -68,10 +69,10 @@ export default defineSet({
     {
       heading: 'Honk if you\'re Canadian',
       facts: [
-        'Britain did this to itself: Canada geese joined a royal waterfowl collection in London\'s St James\'s Park in the late 1600s, and the UK population now tops **150,000**. Oops.',
+        'Britain did this to itself: Canada geese joined a London royal collection in the late 1600s; the UK now has over **150,000**. Oops.',
         'The giant Canada goose was written off as extinct until a flock turned up wintering in Rochester, Minnesota, in **1962**.',
-        'A flock took out both engines of US Airways 1549 shortly after takeoff in 2009, which is how the plane ended up in the **Hudson River**.',
-        'I was hand-feeding them out of my palm back in **2006**; adult geese hiss, charge, and beat intruders with their wings. Only clueless tourists and kids are this brave',
+        'A flock took out both engines of US Airways 1549 shortly after takeoff in 2009, landing the plane in the **Hudson River**.',
+        'I hand-fed them from my palm in **2006**; adults hiss, charge and beat intruders with their wings. Only clueless tourists and kids are this brave.',
       ],
       images: [
         {

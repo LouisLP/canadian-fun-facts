@@ -65,7 +65,7 @@ export default defineSet({
         'I grew up in **Mount Pleasant**, Vancouver\'s first suburb, where **Brewery Creek** once powered four breweries at a time.',
         '**Stanley Park** covers **405 hectares**, about a fifth bigger than New York\'s Central Park, right on the edge of downtown.',
         'The **Seawall** around it took **63 years** to finish, and its 28 km path is the world\'s longest uninterrupted waterfront route.',
-        'It all started in **Gastown** in 1867, with Gassy Jack Deighton, a barrel of whisky and a saloon; the famous steam clock only arrived in 1977.',
+        'It all started in **Gastown** in 1867, with Gassy Jack Deighton, a barrel of whisky and a saloon; the steam clock only arrived in 1977.',
       ],
       images: [
         {

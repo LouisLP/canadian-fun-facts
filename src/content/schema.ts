@@ -5,7 +5,8 @@ export type IsoDate = `${number}-${number}-${number}`
 export interface SlideImage {
   /** Typed Vite import — a broken path fails the build. */
   src: string
-  alt?: string
+  /** Plainly descriptive; required, so no photo ships unreadable. */
+  alt: string
   /** Attribution for the image itself: a name or URL. */
   credit?: string
 }
