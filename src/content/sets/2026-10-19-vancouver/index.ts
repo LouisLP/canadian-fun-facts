@@ -1,4 +1,4 @@
-import { INBOX_CREDIT, defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import brocktonPointLighthouseImg from './brockton-point-lighthouse.webp'
 import coalHarbourNorthShoreImg from './coal-harbour-north-shore.webp'
 import duskBeachImg from './dusk-beach.webp'

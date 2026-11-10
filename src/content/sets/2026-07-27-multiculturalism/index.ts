@@ -1,4 +1,4 @@
-import { INBOX_CREDIT, defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import bagelOvenImg from './bagel-wood-fired-oven.webp'
 import biculturalismHearingImg from './bilingualism-biculturalism-hearing.webp'
 import canadaDayImg from './canada-day-parliament-hill.webp'

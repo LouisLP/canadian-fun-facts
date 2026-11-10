@@ -1,4 +1,4 @@
-import { commonsCredit, INBOX_CREDIT, defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import canuckWithKnifeImg from './canuck-with-knife.webp'
 import crowOnWireImg from './crow-on-wire.webp'
 import eagleCarvingImg from './eagle-carving.webp'

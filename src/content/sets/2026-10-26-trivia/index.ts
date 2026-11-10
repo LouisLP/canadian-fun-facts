@@ -23,7 +23,7 @@ import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
-import { commonsCredit, INBOX_CREDIT, defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
 

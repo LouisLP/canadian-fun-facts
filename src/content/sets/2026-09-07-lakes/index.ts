@@ -1,4 +1,4 @@
-import { commonsCredit, INBOX_CREDIT, defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import abrahamLakeImg from './abraham-lake.webp'
 import emeraldLakeImg from './emerald-lake.webp'
 import greatLakesMapImg from './great-lakes-map.webp'

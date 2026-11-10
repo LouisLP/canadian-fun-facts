@@ -1,4 +1,4 @@
-import { INBOX_CREDIT, defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import budTrimmingImg from './bud-trimming.webp'
 import budsOnBanknotesImg from './buds-on-banknotes.webp'
 import cannabisGrowRoomImg from './cannabis-grow-room.webp'
