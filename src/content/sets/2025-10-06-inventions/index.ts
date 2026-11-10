@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import bantingBestImg from './banting-best.webp'
 import blackberryImg from './blackberry-bold.webp'
 import telephoneImg from './candlestick-telephone.webp'
@@ -31,22 +31,22 @@ export default defineSet({
         {
           src: peanutImg,
           alt: 'An open jar of peanut butter with a spoonful resting on top',
-          credit: 'Silar, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Silar', 'CC0'),
         },
         {
           src: pizzaImg,
           alt: 'A sliced Hawaiian pizza with ham and pineapple',
-          credit: 'Avelludo, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Avelludo', 'CC BY-SA 4.0'),
         },
         {
           src: poutineImg,
           alt: 'A plate of poutine with fries, cheese curds, and gravy',
-          credit: 'Antonydstevens, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Antonydstevens', 'CC0'),
         },
         {
           src: appleImg,
           alt: 'A McIntosh Red apple from a 1909 nursery catalogue plate',
-          credit: 'Brown Brothers Continental Nurseries catalogue (1909), public domain, via Wikimedia Commons',
+          credit: commonsCredit('Brown Brothers Continental Nurseries catalogue (1909)', 'public domain'),
         },
       ],
     },
@@ -62,7 +62,7 @@ export default defineSet({
         {
           src: telephoneImg,
           alt: 'An early-1900s candlestick telephone with its earpiece on the hook',
-          credit: 'Nuberger13, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Nuberger13', 'public domain'),
         },
         {
           src: zipperImg,
@@ -77,7 +77,7 @@ export default defineSet({
         {
           src: blackberryImg,
           alt: 'A BlackBerry Bold 9900 with its physical keyboard',
-          credit: 'P2u111, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('P2u111', 'CC BY 4.0'),
         },
       ],
     },
@@ -98,7 +98,7 @@ export default defineSet({
         {
           src: fingerprintImg,
           alt: 'A close-up of a fingerprint on a fingertip',
-          credit: 'Frettie, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Frettie', 'CC BY 3.0'),
         },
         {
           src: naismithImg,
@@ -108,7 +108,7 @@ export default defineSet({
         {
           src: pacemakerImg,
           alt: 'A modern pacemaker resting in the palm of a hand',
-          credit: 'Steven Fruitsmaak, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Steven Fruitsmaak', 'CC BY 3.0'),
         },
       ],
     },

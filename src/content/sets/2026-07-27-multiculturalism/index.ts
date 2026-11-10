@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { INBOX_CREDIT, defineSet } from '../../schema'
 import bagelOvenImg from './bagel-wood-fired-oven.webp'
 import biculturalismHearingImg from './bilingualism-biculturalism-hearing.webp'
 import canadaDayImg from './canada-day-parliament-hill.webp'
@@ -17,8 +17,6 @@ import ukrainianRallyImg from './toronto-ukrainian-rally.webp'
 import chinatownGateImg from './vancouver-chinatown-gate.webp'
 import indianWeddingImg from './vancouver-indian-wedding.webp'
 import worldCupFansImg from './world-cup-fans.webp'
-
-const INBOX_CREDIT = 'Sourced by Louis Lascelles-Palys'
 
 export default defineSet({
   slug: 'multiculturalism',

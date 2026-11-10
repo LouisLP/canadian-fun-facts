@@ -1,23 +1,31 @@
 /**
  * Convert set images to WebP and rewrite imports.
  *
- * Scans src/content/sets/ for .jpg/.jpeg/.png files, converts each to a
- * .webp capped at MAX_WIDTH, deletes the original, and rewrites the
- * filename in the set's index.ts. Oversized .webp files are resized in
- * place. Run after dropping new images into a set folder:
+ * Scans src/content/sets/ for .jpg/.jpeg/.png/.heic/.heif files, converts
+ * each to a .webp capped at MAX_WIDTH, deletes the original, and rewrites
+ * the filename in the set's index.ts. Oversized .webp files are resized in
+ * place. HEIC goes through macOS `sips` first, since sharp's prebuilt
+ * binaries cannot decode it. Run after dropping new images into a set folder:
  *
  *   pnpm optimize-images          # convert + rewrite
  *   pnpm optimize-images --check  # report offenders, exit 1 if any (CI)
  */
-import { readdir, readFile, rename, stat, unlink, writeFile } from 'node:fs/promises'
+import { execFile } from 'node:child_process'
+import { mkdtemp, readdir, readFile, rename, rm, stat, unlink, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
 import path from 'node:path'
 import process from 'node:process'
+import { promisify } from 'node:util'
 import sharp from 'sharp'
 
 const SETS_DIR = path.join(import.meta.dirname, '..', 'src', 'content', 'sets')
 const MAX_WIDTH = 1600
 const WEBP_QUALITY = 80
-const CONVERTIBLE = new Set(['.jpg', '.jpeg', '.png'])
+/** Decoded by `sips`, not sharp. */
+const HEIC = new Set(['.heic', '.heif'])
+const CONVERTIBLE = new Set(['.jpg', '.jpeg', '.png', ...HEIC])
+
+const run = promisify(execFile)
 
 const checkOnly = process.argv.includes('--check')
 
@@ -36,6 +44,20 @@ async function collectImages(dir: string): Promise<string[]> {
     })
 }
 
+/** Decode a HEIC into a throwaway full-quality JPEG that sharp can read. */
+async function heicToJpeg(file: string, tempDir: string): Promise<string> {
+  const jpeg = path.join(tempDir, `${path.basename(file)}.jpg`)
+  try {
+    await run('sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', '100', file, '--out', jpeg])
+  }
+  catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT')
+      throw new Error(`${file}: HEIC needs macOS \`sips\`, which is not on this machine. Convert it to .jpg by hand.`)
+    throw error
+  }
+  return jpeg
+}
+
 async function rewriteReferences(setDir: string, oldName: string, newName: string): Promise<void> {
   const entries = await readdir(setDir)
   for (const entry of entries.filter(e => e.endsWith('.ts'))) {
@@ -50,14 +72,17 @@ async function main(): Promise<void> {
   const images = await collectImages(SETS_DIR)
   const offenders: string[] = []
   let savedBytes = 0
+  let tempDir: string | undefined
 
   for (const file of images) {
     const ext = path.extname(file).toLowerCase()
     const relative = path.relative(SETS_DIR, file)
-    const { width = 0 } = await sharp(file).metadata()
 
-    if (ext === '.webp' && width <= MAX_WIDTH)
-      continue
+    if (ext === '.webp') {
+      const { width = 0 } = await sharp(file).metadata()
+      if (width <= MAX_WIDTH)
+        continue
+    }
 
     offenders.push(relative)
     if (checkOnly)
@@ -67,7 +92,14 @@ async function main(): Promise<void> {
     const target = ext === '.webp' ? file : `${file.slice(0, -ext.length)}.webp`
     const temp = `${target}.tmp`
 
-    await sharp(file)
+    let source = file
+    if (HEIC.has(ext)) {
+      tempDir ??= await mkdtemp(path.join(tmpdir(), 'optimize-images-'))
+      source = await heicToJpeg(file, tempDir)
+    }
+
+    await sharp(source)
+      .autoOrient()
       .resize({ width: MAX_WIDTH, withoutEnlargement: true })
       .webp({ quality: WEBP_QUALITY })
       .toFile(temp)
@@ -84,6 +116,9 @@ async function main(): Promise<void> {
 
     console.log(`${relative} → ${path.basename(target)} (${kb(sizeBefore)} → ${kb(sizeAfter)})`)
   }
+
+  if (tempDir)
+    await rm(tempDir, { recursive: true })
 
   if (checkOnly) {
     if (offenders.length > 0) {

@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import deadOfWinterImg from './dead-of-winter.webp'
 import legendPosterImg from './ogopogo-legend-poster.webp'
 import ogopogoPaintingImg from './ogopogo-painting.webp'
@@ -36,22 +36,22 @@ export default defineSet({
         {
           src: okanaganLakeImg,
           alt: 'Okanagan Lake seen from the shore at Peachland, British Columbia, with dry hills on both sides',
-          credit: 'Christopher Jones, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Christopher Jones', 'CC BY-SA 4.0'),
         },
         {
           src: rattlesnakeIslandImg,
           alt: 'A rocky headland dropping into calm water at Ogopogo Gap, beside Rattlesnake Island on Okanagan Lake',
-          credit: 'Extemporalist, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Extemporalist', 'CC BY-SA 4.0'),
         },
         {
           src: ogopogoStatueImg,
           alt: 'A green humped Ogopogo sculpture in a Kelowna waterfront park',
-          credit: 'GoToVan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
         },
         {
           src: sheetMusicImg,
           alt: 'Cover of the 1924 sheet music "The Ogo-Pogo: The Funny Fox-Trot", showing a cartoon creature playing a banjo',
-          credit: 'Fred Low, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Fred Low', 'public domain'),
         },
         {
           src: ogopogoPaintingImg,
@@ -73,17 +73,17 @@ export default defineSet({
         {
           src: sasquatchForestImg,
           alt: 'A narrow trail through a dense, moss-covered coastal forest in British Columbia',
-          credit: 'Simon Fast, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Simon Fast', 'CC BY 3.0'),
         },
         {
           src: provincialParkImg,
           alt: 'Deer Lake in Sasquatch Provincial Park, British Columbia, with forested mountains reflected in still water',
-          credit: 'mmmmngai@rogers.com, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('mmmmngai@rogers.com', 'CC BY-SA 2.0'),
         },
         {
           src: dioramaImg,
           alt: 'A museum diorama model of a Sasquatch figure crossing a fallen log over a ravine',
-          credit: 'Chris Light, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Chris Light', 'CC BY-SA 4.0'),
         },
         {
           src: roadsideFigureImg,
@@ -110,22 +110,22 @@ export default defineSet({
         {
           src: winterForestImg,
           alt: 'A snow-covered path running through a bare winter forest',
-          credit: 'Thomas Metaxas, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Thomas Metaxas', 'CC BY-SA 4.0'),
         },
         {
           src: deadOfWinterImg,
           alt: 'Fallen dead branches and trees lying across deep snow in a winter woodland',
-          credit: 'Danielle Scott, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Danielle Scott', 'CC BY-SA 2.0'),
         },
         {
           src: wendigoCostumeImg,
           alt: 'A modern antlered Wendigo costume worn at a fan convention, illustrating the recent pop-culture depiction',
-          credit: 'GabboT, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('GabboT', 'CC BY-SA 2.0'),
         },
         {
           src: wendigoArtImg,
           alt: 'A modern digital illustration of a gaunt, antlerless Wendigo figure in a grey forest',
-          credit: 'Віщун, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Віщун', 'CC BY-SA 4.0'),
         },
         {
           src: wendigoClassicImg,

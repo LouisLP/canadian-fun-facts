@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { INBOX_CREDIT, defineSet } from '../../schema'
 import brocktonPointLighthouseImg from './brockton-point-lighthouse.webp'
 import coalHarbourNorthShoreImg from './coal-harbour-north-shore.webp'
 import duskBeachImg from './dusk-beach.webp'
@@ -40,7 +40,7 @@ export default defineSet({
         {
           src: winterBeachImg,
           alt: 'Me bundled up in a toque and scarf on a pebble beach on a grey winter day, forest behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: greyBeachImg,
@@ -71,7 +71,7 @@ export default defineSet({
         {
           src: mountPleasantRainImg,
           alt: 'A person in a red jacket with an umbrella crossing a wet Mount Pleasant street at night, lit by red traffic lights',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: stanleyParkAerialImg,
@@ -81,7 +81,7 @@ export default defineSet({
         {
           src: brocktonPointLighthouseImg,
           alt: 'The red-and-white Brockton Point lighthouse on the Seawall, with North Vancouver and the mountains behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: steamClockImg,
@@ -102,12 +102,12 @@ export default defineSet({
         {
           src: seawallSunsetImg,
           alt: 'An orange sunset over English Bay from a rocky shore, with freighters on the horizon',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: jerichoBeachImg,
           alt: 'My girlfriend wading out of the water at Jericho Beach on a sunny day, with the North Shore across the bay',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: englishBayInukshukImg,
@@ -117,7 +117,7 @@ export default defineSet({
         {
           src: duskBeachImg,
           alt: 'Me on a wide sandy beach at dusk, looking down at my camera, with mountains across the water',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -133,12 +133,12 @@ export default defineSet({
         {
           src: coalHarbourNorthShoreImg,
           alt: 'Clouds over the North Shore mountains, seen across Coal Harbour with a floatplane at the dock',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: mountainBoulderImg,
           alt: 'Me sitting on a boulder by a forest creek, looking up at a snow-capped mountain',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: grouseViewImg,

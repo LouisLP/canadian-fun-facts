@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import bigHouseImg from './big-house.webp'
 import housePostImg from './house-post.webp'
 import inukshukImg from './inukshuk.webp'
@@ -30,22 +30,22 @@ export default defineSet({
         {
           src: inukshukImg,
           alt: 'A stone inukshuk on a snowy shoreline in Sylvia Grinnell Territorial Park, Nunavut',
-          credit: 'Films Oiseau de nuit, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Films Oiseau de nuit', 'CC BY-SA 4.0'),
         },
         {
           src: metisSashImg,
           alt: 'A finger-woven Métis arrowhead sash (ceinture fléchée) in orange, black, and white',
-          credit: 'Wilfredor, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Wilfredor', 'CC0'),
         },
         {
           src: totemPoleImg,
           alt: 'A weathered carved totem pole standing among evergreens in Stanley Park, Vancouver',
-          credit: 'Another Believer, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Another Believer', 'CC BY-SA 3.0'),
         },
         {
           src: bigHouseImg,
           alt: 'A painted Kwakwaka\'wakw big house beside a totem pole at Thunderbird Park, Victoria',
-          credit: 'Ryan Bushby (HighInBC), CC BY-SA 2.5, via Wikimedia Commons',
+          credit: commonsCredit('Ryan Bushby (HighInBC)', 'CC BY-SA 2.5'),
         },
       ],
     },
@@ -61,22 +61,22 @@ export default defineSet({
         {
           src: welcomeFigureImg,
           alt: 'A tall carved Coast Salish welcome figure by artist Susan Point on the White Rock waterfront, BC',
-          credit: 'Almccon, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Almccon', 'CC0'),
         },
         {
           src: musqueamDrummerImg,
           alt: 'A drummer in regalia performing at a Musqueam community gathering in Vancouver',
-          credit: 'Jeremy Board, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Jeremy Board', 'CC BY 2.0'),
         },
         {
           src: moaGreatHallImg,
           alt: 'Carved house posts, feast dishes, and bentwood boxes in the Great Hall of UBC\'s Museum of Anthropology',
-          credit: 'Daderot, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Daderot', 'public domain'),
         },
         {
           src: housePostImg,
           alt: 'A large weathered Northwest Coast house post on display at UBC\'s Museum of Anthropology',
-          credit: 'Xicotencatl, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Xicotencatl', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -92,22 +92,22 @@ export default defineSet({
         {
           src: ravenImg,
           alt: 'A common raven in flight with wings and tail fully spread against a pale sky',
-          credit: 'Mykola Swarnyk, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Mykola Swarnyk', 'CC BY-SA 4.0'),
         },
         {
           src: orcaImg,
           alt: 'The tall dorsal fin of a killer whale breaking calm water off Vancouver Island at dusk',
-          credit: 'Buiobuione, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Buiobuione', 'CC BY-SA 4.0'),
         },
         {
           src: spiritBearImg,
           alt: 'A cream-coloured Kermode spirit bear wading in a stream in British Columbia',
-          credit: 'Maximilian Helm, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Maximilian Helm', 'CC BY 2.0'),
         },
         {
           src: thunderbirdImg,
           alt: 'A brightly painted totem pole topped by a carved thunderbird with outstretched wings, Stanley Park',
-          credit: 'Ymblanter, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Ymblanter', 'CC BY-SA 4.0'),
         },
       ],
     },

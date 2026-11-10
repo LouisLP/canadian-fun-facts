@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import canadaLineImg from './canada-line-train.webp'
 import timeZonesImg from './canada-time-zones.webp'
 import capeSpearImg from './cape-spear.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: aerialImg,
           alt: 'Aerial view of Vancouver International Airport at sunset, seen from a passing aircraft window',
-          credit: 'Shawn from Airdrie, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Shawn from Airdrie', 'CC BY-SA 2.0'),
         },
         {
           src: terminalImg,
           alt: 'An indoor landscape of rocks, logs and running water inside YVR\'s international terminal',
-          credit: 'Wpcpey, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Wpcpey', 'CC BY-SA 4.0'),
         },
         {
           src: lufthansaImg,
           alt: 'A Lufthansa Boeing 747 on the tarmac at YVR with snow-capped mountains behind it',
-          credit: 'Shwangtianyuan, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Shwangtianyuan', 'CC BY-SA 4.0'),
         },
         {
           src: concourseImg,
           alt: 'A moving walkway running down a wide, sunlit concourse at Vancouver International Airport',
-          credit: 'Sunnya343, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Sunnya343', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -65,22 +65,22 @@ export default defineSet({
         {
           src: jadeCanoeImg,
           alt: 'The Spirit of Haida Gwaii bronze canoe sculpture filled with figures, in the airport terminal',
-          credit: 'Tony Hisgett, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Tony Hisgett', 'CC BY 2.0'),
         },
         {
           src: jadeCanoePortImg,
           alt: 'The port side of the Jade Canoe sculpture, with two visitors standing beside it for scale',
-          credit: 'D. Gordon E. Robertson, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('D. Gordon E. Robertson', 'CC BY-SA 3.0'),
         },
         {
           src: totemPoleImg,
           alt: 'A tall carved pole rising through the glass-walled Graham Clarke Atrium at YVR',
-          credit: 'FaysaLBinDaruL, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('FaysaLBinDaruL', 'CC BY 4.0'),
         },
         {
           src: totemTowerImg,
           alt: 'The winged top of a carved pole inside the airport atrium, with the control tower visible through the glass',
-          credit: 'Adam Jones, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Adam Jones', 'CC BY-SA 2.0'),
         },
       ],
     },
@@ -96,22 +96,22 @@ export default defineSet({
         {
           src: timeZonesImg,
           alt: 'Map of Canada shaded into its six time zones with UTC offsets labelled',
-          credit: 'Mappify, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Mappify', 'CC BY-SA 4.0'),
         },
         {
           src: capeSpearImg,
           alt: 'The lighthouse at Cape Spear, Newfoundland, on a rocky headland above the Atlantic',
-          credit: 'Tony Kocurko, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Tony Kocurko', 'CC BY 3.0'),
         },
         {
           src: rowhousesImg,
           alt: 'Brightly painted row houses on a street in St. John\'s, Newfoundland',
-          credit: 'Mike from Vancouver, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Mike from Vancouver', 'CC BY-SA 2.0'),
         },
         {
           src: steamClockImg,
           alt: 'The Gastown steam clock in Vancouver venting steam from its pipes',
-          credit: 'Dietmar Rabich, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Dietmar Rabich', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -127,22 +127,22 @@ export default defineSet({
         {
           src: skylineImg,
           alt: 'Downtown Vancouver\'s towers with the snow-capped North Shore mountains rising behind',
-          credit: 'Kyle Pearce, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Kyle Pearce', 'CC BY-SA 2.0'),
         },
         {
           src: seawallImg,
           alt: 'Cyclists and walkers on the Stanley Park seawall beside a marina, with the city across the water',
-          credit: 'GoToVan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
         },
         {
           src: cathedralGroveImg,
           alt: 'Old-growth Douglas firs in Cathedral Grove on Vancouver Island',
-          credit: 'Kevstan, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Kevstan', 'CC BY-SA 3.0'),
         },
         {
           src: canadaLineImg,
           alt: 'A Canada Line SkyTrain crossing an elevated guideway with mountains in the distance',
-          credit: 'Tim Wu, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Tim Wu', 'CC BY-SA 4.0'),
         },
       ],
     },

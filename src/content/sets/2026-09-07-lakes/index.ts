@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, INBOX_CREDIT, defineSet } from '../../schema'
 import abrahamLakeImg from './abraham-lake.webp'
 import emeraldLakeImg from './emerald-lake.webp'
 import greatLakesMapImg from './great-lakes-map.webp'
@@ -30,32 +30,32 @@ export default defineSet({
         {
           src: greatLakesMapImg,
           alt: 'Coloured map of the five Great Lakes with the Canada-United States border marked through them, labelling Superior, Michigan, Huron, Erie and Ontario',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: lakeSuperiorImg,
           alt: 'A lighthouse on a high cliff above Lake Superior at dusk, with a full moon in a pink and blue sky and snow on the shoreline below',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: lakeHuronImg,
           alt: 'Clear turquoise water over pale limestone slabs in a rocky cove on Lake Huron, backed by a low cliff and green forest',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: lakeOntarioImg,
           alt: 'The Toronto skyline and CN Tower silhouetted against an orange sunset, seen from the surface of Lake Ontario',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: lakeErieImg,
           alt: 'Aerial view of a wooded point of land tapering into Lake Erie, with farm fields behind it and sun glinting off the water',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: lakeMichiganImg,
           alt: 'A white lighthouse at the end of a concrete pier reaching into Lake Michigan, lit against an orange and pink sunset',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -71,32 +71,32 @@ export default defineSet({
         {
           src: lakeLouiseImg,
           alt: 'Turquoise water of Lake Louise leading to a snow-covered glacier and mountain face, framed by conifers and rocks in the foreground',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: moraineLakeImg,
           alt: 'Moraine Lake at sunrise, its blue water below the Valley of the Ten Peaks lit orange along the summits',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: emeraldLakeImg,
           alt: 'Bright green water of Emerald Lake in Yoho National Park with two canoes on it, ringed by steep forested slopes and a rocky peak',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: greatSlaveKayakingImg,
           alt: 'Three sea kayakers paddling on Great Slave Lake beneath a tall sheer cliff topped with spruce trees',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: spottedLakeImg,
           alt: 'Spotted Lake in the dry hills near Osoyoos, its bed showing dozens of pale circular mineral pools separated by ridges',
-          credit: 'Mykola Swarnyk, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Mykola Swarnyk', 'CC BY-SA 3.0'),
         },
         {
           src: abrahamLakeImg,
           alt: 'Stacks of white methane bubbles frozen inside the clear ice of Abraham Lake, with snowy mountains behind',
-          credit: 'Joli Rumi, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Joli Rumi', 'CC BY-SA 4.0'),
         },
       ],
     },

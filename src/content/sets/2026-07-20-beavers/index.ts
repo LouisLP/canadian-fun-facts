@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import canadaDayImg from './beaver-canada-day-flag.webp'
 import carryingBranchImg from './beaver-carrying-branch.webp'
 import chewedTreeImg from './beaver-chewing.webp'
@@ -38,12 +38,12 @@ export default defineSet({
         {
           src: nickelImg,
           alt: 'Both sides of a 1937 Canadian five-cent coin, the beaver perched on its rock',
-          credit: 'Awmcphee, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Awmcphee', 'CC0'),
         },
         {
           src: peltImg,
           alt: 'A beaver pelt stretched on a round willow frame',
-          credit: 'Thomas Quine, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Thomas Quine', 'CC BY 2.0'),
         },
         {
           src: stampImg,
@@ -76,22 +76,22 @@ export default defineSet({
         {
           src: treeCuttingImg,
           alt: 'A beaver pressed against a half-gnawed tree trunk in the snow, mid-chew',
-          credit: 'D. Gordon E. Robertson, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('D. Gordon E. Robertson', 'CC BY-SA 3.0'),
         },
         {
           src: swimmingImg,
           alt: 'A swimming beaver with its broad flat tail floating at the surface',
-          credit: 'Bureau of Land Management Alaska, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Bureau of Land Management Alaska', 'public domain'),
         },
         {
           src: cruisingImg,
           alt: 'A beaver cruising low through still water at dusk, only head and back showing',
-          credit: 'U.S. Fish and Wildlife Service, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('U.S. Fish and Wildlife Service', 'CC BY 2.0'),
         },
         {
           src: chewedTreeImg,
           alt: 'A large tree trunk chewed most of the way through by beaver teeth',
-          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
+          credit: commonsCredit('U.S. Fish and Wildlife Service', 'public domain'),
         },
         {
           src: grippingLogImg,
@@ -116,17 +116,17 @@ export default defineSet({
         {
           src: damImg,
           alt: 'A beaver dam of gnawed logs holding back a calm pond on a forest stream',
-          credit: 'Jakub Hałun, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jakub Hałun', 'CC BY 4.0'),
         },
         {
           src: pondAerialImg,
           alt: 'Aerial view of a beaver wetland strewn with dozens of felled tree trunks',
-          credit: 'Ermell, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Ermell', 'CC BY-SA 4.0'),
         },
         {
           src: lodgeImg,
           alt: 'A snow-dusted beaver lodge of piled sticks rising out of an icy marsh',
-          credit: 'U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons',
+          credit: commonsCredit('U.S. Fish and Wildlife Service', 'public domain'),
         },
         {
           src: hoppersImg,
@@ -135,7 +135,7 @@ export default defineSet({
         {
           src: carryingBranchImg,
           alt: 'A beaver hauling a leafy branch across a pond',
-          credit: 'Jeffery J. Nichols, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jeffery J. Nichols', 'CC BY-SA 4.0'),
         },
         {
           src: damBankImg,
