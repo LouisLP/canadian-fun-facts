@@ -13,9 +13,9 @@ export function useSlideNavigation(sectionCount: Ref<number>) {
   const container = ref<HTMLElement | null>(null)
   const current = ref(0)
 
-  function scrollTo(index: number) {
+  function scrollTo(index: number, behavior: ScrollBehavior = 'smooth') {
     const target = container.value?.children[index] as HTMLElement | undefined
-    target?.scrollIntoView({ behavior: 'smooth' })
+    target?.scrollIntoView({ behavior })
   }
 
   function next() {
@@ -29,6 +29,10 @@ export function useSlideNavigation(sectionCount: Ref<number>) {
   function onKeydown(e: KeyboardEvent) {
     // Leave modified keys to the browser — cmd+arrow is not a slide change.
     if (e.metaKey || e.ctrlKey || e.altKey)
+      return
+
+    // Someone typing a comment wants a space, not the next slide.
+    if (e.target instanceof HTMLElement && e.target.closest('input, textarea, select, [contenteditable]'))
       return
 
     if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {

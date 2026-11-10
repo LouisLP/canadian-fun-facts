@@ -4,13 +4,14 @@
 <script setup lang="ts">
 import type { SlideImage, VoiceoverCue } from '../content/schema'
 import { Icon } from '@iconify/vue'
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import FactPanel from '../components/set/FactPanel.vue'
 import QuestionPanel from '../components/set/QuestionPanel.vue'
 import SlideRail from '../components/set/SlideRail.vue'
 import ThanksPanel from '../components/set/ThanksPanel.vue'
 import TitlePanel from '../components/set/TitlePanel.vue'
 import VoiceoverPlayer from '../components/set/VoiceoverPlayer.vue'
+import { consumeSignInReturn } from '../composables/useAuth'
 import { useFullscreen } from '../composables/useFullscreen'
 import { useSlideNavigation } from '../composables/useSlideNavigation'
 import { findSet } from '../content/sets'
@@ -62,6 +63,13 @@ function followCue(cue: VoiceoverCue | undefined) {
   if (panel !== current.value)
     scrollTo(panel)
 }
+
+// Back from signing in: skip the replay and land on the comments again, at
+// the foot of the thank-you panel.
+onMounted(() => {
+  if (consumeSignInReturn())
+    scrollTo(sectionCount.value - 1, 'instant')
+})
 </script>
 
 <template>
@@ -88,7 +96,7 @@ function followCue(cue: VoiceoverCue | undefined) {
         />
       </template>
 
-      <ThanksPanel :data-index="panels.length + 1" />
+      <ThanksPanel :slug="set.slug" :data-index="panels.length + 1" />
     </div>
 
     <SlideRail

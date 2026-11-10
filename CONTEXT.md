@@ -49,3 +49,11 @@ _Avoid_: ID, key
 **Hub**:
 The site's front page: all sets in reverse-chronological order, filterable by topic.
 _Avoid_: Index, home, gallery
+
+**Comment**:
+A signed-in reader's plain-text remark on a set, shown under the sign-off on the thank-you panel. Lives in the database, tied to the set by slug.
+_Avoid_: Reply, post, message
+
+**Profile**:
+A reader's public face: a display name, nothing else. Made automatically the first time they sign in.
+_Avoid_: Account, user
