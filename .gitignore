@@ -41,3 +41,6 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Personal hooks bank: private, local only
+docs/personal-hooks.md

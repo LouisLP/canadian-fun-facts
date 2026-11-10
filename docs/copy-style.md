@@ -37,6 +37,7 @@ he played, the brands he grew up on.
 - First person ("where I was born and raised", "my family still tapped trees here"). Never name Louis in the copy.
 - Only where it's true. Don't manufacture a connection to fill a slide, and don't put one on every fact.
 - Personal connections often come from an image in the inbox (which he'll tell you about).
+- Known hooks, and the sets that already used them, are banked in `docs/personal-hooks.md` (gitignored, local only). Don't invent detail beyond it.
 
 ## Banned
 
