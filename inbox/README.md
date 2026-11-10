@@ -6,7 +6,7 @@ land in `src/content/sets/`.
 
 ## How to use it
 
-One folder per set, named with the set's slug:
+One folder per set, named with the set's slug (`pnpm new-set <slug> <topic>` creates it):
 
 ```
 inbox/

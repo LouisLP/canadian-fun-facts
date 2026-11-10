@@ -14,6 +14,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint .",
+    "new-set": "node scripts/new-set.ts",
     "optimize-images": "node scripts/optimize-images.ts",
     "voiceover": "node scripts/voiceover.ts"
   },
