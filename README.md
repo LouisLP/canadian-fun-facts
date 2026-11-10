@@ -77,6 +77,7 @@ pnpm preview       # serve the built bundle
 ```sh
 pnpm lint --fix              # eslint (@antfu config); sorts imports
 pnpm type-check              # vue-tsc — content errors surface here
+pnpm check-sets              # copy-style + folder rules: word caps, em-dashes, dates, orphan images
 pnpm new-set <slug> <topic>  # scaffold a set: dated folder + stub, inbox, backlog note
 pnpm optimize-images         # convert new images to WebP, rewrite imports
 pnpm optimize-images --check # CI gate: fails on unoptimized or oversized images

@@ -36,7 +36,7 @@ export default defineSet({
         '**Dildo** has been on Newfoundland charts since **1711**, centuries before the word meant what it means now, and nobody can explain the origin.',
         'A 1980s petition to rename it Seaview or Pretty Cove was voted down flat, and the town leaned in instead: **Capt. Dildo** statue, annual parade.',
         '**Jimmy Kimmel** talked up Dildo for weeks in 2019, was named honorary mayor on **August 15**, and paid for the Hollywood-style sign on the hillside.',
-        '**Blow Me Down** names the winds off the Bay of Islands; the mountain behind it is bare **Earth\'s mantle**, shoved to the surface when an ancient ocean closed.',
+        '**Blow Me Down** names the winds off the Bay of Islands; the mountain behind is bare **Earth\'s mantle**, pushed up when an ancient ocean closed.',
       ],
       images: [
         {

@@ -55,9 +55,11 @@ export default defineSet({
         },
         {
           src: sanctuaryImg,
+          alt: 'A grey and white humanoid robot raising one hand, in a dark studio',
         },
         {
           src: robotiqImg,
+          alt: 'A robot arm with a suction-cup gripper lifting a cardboard box',
         },
       ],
     },
@@ -92,9 +94,11 @@ export default defineSet({
         },
         {
           src: eaOfficeImg,
+          alt: 'The Electronic Arts office building, glass and wood-panelled storeys under a blue sky, with the EA logo on its tower',
         },
         {
           src: balatroImg,
+          alt: 'The Balatro title art: the game\'s name with an ace of spades for the A, beside three joker cards on a red swirl',
         },
       ],
     },
@@ -129,9 +133,11 @@ export default defineSet({
         },
         {
           src: blackberryClassicImg,
+          alt: 'Two hands typing with their thumbs on a phone with a slide-out physical keyboard',
         },
         {
           src: obsidianImg,
+          alt: 'The Obsidian logo, a purple faceted crystal, on a dark circuit-board pattern',
         },
       ],
     },

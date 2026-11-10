@@ -55,9 +55,11 @@ export default defineSet({
         },
         {
           src: ogopogoPaintingImg,
+          alt: 'A painting of long-necked serpents swimming in a green lake, one coiling beneath the surface',
         },
         {
           src: legendPosterImg,
+          alt: 'A collage of four black-and-white pictures of a humped serpent in a lake',
         },
       ],
     },
@@ -92,9 +94,11 @@ export default defineSet({
         },
         {
           src: sasquatchPhotoImg,
+          alt: 'A blurry film frame of a dark, ape-like figure walking upright through a clearing and looking back at the camera',
         },
         {
           src: moviePosterImg,
+          alt: 'The poster for the film Sasquatch: The Legend of Bigfoot, a dark ape-like silhouette in a forest above riders crossing a river',
         },
       ],
     },
@@ -129,9 +133,11 @@ export default defineSet({
         },
         {
           src: wendigoClassicImg,
+          alt: 'An illustration of a tall, gaunt creature with a deer skull and antlers for a head, standing in a misty forest',
         },
         {
           src: wendigoRenderingImg,
+          alt: 'A digital drawing of a crouching, emaciated creature with a deer skull head and large antlers',
         },
       ],
     },

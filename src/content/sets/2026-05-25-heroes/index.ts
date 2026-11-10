@@ -53,9 +53,11 @@ export default defineSet({
         },
         {
           src: hadfieldGuitarImg,
+          alt: 'Chris Hadfield in a red shirt playing an acoustic guitar while floating in the space station\'s cupola, Earth in the windows',
         },
         {
           src: bondarInSpaceImg,
+          alt: 'Roberta Bondar floating inside a space shuttle cabin among equipment',
         },
       ],
     },
@@ -88,9 +90,11 @@ export default defineSet({
         },
         {
           src: bantingInsulinImg,
+          alt: 'A vial labelled insulin injection standing beside a syringe',
         },
         {
           src: suzukiSpeakingCrowdImg,
+          alt: 'David Suzuki speaking at a glass lectern, wearing an embroidered vest over a black shirt',
         },
       ],
     },
@@ -123,9 +127,11 @@ export default defineSet({
         },
         {
           src: terryFoxRunningImg,
+          alt: 'Terry Fox running along a highway on his prosthetic leg, a police car following behind him',
         },
         {
           src: violaElderlyImg,
+          alt: 'An elderly woman raising her hands as she speaks in front of a banner showing a portrait of Viola Desmond',
         },
       ],
     },

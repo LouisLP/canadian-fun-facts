@@ -217,6 +217,7 @@ If the set's slides are later added, removed or reordered, renumber the `panel`s
 ```sh
 pnpm lint --fix      # imports must be alphabetized (perfectionist/sort-imports)
 pnpm type-check      # vue-tsc; a broken image path or bad topic fails here
+pnpm check-sets      # copy-style + folder rules the types can't see
 pnpm build           # bundles the set + its images
 ```
 
