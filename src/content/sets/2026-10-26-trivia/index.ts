@@ -118,12 +118,12 @@ export default defineSet({
         {
           src: loonieImg,
           alt: 'A Canadian one-dollar coin showing a common loon swimming past a treed shoreline, on dark weathered wood',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: toonieImg,
           alt: 'A Canadian two-dollar coin with a gold-coloured centre showing a polar bear, ringed by a silver-coloured outer band',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },
@@ -175,7 +175,7 @@ export default defineSet({
         {
           src: mapleSyrupLineupImg,
           alt: 'A row of maple-leaf-shaped bottles of syrup on a wooden railing, shading from dark amber to golden in the sun',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },
@@ -212,12 +212,12 @@ export default defineSet({
         {
           src: lakeLouiseImg,
           alt: 'Turquoise water of Lake Louise leading to a snow-covered glacier and mountain face, framed by conifers and rocks in the foreground',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: moraineLakeImg,
           alt: 'Moraine Lake at sunrise, its blue water below the Valley of the Ten Peaks lit orange along the summits',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },
@@ -250,12 +250,12 @@ export default defineSet({
         {
           src: dildoSignImg,
           alt: 'Large white block letters spelling DILDO standing on a wooded hillside, with workers on the scaffolding beneath them',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: captainDildoImg,
           alt: 'A visitor in a yellow rain jacket posing beside a wooden statue of a bearded fisherman in yellow oilskins labelled CAPT. DILDO, fishing boats behind',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },
@@ -271,12 +271,12 @@ export default defineSet({
         {
           src: canuckWithKnifeImg,
           alt: 'A crow standing on gravel with a serrated wooden-handled kitchen knife gripped in its beak, a red band on one leg',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: crowOnWireImg,
           alt: 'A crow perched on a guy wire beneath a street light against a pale overcast sky',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },
@@ -313,7 +313,7 @@ export default defineSet({
         {
           src: seawallSunsetImg,
           alt: 'An orange sunset over English Bay from a rocky shore, with freighters on the horizon',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
       ],
     },

@@ -16,7 +16,7 @@ export interface FactSlide {
   heading: string
   /** Full markdown per fact. At least one; 2–3 by convention. */
   facts: [string, ...string[]]
-  /** At least two; four is typical, six fills the slide's gutters. */
+  /** At least two; two to four by convention. */
   images: [SlideImage, SlideImage, ...SlideImage[]]
 }
 
@@ -79,7 +79,7 @@ export interface FunFactSet {
   covers?: string[]
   /** Me talking through the set; adds a player to the presentation. */
   voiceover?: Voiceover
-  /** At least one; four by convention. */
+  /** At least one; three or four by convention. */
   slides: [Slide, ...Slide[]]
 }
 

@@ -93,14 +93,14 @@ Two things carry most of the weight:
 
 - **Copy** follows [docs/copy-style.md](docs/copy-style.md) — one sentence per fact, lead
   with the surprising bit, bold the key figure.
-- **Images** are four per slide, credited in the set file. First choice is whatever is in
-  [`inbox/<slug>/`](inbox/README.md) (gitignored; originals stay out of the repo); gaps get
-  filled from Wikimedia Commons, Public Domain or CC only. This shapes the slides: a
-  subject you can't illustrate four times over is the wrong subject.
+- **Images** are two to four per slide, credited in the set file. First choice is whatever
+  is in [`inbox/<slug>/`](inbox/README.md) (gitignored; originals stay out of the repo);
+  gaps get filled from Wikimedia Commons, Public Domain or CC only. This shapes the slides:
+  a subject you can't illustrate twice over is the wrong subject.
 
 Raw material for future sets lives in `docs/backlog/`.
-[future-topics.md](docs/backlog/future-topics.md) is the standing idea bank — 48 candidate
-sets grouped by topic, each rated on how hard it is to illustrate with free images.
+[future-topics.md](docs/backlog/future-topics.md) is the standing idea bank: candidate
+sets grouped by topic, each with three or four slide subjects.
 
 ## Further reading
 

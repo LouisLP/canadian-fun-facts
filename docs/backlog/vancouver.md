@@ -68,7 +68,7 @@ Arc'teryx (brands), Horseshoe Bay craft brewery and cannabis stat (drugs & alcoh
    choice?
 2. Swap slide 4 for Raincouver, or add it as a fifth?
 
-## Shot list for `inbox/vancouver/` (6 per slide, a few spares each)
+## Shot list for `inbox/vancouver/`
 
 1. **Stanley Park:** Seawall with cyclists/walkers; Siwash Rock; aerial of the park from
    above downtown; Lions Gate Bridge from the Seawall; the forest trails; 2006 storm

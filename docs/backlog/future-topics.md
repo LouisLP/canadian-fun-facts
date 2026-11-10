@@ -16,7 +16,7 @@ Already published, do not re-propose: beavers, inventions, maple, filming & cele
 brands, language & slang, the cold, Indigenous peoples, travel, sports, weird laws,
 mythical creatures, industry & tech, Canada vs Germany, heroes, music, provinces &
 territories, birds, multiculturalism, weird place names, money, lakes, drugs & alcohol,
-the snack aisle.
+Vancouver, trivia, the snack aisle.
 
 Already covered inside a published set, so dropped from here: the Great Lakes (lakes),
 aurora borealis and the Rideau Canal skateway (the cold), astronauts and Nobel laureates
@@ -231,10 +231,6 @@ that still takes four nights; the Spiral Tunnels.
 
 **Festivals** — the Calgary Stampede's attendance; Winterlude; Just for Laughs and the
 Montreal jazz festival scale.
-
-**Vancouver** — Stanley Park bigger than Central Park; the Seawall; the Capilano Suspension
-Bridge and the Grouse Grind; skiing and the beach on the same day. _(Vancouver; travel set
-has one Stanley Park photo, check overlap.)_
 
 **Landmarks** — the CN Tower, world's tallest freestanding structure for 32 years, and its
 EdgeWalk; Peggy's Cove lighthouse; the Château Frontenac, the most photographed hotel.

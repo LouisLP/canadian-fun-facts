@@ -51,7 +51,7 @@ export default defineSet({
         {
           src: eagleOnBoatBowImg,
           alt: 'A bald eagle perched on the bow of a moored aluminum boat, snow-covered mountains behind',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: eagleCatchingFishImg,
@@ -77,17 +77,17 @@ export default defineSet({
         {
           src: geeseStanleyParkImg,
           alt: 'Canada geese grazing on wet grass beside a seawall path, a city beach and apartment towers behind them',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: gooseSasamatImg,
           alt: 'A single Canada goose sitting on patchy grass in front of a dark conifer forest',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: feedingGeeseImg,
           alt: 'A child in a cap and backpack holding out a handful of food to four Canada geese on a sunlit park lawn',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: geeseInFlightImg,
@@ -118,17 +118,17 @@ export default defineSet({
         {
           src: crowOnWireImg,
           alt: 'A crow perched on a guy wire beneath a street light against a pale overcast sky',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: canuckWithKnifeImg,
           alt: 'A crow standing on gravel with a serrated wooden-handled kitchen knife gripped in its beak, a red band on one leg',
-          credit: 'inbox, source unverified',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: heronStanleyParkImg,
           alt: 'A great blue heron flying between bare spring treetops, wings raised and neck stretched out',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: heronNestPairImg,
@@ -138,7 +138,7 @@ export default defineSet({
         {
           src: gullTakingOffImg,
           alt: 'A gull lifting off from a wooden pier railing with its wings blurred in motion, sea and shoreline behind',
-          credit: 'Louis Lascelles-Palys',
+          credit: 'Sourced by Louis Lascelles-Palys',
         },
         {
           src: glaucousWingedGullsImg,
