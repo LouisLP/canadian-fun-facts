@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import daviesSmilingImg from './alphonso-davies-smiling.webp'
 import daviesImg from './alphonso-davies.webp'
 import bcPlaceImg from './bc-place-world-cup.webp'
@@ -42,22 +42,22 @@ export default defineSet({
         {
           src: bcPlaceImg,
           alt: 'The interior of BC Place in Vancouver, red seats around a green pitch, before a Canada match',
-          credit: 'Aeacad, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Aeacad', 'CC0'),
         },
         {
           src: daviesImg,
           alt: 'Alphonso Davies in a black and red Canada warm-up shirt on the pitch',
-          credit: 'Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Bryan Berlin', 'CC BY-SA 4.0'),
         },
         {
           src: davidImg,
           alt: 'Jonathan David in Canada\'s number 10 shirt during a World Cup match',
-          credit: 'Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Bryan Berlin', 'CC BY-SA 4.0'),
         },
         {
           src: bmoFieldImg,
           alt: 'The exterior of BMO Field in Toronto under a clear sky',
-          credit: 'Wladyslaw, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Wladyslaw', 'CC BY-SA 3.0'),
         },
         {
           src: fifaTeamImg,
@@ -81,22 +81,22 @@ export default defineSet({
         {
           src: cauldronImg,
           alt: 'The Vancouver 2010 Olympic cauldron burning in downtown Vancouver at dusk',
-          credit: 'Anthonymaw, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthonymaw', 'CC BY-SA 4.0'),
         },
         {
           src: bilodeauImg,
           alt: 'Alexandre Bilodeau\'s gold medal ceremony shown on a large screen, captioned Gold Men\'s Moguls',
-          credit: 'Michael Francis McCarthy, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Michael Francis McCarthy', 'CC BY 2.0'),
         },
         {
           src: olympicHockeyImg,
           alt: 'Canadian and American players skating during an ice hockey game at the 2010 Winter Olympics',
-          credit: 'Robert Scoble, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Robert Scoble', 'CC BY 2.0'),
         },
         {
           src: streetCelebrationImg,
           alt: 'Crowds in hockey jerseys filling a Vancouver street at night to celebrate a gold medal',
-          credit: 'Duncan Rawlinson, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Duncan Rawlinson', 'CC BY 2.0'),
         },
         {
           src: olympicFansImg,
@@ -120,22 +120,22 @@ export default defineSet({
         {
           src: lacrosseImg,
           alt: 'A goalie in a Canada national indoor lacrosse jersey guarding the net',
-          credit: 'RicLaf, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('RicLaf', 'CC BY-SA 2.0'),
         },
         {
           src: pondHockeyImg,
           alt: 'Players skating on a cleared outdoor pond rink beside snow-covered houses',
-          credit: 'Laslovarga, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Laslovarga', 'CC BY-SA 4.0'),
         },
         {
           src: victoryCeremonyImg,
           alt: 'Fans in red filling an arena for the Olympic ice hockey victory ceremony in Vancouver',
-          credit: 's.yume, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('s.yume', 'CC BY 2.0'),
         },
         {
           src: outdoorRinkImg,
           alt: 'A black and white photo of a hockey game on an outdoor rink at Fort Chipewyan, Alberta',
-          credit: 'Provincial Archives of Alberta, no known copyright restrictions, via Wikimedia Commons',
+          credit: commonsCredit('Provincial Archives of Alberta', 'no known copyright restrictions'),
         },
         {
           src: lacrosseTeamsImg,
@@ -159,22 +159,22 @@ export default defineSet({
         {
           src: gretzkyRangersImg,
           alt: 'Wayne Gretzky skating in a New York Rangers jersey',
-          credit: 'Håkan Dahlström, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Håkan Dahlström', 'CC BY-SA 3.0'),
         },
         {
           src: gretzkyStatueImg,
           alt: 'A bronze statue of Wayne Gretzky raising the Stanley Cup outside the Wayne Gretzky Centre in Brantford',
-          credit: 'Jfvoll, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jfvoll', 'CC BY-SA 4.0'),
         },
         {
           src: gretzkyPortraitImg,
           alt: 'A portrait of Wayne Gretzky wearing a black jacket and a Turin 2006 lanyard',
-          credit: 'Kris Krüg, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Kris Krüg', 'CC BY-SA 2.0'),
         },
         {
           src: howeImg,
           alt: 'Gordie Howe standing at a rink holding a paper cup',
-          credit: 'Arnie Lee, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Arnie Lee', 'CC BY 3.0'),
         },
         {
           src: gretzkyPointsImg,

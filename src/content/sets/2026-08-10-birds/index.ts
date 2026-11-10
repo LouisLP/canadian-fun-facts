@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import canuckWithKnifeImg from './canuck-with-knife.webp'
 import crowOnWireImg from './crow-on-wire.webp'
 import eagleCarvingImg from './eagle-carving.webp'
@@ -37,32 +37,32 @@ export default defineSet({
         {
           src: loonOnLakeImg,
           alt: 'A common loon in black-and-white breeding plumage swimming on still water, its reflection below',
-          credit: 'Enoch Leung, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Enoch Leung', 'CC BY-SA 2.0'),
         },
         {
           src: loonAndChickImg,
           alt: 'An adult common loon on a lake with a downy grey chick swimming alongside it',
-          credit: 'Cephas, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Cephas', 'CC BY-SA 3.0'),
         },
         {
           src: snowyOwlLandingImg,
           alt: 'A snowy owl dropping onto a snowbank with wings spread and talons forward against a blue sky',
-          credit: 'Bert de Tilly, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Bert de Tilly', 'CC BY-SA 4.0'),
         },
         {
           src: eagleOnBoatBowImg,
           alt: 'A bald eagle perched on the bow of a moored aluminum boat, snow-covered mountains behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: eagleCatchingFishImg,
           alt: 'A bald eagle skimming open water with its talons down, snatching a fish from the surface',
-          credit: 'Lorie Shaull, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Lorie Shaull', 'CC BY-SA 2.0'),
         },
         {
           src: eagleCarvingImg,
           alt: 'A carved and painted wooden eagle with outstretched wings on top of a Northwest Coast pole in British Columbia',
-          credit: 'Chris English, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Chris English', 'CC BY-SA 3.0'),
         },
       ],
     },
@@ -78,32 +78,32 @@ export default defineSet({
         {
           src: geeseStanleyParkImg,
           alt: 'Canada geese grazing on wet grass beside a seawall path, a city beach and apartment towers behind them',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: gooseSasamatImg,
           alt: 'A single Canada goose sitting on patchy grass in front of a dark conifer forest',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: feedingGeeseImg,
           alt: 'A child in a cap and backpack holding out a handful of food to four Canada geese on a sunlit park lawn',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: geeseInFlightImg,
           alt: 'Three Canada geese silhouetted in flight against a cloudy blue sky',
-          credit: 'Ildar Sagdejev, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Ildar Sagdejev', 'CC BY-SA 4.0'),
         },
         {
           src: gooseFamilyThamesImg,
           alt: 'A Canada goose swimming along a stone-walled English canal with five goslings following',
-          credit: 'Jettthedog, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Jettthedog', 'CC0'),
         },
         {
           src: gooseLowOverWaterImg,
           alt: 'A Canada goose flying low over open water with its wings fully extended downward',
-          credit: 'Frank Schulenburg, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Frank Schulenburg', 'CC BY-SA 3.0'),
         },
       ],
     },
@@ -119,32 +119,32 @@ export default defineSet({
         {
           src: crowOnWireImg,
           alt: 'A crow perched on a guy wire beneath a street light against a pale overcast sky',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: canuckWithKnifeImg,
           alt: 'A crow standing on gravel with a serrated wooden-handled kitchen knife gripped in its beak, a red band on one leg',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: heronStanleyParkImg,
           alt: 'A great blue heron flying between bare spring treetops, wings raised and neck stretched out',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: heronNestPairImg,
           alt: 'Two great blue herons facing each other on a stick nest high in a tree at sunset',
-          credit: 'Pete from Vancouver, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Pete from Vancouver', 'CC BY-SA 2.0'),
         },
         {
           src: gullTakingOffImg,
           alt: 'A gull lifting off from a wooden pier railing with its wings blurred in motion, sea and shoreline behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: glaucousWingedGullsImg,
           alt: 'Two adult glaucous-winged gulls with pale grey wings standing together on a weathered piling',
-          credit: 'Tony Fox, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Tony Fox', 'CC BY-SA 3.0'),
         },
       ],
     },

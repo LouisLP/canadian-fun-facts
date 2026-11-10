@@ -131,11 +131,11 @@ curl -sL -H "User-Agent: $UA" \
 ## 5. Convert to WebP
 
 Once every chosen image — inbox copies and Commons downloads alike — is sitting in the set
-folder as `.jpg`/`.png`/`.webp`:
+folder as `.jpg`/`.png`/`.heic`/`.webp`:
 
 ```sh
 pnpm optimize-images        # converts to .webp (≤1600px, q80), deletes originals,
-                            # and rewrites any .jpg/.png references in index.ts
+                            # and rewrites any .jpg/.png/.heic references in index.ts
 pnpm optimize-images --check   # CI gate; must pass
 ```
 
@@ -151,12 +151,12 @@ date and the folder name mirrors it by convention. Both are already set, so leav
 - **Alt text**: plainly descriptive, no jokes, no flourishes (per copy-style scope note).
 - **Credit**: optional in the schema, and currently not rendered (the `<figcaption>` in
   `FactPanel.vue` is commented out) — but fill it in on every image, since it's the only
-  record of where a file came from. **Inbox images** get `'Sourced by Louis Lascelles-Palys'`
-  (many are web-sourced, not his own photographs), held in one `INBOX_CREDIT` const per
-  set. **Commons
-  images** get `"<Author>, <LICENSE>, via Wikimedia Commons"`, e.g.
-  `"Jomegat, CC BY-SA 4.0, via Wikimedia Commons"`. Public-domain / no-restrictions files:
-  `"public domain, via Wikimedia Commons"` or `"<Institution>, no known copyright restrictions, via Wikimedia Commons"`.
+  record of where a file came from. Both kinds come from `schema.ts`; never retype the
+  strings. **Inbox images** get `INBOX_CREDIT` (many are web-sourced, not his own
+  photographs). **Commons images** get `commonsCredit(author, license)`, e.g.
+  `commonsCredit('Jomegat', 'CC BY-SA 4.0')`; the license is `'public domain'` or
+  `'no known copyright restrictions'` where that applies. A file with no named author is
+  the one literal: `'public domain, via Wikimedia Commons'`.
   Take the author and license short-name from the same `extmetadata` the search returned.
 
 ## 6b. Voiceover (optional)

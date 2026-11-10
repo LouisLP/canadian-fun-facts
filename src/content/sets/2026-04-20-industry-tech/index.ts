@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import balatroImg from './balatro-title.webp'
 import blackberryClassicImg from './blackberry-classic.webp'
 import blackberryImg from './blackberry-phones.webp'
@@ -36,22 +36,22 @@ export default defineSet({
         {
           src: jackalImg,
           alt: 'A small four-wheeled Clearpath Jackal research robot fitted with a spinning laser scanner',
-          credit: 'Luke J. Allen, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Luke J. Allen', 'public domain'),
         },
         {
           src: agvImg,
           alt: 'An automated guided vehicle carrying a loaded pallet through an industrial plant',
-          credit: 'Timmo at ek robotics GmbH, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Timmo at ek robotics GmbH', 'CC BY-SA 4.0'),
         },
         {
           src: humanoidImg,
           alt: 'Two full-size humanoid robots standing on display stands in an exhibition hall',
-          credit: 'Syced, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Syced', 'CC0'),
         },
         {
           src: gripperImg,
           alt: 'A collaborative robot arm with a gripper picking parts from a tray on a workbench',
-          credit: 'Jeff Green/Rethink Robotics, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jeff Green/Rethink Robotics', 'CC BY 4.0'),
         },
         {
           src: sanctuaryImg,
@@ -75,22 +75,22 @@ export default defineSet({
         {
           src: ubisoftImg,
           alt: 'The red brick Ubisoft building in Montreal\'s Plateau neighbourhood, signage on the roofline',
-          credit: 'Guilhem Vellut, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Guilhem Vellut', 'CC BY 2.0'),
         },
         {
           src: controllerImg,
           alt: 'Two hands holding a red wired game controller mid-play',
-          credit: '$ir$terlin, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('$ir$terlin', 'CC BY-SA 4.0'),
         },
         {
           src: gamingLoungeImg,
           alt: 'People gathered among rows of gaming PCs and racing seats in a dark neon-lit gaming lounge',
-          credit: 'Masterandbeef, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Masterandbeef', 'CC0'),
         },
         {
           src: pokerImg,
           alt: 'A fanned poker hand of five hearts on a green felt table, standing in for the card game Balatro',
-          credit: 'Guts Gaming, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Guts Gaming', 'CC BY 2.0'),
         },
         {
           src: eaOfficeImg,
@@ -114,22 +114,22 @@ export default defineSet({
         {
           src: shopifyImg,
           alt: 'The Shopify name and shopping-bag logo on a directory sign in an office lobby',
-          credit: 'Raysonho @ Open Grid Scheduler / Grid Engine, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Raysonho @ Open Grid Scheduler / Grid Engine', 'CC0'),
         },
         {
           src: blackberryImg,
           alt: 'Three BlackBerry phones with physical keyboards lined up side by side',
-          credit: 'Kt38138, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Kt38138', 'CC BY-SA 4.0'),
         },
         {
           src: goslingImg,
           alt: 'James Gosling, creator of Java, speaking and gesturing with one hand',
-          credit: 'Peter Campbell, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Peter Campbell', 'CC BY-SA 4.0'),
         },
         {
           src: lerdorfImg,
           alt: 'Portrait of Rasmus Lerdorf, creator of PHP, in front of a metal wall',
-          credit: 'William Stadtwald Demchick, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('William Stadtwald Demchick', 'CC BY-SA 4.0'),
         },
         {
           src: blackberryClassicImg,

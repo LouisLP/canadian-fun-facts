@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import dimeBluenoseImg from './dime-bluenose.webp'
 import fiftyDollarNoteImg from './fifty-dollar-note.webp'
 import fiveDollarNoteImg from './five-dollar-note.webp'
@@ -31,32 +31,32 @@ export default defineSet({
         {
           src: nickelBeaverImg,
           alt: 'Several Canadian five-cent coins on a dark wooden surface, each showing a beaver on a log',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: dimeBluenoseImg,
           alt: 'Three Canadian ten-cent coins showing the schooner Bluenose under sail, resting on an old chart of the Nova Scotia coast',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: loonieImg,
           alt: 'A Canadian one-dollar coin showing a common loon swimming past a treed shoreline, on dark weathered wood',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: toonieImg,
           alt: 'A Canadian two-dollar coin with a gold-coloured centre showing a polar bear, ringed by a silver-coloured outer band',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: quarterCaribouImg,
           alt: 'A Canadian twenty-five-cent coin showing a caribou head, sitting on top of a pile of mixed Canadian coins',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: penny2012Img,
           alt: 'A 2012 Canadian one-cent coin showing two maple leaves on a stem, against a background of blurred pennies',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -73,17 +73,17 @@ export default defineSet({
         {
           src: fiveDollarNoteImg,
           alt: 'Front and back of the blue Canadian five-dollar polymer note, showing Wilfrid Laurier and the Canadarm2 robotic arm with an astronaut',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: tenDollarNoteImg,
           alt: 'Front and back of the purple Canadian ten-dollar polymer note, showing John A. Macdonald and a passenger train in the Rockies',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: hundredDollarNoteImg,
           alt: 'Front and back of the brown Canadian hundred-dollar polymer note, showing Robert Borden and a researcher at a microscope beside a vial of insulin',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: violaDesmondImg,
@@ -93,12 +93,12 @@ export default defineSet({
         {
           src: twentyDollarNoteImg,
           alt: 'Front and back of the green Canadian twenty-dollar polymer note, showing Queen Elizabeth II and the Canadian National Vimy Memorial',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: fiftyDollarNoteImg,
           alt: 'Front and back of the red Canadian fifty-dollar polymer note, showing Mackenzie King and the research icebreaker CCGS Amundsen',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },

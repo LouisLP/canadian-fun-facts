@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import cashBillsImg from './cash-bills.webp'
 import coinsPileImg from './coins-pile.webp'
 import dimeImg from './dime.webp'
@@ -36,22 +36,22 @@ export default defineSet({
         {
           src: coinsPileImg,
           alt: 'Hands sifting through a large pile of assorted coins spread across a table',
-          credit: 'Morgan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Morgan', 'CC BY 2.0'),
         },
         {
           src: nickelImg,
           alt: 'Close-up of the beaver side of a 1987 Canadian five-cent coin',
-          credit: 'Mark Morgan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Mark Morgan', 'CC BY 2.0'),
         },
         {
           src: loonieImg,
           alt: 'A Canadian one-dollar coin showing the loon on a plain white background',
-          credit: 'Creative Tools, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Creative Tools', 'CC BY 2.0'),
         },
         {
           src: toonieImg,
           alt: 'A Canadian two-dollar coin standing on edge, its polar bear side lit against a dark background',
-          credit: 'Carol VanHook, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Carol VanHook', 'CC BY-SA 2.0'),
         },
         {
           src: dimeImg,
@@ -75,22 +75,22 @@ export default defineSet({
         {
           src: ratAtWaterImg,
           alt: 'A brown rat crouched at the edge of still water, its reflection visible below',
-          credit: 'Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Charles J. Sharp', 'CC BY-SA 4.0'),
         },
         {
           src: ratEatingImg,
           alt: 'A brown rat feeding on the ground beside a discarded tin can',
-          credit: 'Zeynel Cebeci, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Zeynel Cebeci', 'CC BY-SA 4.0'),
         },
         {
           src: ratByFenceImg,
           alt: 'A brown rat sniffing a plastic tub beside a chain-link fence',
-          credit: 'Chuck Homler d/b/a Focus On Wildlife, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Chuck Homler d/b/a Focus On Wildlife', 'CC BY-SA 4.0'),
         },
         {
           src: ratOnGravelImg,
           alt: 'A brown rat standing on gravel in bright sunlight',
-          credit: 'AnemoneProjectors, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('AnemoneProjectors', 'CC BY-SA 2.0'),
         },
         {
           src: ratPropagandaImg,
@@ -114,22 +114,22 @@ export default defineSet({
         {
           src: shovellingRoofImg,
           alt: 'A person standing on the snow-covered roof of a house, shovelling snow off the edge',
-          credit: 'Artaxerxes, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Artaxerxes', 'CC BY-SA 4.0'),
         },
         {
           src: snowCurlImg,
           alt: 'A thick curl of snow overhanging the edge of a house roof',
-          credit: 'Lee Snook (MORA), public domain, via Wikimedia Commons',
+          credit: commonsCredit('Lee Snook (MORA)', 'public domain'),
         },
         {
           src: snowPiledImg,
           alt: 'Deep snow piled across a roof and capping two stone chimneys',
-          credit: 'Lee Snook (MORA), public domain, via Wikimedia Commons',
+          credit: commonsCredit('Lee Snook (MORA)', 'public domain'),
         },
         {
           src: iciclesImg,
           alt: 'Long icicles dripping from a snowy edge against a clear blue sky',
-          credit: 'Hsoosalu, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Hsoosalu', 'CC BY-SA 4.0'),
         },
         {
           src: shovellingSnowRoofImg,

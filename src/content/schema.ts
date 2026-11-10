@@ -40,6 +40,18 @@ export interface QuizSlide {
 
 export type Slide = FactSlide | QuizSlide
 
+/** Credit for inbox images: many are web-sourced, not my own photographs. */
+export const INBOX_CREDIT = 'Sourced by Louis Lascelles-Palys'
+
+/**
+ * Credit for a Wikimedia Commons image. Take both from the file's
+ * `extmetadata`: the Artist, and the LicenseShortName ("CC BY-SA 4.0",
+ * "public domain", "no known copyright restrictions").
+ */
+export function commonsCredit(author: string, license: string): string {
+  return `${author}, ${license}, via Wikimedia Commons`
+}
+
 /** What a slide is called in a list: its heading, or its question. */
 export function slideHeading(slide: Slide): string {
   return slide.kind === 'quiz' ? slide.question : slide.heading

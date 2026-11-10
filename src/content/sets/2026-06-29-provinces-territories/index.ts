@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import ratPosterImg from './alberta-rat-poster.webp'
 import autumnLakeImg from './autumn-lake-reflection.webp'
 import borealForestImg from './boreal-forest-bridge.webp'
@@ -42,22 +42,22 @@ export default defineSet({
         {
           src: howeSoundImg,
           alt: 'Snow-capped mountains rising above the deep blue water of Howe Sound in British Columbia',
-          credit: 'Shafik Diwan, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Shafik Diwan', 'CC BY-SA 4.0'),
         },
         {
           src: moraineImg,
           alt: 'Jagged Rocky Mountain peaks reflected in the still water of Moraine Lake, Banff National Park',
-          credit: 'Terry Ott, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Terry Ott', 'CC BY 2.0'),
         },
         {
           src: prairieImg,
           alt: 'A line of power poles receding toward a flat, unbroken prairie horizon',
-          credit: 'Saffron Blaze, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Saffron Blaze', 'CC BY-SA 3.0'),
         },
         {
           src: polarBearImg,
           alt: 'A polar bear walking across mossy tundra near Churchill, Manitoba',
-          credit: 'TravelingOtter, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('TravelingOtter', 'CC BY 2.0'),
         },
         {
           src: tenPeaksImg,
@@ -81,22 +81,22 @@ export default defineSet({
         {
           src: niagaraImg,
           alt: 'Aerial view of the Horseshoe Falls at Niagara, mist rising from the curved crest',
-          credit: 'FuchsiaPeacock, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('FuchsiaPeacock', 'CC BY-SA 4.0'),
         },
         {
           src: torontoImg,
           alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: 'Jchmrt, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
         },
         {
           src: frontenacImg,
           alt: 'The Château Frontenac above snow-covered Quebec City at sunset',
-          credit: 'Wilfredor, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Wilfredor', 'CC BY-SA 4.0'),
         },
         {
           src: notreDameImg,
           alt: 'The twin-towered stone facade of Notre-Dame Basilica in Old Montreal, lit at night',
-          credit: 'Diego Delso, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Diego Delso', 'CC BY-SA 4.0'),
         },
         {
           src: quebecWinterImg,
@@ -120,22 +120,22 @@ export default defineSet({
         {
           src: hopewellImg,
           alt: 'Tree-topped sandstone sea stacks at Hopewell Rocks, exposed on the sea floor at low tide',
-          credit: 'Dennis G. Jarvis, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Dennis G. Jarvis', 'CC BY-SA 2.0'),
         },
         {
           src: peggysCoveImg,
           alt: 'The white lighthouse at Peggys Cove, Nova Scotia, standing on bare granite in fog',
-          credit: 'TravelingOtter, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('TravelingOtter', 'CC BY-SA 2.0'),
         },
         {
           src: bridgeImg,
           alt: 'The Confederation Bridge on its concrete piers, curving away across the water',
-          credit: 'Wladyslaw, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Wladyslaw', 'CC BY-SA 3.0'),
         },
         {
           src: jellybeanImg,
           alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: 'miketnorton, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
         },
         {
           src: fishingVillageImg,
@@ -159,22 +159,22 @@ export default defineSet({
         {
           src: auroraImg,
           alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
         {
           src: klondikeImg,
           alt: 'The SS Klondike sternwheeler moored on the bank of the Yukon River at Whitehorse',
-          credit: 'Bo Mertz, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Bo Mertz', 'CC BY-SA 2.0'),
         },
         {
           src: greatSlaveImg,
           alt: 'The rocky shoreline of Great Slave Lake at Yellowknife under a clear sky',
-          credit: 'CambridgeBayWeather, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('CambridgeBayWeather', 'CC BY-SA 4.0'),
         },
         {
           src: inukshukImg,
           alt: 'A large stone inukshuk with outstretched arms standing against a clear blue sky',
-          credit: 'Fabian Roudra Baroi, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Fabian Roudra Baroi', 'CC BY-SA 4.0'),
         },
         {
           src: whitePassImg,

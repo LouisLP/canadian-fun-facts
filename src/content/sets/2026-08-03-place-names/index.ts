@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import alexandraBridgeImg from './alexandra-bridge-spuzzum.webp'
 import blowMeDownKayaksImg from './blow-me-down-kayaks.webp'
 import blowMeDownSignImg from './blow-me-down-park-sign.webp'
@@ -42,32 +42,32 @@ export default defineSet({
         {
           src: dildoSignImg,
           alt: 'Large white block letters spelling DILDO standing on a wooded hillside, with workers on the scaffolding beneath them',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: captainDildoImg,
           alt: 'A visitor in a yellow rain jacket posing beside a wooden statue of a bearded fisherman in yellow oilskins labelled CAPT. DILDO, fishing boats behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: dildoHarbourImg,
           alt: 'Coloured fishing sheds and wharves along a still harbour under a cloudy sky in Dildo, Newfoundland',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: blowMeDownSignImg,
           alt: 'A hanging wooden sign reading Blow Me Down Provincial Park, Parks and Natural Areas, Newfoundland and Labrador, beside a gravel road',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: blowMeDownShorelineImg,
           alt: 'A hiker on a wooden staircase under an overhanging cliff, looking out over a curved pebble beach and forested mountains',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: blowMeDownKayaksImg,
           alt: 'Two sea kayakers paddling on open blue water in front of a steep flat-topped mountain',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -83,32 +83,32 @@ export default defineSet({
         {
           src: comeByChanceSignImg,
           alt: 'A welcome sign reading THE TOWN OF COME BY CHANCE WELCOMES YOU in orange and pink lettering, with an eagle, a salmon, and the refinery skyline behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: comeByChanceAerialImg,
           alt: 'Aerial view of Come By Chance, a road and scattered houses along a tidal river running out through green barrens to distant hills',
-          credit: 'Shhewitt, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Shhewitt', 'CC BY-SA 4.0'),
         },
         {
           src: comeByChanceRefineryImg,
           alt: 'The Come By Chance oil refinery in winter, steam rising from rows of distillation columns above snow-covered outbuildings',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: happyAdventureSignImg,
           alt: 'A green highway sign with three destinations: Salvage to the left, Happy Adventure and Sandy Cove to the right',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: happyAdventureWharfImg,
           alt: 'A red and white fishing boat tied up at a wharf in evening light, small open boats moored in the foreground',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: happyAdventureCoveImg,
           alt: 'A sheltered cove ringed by spruce and low houses, reflecting a sky full of small clouds',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -124,32 +124,32 @@ export default defineSet({
         {
           src: haHaHighwayImg,
           alt: 'A green highway sign in a snowy landscape pointing left to Saint-Louis-du-Ha! Ha! and St-Elzéar-de-Témiscouata',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: haHaPostOfficeImg,
           alt: 'A red Canada Post sign on a white clapboard wall reading Saint-Louis-du-Ha! Ha!',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: climaxWelcomeImg,
           alt: 'A wooden roadside shelter holding a painted sign reading Welcome to Climax, Sunset Capital of Canada, over a prairie sunset scene',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: climaxGoSlowImg,
           alt: 'Black-and-white photo of eight young people posed on and around an old sign reading Welcome to Climax, Go Slow, Speed Limit 10 Miles Per Hour',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: climaxSunsetImg,
           alt: 'Aerial view of a small prairie village at sunset, a vertical light pillar rising above the sun on the flat horizon',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: climaxElevatorImg,
           alt: 'A white wooden grain elevator lettered SASKATCHEWAN CLIMAX in red, against a deep blue sky',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -165,32 +165,32 @@ export default defineSet({
         {
           src: moonbeamSaucerImg,
           alt: 'A white flying saucer on landing legs lettered MOONBEAM, parked beside a red and green tourist information building',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: moonbeamUnveilingImg,
           alt: 'A crowd watching a person in a green alien costume walk beside a silver flying saucer lettered MOONBEAM on a lawn',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: moonbeamLakeImg,
           alt: 'A person sitting alone in a lawn chair on a flat rock at the edge of a calm lake, clouds mirrored in the water',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: spuzzumSignImg,
           alt: 'A hand-painted roadside sign reading Spuzzum First Nation, Nlaka\'Pamux Nation, with a Coast Salish salmon design',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: alexandraBridgeImg,
           alt: 'Black-and-white photo of the Alexandra Bridge, a concrete-towered suspension bridge over the Fraser River at Spuzzum, a 1940s car crossing it',
-          credit: 'Don Coltman, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Don Coltman', 'CC0'),
         },
         {
           src: spuzzumRaftingImg,
           alt: 'A raft of paddlers in helmets and life jackets dropping into whitewater in a steep rocky river canyon',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },

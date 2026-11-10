@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import backpackImg from './arcteryx-backpack.webp'
 import jacketImg from './arcteryx-jacket.webp'
 import logoImg from './arcteryx-logo.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: lululemonRobsonImg,
           alt: 'A Lululemon store on Robson Street in Vancouver',
-          credit: 'GoToVan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
         },
         {
           src: lululemonYogaImg,
           alt: 'A woman meditating cross-legged on a yoga mat outdoors in a park',
-          credit: 'lululemon athletica, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('lululemon athletica', 'CC BY 2.0'),
         },
         {
           src: lululemonChelseaImg,
           alt: 'A Lululemon storefront with the brand name above the windows',
-          credit: 'Philafrenzy, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Philafrenzy', 'CC BY-SA 4.0'),
         },
         {
           src: lululemonStorefrontImg,
           alt: 'Entrance to a Lululemon store inside a shopping mall',
-          credit: 'Windmemories, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Windmemories', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -65,22 +65,22 @@ export default defineSet({
         {
           src: sportChekChinookImg,
           alt: 'A Sport Chek store entrance inside a shopping mall',
-          credit: 'Rowanlovescars, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Rowanlovescars', 'CC BY-SA 4.0'),
         },
         {
           src: sportChekEdmontonImg,
           alt: 'Exterior of a Sport Chek store at West Edmonton Mall',
-          credit: 'Rowanlovescars, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Rowanlovescars', 'CC BY-SA 4.0'),
         },
         {
           src: mecStoreImg,
           alt: 'A Mountain Equipment Co-op store exterior',
-          credit: 'Simon Law, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Simon Law', 'CC BY-SA 2.0'),
         },
         {
           src: mecEdmontonImg,
           alt: 'Exterior of the MEC store in Edmonton',
-          credit: 'Myke2020, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Myke2020', 'public domain'),
         },
       ],
     },
@@ -96,22 +96,22 @@ export default defineSet({
         {
           src: gooseFlagshipImg,
           alt: 'A Canada Goose flagship store entrance at Sherway Gardens mall',
-          credit: 'Canmenwalker, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Canmenwalker', 'CC BY 4.0'),
         },
         {
           src: gooseLabelImg,
           alt: 'The round Canada Goose Arctic Program badge stitched on a cream knit garment',
-          credit: 'Qirille, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Qirille', 'CC BY-SA 4.0'),
         },
         {
           src: gooseGreenlandImg,
           alt: 'A small blue Canada Goose shop in Kangerlussuaq, Greenland',
-          credit: 'Quintin Soloviev, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Quintin Soloviev', 'CC BY-SA 4.0'),
         },
         {
           src: gooseManotickImg,
           alt: 'A Canada Goose shop on the main street of Manotick, Ontario',
-          credit: 'Peter Jakubinek, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Peter Jakubinek', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -127,22 +127,22 @@ export default defineSet({
         {
           src: jacketImg,
           alt: 'A hiker in an orange Arc\'teryx insulated jacket on a snowy mountain ridge',
-          credit: 'Olgierd, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Olgierd', 'CC BY 2.0'),
         },
         {
           src: squareOneImg,
           alt: 'An Arc\'teryx store inside Square One shopping centre',
-          credit: 'Canmenwalker, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Canmenwalker', 'CC BY 4.0'),
         },
         {
           src: backpackImg,
           alt: 'A black Arc\'teryx Alpha backpack with the skeletal bird logo',
-          credit: 'Jjanhone, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jjanhone', 'CC BY-SA 4.0'),
         },
         {
           src: logoImg,
           alt: 'The Arc\'teryx Archaeopteryx skeleton logo',
-          credit: 'Olgierd, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Olgierd', 'CC BY 2.0'),
         },
       ],
     },

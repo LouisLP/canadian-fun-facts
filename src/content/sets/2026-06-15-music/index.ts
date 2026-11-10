@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import arcadeFireImg from './arcade-fire.webp'
 import avrilLavigneImg from './avril-lavigne-complicated.webp'
 import bieberBabyEraImg from './bieber-baby-era.webp'
@@ -42,22 +42,22 @@ export default defineSet({
         {
           src: drakeImg,
           alt: 'Drake singing into a microphone on a dark stage, wearing a black jacket and gold chains',
-          credit: 'The Come Up Show, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('The Come Up Show', 'CC BY 2.0'),
         },
         {
           src: weekndImg,
           alt: 'A packed Stade de France during a Weeknd stadium concert, the stage lit through smoke',
-          credit: 'Zakarie Faibis, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Zakarie Faibis', 'CC BY-SA 4.0'),
         },
         {
           src: bieberImg,
           alt: 'Justin Bieber in a purple cap leaning on a metal stage rig railing at a night concert',
-          credit: 'Heather Sokol, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Heather Sokol', 'CC BY-SA 2.0'),
         },
         {
           src: shawnMendesImg,
           alt: 'Shawn Mendes playing a black electric guitar and singing at a microphone under spotlights',
-          credit: 'Josiah VanDien, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Josiah VanDien', 'CC BY-SA 4.0'),
         },
         {
           src: bieberBabyEraImg,
@@ -81,22 +81,22 @@ export default defineSet({
         {
           src: celinePortraitImg,
           alt: 'Close portrait of Celine Dion on stage in a black top',
-          credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
         },
         {
           src: celineTakingChancesImg,
           alt: 'Celine Dion singing into a handheld microphone with one arm raised, lit in blue and pink',
-          credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
         },
         {
           src: celineConciertoImg,
           alt: 'Celine Dion performing on a bare stage against a deep blue backdrop',
-          credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
         },
         {
           src: celineLaserImg,
           alt: 'A packed arena during a Celine Dion concert, green lasers sweeping above the stage',
-          credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
         },
         {
           src: eurovisionImg,
@@ -121,22 +121,22 @@ export default defineSet({
         {
           src: sum41Img,
           alt: 'A member of Sum 41 playing electric guitar and singing on an outdoor stage',
-          credit: 'Dana Beveridge, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Dana Beveridge', 'CC BY 2.0'),
         },
         {
           src: deadmau5Img,
           alt: 'Deadmau5 performing at a DJ console wearing his large mouse-head helmet',
-          credit: 'GoatLordServant, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('GoatLordServant', 'CC BY 4.0'),
         },
         {
           src: kaytranadaImg,
           alt: 'Kaytranada at a DJ booth in front of a large screen showing a black-and-white close-up of him',
-          credit: 'ManoSolo13241324, CC0, via Wikimedia Commons',
+          credit: commonsCredit('ManoSolo13241324', 'CC0'),
         },
         {
           src: arcadeFireImg,
           alt: 'Arcade Fire performing in the round on a central arena stage under blue lights',
-          credit: 'swimfinfan, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('swimfinfan', 'CC BY-SA 2.0'),
         },
         {
           src: avrilLavigneImg,
@@ -160,22 +160,22 @@ export default defineSet({
         {
           src: nardwuarPortraitImg,
           alt: 'Studio portrait of Nardwuar in a tartan cap and green suit against a yellow background',
-          credit: 'William Jans, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('William Jans', 'CC BY-SA 3.0'),
         },
         {
           src: nardwuarTedxImg,
           alt: 'Nardwuar speaking into a microphone on a TEDx Vancouver stage in a red jacket and tartan trousers',
-          credit: 'TEDx Vancouver, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('TEDx Vancouver', 'CC BY-SA 2.0'),
         },
         {
           src: nardwuarTedx2Img,
           alt: 'Nardwuar in a tartan cap and red jacket pointing towards the camera',
-          credit: 'TEDx Vancouver, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('TEDx Vancouver', 'CC BY-SA 2.0'),
         },
         {
           src: nardwuar2019Img,
           alt: 'Nardwuar holding a microphone, wearing a tartan cap and a patterned sweater',
-          credit: 'SUPA CINDY, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('SUPA CINDY', 'CC BY 3.0'),
         },
         {
           src: nardwuarSabrinaImg,

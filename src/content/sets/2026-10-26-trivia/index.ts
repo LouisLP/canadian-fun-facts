@@ -23,7 +23,7 @@ import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
 
@@ -48,7 +48,7 @@ export default defineSet({
         {
           src: torontoSkylineImg,
           alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: 'Jchmrt, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
         },
         {
           src: oldQuebecWinterImg,
@@ -57,12 +57,12 @@ export default defineSet({
         {
           src: jellybeanRowImg,
           alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: 'miketnorton, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
         },
         {
           src: yukonAuroraImg,
           alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
       ],
     },
@@ -78,7 +78,7 @@ export default defineSet({
         {
           src: markCarneyImg,
           alt: 'Portrait of Prime Minister Mark Carney in a dark suit and blue tie',
-          credit: 'Simon Dawson / No 10 Downing Street, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Simon Dawson / No 10 Downing Street', 'CC BY 2.0'),
         },
         {
           src: parliamentHillImg,
@@ -102,7 +102,7 @@ export default defineSet({
         {
           src: ratAtWaterImg,
           alt: 'A brown rat crouched at the edge of still water, its reflection visible below',
-          credit: 'Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Charles J. Sharp', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -118,12 +118,12 @@ export default defineSet({
         {
           src: loonieImg,
           alt: 'A Canadian one-dollar coin showing a common loon swimming past a treed shoreline, on dark weathered wood',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: toonieImg,
           alt: 'A Canadian two-dollar coin with a gold-coloured centre showing a polar bear, ringed by a silver-coloured outer band',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -170,12 +170,12 @@ export default defineSet({
         {
           src: syrupProductsImg,
           alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: 'Ross Dunn, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
         },
         {
           src: mapleSyrupLineupImg,
           alt: 'A row of maple-leaf-shaped bottles of syrup on a wooden railing, shading from dark amber to golden in the sun',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -191,12 +191,12 @@ export default defineSet({
         {
           src: frozenYukonRiverImg,
           alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: 'Eric A. Hegg, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Eric A. Hegg', 'public domain'),
         },
         {
           src: auroraYukonImg,
           alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
       ],
     },
@@ -212,12 +212,12 @@ export default defineSet({
         {
           src: lakeLouiseImg,
           alt: 'Turquoise water of Lake Louise leading to a snow-covered glacier and mountain face, framed by conifers and rocks in the foreground',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: moraineLakeImg,
           alt: 'Moraine Lake at sunrise, its blue water below the Valley of the Ten Peaks lit orange along the summits',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -250,12 +250,12 @@ export default defineSet({
         {
           src: dildoSignImg,
           alt: 'Large white block letters spelling DILDO standing on a wooded hillside, with workers on the scaffolding beneath them',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: captainDildoImg,
           alt: 'A visitor in a yellow rain jacket posing beside a wooden statue of a bearded fisherman in yellow oilskins labelled CAPT. DILDO, fishing boats behind',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -271,12 +271,12 @@ export default defineSet({
         {
           src: canuckWithKnifeImg,
           alt: 'A crow standing on gravel with a serrated wooden-handled kitchen knife gripped in its beak, a red band on one leg',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
         {
           src: crowOnWireImg,
           alt: 'A crow perched on a guy wire beneath a street light against a pale overcast sky',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -291,7 +291,7 @@ export default defineSet({
         {
           src: timHortonsCupImg,
           alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: 'Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
         },
       ],
     },
@@ -313,7 +313,7 @@ export default defineSet({
         {
           src: seawallSunsetImg,
           alt: 'An orange sunset over English Bay from a rocky shore, with freighters on the horizon',
-          credit: 'Sourced by Louis Lascelles-Palys',
+          credit: INBOX_CREDIT,
         },
       ],
     },

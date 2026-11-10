@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import bantingBestImg from './banting-and-best.webp'
 import bantingHouseImg from './banting-house.webp'
 import bantingInsulinImg from './banting-insulin.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: hadfieldImg,
           alt: 'Official portrait of Chris Hadfield in a white spacesuit, holding his helmet beside a Canadian flag',
-          credit: 'Robert Markowitz, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Robert Markowitz', 'public domain'),
         },
         {
           src: cupolaImg,
           alt: 'Chris Hadfield looking out at Earth through the windows of the International Space Station cupola',
-          credit: 'NASA, public domain, via Wikimedia Commons',
+          credit: commonsCredit('NASA', 'public domain'),
         },
         {
           src: bondarImg,
           alt: 'Official portrait of Roberta Bondar in an orange launch suit beside a Canadian flag',
-          credit: 'NASA, public domain, via Wikimedia Commons',
+          credit: commonsCredit('NASA', 'public domain'),
         },
         {
           src: sts42Img,
           alt: 'The seven STS-42 crew members, including Roberta Bondar, in orange flight suits with a shuttle launch behind them',
-          credit: 'NASA, public domain, via Wikimedia Commons',
+          credit: commonsCredit('NASA', 'public domain'),
         },
         {
           src: hadfieldGuitarImg,
@@ -71,22 +71,22 @@ export default defineSet({
         {
           src: bantingBestImg,
           alt: 'Frederick Banting and Charles Best standing with a laboratory dog on the roof of the University of Toronto Medical Building in 1921',
-          credit: 'Thomas Fisher Rare Book Library, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Thomas Fisher Rare Book Library', 'CC BY 2.0'),
         },
         {
           src: bantingHouseImg,
           alt: 'The yellow-brick Banting House museum in London, Ontario, with a statue in the front garden',
-          credit: 'Adam Bishop, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Adam Bishop', 'CC BY-SA 4.0'),
         },
         {
           src: suzukiImg,
           alt: 'Portrait of David Suzuki in a red shirt, smiling',
-          credit: 'Stephen Barnett, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Stephen Barnett', 'CC BY 2.0'),
         },
         {
           src: suzukiSpeakingImg,
           alt: 'David Suzuki speaking at a podium microphone in a red shirt',
-          credit: 'Stephen Michael Barnett, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Stephen Michael Barnett', 'CC BY 2.0'),
         },
         {
           src: bantingInsulinImg,
@@ -108,12 +108,12 @@ export default defineSet({
         {
           src: monumentImg,
           alt: 'The bronze Terry Fox monument in Thunder Bay, Ontario, showing him mid-stride above a wall of provincial shields',
-          credit: 'Guinevere Orvis, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Guinevere Orvis', 'CC BY-SA 4.0'),
         },
         {
           src: mileZeroImg,
           alt: 'Bronze statue of Terry Fox running at the Mile 0 memorial in St. John\'s, Newfoundland',
-          credit: 'Gordon Leggett, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Gordon Leggett', 'CC BY-SA 4.0'),
         },
         {
           src: violaImg,
@@ -123,7 +123,7 @@ export default defineSet({
         {
           src: clarionImg,
           alt: 'Front page of The Clarion newspaper from 1946 reporting Viola Desmond taking action against segregation',
-          credit: 'Nova Scotia Archives, no known copyright restrictions, via Wikimedia Commons',
+          credit: commonsCredit('Nova Scotia Archives', 'no known copyright restrictions'),
         },
         {
           src: terryFoxRunningImg,
