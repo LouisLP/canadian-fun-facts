@@ -44,6 +44,30 @@ export function slideHeading(slide: Slide): string {
   return slide.kind === 'quiz' ? slide.question : slide.heading
 }
 
+/**
+ * A moment in the voiceover that moves the presentation. While the audio
+ * plays, the latest cue at or before the playhead decides what is on screen.
+ */
+export interface VoiceoverCue {
+  /** Seconds into the recording. */
+  at: number
+  /**
+   * Which panel to show, counted like the rail's dots: 0 is the title, then
+   * one per slide (a quiz slide takes two: question, then answer), and the
+   * last is the thank-you.
+   */
+  panel: number
+  /** Photo on that panel to light up (0-based), until the next cue. */
+  image?: number
+}
+
+export interface Voiceover {
+  /** Typed Vite import of the recording. */
+  src: string
+  /** Without cues the audio just plays and the listener changes slides. */
+  cues?: VoiceoverCue[]
+}
+
 export interface FunFactSet {
   /** Permalink identity; renaming the folder never changes it. */
   slug: string
@@ -53,6 +77,8 @@ export interface FunFactSet {
   topic: Topic
   /** Title-panel photos; defaults to each of the first three slides' lead image. */
   covers?: string[]
+  /** Me talking through the set; adds a player to the presentation. */
+  voiceover?: Voiceover
   /** At least one; four by convention. */
   slides: [Slide, ...Slide[]]
 }

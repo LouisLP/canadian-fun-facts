@@ -26,6 +26,18 @@ _Avoid_: Body, bullet, point
 The single theme a set belongs to, chosen from a curated registry (each with a label and colour). Sets have exactly one.
 _Avoid_: Category, tag, theme
 
+**Voiceover**:
+One optional audio recording per set of Louis talking through it, played from a player in the presentation. It drives the slides through its cues.
+_Avoid_: Narration, audio track, commentary
+
+**Cue**:
+A timestamp in a voiceover that changes what is on screen: which panel is showing, and optionally which of its photos is lit up.
+_Avoid_: Marker, keyframe, timestamp
+
+**Panel**:
+One full-screen step of a presented set: the title, each slide (a quiz slide makes two), and the thank-you. What cues and the rail count in.
+_Avoid_: Section, page, screen
+
 **Credit**:
 Attribution for where a slide's image came from (name or URL). Optional per image.
 _Avoid_: Attribution, courtesy

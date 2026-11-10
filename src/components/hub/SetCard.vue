@@ -26,6 +26,9 @@ const slideCount = computed(() => props.set.slides.length)
     <p class="meta">
       <Icon icon="lucide:calendar" class="icon" /> {{ set.date }} &nbsp;•&nbsp;
       <Icon icon="lucide:image" class="icon" /> {{ slideCount }} slide{{ slideCount === 1 ? '' : 's' }}
+      <template v-if="set.voiceover">
+        &nbsp;•&nbsp; <Icon icon="lucide:mic" class="icon" /> voiceover
+      </template>
     </p>
     <p class="teaser">
       {{ slideHeading(set.slides[0]) }}
