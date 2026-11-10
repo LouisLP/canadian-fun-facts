@@ -52,6 +52,9 @@ Personal connections to Louis are welcome and worth hunting for — hometown, fa
 jobs, trips, teams — one clause inside a fact, first person, only where it's true. Ask him
 for one if a slide looks like it has an obvious hook you don't know the answer to.
 
+Check `docs/personal-hooks.md` first (gitignored, local only; skip if absent): it lists what
+is known and which sets already used it. When he tells you something new, add it there.
+
 ## 4. Source images — two to four per slide
 
 Two sources, in order: **the inbox first, Commons for the gaps.**
