@@ -77,13 +77,15 @@ pnpm preview       # serve the built bundle
 ```sh
 pnpm lint --fix              # eslint (@antfu config); sorts imports
 pnpm type-check              # vue-tsc — content errors surface here
+pnpm new-set <slug> <topic>  # scaffold a set: dated folder + stub, inbox, backlog note
 pnpm optimize-images         # convert new images to WebP, rewrite imports
 pnpm optimize-images --check # CI gate: fails on unoptimized or oversized images
 ```
 
 ## Writing a set
 
-Pick a topic, drop pictures in `inbox/<slug>/`, ask Claude to build the set.
+Pick a topic, run `pnpm new-set <slug> <topic>`, drop pictures in `inbox/<slug>/`, ask
+Claude to build the set.
 [docs/authoring-a-set.md](docs/authoring-a-set.md) is the recipe, start to finish: grouping
 a topic into slides, writing the copy, choosing images, and verifying it all builds.
 

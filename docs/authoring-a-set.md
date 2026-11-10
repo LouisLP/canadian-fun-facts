@@ -4,8 +4,8 @@ The repeatable process for turning a topic into a published set. Proven end-to-e
 all 17 published sets, starting with Maple (`src/content/sets/2025-10-27-maple`); every new
 set follows it verbatim.
 
-**The short version:** pick a topic → drop pictures in `inbox/<slug>/` → say "build the
-`<slug>` set". Steps 2–7 are then Claude's job.
+**The short version:** pick a topic → `pnpm new-set <slug> <topic>` → drop pictures in
+`inbox/<slug>/` → say "build the `<slug>` set". Steps 2–7 are then Claude's job.
 
 ## 1. Pick the topic
 
@@ -17,9 +17,21 @@ Two entry points, both fine:
   subjects are a starting point, not the finished grouping. (The original Fun Facts 01–22
   notes are all published and have been deleted.)
 
-Either way: pick the `<slug>` early, since `inbox/<slug>/` is named after it. Confirm the
-[topic](../src/content/topics.ts) already exists; if it doesn't, that is a separate
-one-line change to the registry.
+Either way: pick the `<slug>` early, then scaffold it:
+
+```sh
+pnpm new-set <slug> <topic>                    # dated the next free Monday
+pnpm new-set <slug> <topic> --date 2026-11-09  # or a Monday you name
+```
+
+That creates `src/content/sets/YYYY-MM-DD-<slug>/index.ts` (a stub with the slug, date and
+topic filled in), `inbox/<slug>/`, and a `docs/backlog/<slug>.md` note with the usual
+headings. A note that already exists is left alone. The script refuses a taken slug, a
+non-Monday, a Monday that already has a set, and a [topic](../src/content/topics.ts) that
+isn't in the registry; adding one is a separate one-line change there.
+
+The stub fails `pnpm type-check` until it has real slides, so a half-built set cannot
+deploy. Keep it off `main` until then.
 
 Louis may also hand over a rough list of facts he wants in. Treat those as the spine of the
 set — verify and rewrite them to [copy-style](copy-style.md), then fill out the rest around
@@ -132,8 +144,9 @@ produces exactly those names.
 
 ## 6. Write `index.ts`
 
-Copy the beavers set's structure. `slug` is stable and unique (renaming the folder never
-changes it); `date` is the publish date and the folder name mirrors it by convention.
+Fill in the stub `pnpm new-set` wrote; a published set is the model for a finished one.
+`slug` is stable and unique (renaming the folder never changes it); `date` is the publish
+date and the folder name mirrors it by convention. Both are already set, so leave them be.
 
 - **Alt text**: plainly descriptive, no jokes, no flourishes (per copy-style scope note).
 - **Credit**: optional in the schema, and currently not rendered (the `<figcaption>` in
@@ -212,4 +225,5 @@ The set then appears on the hub (newest-first) and at `/<slug>`.
 Cadence going forward is **one set per week**, `date` = the Monday it publishes, folder
 named `YYYY-MM-DD-<slug>`. The three pilot sets (beavers, inventions, maple) share
 `2026-07-17` as seed content; the hub already handles same-date ties, and `slug` (not date)
-is the permalink identity, so the collision is cosmetic. Real sets get distinct weekly dates.
+is the permalink identity, so the collision is cosmetic. Real sets get distinct weekly dates:
+`pnpm new-set` picks the next Monday with no set on it and no other backlog note targeting it.
