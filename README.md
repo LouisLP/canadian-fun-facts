@@ -50,6 +50,17 @@ plugin loads them through a throwaway Vite server rather than parsing files: the
 generated from the same `ALL_SETS` the hub renders. It is emitted into `dist/` at build
 time and served live at `/canadian-fun-facts/feed.xml` by `pnpm dev`.
 
+## Comments
+
+Sets stay in the repo; the only thing in a database is what readers add. Comments and
+sign-in run on [Supabase](https://supabase.com), called straight from the browser
+([ADR 0007](docs/adr/0007-supabase-for-reader-data.md)). The schema and its row-level
+security policies are in `supabase/migrations/`.
+
+It is opt-in. Without `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` the site
+builds as a plain static site and the comments panel never renders.
+[docs/backend-setup.md](docs/backend-setup.md) is the one-time setup.
+
 ## Project setup
 
 Requires Node `^22.18.0 || >=24.12.0` and pnpm.
@@ -93,5 +104,5 @@ sets grouped by topic, each rated on how hard it is to illustrate with free imag
 
 - [CONTEXT.md](CONTEXT.md) — the project's vocabulary (set, slide, fact, topic, hub)
 - [docs/adr/](docs/adr) — why sets are modules, why slides hold multiple facts, why slides
-  carry no sources
+  carry no sources, why reader data lives in Supabase
 - [docs/research/](docs/research) — sourcing notes behind specific claims

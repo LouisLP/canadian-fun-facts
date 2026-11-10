@@ -26,6 +26,11 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+        env:
+          # Repository variables, not secrets: both are public by design.
+          # Unset = the site builds without comments.
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3

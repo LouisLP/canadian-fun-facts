@@ -35,7 +35,7 @@ A timestamp in a voiceover that changes what is on screen: which panel is showin
 _Avoid_: Marker, keyframe, timestamp
 
 **Panel**:
-One full-screen step of a presented set: the title, each slide (a quiz slide makes two), and the thank-you. What cues and the rail count in.
+One full-screen step of a presented set: the title, each slide (a quiz slide makes two), the thank-you, and the comments when there is a backend. What cues and the rail count in.
 _Avoid_: Section, page, screen
 
 **Credit**:
@@ -49,3 +49,11 @@ _Avoid_: ID, key
 **Hub**:
 The site's front page: all sets in reverse-chronological order, filterable by topic.
 _Avoid_: Index, home, gallery
+
+**Comment**:
+A signed-in reader's plain-text remark on a set, shown on the panel after the thank-you. Lives in the database, tied to the set by slug.
+_Avoid_: Reply, post, message
+
+**Profile**:
+A reader's public face: a display name, nothing else. Made automatically the first time they sign in.
+_Avoid_: Account, user

@@ -1,0 +1,25 @@
+name: Keep backend awake
+
+# Supabase pauses a free-tier project after a week without activity, and a
+# weekly site can go that long between comments. One cheap read, twice a week.
+
+on:
+  schedule:
+    - cron: '17 9 * * 1,4'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    if: vars.VITE_SUPABASE_URL != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read one comment
+        env:
+          SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          curl --fail --silent --show-error \
+            -H "apikey: $SUPABASE_KEY" \
+            "$SUPABASE_URL/rest/v1/comments?select=id&limit=1"
