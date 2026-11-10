@@ -58,7 +58,7 @@ sign-in run on [Supabase](https://supabase.com), called straight from the browse
 security policies are in `supabase/migrations/`.
 
 It is opt-in. Without `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` the site
-builds as a plain static site and the comments panel never renders.
+builds as a plain static site and the thank-you panel shows no comments.
 [docs/backend-setup.md](docs/backend-setup.md) is the one-time setup.
 
 ## Project setup

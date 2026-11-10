@@ -5,7 +5,6 @@
 import type { SlideImage, VoiceoverCue } from '../content/schema'
 import { Icon } from '@iconify/vue'
 import { computed, onMounted, ref } from 'vue'
-import CommentsPanel from '../components/set/CommentsPanel.vue'
 import FactPanel from '../components/set/FactPanel.vue'
 import QuestionPanel from '../components/set/QuestionPanel.vue'
 import SlideRail from '../components/set/SlideRail.vue'
@@ -16,7 +15,6 @@ import { consumeSignInReturn } from '../composables/useAuth'
 import { useFullscreen } from '../composables/useFullscreen'
 import { useSlideNavigation } from '../composables/useSlideNavigation'
 import { findSet } from '../content/sets'
-import { supabase } from '../lib/supabase'
 
 const props = defineProps<{ slug: string }>()
 
@@ -50,10 +48,7 @@ const panels = computed<Panel[]>(() => {
   }) ?? []
 })
 
-// Comments need the backend; without one the set ends on the thank-you panel.
-const hasComments = supabase !== null
-
-const sectionCount = computed(() => panels.value.length + (hasComments ? 3 : 2))
+const sectionCount = computed(() => panels.value.length + 2)
 
 const { container, current, scrollTo } = useSlideNavigation(sectionCount)
 const { toggle: toggleFullscreen } = useFullscreen()
@@ -69,9 +64,10 @@ function followCue(cue: VoiceoverCue | undefined) {
     scrollTo(panel)
 }
 
-// Back from signing in: skip the replay and land on the comments again.
+// Back from signing in: skip the replay and land on the comments again, at
+// the foot of the thank-you panel.
 onMounted(() => {
-  if (hasComments && consumeSignInReturn())
+  if (consumeSignInReturn())
     scrollTo(sectionCount.value - 1, 'instant')
 })
 </script>
@@ -100,9 +96,7 @@ onMounted(() => {
         />
       </template>
 
-      <ThanksPanel :data-index="panels.length + 1" />
-
-      <CommentsPanel v-if="hasComments" :slug="set.slug" :data-index="panels.length + 2" />
+      <ThanksPanel :slug="set.slug" :data-index="panels.length + 1" />
     </div>
 
     <SlideRail

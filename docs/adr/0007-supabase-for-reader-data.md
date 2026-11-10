@@ -35,7 +35,7 @@ OAuth needs no mail. Google is the default because most coworkers have an accoun
 
 ## The backend is optional
 
-`supabase` is `null` when `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` are unset, and the comments panel doesn't mount. A fork, a fresh clone, or a build with the variables removed is the same static site as before.
+`supabase` is `null` when `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` are unset, and the thank-you panel renders without its comment thread. A fork, a fresh clone, or a build with the variables removed is the same static site as before.
 
 ## Considered Options
 
