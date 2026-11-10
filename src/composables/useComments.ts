@@ -33,7 +33,7 @@ function toComment(row: CommentRow): SetComment {
   }
 }
 
-/** A set's comments, oldest first, and the ways to change them. */
+/** A set's comments, newest first, and the ways to change them. */
 export function useComments(slug: MaybeRefOrGetter<string>) {
   const comments = ref<SetComment[]>([])
   const loading = ref(false)
@@ -49,7 +49,7 @@ export function useComments(slug: MaybeRefOrGetter<string>) {
       .from('comments')
       .select(COLUMNS)
       .eq('set_slug', requested)
-      .order('created_at')
+      .order('created_at', { ascending: false })
       .overrideTypes<CommentRow[], { merge: false }>()
     // The reader moved to another set while this was in flight.
     if (requested !== toValue(slug))
@@ -77,7 +77,7 @@ export function useComments(slug: MaybeRefOrGetter<string>) {
       error.value = failure.message
       return false
     }
-    comments.value.push(toComment(data))
+    comments.value.unshift(toComment(data))
     return true
   }
 
