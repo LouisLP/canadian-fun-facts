@@ -14,7 +14,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint .",
-    "optimize-images": "node scripts/optimize-images.ts"
+    "optimize-images": "node scripts/optimize-images.ts",
+    "voiceover": "node scripts/voiceover.ts"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.1",

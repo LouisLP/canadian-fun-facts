@@ -2,14 +2,15 @@
      Full-viewport scroll-snap panels, ↓/↑/space snap, maple-leaf rail,
      whole-page fullscreen, aesthetic at maximum. -->
 <script setup lang="ts">
-import type { SlideImage } from '../content/schema'
+import type { SlideImage, VoiceoverCue } from '../content/schema'
 import { Icon } from '@iconify/vue'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import FactPanel from '../components/set/FactPanel.vue'
 import QuestionPanel from '../components/set/QuestionPanel.vue'
 import SlideRail from '../components/set/SlideRail.vue'
 import ThanksPanel from '../components/set/ThanksPanel.vue'
 import TitlePanel from '../components/set/TitlePanel.vue'
+import VoiceoverPlayer from '../components/set/VoiceoverPlayer.vue'
 import { useFullscreen } from '../composables/useFullscreen'
 import { useSlideNavigation } from '../composables/useSlideNavigation'
 import { findSet } from '../content/sets'
@@ -50,6 +51,17 @@ const sectionCount = computed(() => panels.value.length + 2)
 
 const { container, current, scrollTo } = useSlideNavigation(sectionCount)
 const { toggle: toggleFullscreen } = useFullscreen()
+
+// The voiceover drives the slides: each cue snaps to its panel and may light
+// up one photo there. Before the first cue the title panel is up.
+const spotlight = ref<VoiceoverCue>()
+
+function followCue(cue: VoiceoverCue | undefined) {
+  spotlight.value = cue
+  const panel = cue?.panel ?? 0
+  if (panel !== current.value)
+    scrollTo(panel)
+}
 </script>
 
 <template>
@@ -71,6 +83,7 @@ const { toggle: toggleFullscreen } = useFullscreen()
           :heading="panel.heading"
           :facts="panel.facts"
           :images="panel.images"
+          :highlight="spotlight?.panel === i + 1 ? spotlight.image : undefined"
           :data-index="i + 1"
         />
       </template>
@@ -83,6 +96,14 @@ const { toggle: toggleFullscreen } = useFullscreen()
       :current="current"
       @go="scrollTo"
       @toggle-fullscreen="toggleFullscreen"
+    />
+
+    <VoiceoverPlayer
+      v-if="set.voiceover"
+      :key="set.slug"
+      :src="set.voiceover.src"
+      :cues="set.voiceover.cues"
+      @cue="followCue"
     />
   </div>
 

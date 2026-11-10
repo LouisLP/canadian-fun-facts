@@ -30,4 +30,14 @@ Then say "build the sugar-shacks set" (or just "the pictures are in"). The rest 
 - **Any format.** `.jpg`, `.png`, `.webp` all convert. `.heic` needs converting first
   (`sips -s format jpeg *.HEIC --out .` on macOS).
 
+## Voiceovers
+
+A recording of you talking through the set goes in the same folder, any name, any format
+ffmpeg can read (`.m4a` from Voice Memos is ideal). Say "add the voiceover to `<slug>`" and it
+gets compressed, transcribed and synced: the slides change, and photos light up, as you
+talk about them. Works for sets that are already published too.
+
+It syncs best if you say out loud when you move on ("next up…") and name the thing in a
+photo when you want it pointed at. One take, no need to be tidy.
+
 Nothing here is deleted after a set ships — clean out old folders whenever you like.

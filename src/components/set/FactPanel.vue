@@ -4,7 +4,13 @@
 import type { SlideImage } from '../../content/schema'
 import { renderMarkdown } from '../../lib/markdown'
 
-defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
+defineProps<{
+  heading: string
+  facts: string[]
+  images: SlideImage[]
+  /** Index of a photo to light up as if hovered; the voiceover points at it. */
+  highlight?: number
+}>()
 </script>
 
 <template>
@@ -19,7 +25,12 @@ defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
       </ul>
     </div>
     <div class="photos">
-      <figure v-for="image in images" :key="image.src" class="slide-figure">
+      <figure
+        v-for="(image, k) in images"
+        :key="image.src"
+        class="slide-figure"
+        :class="{ lit: k === highlight }"
+      >
         <img :src="image.src" :alt="image.alt">
         <figcaption v-if="image.credit">
           <!-- 📷 {{ image.credit }} -->
@@ -133,20 +144,21 @@ defineProps<{ heading: string, facts: string[], images: SlideImage[] }>()
 }
 
 /* Hovering a photo straightens it, pulls it forward over its neighbours,
-   and knocks the rest of the grid back so it's the only thing lit. */
-.slide-figure:hover {
+   and knocks the rest of the grid back so it's the only thing lit. The
+   voiceover does the same to the photo it is talking about (.lit). */
+.slide-figure:is(:hover, .lit) {
   z-index: var(--layer-raised);
   rotate: 0deg;
   scale: var(--scale-photo-hover);
   translate: var(--lift-hover) var(--lift-hover);
 }
 
-.slide-figure:hover img {
+.slide-figure:is(:hover, .lit) img {
   border-color: var(--accent-flag);
   filter: drop-shadow(var(--shadow-photo-lift));
 }
 
-.photos:has(.slide-figure:hover) .slide-figure:not(:hover) {
+.photos:has(.slide-figure:is(:hover, .lit)) .slide-figure:not(:hover, .lit) {
   filter: var(--filter-photo-dimmed);
 }
 

@@ -141,6 +141,59 @@ changes it); `date` is the publish date and the folder name mirrors it by conven
   `"public domain, via Wikimedia Commons"` or `"<Institution>, no known copyright restrictions, via Wikimedia Commons"`.
   Take the author and license short-name from the same `extmetadata` the search returned.
 
+## 6b. Voiceover (optional)
+
+Louis may record himself talking through the set ([ADR 0006](adr/0006-set-voiceover.md)).
+He drops the raw recording in `inbox/<slug>/`; the rest is Claude's job, and works on an
+already-published set too.
+
+**Compress and transcribe:**
+
+```sh
+pnpm voiceover inbox/<slug>/<recording> src/content/sets/<folder>
+```
+
+That writes `voiceover.m4a` into the set folder (mono 64 kbps AAC, roughly 0.5 MB per
+minute) and prints the transcript, one short phrase per line, each with the second it
+starts at. First run on a machine: `brew install ffmpeg whisper-cpp`, and the script
+prints the `curl` for the model if it is missing.
+
+**Place the cues.** Read the transcript against the slides and write one timeline:
+
+```ts
+import voiceover from './voiceover.m4a'
+
+export default defineSet({
+  // …
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 7.0, panel: 1 }, // "First up, chips"
+      { at: 10.6, panel: 1, image: 1 }, // "here is a bag of Ruffles"
+      { at: 19.2, panel: 2 }, // "Next, chocolate bars"
+      { at: 47.6, panel: 5 }, // "That's it for this week"
+    ],
+  },
+})
+```
+
+- `panel` counts like the rail's dots: 0 is the title (shown until the first cue), then
+  one per slide, **two for a quiz slide** (question, then answer), and the thank-you last.
+- **One cue per panel change**, at the start of the phrase where he moves on ("next up",
+  "moving on", or just the first mention of the new subject). For a quiz slide, the answer
+  cue goes where he gives the answer away, not before.
+- **A cue with `image`** (0-based, in the slide's `images` order) lights that photo up
+  until the next cue. Add one wherever he is plainly talking about what a photo shows;
+  match on the alt text. A cue without `image` clears the highlight. Don't force one onto
+  every photo.
+- The transcript mishears names (Kraft becomes "craft"); go by the slide content.
+- A phrase line only gives its start. For something said mid-phrase, add about 0.35 s per
+  word in. Being a beat early is better than late.
+- Sanity-check: `at` strictly increasing, last `panel` is the thank-you, every `image`
+  exists on its panel.
+
+If the set's slides are later added, removed or reordered, renumber the `panel`s.
+
 ## 7. Verify
 
 ```sh
