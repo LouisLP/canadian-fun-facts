@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import auroraCampingImg from './aurora-camping.webp'
 import auroraYellowknifeGreenImg from './aurora-yellowknife-green.webp'
 import auroraYellowknifeImg from './aurora-yellowknife.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: bonhommeImg,
           alt: 'The Bonhomme Carnaval mascot, a snowman in a red tuque and a colourful woven sash, waving',
-          credit: 'Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Jeangagnon', 'CC BY-SA 3.0'),
         },
         {
           src: icePalaceImg,
           alt: 'A tall snow-and-ice palace with turrets at the 1895 Quebec winter carnival',
-          credit: 'Bibliothèque et Archives nationales du Québec, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Bibliothèque et Archives nationales du Québec', 'public domain'),
         },
         {
           src: iceCanoeRaceImg,
           alt: 'Two racers pushing an ice canoe over broken ice on the St. Lawrence River',
-          credit: 'Cephas, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Cephas', 'CC BY-SA 4.0'),
         },
         {
           src: bonhommeSnowBathImg,
           alt: 'The Bonhomme mascot with a crowd of cheering people taking a snow bath in swimwear',
-          credit: 'Marc-Lautenbacher, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Marc-Lautenbacher', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -65,22 +65,22 @@ export default defineSet({
         {
           src: polarBearSwimImg,
           alt: 'A swimmer emerging from cold ocean water with arms raised at a winter polar bear swim',
-          credit: 'GoToVan, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
         },
         {
           src: rideauCanalSkatingImg,
           alt: 'People skating along the frozen Rideau Canal in Ottawa under a grey winter sky',
-          credit: 'Ahunt, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Ahunt', 'CC0'),
         },
         {
           src: tireDerableImg,
           alt: 'A ribbon of maple taffy wound onto a wooden stick held to a person\'s mouth',
-          credit: 'Gachepi, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Gachepi', 'CC BY-SA 3.0'),
         },
         {
           src: vintageSkierImg,
           alt: 'A woman in 1940s winter clothing holding a pair of cross-country skis over her shoulder',
-          credit: 'Conrad Poirier, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Conrad Poirier', 'public domain'),
         },
       ],
     },
@@ -96,22 +96,22 @@ export default defineSet({
         {
           src: whitehorseWinterTreesImg,
           alt: 'Bare snow-covered trees in a frozen woodland near Whitehorse, Yukon',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
         {
           src: frostyFenceImg,
           alt: 'Trees and a fence thickly coated in white hoar frost on a cold prairie morning',
-          credit: 'daryl_mitchell, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('daryl_mitchell', 'CC BY-SA 2.0'),
         },
         {
           src: frozenYukonRiverImg,
           alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: 'Eric A. Hegg, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Eric A. Hegg', 'public domain'),
         },
         {
           src: downtownWhitehorseImg,
           alt: 'A snowy main street of downtown Whitehorse, Yukon, with parked cars and shopfronts',
-          credit: 'US Mission Canada, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('US Mission Canada', 'CC BY 2.0'),
         },
       ],
     },
@@ -132,17 +132,17 @@ export default defineSet({
         {
           src: auroraYellowknifeGreenImg,
           alt: 'Faint aurora and a field of stars in the night sky over Yellowknife',
-          credit: 'TravelingOtter, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('TravelingOtter', 'CC BY-SA 2.0'),
         },
         {
           src: auroraYukonImg,
           alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
         {
           src: auroraCampingImg,
           alt: 'Aurora over a lake with a glowing tent pitched on a lakeside dock',
-          credit: 'Sebastian Schlaeger, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Sebastian Schlaeger', 'CC BY-SA 2.0'),
         },
       ],
     },

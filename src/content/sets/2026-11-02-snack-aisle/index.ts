@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import allDressedImg from './all-dressed-ruffles.webp'
 import caramilkImg from './caramilk-bar-open.webp'
 import coffeeCrispImg from './coffee-crisp-bar.webp'
@@ -13,8 +13,6 @@ import milkBagHandImg from './milk-bag-hand.webp'
 import milkBagPitcherImg from './milk-bag-pitcher.webp'
 import smartiesChocolateImg from './smarties-chocolate.webp'
 import smartiesUsImg from './smarties-us.webp'
-
-const INBOX_CREDIT = 'Sourced by Louis Lascelles-Palys'
 
 export default defineSet({
   slug: 'snack-aisle',

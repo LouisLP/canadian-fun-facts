@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import abrahamLakeImg from './abraham-lake.webp'
 import emeraldLakeImg from './emerald-lake.webp'
 import greatLakesMapImg from './great-lakes-map.webp'
@@ -91,12 +91,12 @@ export default defineSet({
         {
           src: spottedLakeImg,
           alt: 'Spotted Lake in the dry hills near Osoyoos, its bed showing dozens of pale circular mineral pools separated by ridges',
-          credit: 'Mykola Swarnyk, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Mykola Swarnyk', 'CC BY-SA 3.0'),
         },
         {
           src: abrahamLakeImg,
           alt: 'Stacks of white methane bubbles frozen inside the clear ice of Abraham Lake, with snowy mountains behind',
-          credit: 'Joli Rumi, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Joli Rumi', 'CC BY-SA 4.0'),
         },
       ],
     },

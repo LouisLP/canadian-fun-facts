@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import arretImg from './arret-sign.webp'
 import depanneurImg from './depanneur.webp'
 import jellyBeanImg from './jelly-bean-row.webp'
@@ -30,22 +30,22 @@ export default defineSet({
         {
           src: toqueImg,
           alt: 'A hand-knit wool toque in pink, purple and green',
-          credit: 'Rathernotto, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Rathernotto', 'CC BY-SA 4.0'),
         },
         {
           src: loonImg,
           alt: 'A common loon swimming on calm water',
-          credit: 'Enoch Leung, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Enoch Leung', 'CC BY-SA 2.0'),
         },
         {
           src: toonieImg,
           alt: 'A Canadian two-dollar toonie coin standing on its edge',
-          credit: 'Carol VanHook, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Carol VanHook', 'CC BY-SA 2.0'),
         },
         {
           src: timHortonsImg,
           alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: 'Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
         },
       ],
     },
@@ -61,22 +61,22 @@ export default defineSet({
         {
           src: flagImg,
           alt: 'Quebec\'s blue-and-white fleur-de-lis flag flying from a building',
-          credit: 'Tony Webster, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Tony Webster', 'CC BY 2.0'),
         },
         {
           src: arretImg,
           alt: 'A Montreal stop sign reading ARRÊT in French',
-          credit: 'Tony Webster, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Tony Webster', 'CC BY-SA 2.0'),
         },
         {
           src: churchImg,
           alt: 'The ornate interior entrance of a Catholic church in Quebec',
-          credit: 'Wilfredor, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Wilfredor', 'CC0'),
         },
         {
           src: depanneurImg,
           alt: 'A Montreal corner store with a Dépanneur sign above the door',
-          credit: 'Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
         },
       ],
     },
@@ -92,22 +92,22 @@ export default defineSet({
         {
           src: speedImg,
           alt: 'A Canadian road sign reading MAXIMUM 100, in kilometres per hour',
-          credit: 'Ken Lund, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Ken Lund', 'CC BY-SA 2.0'),
         },
         {
           src: jellyBeanImg,
           alt: 'Brightly painted row houses on a hillside in St. John\'s, Newfoundland',
-          credit: 'Kenny Louie, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Kenny Louie', 'CC BY 2.0'),
         },
         {
           src: scotiabankImg,
           alt: 'The Scotiabank Centre arena in Halifax, its name spelled with the British "centre"',
-          credit: 'A Disappearing Act, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('A Disappearing Act', 'CC BY-SA 2.0'),
         },
         {
           src: prairieImg,
           alt: 'A wooden grain elevator beside a dirt road on the Saskatchewan prairie',
-          credit: 'John Kaminski, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('John Kaminski', 'CC BY-SA 4.0'),
         },
       ],
     },

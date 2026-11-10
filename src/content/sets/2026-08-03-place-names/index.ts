@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import alexandraBridgeImg from './alexandra-bridge-spuzzum.webp'
 import blowMeDownKayaksImg from './blow-me-down-kayaks.webp'
 import blowMeDownSignImg from './blow-me-down-park-sign.webp'
@@ -88,7 +88,7 @@ export default defineSet({
         {
           src: comeByChanceAerialImg,
           alt: 'Aerial view of Come By Chance, a road and scattered houses along a tidal river running out through green barrens to distant hills',
-          credit: 'Shhewitt, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Shhewitt', 'CC BY-SA 4.0'),
         },
         {
           src: comeByChanceRefineryImg,
@@ -185,7 +185,7 @@ export default defineSet({
         {
           src: alexandraBridgeImg,
           alt: 'Black-and-white photo of the Alexandra Bridge, a concrete-towered suspension bridge over the Fraser River at Spuzzum, a 1940s car crossing it',
-          credit: 'Don Coltman, CC0, via Wikimedia Commons',
+          credit: commonsCredit('Don Coltman', 'CC0'),
         },
         {
           src: spuzzumRaftingImg,

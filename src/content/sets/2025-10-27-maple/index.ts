@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import boilingSapImg from './boiling-sap.webp'
 import cabaneImg from './cabane-a-sucre.webp'
 import skyImg from './maple-against-sky.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: treeImg,
           alt: 'A large sugar maple in full golden-orange autumn foliage',
-          credit: 'James St. John, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('James St. John', 'CC BY 2.0'),
         },
         {
           src: leafImg,
           alt: 'Yellow sugar maple leaves fallen on grass',
-          credit: 'James St. John, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('James St. John', 'CC BY 2.0'),
         },
         {
           src: skyImg,
           alt: 'Maple branches and leaves against a bright blue sky',
-          credit: 'Mangoandmay, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Mangoandmay', 'CC BY-SA 4.0'),
         },
         {
           src: bottleImg,
           alt: 'A maple-leaf-shaped glass bottle of Canadian maple syrup beside pancakes',
-          credit: 'Jan Smith, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Jan Smith', 'CC BY 2.0'),
         },
       ],
     },
@@ -65,12 +65,12 @@ export default defineSet({
         {
           src: traditionalTapImg,
           alt: 'A gloved hand holding a traditional metal maple tap in the snow',
-          credit: 'Jomegat, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jomegat', 'CC BY-SA 4.0'),
         },
         {
           src: plasticBucketImg,
           alt: 'A lidded plastic sap bucket hung on a tapped maple trunk',
-          credit: 'Rhavasy, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Rhavasy', 'CC BY-SA 3.0'),
         },
         {
           src: sapBucketsImg,
@@ -80,7 +80,7 @@ export default defineSet({
         {
           src: tubingTapImg,
           alt: 'Blue plastic sap tubing joined at a maple tap in the snow',
-          credit: 'Jomegat, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jomegat', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -96,22 +96,22 @@ export default defineSet({
         {
           src: cabaneImg,
           alt: 'A worker tending a wood-fired evaporator inside a Quebec sugar shack, steam rising',
-          credit: 'Emmanuel Huybrechts, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Emmanuel Huybrechts', 'CC BY 2.0'),
         },
         {
           src: boilingSapImg,
           alt: 'A man boiling maple sap over a wood-fired arch in a sugar shack',
-          credit: 'Missouri State Archives, no known copyright restrictions, via Wikimedia Commons',
+          credit: commonsCredit('Missouri State Archives', 'no known copyright restrictions'),
         },
         {
           src: sugarHouseImg,
           alt: 'Children watching maple sap boil in long evaporator pans at a sugar house',
-          credit: 'BiblioArchives / LibraryArchives, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('BiblioArchives / LibraryArchives', 'CC BY 2.0'),
         },
         {
           src: taffyImg,
           alt: 'A person eating maple taffy off a stick beside a basin of snow',
-          credit: 'Chris Lund, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Chris Lund', 'public domain'),
         },
       ],
     },
@@ -127,22 +127,22 @@ export default defineSet({
         {
           src: productsImg,
           alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: 'Ross Dunn, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
         },
         {
           src: gradesImg,
           alt: 'Four small bottles of maple syrup ranging from pale gold to dark amber',
-          credit: 'Dvortygirl, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Dvortygirl', 'CC BY-SA 3.0'),
         },
         {
           src: rainbowImg,
           alt: 'Metal pans holding maple syrup in graded shades from light to dark',
-          credit: 'rachaelvoorhees, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('rachaelvoorhees', 'CC BY-SA 2.0'),
         },
         {
           src: jugsImg,
           alt: 'A leaf-shaped bottle of Grade A maple syrup',
-          credit: 'Willis Lam, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Willis Lam', 'CC BY-SA 2.0'),
         },
       ],
     },

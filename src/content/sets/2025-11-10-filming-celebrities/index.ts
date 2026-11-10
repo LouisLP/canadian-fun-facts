@@ -1,4 +1,4 @@
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import celineDionImg from './celine-dion.webp'
 import drakeImg from './drake.webp'
 import filmSetSignsImg from './film-set-signs.webp'
@@ -34,22 +34,22 @@ export default defineSet({
         {
           src: vancouverSkylineImg,
           alt: 'The downtown Vancouver waterfront skyline with mountains behind it',
-          credit: 'Quintin Soloviev, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Quintin Soloviev', 'CC BY 4.0'),
         },
         {
           src: vancouverFilmSetImg,
           alt: 'A wrecked car dressing a Vancouver street as a film set for The Last of Us',
-          credit: 'MSTakesPictures, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('MSTakesPictures', 'CC BY 4.0'),
         },
         {
           src: filmSetSignsImg,
           alt: 'Film-crew directional signs reading "TO SET" and "WORK TRUCKS" on a Vancouver street',
-          credit: 'Emma0mb, CC BY 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Emma0mb', 'CC BY 4.0'),
         },
         {
           src: torontoSkylineImg,
           alt: 'The CN Tower and Toronto skyline lit up at night',
-          credit: 'Wladyslaw, CC BY 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Wladyslaw', 'CC BY 3.0'),
         },
       ],
     },
@@ -65,22 +65,22 @@ export default defineSet({
         {
           src: ryanReynoldsImg,
           alt: 'Ryan Reynolds smiling on a red carpet',
-          credit: 'Dick Thomas Johnson, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Dick Thomas Johnson', 'CC BY 2.0'),
         },
         {
           src: keanuReevesImg,
           alt: 'Black-and-white portrait of a bearded Keanu Reeves',
-          credit: 'Marybel Le Pape, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Marybel Le Pape', 'CC BY-SA 4.0'),
         },
         {
           src: jimCarreyImg,
           alt: 'Black-and-white side profile of Jim Carrey',
-          credit: 'Jean-François Gornet, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Jean-François Gornet', 'CC BY-SA 2.0'),
         },
         {
           src: ryanGoslingImg,
           alt: 'Ryan Gosling in a plaid shirt at an event',
-          credit: 'Elen Nivrae, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Elen Nivrae', 'CC BY 2.0'),
         },
       ],
     },
@@ -96,22 +96,22 @@ export default defineSet({
         {
           src: drakeImg,
           alt: 'Drake performing on stage with a microphone',
-          credit: 'The Come Up Show, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('The Come Up Show', 'CC BY 2.0'),
         },
         {
           src: justinBieberImg,
           alt: 'Justin Bieber singing in a white t-shirt',
-          credit: 'Lou Stejskal, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Lou Stejskal', 'CC BY 2.0'),
         },
         {
           src: theWeekndImg,
           alt: 'Black-and-white photo of The Weeknd singing into a microphone',
-          credit: 'Kayla Johnson, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Kayla Johnson', 'CC BY 2.0'),
         },
         {
           src: celineDionImg,
           alt: 'Céline Dion singing on stage with an outstretched hand',
-          credit: 'Anirudh Koul, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
         },
       ],
     },
@@ -127,22 +127,22 @@ export default defineSet({
         {
           src: sandraOhImg,
           alt: 'Sandra Oh laughing in front of a Toronto film festival backdrop',
-          credit: 'Sara Komatsu, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Sara Komatsu', 'CC BY-SA 4.0'),
         },
         {
           src: margaretAtwoodImg,
           alt: 'Margaret Atwood speaking into a microphone in front of bookshelves',
-          credit: 'Frankie Fouganthin, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Frankie Fouganthin', 'CC BY-SA 4.0'),
         },
         {
           src: wayneGretzkyImg,
           alt: 'Wayne Gretzky skating in a hockey uniform on the ice',
-          credit: 'Rick Dikeman, CC BY-SA 3.0, via Wikimedia Commons',
+          credit: commonsCredit('Rick Dikeman', 'CC BY-SA 3.0'),
         },
         {
           src: steveNashImg,
           alt: 'Steve Nash in a basketball jersey holding a cup courtside',
-          credit: 'Keith Allison, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Keith Allison', 'CC BY-SA 2.0'),
         },
       ],
     },

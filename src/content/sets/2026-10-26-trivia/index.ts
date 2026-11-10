@@ -23,7 +23,7 @@ import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
-import { defineSet } from '../../schema'
+import { commonsCredit, defineSet } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
 
@@ -48,7 +48,7 @@ export default defineSet({
         {
           src: torontoSkylineImg,
           alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: 'Jchmrt, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
         },
         {
           src: oldQuebecWinterImg,
@@ -57,12 +57,12 @@ export default defineSet({
         {
           src: jellybeanRowImg,
           alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: 'miketnorton, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
         },
         {
           src: yukonAuroraImg,
           alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
       ],
     },
@@ -78,7 +78,7 @@ export default defineSet({
         {
           src: markCarneyImg,
           alt: 'Portrait of Prime Minister Mark Carney in a dark suit and blue tie',
-          credit: 'Simon Dawson / No 10 Downing Street, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Simon Dawson / No 10 Downing Street', 'CC BY 2.0'),
         },
         {
           src: parliamentHillImg,
@@ -102,7 +102,7 @@ export default defineSet({
         {
           src: ratAtWaterImg,
           alt: 'A brown rat crouched at the edge of still water, its reflection visible below',
-          credit: 'Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons',
+          credit: commonsCredit('Charles J. Sharp', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -170,7 +170,7 @@ export default defineSet({
         {
           src: syrupProductsImg,
           alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: 'Ross Dunn, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
         },
         {
           src: mapleSyrupLineupImg,
@@ -191,12 +191,12 @@ export default defineSet({
         {
           src: frozenYukonRiverImg,
           alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: 'Eric A. Hegg, public domain, via Wikimedia Commons',
+          credit: commonsCredit('Eric A. Hegg', 'public domain'),
         },
         {
           src: auroraYukonImg,
           alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: 'Anthony DeLorenzo, CC BY 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
         },
       ],
     },
@@ -291,7 +291,7 @@ export default defineSet({
         {
           src: timHortonsCupImg,
           alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: 'Coastal Elite, CC BY-SA 2.0, via Wikimedia Commons',
+          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
         },
       ],
     },
