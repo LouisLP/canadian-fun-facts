@@ -18,6 +18,8 @@ import chinatownGateImg from './vancouver-chinatown-gate.webp'
 import indianWeddingImg from './vancouver-indian-wedding.webp'
 import worldCupFansImg from './world-cup-fans.webp'
 
+const INBOX_CREDIT = 'Sourced by Louis Lascelles-Palys'
+
 export default defineSet({
   slug: 'multiculturalism',
   date: '2026-07-27',
@@ -36,26 +38,32 @@ export default defineSet({
         {
           src: trudeauImg,
           alt: 'Black-and-white portrait of Pierre Elliott Trudeau speaking, seated in front of a map',
+          credit: INBOX_CREDIT,
         },
         {
           src: houseOfCommonsImg,
           alt: 'The empty House of Commons chamber in Ottawa, green desks in rows facing the Speaker\'s chair',
+          credit: INBOX_CREDIT,
         },
         {
           src: biculturalismHearingImg,
           alt: 'Black-and-white photo of a 1960s government hearing, technicians running reel-to-reel recorders and headsets in the foreground',
+          credit: INBOX_CREDIT,
         },
         {
           src: citizenshipCrowdImg,
           alt: 'A crowd of people of many backgrounds waving small Canadian flags at a citizenship ceremony',
+          credit: INBOX_CREDIT,
         },
         {
           src: canadaDayImg,
           alt: 'A packed Canada Day crowd with flags and raised arms on Parliament Hill in Ottawa',
+          credit: INBOX_CREDIT,
         },
         {
           src: worldCupFansImg,
           alt: 'Fans in a stadium holding up Canadian flags and cheering',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -71,26 +79,32 @@ export default defineSet({
         {
           src: chinatownGateImg,
           alt: 'The Millennium Gate over Pender Street in Vancouver\'s Chinatown, with a bilingual insurance sign in the foreground',
+          credit: INBOX_CREDIT,
         },
         {
           src: littleItalyImg,
           alt: 'Little Italy banners on a lamppost at Commercial Drive and Graveley Street in Vancouver',
+          credit: INBOX_CREDIT,
         },
         {
           src: indianWeddingImg,
           alt: 'A packed dance floor at a South Asian wedding reception, guests in saris and suits with arms raised',
+          credit: INBOX_CREDIT,
         },
         {
           src: falseCreekImg,
           alt: 'Aerial view of Vancouver\'s False Creek, with Science World, the SkyTrain, and the downtown skyline',
+          credit: INBOX_CREDIT,
         },
         {
           src: hasidicStreetImg,
           alt: 'Hasidic men in long coats and wide-brimmed hats walking down a snowy Montreal street past a Yiddish sign',
+          credit: INBOX_CREDIT,
         },
         {
           src: ukrainianRallyImg,
           alt: 'A snowy Toronto square packed with people waving Ukrainian flags in front of the TORONTO sign',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -107,26 +121,32 @@ export default defineSet({
         {
           src: hawaiianPizzaImg,
           alt: 'A sliced pizza topped with ham, bacon, and pineapple on a black pan',
+          credit: INBOX_CREDIT,
         },
         {
           src: gingerBeefImg,
           alt: 'A bowl of crispy ginger beef over white rice, scattered with green onion and sesame seeds',
+          credit: INBOX_CREDIT,
         },
         {
           src: bagelOvenImg,
           alt: 'A baker sliding a paddle of bagels into a wood-fired oven, trays of finished bagels in the foreground',
+          credit: INBOX_CREDIT,
         },
         {
           src: stViateurImg,
           alt: 'A hand holding a sesame bagel in a paper bag in front of the St-Viateur Bagel storefront sign',
+          credit: INBOX_CREDIT,
         },
         {
           src: tojoImg,
           alt: 'A sushi chef in whites and a headband plating fish behind a wooden counter',
+          credit: INBOX_CREDIT,
         },
         {
           src: sushiPlatterImg,
           alt: 'An overhead platter of nigiri and rolls with soy sauce, wasabi, and chopsticks on stone',
+          credit: INBOX_CREDIT,
         },
       ],
     },

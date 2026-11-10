@@ -7,7 +7,7 @@ All reader-facing copy (facts, headings, titles) follows [docs/copy-style.md](do
 ## Language
 
 **Set**:
-One week's presentation: a dated, titled collection of at least one slide (three by convention) on a single topic. Identified by its slug.
+One week's presentation: a dated, titled collection of at least one slide (three or four by convention) on a single topic. Identified by its slug.
 _Avoid_: Deck, presentation, week
 
 **Slide**:
@@ -39,7 +39,7 @@ One full-screen step of a presented set: the title, each slide (a quiz slide mak
 _Avoid_: Section, page, screen
 
 **Credit**:
-Attribution for where a slide's image came from (name or URL). Optional per image.
+Attribution for where a slide's image came from (name or URL). Optional in the schema, filled in on every image by convention.
 _Avoid_: Attribution, courtesy
 
 **Slug**:

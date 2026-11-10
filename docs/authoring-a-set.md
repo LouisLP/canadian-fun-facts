@@ -1,7 +1,7 @@
 # Authoring a set (the topic → set recipe)
 
 The repeatable process for turning a topic into a published set. Proven end-to-end across
-all 17 published sets, starting with Maple (`src/content/sets/2025-10-27-maple`); every new
+every published set, starting with Maple (`src/content/sets/2025-10-27-maple`); every new
 set follows it verbatim.
 
 **The short version:** pick a topic → `pnpm new-set <slug> <topic>` → drop pictures in
@@ -150,8 +150,10 @@ date and the folder name mirrors it by convention. Both are already set, so leav
 
 - **Alt text**: plainly descriptive, no jokes, no flourishes (per copy-style scope note).
 - **Credit**: optional in the schema, and currently not rendered (the `<figcaption>` in
-  `SetPage.vue` is commented out) — but always fill it in, since it's the only record of
-  where a file came from. **Inbox images** get `"Louis Lascelles-Palys"`. **Commons
+  `FactPanel.vue` is commented out) — but fill it in on every image, since it's the only
+  record of where a file came from. **Inbox images** get `'Sourced by Louis Lascelles-Palys'`
+  (many are web-sourced, not his own photographs), held in one `INBOX_CREDIT` const per
+  set. **Commons
   images** get `"<Author>, <LICENSE>, via Wikimedia Commons"`, e.g.
   `"Jomegat, CC BY-SA 4.0, via Wikimedia Commons"`. Public-domain / no-restrictions files:
   `"public domain, via Wikimedia Commons"` or `"<Institution>, no known copyright restrictions, via Wikimedia Commons"`.
@@ -223,7 +225,5 @@ The set then appears on the hub (newest-first) and at `/<slug>`.
 ## Date / cadence decision
 
 Cadence going forward is **one set per week**, `date` = the Monday it publishes, folder
-named `YYYY-MM-DD-<slug>`. The three pilot sets (beavers, inventions, maple) share
-`2026-07-17` as seed content; the hub already handles same-date ties, and `slug` (not date)
-is the permalink identity, so the collision is cosmetic. Real sets get distinct weekly dates:
-`pnpm new-set` picks the next Monday with no set on it and no other backlog note targeting it.
+named `YYYY-MM-DD-<slug>`. `slug` (not date) is the permalink identity. `pnpm new-set`
+picks the next Monday with no set on it and no other backlog note targeting it.
