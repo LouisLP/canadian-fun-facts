@@ -1,5 +1,5 @@
 <!-- The set's voiceover, pinned bottom-left: a single play button until it's
-     first pressed, then a scrubber and clock as well. Announces each cue as
+     first pressed, then a scrubber, clock and speed button as well. Announces each cue as
      the playhead crosses it; what a cue does is the page's business. -->
 <script setup lang="ts">
 import type { VoiceoverCue } from '../../content/schema'
@@ -19,6 +19,32 @@ const playing = ref(false)
 const started = ref(false)
 const time = ref(0)
 const duration = ref(0)
+
+// Remembered across sets; storage can be missing or blocked, so never rely on it.
+const SPEEDS = [1, 1.25, 1.5, 2] as const
+const SPEED_KEY = 'voiceover-speed'
+const speed = ref<number>(loadSpeed())
+
+function loadSpeed(): number {
+  try {
+    const saved = Number(localStorage.getItem(SPEED_KEY))
+    return SPEEDS.find(s => s === saved) ?? 1
+  }
+  catch {
+    return 1
+  }
+}
+
+function cycleSpeed() {
+  const next = SPEEDS[(SPEEDS.findIndex(s => s === speed.value) + 1) % SPEEDS.length] ?? 1
+  speed.value = next
+  if (audio.value)
+    audio.value.playbackRate = next
+  try {
+    localStorage.setItem(SPEED_KEY, String(next))
+  }
+  catch {}
+}
 
 const sortedCues = computed(() => [...props.cues ?? []].sort((a, b) => a.at - b.at))
 
@@ -48,6 +74,8 @@ function toggle() {
 }
 
 function onPlay() {
+  if (audio.value)
+    audio.value.playbackRate = speed.value
   playing.value = true
   started.value = true
   onTime()
@@ -112,6 +140,15 @@ function clock(seconds: number): string {
         @pointerup="releaseFocus"
       >
       <span class="clock">{{ clock(time) }} / {{ clock(duration) }}</span>
+      <button
+        type="button"
+        class="speed"
+        :aria-label="`Playback speed ${speed}×, change`"
+        @click="cycleSpeed"
+        @pointerup="releaseFocus"
+      >
+        {{ speed }}×
+      </button>
     </template>
   </div>
 </template>
@@ -157,8 +194,27 @@ function clock(seconds: number): string {
   transition-duration: var(--motion-press);
 }
 
+.speed {
+  min-width: 3.5em;
+  background: none;
+  border: var(--border-chrome);
+  border-radius: var(--radius-pill);
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  padding: var(--space-2xs) var(--space-sm);
+}
+
+.speed:hover {
+  border-color: var(--accent-trim);
+}
+
 .toggle:focus-visible,
-.scrubber:focus-visible {
+.scrubber:focus-visible,
+.speed:focus-visible {
   outline: var(--outline-focus);
   outline-color: var(--accent-trim);
   outline-offset: var(--outline-focus-offset);

@@ -13,12 +13,41 @@ import milkBagHandImg from './milk-bag-hand.webp'
 import milkBagPitcherImg from './milk-bag-pitcher.webp'
 import smartiesChocolateImg from './smarties-chocolate.webp'
 import smartiesUsImg from './smarties-us.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'snack-aisle',
   date: '2026-11-02',
   title: 'The Snack Aisle: Aisle Be Back',
   topic: 'food',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 30.3, panel: 1 }, // "First of all, chip flavors"
+      { at: 37.9, panel: 1, image: 0 }, // "ketchup chips"
+      { at: 42.9, panel: 1, image: 3 }, // "ketchup chips kind of have like a sour kind of sweetness"
+      { at: 60.2, panel: 1, image: 1 }, // "all dressed"
+      { at: 97.6, panel: 1 }, // "recently Lays bought the brand"
+      { at: 109.4, panel: 1, image: 0 }, // "the Lays ketchup chips"
+      { at: 114.1, panel: 2 }, // "Next up, we got candies"
+      { at: 121.4, panel: 2, image: 0 }, // "smarties, they're like these little circular chocolates"
+      { at: 132.4, panel: 2, image: 1 }, // "little like pill shaped … chalk tasting candies"
+      { at: 144.8, panel: 2, image: 0 }, // "actual smarties like we get here"
+      { at: 151.0, panel: 2, image: 2 }, // "a chocolate in Canada called Coffee Crisp"
+      { at: 173.4, panel: 2, image: 3 }, // "we have Caramilk"
+      { at: 186.5, panel: 2 }, // "Caramilk and Smarties were some of my favorites"
+      { at: 194.1, panel: 3 }, // "And all right, here, I have to talk about KD"
+      { at: 213.3, panel: 3, image: 0 }, // "the boxes even have … the letters KD on it"
+      { at: 221.8, panel: 3, image: 2 }, // "just like a plastic cheese tasting mac and cheese"
+      { at: 236.9, panel: 3 }, // "another one to put on your list"
+      { at: 240.8, panel: 4 }, // "And last, this one is super weird"
+      { at: 250.5, panel: 4, image: 0 }, // "you get milk in bags"
+      { at: 256.5, panel: 4 }, // "rows in the refrigerated section"
+      { at: 277.5, panel: 4, image: 1 }, // "you put it in a pitcher"
+      { at: 283.9, panel: 4, image: 2 }, // "you cut the corner"
+      { at: 299.3, panel: 5 }, // "Anyway, that's all I got for you today"
+    ],
+  },
   slides: [
     {
       heading: 'All Dressed Up',
