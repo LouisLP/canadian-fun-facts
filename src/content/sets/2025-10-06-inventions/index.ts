@@ -1,14 +1,14 @@
-import { commonsCredit, defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import bantingBestImg from './banting-best.webp'
-import blackberryImg from './blackberry-bold.webp'
-import telephoneImg from './candlestick-telephone.webp'
+import bellTelephoneImg from './bell-telephone.webp'
+import blackberryBoldImg from './blackberry-bold.webp'
+import californiaRollImg from './california-roll.webp'
+import deromeImg from './derome.webp'
 import fessendenImg from './fessenden.webp'
-import fingerprintImg from './fingerprint.webp'
-import pizzaImg from './hawaiian-pizza.webp'
-import appleImg from './mcintosh-apple.webp'
+import hawaiianPizzaImg from './hawaiian-pizza.webp'
+import mcintoshAppleImg from './mcintosh-apple.webp'
 import naismithImg from './naismith.webp'
 import pacemakerImg from './pacemaker.webp'
-import peanutImg from './peanut-butter.webp'
 import poutineImg from './poutine.webp'
 import zipperImg from './zipper.webp'
 
@@ -21,32 +21,31 @@ export default defineSet({
     {
       heading: 'Invented it, ate it',
       facts: [
-        '**Peanut butter**: patented in 1884 by Montréal chemist Marcellus Gilmore Edson, pitched as food for people who couldn\'t chew.',
-        'Canada invents other countries\' food: the **Hawaiian pizza** (Chatham, Ontario, 1962) and the inside-out **California roll** (Vancouver chef Hidekazu Tojo).',
-        'The **London Fog** latte comes from a 1990s Vancouver café, not London.',
-        'Québec gave the world **poutine**, a late-1950s snack-bar experiment, and **tourtière**, centuries on réveillon tables.',
+        '**Hawaiian pizza** is from Chatham, Ontario: in 1962 Sam Panopoulos tipped a can of pineapple onto a pie.',
+        'My hometown names its food after other places: Vancouver claims both the **California roll** and the **London Fog** latte.',
+        'My mom\'s home province gave the world **poutine**, a late-1950s snack-bar experiment in rural Québec.',
         'Every **McIntosh apple** on Earth descends from one tree found in Ontario in 1811; Apple\'s Macintosh computer is named after the fruit.',
       ],
       images: [
         {
-          src: peanutImg,
-          alt: 'An open jar of peanut butter with a spoonful resting on top',
-          credit: commonsCredit('Silar', 'CC0'),
+          src: hawaiianPizzaImg,
+          alt: 'A sliced Hawaiian pizza topped with ham and pineapple, seen from above',
+          credit: INBOX_CREDIT,
         },
         {
-          src: pizzaImg,
-          alt: 'A sliced Hawaiian pizza with ham and pineapple',
-          credit: commonsCredit('Avelludo', 'CC BY-SA 4.0'),
+          src: californiaRollImg,
+          alt: 'Inside-out California rolls with crab and avocado on a plate',
+          credit: INBOX_CREDIT,
         },
         {
           src: poutineImg,
-          alt: 'A plate of poutine with fries, cheese curds, and gravy',
-          credit: commonsCredit('Antonydstevens', 'CC0'),
+          alt: 'A plate of poutine: fries, cheese curds and gravy',
+          credit: INBOX_CREDIT,
         },
         {
-          src: appleImg,
-          alt: 'A McIntosh Red apple from a 1909 nursery catalogue plate',
-          credit: commonsCredit('Brown Brothers Continental Nurseries catalogue (1909)', 'public domain'),
+          src: mcintoshAppleImg,
+          alt: 'Red McIntosh apples hanging on the tree',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -60,24 +59,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: telephoneImg,
-          alt: 'An early-1900s candlestick telephone with its earpiece on the hook',
-          credit: commonsCredit('Nuberger13', 'public domain'),
+          src: bellTelephoneImg,
+          alt: 'An early experimental telephone by Alexander Graham Bell, brass and black on a wooden base',
+          credit: INBOX_CREDIT,
         },
         {
           src: zipperImg,
-          alt: 'A brass zipper on denim, zipped halfway',
-          credit: 'CC BY-SA 3.0, via Wikimedia Commons',
+          alt: 'Extreme close-up of metal zipper teeth on blue fabric',
+          credit: INBOX_CREDIT,
         },
         {
           src: fessendenImg,
-          alt: 'Reginald Fessenden posing with his oscillator, around 1914',
-          credit: 'public domain, via Wikimedia Commons',
+          alt: 'Reginald Fessenden wearing headphones at a bench of early radio equipment',
+          credit: INBOX_CREDIT,
         },
         {
-          src: blackberryImg,
-          alt: 'A BlackBerry Bold 9900 with its physical keyboard',
-          credit: commonsCredit('P2u111', 'CC BY 4.0'),
+          src: blackberryBoldImg,
+          alt: 'Front and back of a BlackBerry Bold 9900 with its physical keyboard',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -96,19 +95,19 @@ export default defineSet({
           credit: 'public domain, via Wikimedia Commons',
         },
         {
-          src: fingerprintImg,
-          alt: 'A close-up of a fingerprint on a fingertip',
-          credit: commonsCredit('Frettie', 'CC BY 3.0'),
+          src: deromeImg,
+          alt: 'Wilfrid Derome, founder of the Montréal forensic lab, looking up from a microscope',
+          credit: INBOX_CREDIT,
         },
         {
           src: naismithImg,
-          alt: 'James Naismith holding a ball and the original peach basket',
-          credit: 'public domain, via Wikimedia Commons',
+          alt: 'James Naismith holding an early basketball',
+          credit: INBOX_CREDIT,
         },
         {
           src: pacemakerImg,
-          alt: 'A modern pacemaker resting in the palm of a hand',
-          credit: commonsCredit('Steven Fruitsmaak', 'CC BY 3.0'),
+          alt: 'An early external pacemaker, a metal box with dials, beside its electrode lead',
+          credit: INBOX_CREDIT,
         },
       ],
     },

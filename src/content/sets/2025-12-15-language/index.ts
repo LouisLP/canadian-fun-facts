@@ -1,14 +1,14 @@
-import { commonsCredit, defineSet } from '../../schema'
-import arretImg from './arret-sign.webp'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
+import arretSignImg from './arret-sign.webp'
 import depanneurImg from './depanneur.webp'
-import jellyBeanImg from './jelly-bean-row.webp'
-import loonImg from './loon.webp'
-import prairieImg from './prairie-elevator.webp'
-import churchImg from './quebec-church.webp'
-import flagImg from './quebec-flag.webp'
-import scotiabankImg from './scotiabank-centre.webp'
-import speedImg from './speed-limit-kmh.webp'
-import timHortonsImg from './tim-hortons-cup.webp'
+import doubleDoubleImg from './double-double.webp'
+import jellyBeanRowImg from './jelly-bean-row.webp'
+import loonieImg from './loonie.webp'
+import notreDameBasilicaImg from './notre-dame-basilica.webp'
+import petitChamplainImg from './petit-champlain.webp'
+import prairieElevatorImg from './prairie-elevator.webp'
+import rogersCentreImg from './rogers-centre.webp'
+import roseDesVentsImg from './rose-des-vents.webp'
 import toonieImg from './toonie.webp'
 import toqueImg from './toque.webp'
 
@@ -29,13 +29,13 @@ export default defineSet({
       images: [
         {
           src: toqueImg,
-          alt: 'A hand-knit wool toque in pink, purple and green',
-          credit: commonsCredit('Rathernotto', 'CC BY-SA 4.0'),
+          alt: 'A smiling woman pulling on a red and black toque with a pom-pom',
+          credit: INBOX_CREDIT,
         },
         {
-          src: loonImg,
-          alt: 'A common loon swimming on calm water',
-          credit: commonsCredit('Enoch Leung', 'CC BY-SA 2.0'),
+          src: loonieImg,
+          alt: 'A 1987 loonie showing a common loon on a lake, lying on dark wood',
+          credit: INBOX_CREDIT,
         },
         {
           src: toonieImg,
@@ -43,40 +43,40 @@ export default defineSet({
           credit: commonsCredit('Carol VanHook', 'CC BY-SA 2.0'),
         },
         {
-          src: timHortonsImg,
-          alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
+          src: doubleDoubleImg,
+          alt: 'A Tim Hortons coffee cup beside a plate of donuts',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Joual of the crown',
       facts: [
-        'Quebec\'s everyday French, called **joual**, can sound worlds apart from the French of France.',
+        'My mom\'s home province speaks **joual**, an everyday French that can sound worlds apart from the French of France.',
         'Words melt together in speech: **je suis** collapses through j\'suis and chuis down to chu.',
         'Québécois swears come from the Catholic **church**: tabarnak, câlisse and ostie all started as religious words.',
         'Everyday talk borrows English: **char** for car, toune for tune, and c\'est le fun for it\'s fun.',
       ],
       images: [
         {
-          src: flagImg,
-          alt: 'Quebec\'s blue-and-white fleur-de-lis flag flying from a building',
-          credit: commonsCredit('Tony Webster', 'CC BY 2.0'),
+          src: petitChamplainImg,
+          alt: 'Rue du Petit-Champlain in Old Quebec, lit up at dusk in winter',
+          credit: INBOX_CREDIT,
         },
         {
-          src: arretImg,
-          alt: 'A Montreal stop sign reading ARRÊT in French',
-          credit: commonsCredit('Tony Webster', 'CC BY-SA 2.0'),
+          src: arretSignImg,
+          alt: 'A red ARRÊT stop sign on a leafy Montreal street',
+          credit: INBOX_CREDIT,
         },
         {
-          src: churchImg,
-          alt: 'The ornate interior entrance of a Catholic church in Quebec',
-          credit: commonsCredit('Wilfredor', 'CC0'),
+          src: notreDameBasilicaImg,
+          alt: 'The blue-lit vaulted interior and altar of Notre-Dame Basilica in Montreal',
+          credit: INBOX_CREDIT,
         },
         {
           src: depanneurImg,
-          alt: 'A Montreal corner store with a Dépanneur sign above the door',
-          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
+          alt: 'A Montreal corner store under a large red DÉPANNEUR sign',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -85,29 +85,29 @@ export default defineSet({
       facts: [
         'Canadians spell the British way (**colour**, centre, cheque) but usually pronounce those words the American way.',
         'The final letter is **zed**, not "zee", one of the surest giveaways of a Canadian accent.',
-        'Canada runs on the **metric system** for nearly everything, yet people still give height in feet and weight in pounds.',
+        'French schooling reaches far beyond Quebec: I did all of elementary school in French, at a Francophone school in **Vancouver**.',
         'Accents swing by region: **Newfoundland** English can sound almost Irish, while the Prairies echo the American Midwest.',
       ],
       images: [
         {
-          src: speedImg,
-          alt: 'A Canadian road sign reading MAXIMUM 100, in kilometres per hour',
-          credit: commonsCredit('Ken Lund', 'CC BY-SA 2.0'),
+          src: rogersCentreImg,
+          alt: 'The Rogers Centre stadium in Toronto, its name spelled with the British "centre"',
+          credit: INBOX_CREDIT,
         },
         {
-          src: jellyBeanImg,
-          alt: 'Brightly painted row houses on a hillside in St. John\'s, Newfoundland',
-          credit: commonsCredit('Kenny Louie', 'CC BY 2.0'),
+          src: roseDesVentsImg,
+          alt: 'The entrance of École Rose-des-Vents, a French-language school in Vancouver',
+          credit: INBOX_CREDIT,
         },
         {
-          src: scotiabankImg,
-          alt: 'The Scotiabank Centre arena in Halifax, its name spelled with the British "centre"',
-          credit: commonsCredit('A Disappearing Act', 'CC BY-SA 2.0'),
+          src: jellyBeanRowImg,
+          alt: 'Brightly painted row houses in St. John\'s, Newfoundland',
+          credit: INBOX_CREDIT,
         },
         {
-          src: prairieImg,
-          alt: 'A wooden grain elevator beside a dirt road on the Saskatchewan prairie',
-          credit: commonsCredit('John Kaminski', 'CC BY-SA 4.0'),
+          src: prairieElevatorImg,
+          alt: 'Old wooden grain elevators beside a rail line on the Prairies at sunset',
+          credit: INBOX_CREDIT,
         },
       ],
     },

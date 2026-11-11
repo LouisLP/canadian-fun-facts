@@ -1,9 +1,9 @@
 import bantingBestImg from '../2025-10-06-inventions/banting-best.webp'
 import naismithImg from '../2025-10-06-inventions/naismith.webp'
-import syrupProductsImg from '../2025-10-27-maple/syrup-products.webp'
-import timHortonsCupImg from '../2025-12-15-language/tim-hortons-cup.webp'
-import auroraYukonImg from '../2026-01-05-cold/aurora-yukon.webp'
-import frozenYukonRiverImg from '../2026-01-05-cold/frozen-yukon-river.webp'
+import syrupProductsImg from '../2025-10-27-maple/leaf-bottles.webp'
+import timHortonsCupImg from '../2025-12-15-language/double-double.webp'
+import auroraYukonImg from '../2026-01-05-cold/aurora-cabin.webp'
+import frozenYukonRiverImg from '../2026-01-05-cold/yukon-winter.webp'
 import ratAtWaterImg from '../2026-03-16-weird-laws/rat-at-water.webp'
 import ratPosterImg from '../2026-06-29-provinces-territories/alberta-rat-poster.webp'
 import jellybeanRowImg from '../2026-06-29-provinces-territories/jellybean-row.webp'
@@ -169,8 +169,8 @@ export default defineSet({
       images: [
         {
           src: syrupProductsImg,
-          alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
+          alt: 'Three maple-leaf-shaped glass bottles of maple syrup',
+          credit: INBOX_CREDIT,
         },
         {
           src: mapleSyrupLineupImg,
@@ -190,13 +190,13 @@ export default defineSet({
       images: [
         {
           src: frozenYukonRiverImg,
-          alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: commonsCredit('Eric A. Hegg', 'public domain'),
+          alt: 'Snow-covered mountains above a frosted spruce forest in deep winter',
+          credit: INBOX_CREDIT,
         },
         {
           src: auroraYukonImg,
-          alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          alt: 'Bands of green aurora above a lit log cabin in a snowy forest',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -290,8 +290,8 @@ export default defineSet({
       images: [
         {
           src: timHortonsCupImg,
-          alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
+          alt: 'A Tim Hortons coffee cup beside a plate of donuts',
+          credit: INBOX_CREDIT,
         },
       ],
     },

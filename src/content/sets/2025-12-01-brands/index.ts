@@ -1,20 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import backpackImg from './arcteryx-backpack.webp'
-import jacketImg from './arcteryx-jacket.webp'
-import logoImg from './arcteryx-logo.webp'
-import squareOneImg from './arcteryx-square-one.webp'
-import gooseFlagshipImg from './canada-goose-flagship.webp'
-import gooseGreenlandImg from './canada-goose-greenland.webp'
-import gooseLabelImg from './canada-goose-label.webp'
-import gooseManotickImg from './canada-goose-manotick.webp'
-import lululemonChelseaImg from './lululemon-chelsea.webp'
-import lululemonRobsonImg from './lululemon-robson.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import archaeopteryxFossilImg from './archaeopteryx-fossil.webp'
+import arcteryxFactoryImg from './arcteryx-factory.webp'
+import arcteryxShellImg from './arcteryx-shell.webp'
+import arcteryxStoreImg from './arcteryx-store.webp'
+import canadaGooseBadgeImg from './canada-goose-badge.webp'
+import canadaGooseFactoryImg from './canada-goose-factory.webp'
+import kanukParkaImg from './kanuk-parka.webp'
+import lululemonKitsilanoImg from './lululemon-kitsilano.webp'
+import lululemonLeggingsImg from './lululemon-leggings.webp'
 import lululemonStorefrontImg from './lululemon-storefront.webp'
 import lululemonYogaImg from './lululemon-yoga.webp'
-import mecEdmontonImg from './mec-edmonton.webp'
-import mecStoreImg from './mec-store.webp'
-import sportChekChinookImg from './sportchek-chinook.webp'
-import sportChekEdmontonImg from './sportchek-edmonton.webp'
+import mecPackImg from './mec-pack.webp'
+import mecVancouverImg from './mec-vancouver.webp'
+import snowMantraImg from './snow-mantra.webp'
+import sportchekFlagshipImg from './sportchek-flagship.webp'
+import sportchekHockeyImg from './sportchek-hockey.webp'
 
 export default defineSet({
   slug: 'brands',
@@ -25,31 +25,30 @@ export default defineSet({
     {
       heading: 'Stretch goals',
       facts: [
-        'Lululemon started in **1998** in Vancouver, where the first store doubled as a yoga studio at night to help cover the rent.',
+        'Lululemon began in **1998** in Kitsilano, the Vancouver neighbourhood where I went to high school; the first shop hosted night yoga to make rent.',
         'The brand went public in 2007, raising about **US$328 million** on its stock-market debut.',
         'In 2013 it recalled its black Luon yoga pants for being too sheer, pulling roughly **17%** of the women\'s bottoms it stocked.',
-        'Founder Chip Wilson quit as chairman that same year after saying **some women\'s bodies** just don\'t work for the pants.',
       ],
       images: [
         {
-          src: lululemonRobsonImg,
-          alt: 'A Lululemon store on Robson Street in Vancouver',
-          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
+          src: lululemonKitsilanoImg,
+          alt: 'The Lululemon store on West 4th Avenue in Kitsilano, Vancouver, under a colourful mural',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: lululemonLeggingsImg,
+          alt: 'A curved wall of leggings on display inside a Lululemon store',
+          credit: INBOX_CREDIT,
         },
         {
           src: lululemonYogaImg,
-          alt: 'A woman meditating cross-legged on a yoga mat outdoors in a park',
-          credit: commonsCredit('lululemon athletica', 'CC BY 2.0'),
-        },
-        {
-          src: lululemonChelseaImg,
-          alt: 'A Lululemon storefront with the brand name above the windows',
-          credit: commonsCredit('Philafrenzy', 'CC BY-SA 4.0'),
+          alt: 'A crowd doing yoga on colourful mats at a Lululemon event, seen from above',
+          credit: INBOX_CREDIT,
         },
         {
           src: lululemonStorefrontImg,
-          alt: 'Entrance to a Lululemon store inside a shopping mall',
-          credit: commonsCredit('Windmemories', 'CC BY-SA 4.0'),
+          alt: 'A Lululemon flagship store with its name across a glass canopy',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -63,24 +62,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: sportChekChinookImg,
-          alt: 'A Sport Chek store entrance inside a shopping mall',
-          credit: commonsCredit('Rowanlovescars', 'CC BY-SA 4.0'),
+          src: sportchekFlagshipImg,
+          alt: 'Sport Chek\'s Vancouver flagship store lit up at dusk',
+          credit: INBOX_CREDIT,
         },
         {
-          src: sportChekEdmontonImg,
-          alt: 'Exterior of a Sport Chek store at West Edmonton Mall',
-          credit: commonsCredit('Rowanlovescars', 'CC BY-SA 4.0'),
+          src: sportchekHockeyImg,
+          alt: 'Racks of hockey sticks inside a Sport Chek store',
+          credit: INBOX_CREDIT,
         },
         {
-          src: mecStoreImg,
-          alt: 'A Mountain Equipment Co-op store exterior',
-          credit: commonsCredit('Simon Law', 'CC BY-SA 2.0'),
+          src: mecVancouverImg,
+          alt: 'MEC\'s flagship store in Vancouver, its facade printed with a mountain range',
+          credit: INBOX_CREDIT,
         },
         {
-          src: mecEdmontonImg,
-          alt: 'Exterior of the MEC store in Edmonton',
-          credit: commonsCredit('Myke2020', 'public domain'),
+          src: mecPackImg,
+          alt: 'A red-and-yellow canvas MEC rucksack',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -94,24 +93,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: gooseFlagshipImg,
-          alt: 'A Canada Goose flagship store entrance at Sherway Gardens mall',
-          credit: commonsCredit('Canmenwalker', 'CC BY 4.0'),
+          src: canadaGooseBadgeImg,
+          alt: 'The Canada Goose Arctic Program badge on a red parka, with factory sewers at work behind',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gooseLabelImg,
-          alt: 'The round Canada Goose Arctic Program badge stitched on a cream knit garment',
-          credit: commonsCredit('Qirille', 'CC BY-SA 4.0'),
+          src: canadaGooseFactoryImg,
+          alt: 'Workers sewing parkas on a Canada Goose factory floor in Toronto',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gooseGreenlandImg,
-          alt: 'A small blue Canada Goose shop in Kangerlussuaq, Greenland',
-          credit: commonsCredit('Quintin Soloviev', 'CC BY-SA 4.0'),
+          src: snowMantraImg,
+          alt: 'A red Canada Goose Snow Mantra parka with a fur-trimmed hood',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gooseManotickImg,
-          alt: 'A Canada Goose shop on the main street of Manotick, Ontario',
-          credit: commonsCredit('Peter Jakubinek', 'CC BY-SA 4.0'),
+          src: kanukParkaImg,
+          alt: 'A red Kanuk winter parka',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -119,30 +118,30 @@ export default defineSet({
       heading: 'Bird is the word',
       facts: [
         'Arc\'teryx started in North Vancouver in **1989** as Rock Solid, making climbing harnesses before it renamed in 1991.',
-        'The name and skeletal logo come from **Archaeopteryx**, the fossil linking dinosaurs to birds.',
+        'The skeletal logo traces the **Berlin specimen** of Archaeopteryx, the dinosaur-to-bird fossil kept in the city where I later worked.',
         'Its breakthrough was the **Vapor** harness, thermolaminated to cut bulk without sacrificing strength.',
         'The Vancouver label is no longer Canadian-owned: it now belongs to Finland\'s **Amer Sports**, led by China\'s Anta.',
       ],
       images: [
         {
-          src: jacketImg,
-          alt: 'A hiker in an orange Arc\'teryx insulated jacket on a snowy mountain ridge',
-          credit: commonsCredit('Olgierd', 'CC BY 2.0'),
+          src: arcteryxShellImg,
+          alt: 'An orange Arc\'teryx shell jacket',
+          credit: INBOX_CREDIT,
         },
         {
-          src: squareOneImg,
-          alt: 'An Arc\'teryx store inside Square One shopping centre',
-          credit: commonsCredit('Canmenwalker', 'CC BY 4.0'),
+          src: arcteryxFactoryImg,
+          alt: 'Rows of sewing stations at Arc\'teryx\'s ARC\'One factory in Metro Vancouver',
+          credit: INBOX_CREDIT,
         },
         {
-          src: backpackImg,
-          alt: 'A black Arc\'teryx Alpha backpack with the skeletal bird logo',
-          credit: commonsCredit('Jjanhone', 'CC BY-SA 4.0'),
+          src: archaeopteryxFossilImg,
+          alt: 'An Archaeopteryx fossil with spread wings pressed in limestone',
+          credit: INBOX_CREDIT,
         },
         {
-          src: logoImg,
-          alt: 'The Arc\'teryx Archaeopteryx skeleton logo',
-          credit: commonsCredit('Olgierd', 'CC BY 2.0'),
+          src: arcteryxStoreImg,
+          alt: 'An Arc\'teryx storefront with the skeletal bird logo in the window',
+          credit: INBOX_CREDIT,
         },
       ],
     },

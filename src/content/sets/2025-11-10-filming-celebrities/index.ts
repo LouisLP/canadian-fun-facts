@@ -1,7 +1,9 @@
-import { commonsCredit, defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import celineDionImg from './celine-dion.webp'
+import deadpoolViaductImg from './deadpool-viaduct.webp'
 import drakeImg from './drake.webp'
 import filmSetSignsImg from './film-set-signs.webp'
+import filmTrucksImg from './film-trucks.webp'
 import jimCarreyImg from './jim-carrey.webp'
 import justinBieberImg from './justin-bieber.webp'
 import keanuReevesImg from './keanu-reeves.webp'
@@ -11,8 +13,6 @@ import ryanReynoldsImg from './ryan-reynolds.webp'
 import sandraOhImg from './sandra-oh.webp'
 import steveNashImg from './steve-nash.webp'
 import theWeekndImg from './the-weeknd.webp'
-import torontoSkylineImg from './toronto-skyline.webp'
-import vancouverFilmSetImg from './vancouver-film-set.webp'
 import vancouverSkylineImg from './vancouver-skyline.webp'
 import wayneGretzkyImg from './wayne-gretzky.webp'
 
@@ -25,31 +25,30 @@ export default defineSet({
     {
       heading: 'Hollywood North',
       facts: [
-        'Vancouver is North America\'s **third-largest** film and TV production hub, behind only Los Angeles and New York.',
-        'On screen the city rarely plays itself, doubling instead for **Seattle, New York, or Los Angeles**.',
-        'Deadpool, Twilight, The X-Files, and Supernatural all shot in **British Columbia**.',
-        'The Revenant froze its cast in **Alberta**, and Titanic filmed its modern-day scenes in **Nova Scotia**.',
+        'My hometown is North America\'s **third-largest** film and TV hub, behind Los Angeles, where I later worked as a video editor, and New York.',
+        'On screen Vancouver rarely plays itself, doubling instead for **Seattle, New York, or Los Angeles**.',
+        'Deadpool, Twilight, The X-Files and Supernatural all shot in **British Columbia**; Deadpool closed Vancouver\'s Georgia Viaduct for its freeway fight.',
       ],
       images: [
         {
           src: vancouverSkylineImg,
-          alt: 'The downtown Vancouver waterfront skyline with mountains behind it',
-          credit: commonsCredit('Quintin Soloviev', 'CC BY 4.0'),
+          alt: 'Aerial view of downtown Vancouver\'s towers with the harbour and mountains behind',
+          credit: INBOX_CREDIT,
         },
         {
-          src: vancouverFilmSetImg,
-          alt: 'A wrecked car dressing a Vancouver street as a film set for The Last of Us',
-          credit: commonsCredit('MSTakesPictures', 'CC BY 4.0'),
+          src: deadpoolViaductImg,
+          alt: 'A performer in the Deadpool costume on the Georgia Viaduct film set in Vancouver, with crew nearby',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: filmTrucksImg,
+          alt: 'Film production trucks and a prop police car parked on a downtown Vancouver street',
+          credit: INBOX_CREDIT,
         },
         {
           src: filmSetSignsImg,
           alt: 'Film-crew directional signs reading "TO SET" and "WORK TRUCKS" on a Vancouver street',
           credit: commonsCredit('Emma0mb', 'CC BY 4.0'),
-        },
-        {
-          src: torontoSkylineImg,
-          alt: 'The CN Tower and Toronto skyline lit up at night',
-          credit: commonsCredit('Wladyslaw', 'CC BY 3.0'),
         },
       ],
     },
@@ -59,28 +58,27 @@ export default defineSet({
         '**Ryan Reynolds** grew up in Vancouver and still shoots there whenever a production will let him.',
         '**Keanu Reeves** was raised in Toronto; **Jim Carrey** came up through the city\'s comedy clubs after dropping out at 15.',
         '**Ryan Gosling** got his start as an Ontario kid on Disney\'s Mickey Mouse Club, alongside Britney Spears and Justin Timberlake.',
-        'Mike Myers and Seth Rogen keep the comedy pipeline flowing, from **Wayne\'s World** to Superbad.',
       ],
       images: [
         {
           src: ryanReynoldsImg,
-          alt: 'Ryan Reynolds smiling on a red carpet',
-          credit: commonsCredit('Dick Thomas Johnson', 'CC BY 2.0'),
+          alt: 'Ryan Reynolds in a red velvet suit at a premiere',
+          credit: INBOX_CREDIT,
         },
         {
           src: keanuReevesImg,
-          alt: 'Black-and-white portrait of a bearded Keanu Reeves',
-          credit: commonsCredit('Marybel Le Pape', 'CC BY-SA 4.0'),
+          alt: 'Keanu Reeves in a dark suit at an event',
+          credit: INBOX_CREDIT,
         },
         {
           src: jimCarreyImg,
-          alt: 'Black-and-white side profile of Jim Carrey',
-          credit: commonsCredit('Jean-François Gornet', 'CC BY-SA 2.0'),
+          alt: 'Jim Carrey smiling at a film premiere',
+          credit: INBOX_CREDIT,
         },
         {
           src: ryanGoslingImg,
-          alt: 'Ryan Gosling in a plaid shirt at an event',
-          credit: commonsCredit('Elen Nivrae', 'CC BY 2.0'),
+          alt: 'Ryan Gosling in a dark red shirt at an event',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -95,23 +93,23 @@ export default defineSet({
       images: [
         {
           src: drakeImg,
-          alt: 'Drake performing on stage with a microphone',
-          credit: commonsCredit('The Come Up Show', 'CC BY 2.0'),
+          alt: 'Drake on stage with his arms spread wide under red lights',
+          credit: INBOX_CREDIT,
         },
         {
           src: justinBieberImg,
-          alt: 'Justin Bieber singing in a white t-shirt',
-          credit: commonsCredit('Lou Stejskal', 'CC BY 2.0'),
+          alt: 'Justin Bieber walking a stadium stage in front of a huge crowd',
+          credit: INBOX_CREDIT,
         },
         {
           src: theWeekndImg,
-          alt: 'Black-and-white photo of The Weeknd singing into a microphone',
-          credit: commonsCredit('Kayla Johnson', 'CC BY 2.0'),
+          alt: 'The Weeknd in a red jacket performing the Super Bowl halftime show under fireworks',
+          credit: INBOX_CREDIT,
         },
         {
           src: celineDionImg,
-          alt: 'Céline Dion singing on stage with an outstretched hand',
-          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
+          alt: 'Céline Dion singing on stage in a gold dress',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -126,23 +124,23 @@ export default defineSet({
       images: [
         {
           src: sandraOhImg,
-          alt: 'Sandra Oh laughing in front of a Toronto film festival backdrop',
-          credit: commonsCredit('Sara Komatsu', 'CC BY-SA 4.0'),
+          alt: 'Sandra Oh in an orange gown at the 2023 Oscars',
+          credit: INBOX_CREDIT,
         },
         {
           src: margaretAtwoodImg,
-          alt: 'Margaret Atwood speaking into a microphone in front of bookshelves',
-          credit: commonsCredit('Frankie Fouganthin', 'CC BY-SA 4.0'),
+          alt: 'Portrait of Margaret Atwood resting her cheek on her hand',
+          credit: INBOX_CREDIT,
         },
         {
           src: wayneGretzkyImg,
-          alt: 'Wayne Gretzky skating in a hockey uniform on the ice',
-          credit: commonsCredit('Rick Dikeman', 'CC BY-SA 3.0'),
+          alt: 'Wayne Gretzky hoisting the Stanley Cup with the Edmonton Oilers in 1984',
+          credit: INBOX_CREDIT,
         },
         {
           src: steveNashImg,
-          alt: 'Steve Nash in a basketball jersey holding a cup courtside',
-          credit: commonsCredit('Keith Allison', 'CC BY-SA 2.0'),
+          alt: 'Steve Nash dribbling in a purple Phoenix Suns jersey',
+          credit: INBOX_CREDIT,
         },
       ],
     },

@@ -1,20 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import boilingSapImg from './boiling-sap.webp'
-import cabaneImg from './cabane-a-sucre.webp'
-import skyImg from './maple-against-sky.webp'
-import plasticBucketImg from './plastic-sap-bucket.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import leafBottlesImg from './leaf-bottles.webp'
+import reserveBarrelsImg from './reserve-barrels.webp'
+import reserveWorkerImg from './reserve-worker.webp'
 import sapBucketsImg from './sap-buckets.webp'
-import sugarHouseImg from './sugar-house-boiling.webp'
-import leafImg from './sugar-maple-leaf.webp'
-import treeImg from './sugar-maple-tree.webp'
-import bottleImg from './syrup-bottle.webp'
-import gradesImg from './syrup-grades.webp'
-import jugsImg from './syrup-jugs.webp'
-import productsImg from './syrup-products.webp'
-import rainbowImg from './syrup-rainbow.webp'
-import taffyImg from './taffy-on-snow.webp'
-import traditionalTapImg from './traditional-tap.webp'
-import tubingTapImg from './tubing-tap.webp'
+import sapDripImg from './sap-drip.webp'
+import sapTubingImg from './sap-tubing.webp'
+import shackMealImg from './shack-meal.webp'
+import sugarMapleLeafImg from './sugar-maple-leaf.webp'
+import sugarMaplesImg from './sugar-maples.webp'
+import sugarShackImg from './sugar-shack.webp'
+import syrupDrawOffImg from './syrup-draw-off.webp'
+import syrupGradesImg from './syrup-grades.webp'
+import syrupPourImg from './syrup-pour.webp'
+import taffyOnSnowImg from './taffy-on-snow.webp'
+import tapDrillImg from './tap-drill.webp'
+import warehouseBarrelsImg from './warehouse-barrels.webp'
 
 export default defineSet({
   slug: 'maple',
@@ -25,31 +25,31 @@ export default defineSet({
     {
       heading: 'The sweetest superpower',
       facts: [
-        'Canada makes about **75%** of the world\'s maple syrup, and Quebec alone pours out the vast majority of it.',
+        'Canada makes about **75%** of the world\'s maple syrup; Quebec, my mom\'s home province, pours out roughly **90%** of that.',
         'It takes roughly **40 litres of sap** to boil down into a single litre of finished syrup.',
-        'Sugar maples stockpile **starch** all winter and convert it to sweet, tappable sap each spring.',
         'A maple usually needs about **40 years** of growth before it is wide enough to tap.',
+        'Colour grades run from pale **golden** to very **dark**, with the darker syrup carrying the stronger maple flavour.',
       ],
       images: [
         {
-          src: treeImg,
-          alt: 'A large sugar maple in full golden-orange autumn foliage',
-          credit: commonsCredit('James St. John', 'CC BY 2.0'),
+          src: sugarMaplesImg,
+          alt: 'A row of maples in blazing orange and red autumn colour',
+          credit: INBOX_CREDIT,
         },
         {
-          src: leafImg,
-          alt: 'Yellow sugar maple leaves fallen on grass',
-          credit: commonsCredit('James St. John', 'CC BY 2.0'),
+          src: sugarMapleLeafImg,
+          alt: 'Red maple leaves backlit against a pale sky',
+          credit: INBOX_CREDIT,
         },
         {
-          src: skyImg,
-          alt: 'Maple branches and leaves against a bright blue sky',
-          credit: commonsCredit('Mangoandmay', 'CC BY-SA 4.0'),
+          src: syrupPourImg,
+          alt: 'Maple syrup being poured over pancakes topped with blueberries',
+          credit: INBOX_CREDIT,
         },
         {
-          src: bottleImg,
-          alt: 'A maple-leaf-shaped glass bottle of Canadian maple syrup beside pancakes',
-          credit: commonsCredit('Jan Smith', 'CC BY 2.0'),
+          src: syrupGradesImg,
+          alt: 'Three bottles of maple syrup labelled dark, amber and golden',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -57,30 +57,29 @@ export default defineSet({
       heading: 'Tap dancing',
       facts: [
         'Sap only runs when nights freeze and days thaw: **no cold snap, no syrup**.',
-        'Producers can\'t schedule the harvest; the trees and the spring weather set the **production calendar**.',
         'Traditional taps drip into hanging buckets; modern sugar bushes web whole forests with **plastic tubing** and vacuum.',
         'Tapping doesn\'t kill the tree: the hole heals over and the same maple keeps giving sap for **decades**.',
       ],
       images: [
         {
-          src: traditionalTapImg,
-          alt: 'A gloved hand holding a traditional metal maple tap in the snow',
-          credit: commonsCredit('Jomegat', 'CC BY-SA 4.0'),
-        },
-        {
-          src: plasticBucketImg,
-          alt: 'A lidded plastic sap bucket hung on a tapped maple trunk',
-          credit: commonsCredit('Rhavasy', 'CC BY-SA 3.0'),
+          src: sapDripImg,
+          alt: 'A drop of sap falling from a metal spile into a bucket',
+          credit: INBOX_CREDIT,
         },
         {
           src: sapBucketsImg,
-          alt: 'Two metal sap buckets hanging on a maple trunk in bare early-spring woods',
-          credit: 'public domain, via Wikimedia Commons',
+          alt: 'Metal sap buckets hanging on maple trunks in a snowy sugar bush',
+          credit: INBOX_CREDIT,
         },
         {
-          src: tubingTapImg,
-          alt: 'Blue plastic sap tubing joined at a maple tap in the snow',
-          credit: commonsCredit('Jomegat', 'CC BY-SA 4.0'),
+          src: sapTubingImg,
+          alt: 'Blue sap tubing strung between maple trunks in snowy woods',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: tapDrillImg,
+          alt: 'A cordless drill boring a tap hole into a maple trunk',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -90,28 +89,27 @@ export default defineSet({
         'Fresh sap is barely sweet at about **2% sugar**; hours of boiling drive off the water until syrup is left.',
         'Quebec\'s **cabane à sucre** turns the boil-down into a whole feast built around the season\'s syrup.',
         'Pour hot syrup onto clean snow and it sets into chewy **maple taffy**, called tire d\'érable.',
-        'Colour grades run from pale **golden** to very **dark**, with the darker syrup carrying the stronger maple flavour.',
       ],
       images: [
         {
-          src: cabaneImg,
-          alt: 'A worker tending a wood-fired evaporator inside a Quebec sugar shack, steam rising',
-          credit: commonsCredit('Emmanuel Huybrechts', 'CC BY 2.0'),
+          src: syrupDrawOffImg,
+          alt: 'A sugar maker pouring hot syrup into a jug inside a steam-filled Quebec sugar shack',
+          credit: INBOX_CREDIT,
         },
         {
-          src: boilingSapImg,
-          alt: 'A man boiling maple sap over a wood-fired arch in a sugar shack',
-          credit: commonsCredit('Missouri State Archives', 'no known copyright restrictions'),
+          src: sugarShackImg,
+          alt: 'A weathered wooden sugar shack in snowy woods, with a sap bucket on a maple in the foreground',
+          credit: INBOX_CREDIT,
         },
         {
-          src: sugarHouseImg,
-          alt: 'Children watching maple sap boil in long evaporator pans at a sugar house',
-          credit: commonsCredit('BiblioArchives / LibraryArchives', 'CC BY 2.0'),
+          src: shackMealImg,
+          alt: 'A sugar-shack spread of baked beans, ham, sausages and pork rinds on a checkered tablecloth',
+          credit: INBOX_CREDIT,
         },
         {
-          src: taffyImg,
-          alt: 'A person eating maple taffy off a stick beside a basin of snow',
-          credit: commonsCredit('Chris Lund', 'public domain'),
+          src: taffyOnSnowImg,
+          alt: 'Maple taffy being rolled onto wooden sticks on a tray of snow',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -125,24 +123,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: productsImg,
-          alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
+          src: reserveBarrelsImg,
+          alt: 'Thousands of white syrup barrels stacked to the ceiling in Quebec\'s strategic reserve warehouse',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gradesImg,
-          alt: 'Four small bottles of maple syrup ranging from pale gold to dark amber',
-          credit: commonsCredit('Dvortygirl', 'CC BY-SA 3.0'),
+          src: reserveWorkerImg,
+          alt: 'A worker rolling a steel syrup barrel past stacks of barrels in the reserve',
+          credit: INBOX_CREDIT,
         },
         {
-          src: rainbowImg,
-          alt: 'Metal pans holding maple syrup in graded shades from light to dark',
-          credit: commonsCredit('rachaelvoorhees', 'CC BY-SA 2.0'),
+          src: warehouseBarrelsImg,
+          alt: 'Syrup barrels standing on the floor of a Quebec warehouse',
+          credit: INBOX_CREDIT,
         },
         {
-          src: jugsImg,
-          alt: 'A leaf-shaped bottle of Grade A maple syrup',
-          credit: commonsCredit('Willis Lam', 'CC BY-SA 2.0'),
+          src: leafBottlesImg,
+          alt: 'Three maple-leaf-shaped glass bottles of maple syrup',
+          credit: INBOX_CREDIT,
         },
       ],
     },
