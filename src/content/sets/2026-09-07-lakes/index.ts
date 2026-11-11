@@ -1,4 +1,4 @@
-import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import abrahamLakeImg from './abraham-lake.webp'
 import emeraldLakeImg from './emerald-lake.webp'
 import greatLakesMapImg from './great-lakes-map.webp'
@@ -80,23 +80,23 @@ export default defineSet({
         },
         {
           src: emeraldLakeImg,
-          alt: 'Bright green water of Emerald Lake in Yoho National Park with two canoes on it, ringed by steep forested slopes and a rocky peak',
+          alt: 'A red canoe on the bright turquoise water of Emerald Lake in Yoho National Park, mountains mirrored around it',
           credit: INBOX_CREDIT,
         },
         {
           src: greatSlaveKayakingImg,
-          alt: 'Three sea kayakers paddling on Great Slave Lake beneath a tall sheer cliff topped with spruce trees',
+          alt: 'Sea kayakers paddling on Great Slave Lake beneath a tall sheer cliff',
           credit: INBOX_CREDIT,
         },
         {
           src: spottedLakeImg,
-          alt: 'Spotted Lake in the dry hills near Osoyoos, its bed showing dozens of pale circular mineral pools separated by ridges',
-          credit: commonsCredit('Mykola Swarnyk', 'CC BY-SA 3.0'),
+          alt: 'Spotted Lake near Osoyoos from above, its bed a mosaic of pale mineral pools among dry hills',
+          credit: INBOX_CREDIT,
         },
         {
           src: abrahamLakeImg,
-          alt: 'Stacks of white methane bubbles frozen inside the clear ice of Abraham Lake, with snowy mountains behind',
-          credit: commonsCredit('Joli Rumi', 'CC BY-SA 4.0'),
+          alt: 'White methane bubbles frozen in the dark ice of Abraham Lake, a mountain behind',
+          credit: INBOX_CREDIT,
         },
       ],
     },

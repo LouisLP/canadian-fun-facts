@@ -1,15 +1,15 @@
 import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import canuckWithKnifeImg from './canuck-with-knife.webp'
 import crowOnWireImg from './crow-on-wire.webp'
-import eagleCarvingImg from './eagle-carving.webp'
 import eagleCatchingFishImg from './eagle-catching-fish.webp'
+import eagleCarvingImg from './eagle-feather.webp'
 import eagleOnBoatBowImg from './eagle-on-boat-bow.webp'
 import feedingGeeseImg from './feeding-geese-2006.webp'
 import geeseInFlightImg from './geese-in-flight.webp'
 import geeseStanleyParkImg from './geese-stanley-park.webp'
 import glaucousWingedGullsImg from './glaucous-winged-gulls.webp'
+import gooseLowOverWaterImg from './goose-charging.webp'
 import gooseFamilyThamesImg from './goose-family-thames.webp'
-import gooseLowOverWaterImg from './goose-low-over-water.webp'
 import gooseSasamatImg from './goose-sasamat-lake.webp'
 import gullTakingOffImg from './gull-taking-off.webp'
 import heronNestPairImg from './heron-nest-pair.webp'
@@ -27,27 +27,26 @@ export default defineSet({
     {
       heading: 'Loonies, lemmings, and eagle feathers',
       facts: [
-        'I hope you all remember our dollar coin is called a **loonie** because it has a common loon on one side.',
+        'I hope you all remember our dollar coin is the **loonie**, for its common loon: a bird closer kin to penguins than to ducks!',
         'Loons can barely walk: legs set so far back they shove along on their bellies, and takeoff needs up to **400 metres** of open water.',
-        'They\'re actually more closely related to penguins than to ducks!',
         'Snowy owls swallow lemmings whole, **three to five a day** and over **1,600 a year** for one adult. They hear them moving under the snow.',
         'Nova Scotia courtrooms have stocked **eagle feathers** since **2018**, offered like a Bible to anyone who would rather affirm the truth holding one.',
       ],
       images: [
         {
           src: loonOnLakeImg,
-          alt: 'A common loon in black-and-white breeding plumage swimming on still water, its reflection below',
-          credit: commonsCredit('Enoch Leung', 'CC BY-SA 2.0'),
+          alt: 'Close-up of a common loon in breeding plumage, red eye and checkered back, on the water',
+          credit: INBOX_CREDIT,
         },
         {
           src: loonAndChickImg,
-          alt: 'An adult common loon on a lake with a downy grey chick swimming alongside it',
-          credit: commonsCredit('Cephas', 'CC BY-SA 3.0'),
+          alt: 'A downy loon chick riding on its parent\'s back',
+          credit: INBOX_CREDIT,
         },
         {
           src: snowyOwlLandingImg,
-          alt: 'A snowy owl dropping onto a snowbank with wings spread and talons forward against a blue sky',
-          credit: commonsCredit('Bert de Tilly', 'CC BY-SA 4.0'),
+          alt: 'A snowy owl coming in to land on snow, wings raised and yellow eyes on the camera',
+          credit: INBOX_CREDIT,
         },
         {
           src: eagleOnBoatBowImg,
@@ -56,13 +55,13 @@ export default defineSet({
         },
         {
           src: eagleCatchingFishImg,
-          alt: 'A bald eagle skimming open water with its talons down, snatching a fish from the surface',
-          credit: commonsCredit('Lorie Shaull', 'CC BY-SA 2.0'),
+          alt: 'A bald eagle with wings spread striking the water with its talons',
+          credit: INBOX_CREDIT,
         },
         {
           src: eagleCarvingImg,
-          alt: 'A carved and painted wooden eagle with outstretched wings on top of a Northwest Coast pole in British Columbia',
-          credit: commonsCredit('Chris English', 'CC BY-SA 3.0'),
+          alt: 'A hand holding an eagle feather beside a case of feathers kept for court oaths',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -92,8 +91,8 @@ export default defineSet({
         },
         {
           src: geeseInFlightImg,
-          alt: 'Three Canada geese silhouetted in flight against a cloudy blue sky',
-          credit: commonsCredit('Ildar Sagdejev', 'CC BY-SA 4.0'),
+          alt: 'A flock of Canada geese flying across a clear blue sky',
+          credit: INBOX_CREDIT,
         },
         {
           src: gooseFamilyThamesImg,
@@ -102,8 +101,8 @@ export default defineSet({
         },
         {
           src: gooseLowOverWaterImg,
-          alt: 'A Canada goose flying low over open water with its wings fully extended downward',
-          credit: commonsCredit('Frank Schulenburg', 'CC BY-SA 3.0'),
+          alt: 'A Canada goose charging through grass with its neck lowered and beak open',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -133,8 +132,8 @@ export default defineSet({
         },
         {
           src: heronNestPairImg,
-          alt: 'Two great blue herons facing each other on a stick nest high in a tree at sunset',
-          credit: commonsCredit('Pete from Vancouver', 'CC BY-SA 2.0'),
+          alt: 'Two great blue herons standing over a stick nest in a bare tree in Stanley Park',
+          credit: INBOX_CREDIT,
         },
         {
           src: gullTakingOffImg,
@@ -143,8 +142,8 @@ export default defineSet({
         },
         {
           src: glaucousWingedGullsImg,
-          alt: 'Two adult glaucous-winged gulls with pale grey wings standing together on a weathered piling',
-          credit: commonsCredit('Tony Fox', 'CC BY-SA 3.0'),
+          alt: 'A glaucous-winged gull calling from a rock, pale grey wings and pink legs',
+          credit: INBOX_CREDIT,
         },
       ],
     },

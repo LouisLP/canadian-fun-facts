@@ -22,7 +22,7 @@ import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
-import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
 import torontoSkylineImg from './toronto-skyline.webp'
@@ -47,8 +47,8 @@ export default defineSet({
       images: [
         {
           src: torontoSkylineImg,
-          alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
+          alt: 'The Toronto skyline at dusk with the CN Tower lit red',
+          credit: INBOX_CREDIT,
         },
         {
           src: oldQuebecWinterImg,
@@ -77,8 +77,8 @@ export default defineSet({
       images: [
         {
           src: markCarneyImg,
-          alt: 'Portrait of Prime Minister Mark Carney in a dark suit and blue tie',
-          credit: commonsCredit('Simon Dawson / No 10 Downing Street', 'CC BY 2.0'),
+          alt: 'Prime Minister Mark Carney smiling in front of a large Canadian flag',
+          credit: INBOX_CREDIT,
         },
         {
           src: parliamentHillImg,
@@ -137,8 +137,8 @@ export default defineSet({
       images: [
         {
           src: naismithImg,
-          alt: 'James Naismith holding a ball and the original peach basket',
-          credit: 'public domain, via Wikimedia Commons',
+          alt: 'James Naismith holding an early basketball',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -307,8 +307,8 @@ export default defineSet({
       images: [
         {
           src: robsonUmbrellasImg,
-          alt: 'Two people with umbrellas walking along a wet downtown Vancouver sidewalk past a bubble tea shop',
-          credit: 'Wikimedia Commons',
+          alt: 'People with umbrellas crossing a rain-soaked downtown Vancouver street',
+          credit: INBOX_CREDIT,
         },
         {
           src: seawallSunsetImg,

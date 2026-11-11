@@ -41,7 +41,7 @@ export default defineSet({
       images: [
         {
           src: dildoSignImg,
-          alt: 'Large white block letters spelling DILDO standing on a wooded hillside, with workers on the scaffolding beneath them',
+          alt: 'Large white block letters spelling DILDO on a wooded hillside',
           credit: INBOX_CREDIT,
         },
         {
@@ -102,7 +102,7 @@ export default defineSet({
         },
         {
           src: happyAdventureWharfImg,
-          alt: 'A red and white fishing boat tied up at a wharf in evening light, small open boats moored in the foreground',
+          alt: 'A fishing boat tied up beside a red shed and stacked crates at a wharf, houses across the harbour',
           credit: INBOX_CREDIT,
         },
         {
@@ -184,8 +184,8 @@ export default defineSet({
         },
         {
           src: alexandraBridgeImg,
-          alt: 'Black-and-white photo of the Alexandra Bridge, a concrete-towered suspension bridge over the Fraser River at Spuzzum, a 1940s car crossing it',
-          credit: commonsCredit('Don Coltman', 'CC0'),
+          alt: 'The old Alexandra Bridge at Spuzzum, a steel-deck suspension bridge with concrete towers over the Fraser Canyon',
+          credit: INBOX_CREDIT,
         },
         {
           src: spuzzumRaftingImg,
