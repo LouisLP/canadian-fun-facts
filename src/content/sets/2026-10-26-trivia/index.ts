@@ -2,14 +2,13 @@ import bantingBestImg from '../2025-10-06-inventions/banting-best.webp'
 import naismithImg from '../2025-10-06-inventions/naismith.webp'
 import syrupProductsImg from '../2025-10-27-maple/leaf-bottles.webp'
 import timHortonsCupImg from '../2025-12-15-language/double-double.webp'
+import jellybeanRowImg from '../2025-12-15-language/jelly-bean-row.webp'
 import auroraYukonImg from '../2026-01-05-cold/aurora-cabin.webp'
+import yukonAuroraImg from '../2026-01-05-cold/aurora-teepees.webp'
 import frozenYukonRiverImg from '../2026-01-05-cold/yukon-winter.webp'
-import ratAtWaterImg from '../2026-03-16-weird-laws/rat-at-water.webp'
+import ratAtWaterImg from '../2026-03-16-weird-laws/brown-rat.webp'
 import ratPosterImg from '../2026-06-29-provinces-territories/alberta-rat-poster.webp'
-import jellybeanRowImg from '../2026-06-29-provinces-territories/jellybean-row.webp'
 import oldQuebecWinterImg from '../2026-06-29-provinces-territories/old-quebec-winter.webp'
-import torontoSkylineImg from '../2026-06-29-provinces-territories/toronto-skyline.webp'
-import yukonAuroraImg from '../2026-06-29-provinces-territories/yukon-aurora.webp'
 import parliamentHillImg from '../2026-07-27-multiculturalism/canada-day-parliament-hill.webp'
 import tojoImg from '../2026-07-27-multiculturalism/chef-tojo.webp'
 import sushiPlatterImg from '../2026-07-27-multiculturalism/sushi-platter.webp'
@@ -26,6 +25,7 @@ import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
 import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
+import torontoSkylineImg from './toronto-skyline.webp'
 
 // A farewell quiz: every answer is a fact from an earlier set, so images are
 // imported from their original folders rather than duplicated.
@@ -56,13 +56,13 @@ export default defineSet({
         },
         {
           src: jellybeanRowImg,
-          alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
+          alt: 'Brightly painted row houses in St. John\'s, Newfoundland',
+          credit: INBOX_CREDIT,
         },
         {
           src: yukonAuroraImg,
-          alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          alt: 'Green aurora over glowing teepees at Aurora Village near Yellowknife',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -101,8 +101,8 @@ export default defineSet({
         },
         {
           src: ratAtWaterImg,
-          alt: 'A brown rat crouched at the edge of still water, its reflection visible below',
-          credit: commonsCredit('Charles J. Sharp', 'CC BY-SA 4.0'),
+          alt: 'A brown rat sniffing along a ledge, seen head-on',
+          credit: INBOX_CREDIT,
         },
       ],
     },

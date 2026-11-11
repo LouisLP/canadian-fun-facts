@@ -1,20 +1,13 @@
-import { commonsCredit, defineSet } from '../../schema'
-import deadOfWinterImg from './dead-of-winter.webp'
-import legendPosterImg from './ogopogo-legend-poster.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import harrisonSasquatchImg from './harrison-sasquatch.webp'
+import ogopogoLegendPosterImg from './ogopogo-legend-poster.webp'
 import ogopogoPaintingImg from './ogopogo-painting.webp'
-import sheetMusicImg from './ogopogo-sheet-music.webp'
 import ogopogoStatueImg from './ogopogo-statue.webp'
 import okanaganLakeImg from './okanagan-lake.webp'
-import rattlesnakeIslandImg from './rattlesnake-island.webp'
-import dioramaImg from './sasquatch-diorama.webp'
-import sasquatchForestImg from './sasquatch-forest.webp'
-import moviePosterImg from './sasquatch-movie-poster.webp'
+import sasquatchMoviePosterImg from './sasquatch-movie-poster.webp'
+import sasquatchParkSignImg from './sasquatch-park-sign.webp'
 import sasquatchPhotoImg from './sasquatch-photo.webp'
-import provincialParkImg from './sasquatch-provincial-park.webp'
-import roadsideFigureImg from './sasquatch-roadside-figure.webp'
-import wendigoClassicImg from './wendigo-classic-illustration.webp'
-import wendigoCostumeImg from './wendigo-costume.webp'
-import wendigoArtImg from './wendigo-modern-art.webp'
+import wendigoClassicIllustrationImg from './wendigo-classic-illustration.webp'
 import wendigoRenderingImg from './wendigo-rendering.webp'
 import winterForestImg from './winter-forest.webp'
 
@@ -30,36 +23,27 @@ export default defineSet({
         'Okanagan Lake\'s **Ogopogo** gets sold as Canada\'s Loch Ness Monster, but the Syilx story came first by centuries.',
         'In Syilx tradition the being is **n\'ha-a-itk**, a water spirit owed respect and an offering before you crossed the lake.',
         'The name "Ogopogo" isn\'t Indigenous at all: it came from a **1924 British music-hall song**.',
-        'Over **200 sightings** are on record. None have ever been verified.',
       ],
       images: [
         {
-          src: okanaganLakeImg,
-          alt: 'Okanagan Lake seen from the shore at Peachland, British Columbia, with dry hills on both sides',
-          credit: commonsCredit('Christopher Jones', 'CC BY-SA 4.0'),
-        },
-        {
-          src: rattlesnakeIslandImg,
-          alt: 'A rocky headland dropping into calm water at Ogopogo Gap, beside Rattlesnake Island on Okanagan Lake',
-          credit: commonsCredit('Extemporalist', 'CC BY-SA 4.0'),
-        },
-        {
           src: ogopogoStatueImg,
-          alt: 'A green humped Ogopogo sculpture in a Kelowna waterfront park',
-          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
+          alt: 'The green Ogopogo statue on the Kelowna waterfront, mouth open and humps trailing behind',
+          credit: INBOX_CREDIT,
         },
         {
-          src: sheetMusicImg,
-          alt: 'Cover of the 1924 sheet music "The Ogo-Pogo: The Funny Fox-Trot", showing a cartoon creature playing a banjo',
-          credit: commonsCredit('Fred Low', 'public domain'),
+          src: okanaganLakeImg,
+          alt: 'Sunset over Okanagan Lake, the hills in silhouette',
+          credit: INBOX_CREDIT,
         },
         {
           src: ogopogoPaintingImg,
           alt: 'A painting of long-necked serpents swimming in a green lake, one coiling beneath the surface',
+          credit: INBOX_CREDIT,
         },
         {
-          src: legendPosterImg,
+          src: ogopogoLegendPosterImg,
           alt: 'A collage of four black-and-white pictures of a humped serpent in a lake',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -68,37 +52,28 @@ export default defineSet({
       facts: [
         '"Sasquatch" is an anglicisation of **sásq\'ets**, a Halkomelem word from the Stó:lō people of the Fraser Valley.',
         'A BC schoolteacher, **J.W. Burns**, popularised the spelling in the 1920s while collecting Stó:lō accounts.',
-        'Stories of large forest beings run through many Pacific Northwest Indigenous cultures, each with **its own name** and meaning.',
         'BC named a **provincial park** after the legend; thousands of sightings have been reported across the region.',
       ],
       images: [
         {
-          src: sasquatchForestImg,
-          alt: 'A narrow trail through a dense, moss-covered coastal forest in British Columbia',
-          credit: commonsCredit('Simon Fast', 'CC BY 3.0'),
+          src: sasquatchParkSignImg,
+          alt: 'A carved wooden sign for Sasquatch Provincial Park listing Hicks Lake and Deer Lake',
+          credit: INBOX_CREDIT,
         },
         {
-          src: provincialParkImg,
-          alt: 'Deer Lake in Sasquatch Provincial Park, British Columbia, with forested mountains reflected in still water',
-          credit: commonsCredit('mmmmngai@rogers.com', 'CC BY-SA 2.0'),
-        },
-        {
-          src: dioramaImg,
-          alt: 'A museum diorama model of a Sasquatch figure crossing a fallen log over a ravine',
-          credit: commonsCredit('Chris Light', 'CC BY-SA 4.0'),
-        },
-        {
-          src: roadsideFigureImg,
-          alt: 'A dark Sasquatch silhouette sculpture standing on a dry hillside beside pine trees',
-          credit: 'public domain, via Wikimedia Commons',
+          src: harrisonSasquatchImg,
+          alt: 'A carved wooden Sasquatch sitting outside a shop in Harrison Hot Springs',
+          credit: INBOX_CREDIT,
         },
         {
           src: sasquatchPhotoImg,
           alt: 'A blurry film frame of a dark, ape-like figure walking upright through a clearing and looking back at the camera',
+          credit: INBOX_CREDIT,
         },
         {
-          src: moviePosterImg,
+          src: sasquatchMoviePosterImg,
           alt: 'The poster for the film Sasquatch: The Legend of Bigfoot, a dark ape-like silhouette in a forest above riders crossing a river',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -113,31 +88,18 @@ export default defineSet({
       images: [
         {
           src: winterForestImg,
-          alt: 'A snow-covered path running through a bare winter forest',
-          credit: commonsCredit('Thomas Metaxas', 'CC BY-SA 4.0'),
+          alt: 'A snowy forest at night with the moon behind bare branches',
+          credit: INBOX_CREDIT,
         },
         {
-          src: deadOfWinterImg,
-          alt: 'Fallen dead branches and trees lying across deep snow in a winter woodland',
-          credit: commonsCredit('Danielle Scott', 'CC BY-SA 2.0'),
-        },
-        {
-          src: wendigoCostumeImg,
-          alt: 'A modern antlered Wendigo costume worn at a fan convention, illustrating the recent pop-culture depiction',
-          credit: commonsCredit('GabboT', 'CC BY-SA 2.0'),
-        },
-        {
-          src: wendigoArtImg,
-          alt: 'A modern digital illustration of a gaunt, antlerless Wendigo figure in a grey forest',
-          credit: commonsCredit('Віщун', 'CC BY-SA 4.0'),
-        },
-        {
-          src: wendigoClassicImg,
+          src: wendigoClassicIllustrationImg,
           alt: 'An illustration of a tall, gaunt creature with a deer skull and antlers for a head, standing in a misty forest',
+          credit: INBOX_CREDIT,
         },
         {
           src: wendigoRenderingImg,
           alt: 'A digital drawing of a crouching, emaciated creature with a deer skull head and large antlers',
+          credit: INBOX_CREDIT,
         },
       ],
     },

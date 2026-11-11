@@ -1,28 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import ratPosterImg from './alberta-rat-poster.webp'
-import autumnLakeImg from './autumn-lake-reflection.webp'
-import borealForestImg from './boreal-forest-bridge.webp'
-import frontenacImg from './chateau-frontenac.webp'
-import polarBearImg from './churchill-polar-bear.webp'
-import bridgeImg from './confederation-bridge.webp'
-import fishingVillageImg from './fishing-village-harbour.webp'
-import greatSlaveImg from './great-slave-lake.webp'
-import hopewellImg from './hopewell-rocks.webp'
-import howeSoundImg from './howe-sound.webp'
-import inukshukImg from './inukshuk.webp'
-import jellybeanImg from './jellybean-row.webp'
-import notreDameImg from './montreal-notre-dame.webp'
-import moraineImg from './moraine-lake.webp'
-import niagaraImg from './niagara-horseshoe.webp'
-import quebecDuskImg from './old-quebec-dusk.webp'
-import quebecWinterImg from './old-quebec-winter.webp'
-import peggysCoveImg from './peggys-cove.webp'
-import prairieImg from './prairie-horizon.webp'
-import klondikeImg from './ss-klondike.webp'
-import torontoImg from './toronto-skyline.webp'
-import tenPeaksImg from './valley-of-ten-peaks.webp'
-import whitePassImg from './white-pass-railway.webp'
-import auroraImg from './yukon-aurora.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import albertaRatPosterImg from './alberta-rat-poster.webp'
+import autumnLakeReflectionImg from './autumn-lake-reflection.webp'
+import borealForestBridgeImg from './boreal-forest-bridge.webp'
+import churchillPolarBearsImg from './churchill-polar-bears.webp'
+import confederationBridgeImg from './confederation-bridge.webp'
+import dawsonCityImg from './dawson-city.webp'
+import fishingVillageHarbourImg from './fishing-village-harbour.webp'
+import hopewellRocksImg from './hopewell-rocks.webp'
+import iqaluitImg from './iqaluit.webp'
+import niagaraHorseshoeImg from './niagara-horseshoe.webp'
+import oldQuebecDuskImg from './old-quebec-dusk.webp'
+import oldQuebecWinterImg from './old-quebec-winter.webp'
+import prairieRoadImg from './prairie-road.webp'
+import torontoPathImg from './toronto-path.webp'
+import valleyOfTenPeaksImg from './valley-of-ten-peaks.webp'
+import whitePassRailwayImg from './white-pass-railway.webp'
 
 export default defineSet({
   slug: 'provinces-territories',
@@ -40,110 +32,86 @@ export default defineSet({
       ],
       images: [
         {
-          src: howeSoundImg,
-          alt: 'Snow-capped mountains rising above the deep blue water of Howe Sound in British Columbia',
-          credit: commonsCredit('Shafik Diwan', 'CC BY-SA 4.0'),
-        },
-        {
-          src: moraineImg,
-          alt: 'Jagged Rocky Mountain peaks reflected in the still water of Moraine Lake, Banff National Park',
-          credit: commonsCredit('Terry Ott', 'CC BY 2.0'),
-        },
-        {
-          src: prairieImg,
-          alt: 'A line of power poles receding toward a flat, unbroken prairie horizon',
-          credit: commonsCredit('Saffron Blaze', 'CC BY-SA 3.0'),
-        },
-        {
-          src: polarBearImg,
-          alt: 'A polar bear walking across mossy tundra near Churchill, Manitoba',
-          credit: commonsCredit('TravelingOtter', 'CC BY 2.0'),
-        },
-        {
-          src: tenPeaksImg,
+          src: valleyOfTenPeaksImg,
           alt: 'The snow-capped Valley of the Ten Peaks above the turquoise water of Moraine Lake',
+          credit: INBOX_CREDIT,
         },
         {
-          src: ratPosterImg,
+          src: albertaRatPosterImg,
           alt: 'A vintage Alberta public health poster reading "You can\'t ignore the rat", above the slogan "Let\'s keep Alberta rat-free"',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: prairieRoadImg,
+          alt: 'A dirt road curving past a pond and yellow canola fields under a wide Saskatchewan sky',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: churchillPolarBearsImg,
+          alt: 'A polar bear and two cubs walking past a white tundra buggy near Churchill, Manitoba',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Where most of us live',
       facts: [
+        'Most Canadians live here, though my own big-city ranking still goes **Vancouver**, Montreal, Toronto.',
         'Toronto hides a city underground: **PATH** runs **30 km** of walkways linking more than 70 buildings downtown.',
         'Niagara Falls is far from the tallest, but its flow rate ranks among the world\'s highest, so it **never freezes**.',
         'By area, Québec is Canada\'s largest province, bigger than **Spain, France, and Germany combined**.',
-        'Jacques Cartier reached Hochelaga in **1535**, which is why much of Québec still wears European-looking architecture.',
       ],
       images: [
         {
-          src: niagaraImg,
-          alt: 'Aerial view of the Horseshoe Falls at Niagara, mist rising from the curved crest',
-          credit: commonsCredit('FuchsiaPeacock', 'CC BY-SA 4.0'),
+          src: torontoPathImg,
+          alt: 'Two people walking through a glass-and-steel tube walkway on Toronto\'s PATH network',
+          credit: INBOX_CREDIT,
         },
         {
-          src: torontoImg,
-          alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
+          src: niagaraHorseshoeImg,
+          alt: 'The Horseshoe Falls at Niagara from directly above, mist boiling out of the curve',
+          credit: INBOX_CREDIT,
         },
         {
-          src: frontenacImg,
-          alt: 'The Château Frontenac above snow-covered Quebec City at sunset',
-          credit: commonsCredit('Wilfredor', 'CC BY-SA 4.0'),
-        },
-        {
-          src: notreDameImg,
-          alt: 'The twin-towered stone facade of Notre-Dame Basilica in Old Montreal, lit at night',
-          credit: commonsCredit('Diego Delso', 'CC BY-SA 4.0'),
-        },
-        {
-          src: quebecWinterImg,
+          src: oldQuebecWinterImg,
           alt: 'Aerial view of Old Quebec at blue hour in winter, snow on the rooftops and ice on the St. Lawrence',
+          credit: INBOX_CREDIT,
         },
         {
-          src: quebecDuskImg,
+          src: oldQuebecDuskImg,
           alt: 'Panorama of Quebec City at dusk under a pink sky, the Château Frontenac rising above the old town',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Where the tide runs the show',
       facts: [
-        'The Bay of Fundy has the **highest tides on Earth**, rising and falling up to **16 metres** twice a day.',
+        'The Bay of Fundy, in the one southern region I haven\'t visited, has the **highest tides on Earth**: up to **16 metres**, twice a day.',
         'Nova Scotia means **New Scotland**, and its **13,000 km** of coastline is dotted with fishing villages and old pirate history.',
         'The **13 km** Confederation Bridge links PEI to the mainland: the world\'s longest bridge over **ice-covered water**.',
         'Newfoundland keeps its own time zone, offset by **30 minutes**; St. John\'s is North America\'s **easternmost city**.',
       ],
       images: [
         {
-          src: hopewellImg,
-          alt: 'Tree-topped sandstone sea stacks at Hopewell Rocks, exposed on the sea floor at low tide',
-          credit: commonsCredit('Dennis G. Jarvis', 'CC BY-SA 2.0'),
+          src: hopewellRocksImg,
+          alt: 'People walking the sea floor among the tree-topped Hopewell Rocks at low tide',
+          credit: INBOX_CREDIT,
         },
         {
-          src: peggysCoveImg,
-          alt: 'The white lighthouse at Peggys Cove, Nova Scotia, standing on bare granite in fog',
-          credit: commonsCredit('TravelingOtter', 'CC BY-SA 2.0'),
+          src: confederationBridgeImg,
+          alt: 'The arches of the Confederation Bridge glowing orange at sunset, reflected in wet sand',
+          credit: INBOX_CREDIT,
         },
         {
-          src: bridgeImg,
-          alt: 'The Confederation Bridge on its concrete piers, curving away across the water',
-          credit: commonsCredit('Wladyslaw', 'CC BY-SA 3.0'),
-        },
-        {
-          src: jellybeanImg,
-          alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
-        },
-        {
-          src: fishingVillageImg,
+          src: fishingVillageHarbourImg,
           alt: 'A red fishing shack and clapboard houses reflected in the calm water of a Nova Scotia harbour, with a red dory moored alongside',
+          credit: INBOX_CREDIT,
         },
         {
-          src: autumnLakeImg,
+          src: autumnLakeReflectionImg,
           alt: 'Autumn foliage in red and gold along a forested shoreline, mirrored in a still lake',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -157,32 +125,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: auroraImg,
-          alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          src: dawsonCityImg,
+          alt: 'Brightly painted false-front buildings along a street in Dawson City, Yukon',
+          credit: INBOX_CREDIT,
         },
         {
-          src: klondikeImg,
-          alt: 'The SS Klondike sternwheeler moored on the bank of the Yukon River at Whitehorse',
-          credit: commonsCredit('Bo Mertz', 'CC BY-SA 2.0'),
-        },
-        {
-          src: greatSlaveImg,
-          alt: 'The rocky shoreline of Great Slave Lake at Yellowknife under a clear sky',
-          credit: commonsCredit('CambridgeBayWeather', 'CC BY-SA 4.0'),
-        },
-        {
-          src: inukshukImg,
-          alt: 'A large stone inukshuk with outstretched arms standing against a clear blue sky',
-          credit: commonsCredit('Fabian Roudra Baroi', 'CC BY-SA 4.0'),
-        },
-        {
-          src: whitePassImg,
+          src: whitePassRailwayImg,
           alt: 'A vintage White Pass railway train winding along a mountainside above fields of pink fireweed',
+          credit: INBOX_CREDIT,
         },
         {
-          src: borealForestImg,
+          src: borealForestBridgeImg,
           alt: 'A wooden footbridge crossing a creek in dense, mossy northern forest',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: iqaluitImg,
+          alt: 'Colourful houses along the tidal flats at Iqaluit, Nunavut, with hills across the bay',
+          credit: INBOX_CREDIT,
         },
       ],
     },

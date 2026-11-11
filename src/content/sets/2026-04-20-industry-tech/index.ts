@@ -1,22 +1,16 @@
-import { commonsCredit, defineSet } from '../../schema'
-import balatroImg from './balatro-title.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import balatroTitleImg from './balatro-title.webp'
 import blackberryClassicImg from './blackberry-classic.webp'
-import blackberryImg from './blackberry-phones.webp'
-import jackalImg from './clearpath-jackal.webp'
-import gripperImg from './cobot-gripper.webp'
+import clearpathHuskyImg from './clearpath-husky.webp'
+import deadByDaylightImg from './dead-by-daylight.webp'
 import eaOfficeImg from './ea-office.webp'
-import controllerImg from './game-controller.webp'
-import gamingLoungeImg from './gaming-lounge.webp'
-import humanoidImg from './humanoid-robots.webp'
-import goslingImg from './james-gosling.webp'
-import obsidianImg from './obsidian-logo.webp'
-import pokerImg from './poker-hand.webp'
-import lerdorfImg from './rasmus-lerdorf.webp'
-import robotiqImg from './robotiq-gripper-box.webp'
-import sanctuaryImg from './sanctuary-ai-robot.webp'
-import shopifyImg from './shopify-office.webp'
-import ubisoftImg from './ubisoft-montreal.webp'
-import agvImg from './warehouse-agv.webp'
+import jamesGoslingImg from './james-gosling.webp'
+import obsidianLogoImg from './obsidian-logo.webp'
+import ottoRobotImg from './otto-robot.webp'
+import robotiqGripperBoxImg from './robotiq-gripper-box.webp'
+import sanctuaryAiRobotImg from './sanctuary-ai-robot.webp'
+import shopifyOfficeImg from './shopify-office.webp'
+import ubisoftMontrealImg from './ubisoft-montreal.webp'
 
 export default defineSet({
   slug: 'industry-tech',
@@ -29,37 +23,29 @@ export default defineSet({
       facts: [
         '**Clearpath Robotics** in Kitchener, Ontario builds the Husky and Jackal rovers that universities and labs worldwide run their research on.',
         '**OTTO Motors**, Clearpath\'s industrial arm, makes self-driving vehicles that haul pallets around warehouses and factory floors.',
-        'Vancouver\'s **Sanctuary AI** builds general-purpose humanoid robots aimed at doing the physical work people do.',
+        'My hometown\'s **Sanctuary AI** builds general-purpose humanoid robots aimed at doing the physical work people do.',
         '**Robotiq**, out of Lévis, Quebec, makes the grippers and sensors that let collaborative robot arms handle real objects.',
       ],
       images: [
         {
-          src: jackalImg,
-          alt: 'A small four-wheeled Clearpath Jackal research robot fitted with a spinning laser scanner',
-          credit: commonsCredit('Luke J. Allen', 'public domain'),
+          src: clearpathHuskyImg,
+          alt: 'A yellow Clearpath Husky rover carrying a sensor mast through long grass',
+          credit: INBOX_CREDIT,
         },
         {
-          src: agvImg,
-          alt: 'An automated guided vehicle carrying a loaded pallet through an industrial plant',
-          credit: commonsCredit('Timmo at ek robotics GmbH', 'CC BY-SA 4.0'),
+          src: ottoRobotImg,
+          alt: 'A low black OTTO autonomous vehicle driving down a warehouse aisle',
+          credit: INBOX_CREDIT,
         },
         {
-          src: humanoidImg,
-          alt: 'Two full-size humanoid robots standing on display stands in an exhibition hall',
-          credit: commonsCredit('Syced', 'CC0'),
-        },
-        {
-          src: gripperImg,
-          alt: 'A collaborative robot arm with a gripper picking parts from a tray on a workbench',
-          credit: commonsCredit('Jeff Green/Rethink Robotics', 'CC BY 4.0'),
-        },
-        {
-          src: sanctuaryImg,
+          src: sanctuaryAiRobotImg,
           alt: 'A grey and white humanoid robot raising one hand, in a dark studio',
+          credit: INBOX_CREDIT,
         },
         {
-          src: robotiqImg,
+          src: robotiqGripperBoxImg,
           alt: 'A robot arm with a suction-cup gripper lifting a cardboard box',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -73,32 +59,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: ubisoftImg,
-          alt: 'The red brick Ubisoft building in Montreal\'s Plateau neighbourhood, signage on the roofline',
-          credit: commonsCredit('Guilhem Vellut', 'CC BY 2.0'),
+          src: ubisoftMontrealImg,
+          alt: 'The red brick Ubisoft Montreal studio on a street corner, banners hanging between its windows',
+          credit: INBOX_CREDIT,
         },
         {
-          src: controllerImg,
-          alt: 'Two hands holding a red wired game controller mid-play',
-          credit: commonsCredit('$ir$terlin', 'CC BY-SA 4.0'),
-        },
-        {
-          src: gamingLoungeImg,
-          alt: 'People gathered among rows of gaming PCs and racing seats in a dark neon-lit gaming lounge',
-          credit: commonsCredit('Masterandbeef', 'CC0'),
-        },
-        {
-          src: pokerImg,
-          alt: 'A fanned poker hand of five hearts on a green felt table, standing in for the card game Balatro',
-          credit: commonsCredit('Guts Gaming', 'CC BY 2.0'),
+          src: deadByDaylightImg,
+          alt: 'Dead by Daylight key art: four survivors in a dark forest with a masked killer looming behind them',
+          credit: INBOX_CREDIT,
         },
         {
           src: eaOfficeImg,
           alt: 'The Electronic Arts office building, glass and wood-panelled storeys under a blue sky, with the EA logo on its tower',
+          credit: INBOX_CREDIT,
         },
         {
-          src: balatroImg,
+          src: balatroTitleImg,
           alt: 'The Balatro title art: the game\'s name with an ace of spades for the A, beside three joker cards on a red swirl',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -112,32 +90,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: shopifyImg,
-          alt: 'The Shopify name and shopping-bag logo on a directory sign in an office lobby',
-          credit: commonsCredit('Raysonho @ Open Grid Scheduler / Grid Engine', 'CC0'),
+          src: shopifyOfficeImg,
+          alt: 'A spiral wooden staircase in the open-plan interior of Shopify\'s Ottawa headquarters',
+          credit: INBOX_CREDIT,
         },
         {
-          src: blackberryImg,
-          alt: 'Three BlackBerry phones with physical keyboards lined up side by side',
-          credit: commonsCredit('Kt38138', 'CC BY-SA 4.0'),
-        },
-        {
-          src: goslingImg,
-          alt: 'James Gosling, creator of Java, speaking and gesturing with one hand',
-          credit: commonsCredit('Peter Campbell', 'CC BY-SA 4.0'),
-        },
-        {
-          src: lerdorfImg,
-          alt: 'Portrait of Rasmus Lerdorf, creator of PHP, in front of a metal wall',
-          credit: commonsCredit('William Stadtwald Demchick', 'CC BY-SA 4.0'),
+          src: jamesGoslingImg,
+          alt: 'James Gosling, creator of Java, speaking on stage in an orange T-shirt',
+          credit: INBOX_CREDIT,
         },
         {
           src: blackberryClassicImg,
           alt: 'Two hands typing with their thumbs on a phone with a slide-out physical keyboard',
+          credit: INBOX_CREDIT,
         },
         {
-          src: obsidianImg,
+          src: obsidianLogoImg,
           alt: 'The Obsidian logo, a purple faceted crystal, on a dark circuit-board pattern',
+          credit: INBOX_CREDIT,
         },
       ],
     },
