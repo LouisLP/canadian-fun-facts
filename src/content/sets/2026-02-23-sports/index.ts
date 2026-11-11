@@ -1,28 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import daviesSmilingImg from './alphonso-davies-smiling.webp'
-import daviesImg from './alphonso-davies.webp'
-import bcPlaceImg from './bc-place-world-cup.webp'
-import bilodeauImg from './bilodeau-gold.webp'
-import bmoFieldImg from './bmo-field.webp'
-import fifaTeamImg from './canadian-fifa-team.webp'
-import hockeyWinImg from './canadian-hockey-win.webp'
-import howeImg from './gordie-howe.webp'
-import gretzkyPortraitImg from './gretzky-portrait.webp'
-import gretzkyRangersImg from './gretzky-rangers.webp'
-import gretzkyStatueImg from './gretzky-statue.webp'
-import victoryCeremonyImg from './hockey-victory-ceremony.webp'
-import davidImg from './jonathan-david.webp'
-import lacrosseImg from './lacrosse-goalie.webp'
-import lacrosseTeamsImg from './lacrosse-teams-usa-vs-canada.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import alphonsoDaviesSmilingImg from './alphonso-davies-smiling.webp'
+import bcPlaceImg from './bc-place.webp'
+import canadianFifaTeamImg from './canadian-fifa-team.webp'
+import canadianHockeyWinImg from './canadian-hockey-win.webp'
+import crosbyGoldenGoalImg from './crosby-golden-goal.webp'
+import gretzkyOilersImg from './gretzky-oilers.webp'
+import howeAndGretzkyImg from './howe-and-gretzky.webp'
+import jonathanDavidImg from './jonathan-david.webp'
+import lacrosseTeamsUsaVsCanadaImg from './lacrosse-teams-usa-vs-canada.webp'
 import olympicCanadaTeamImg from './olympic-canada-team.webp'
-import cauldronImg from './olympic-cauldron.webp'
-import olympicFansImg from './olympic-fans-cheering.webp'
-import olympicHockeyImg from './olympic-hockey-game.webp'
-import outdoorRinkImg from './outdoor-rink-fort-chipewyan.webp'
+import olympicCauldronImg from './olympic-cauldron.webp'
+import olympicFansCheeringImg from './olympic-fans-cheering.webp'
 import pondHockeyImg from './pond-hockey.webp'
-import streetCelebrationImg from './street-celebration.webp'
-import gretzkyNumberImg from './wayne-gretzky-number.webp'
-import gretzkyPointsImg from './wayne-gretzky-points.webp'
+import wayneGretzkyNumberImg from './wayne-gretzky-number.webp'
+import wayneGretzkyPointsImg from './wayne-gretzky-points.webp'
+import womenHockeyGoldImg from './women-hockey-gold.webp'
 
 export default defineSet({
   slug: 'sports',
@@ -34,77 +26,59 @@ export default defineSet({
       heading: 'Three\'s company',
       facts: [
         'The 2026 World Cup is the first ever hosted by **three countries**: Canada, the United States, and Mexico.',
-        'Canada is hosting men\'s World Cup matches for the **first time ever**, in Vancouver and Toronto.',
-        'The field expanded to **48 teams**, up from 32, making this the largest World Cup ever played.',
-        '**Alphonso Davies** and **Jonathan David** headline the Canadian squad.',
+        'Canada hosts men\'s World Cup matches for the **first time ever**, in Toronto and at BC Place in my hometown, Vancouver.',
+        'The field grew to **48 teams**, up from 32; **Alphonso Davies** and Jonathan David headline Canada\'s squad.',
       ],
       images: [
         {
           src: bcPlaceImg,
-          alt: 'The interior of BC Place in Vancouver, red seats around a green pitch, before a Canada match',
-          credit: commonsCredit('Aeacad', 'CC0'),
+          alt: 'Aerial view of BC Place stadium in Vancouver at night, its roof lit blue among the downtown towers',
+          credit: INBOX_CREDIT,
         },
         {
-          src: daviesImg,
-          alt: 'Alphonso Davies in a black and red Canada warm-up shirt on the pitch',
-          credit: commonsCredit('Bryan Berlin', 'CC BY-SA 4.0'),
+          src: jonathanDavidImg,
+          alt: 'Jonathan David in Canada\'s red number 10 shirt, gesturing after scoring',
+          credit: INBOX_CREDIT,
         },
         {
-          src: davidImg,
-          alt: 'Jonathan David in Canada\'s number 10 shirt during a World Cup match',
-          credit: commonsCredit('Bryan Berlin', 'CC BY-SA 4.0'),
-        },
-        {
-          src: bmoFieldImg,
-          alt: 'The exterior of BMO Field in Toronto under a clear sky',
-          credit: commonsCredit('Wladyslaw', 'CC BY-SA 3.0'),
-        },
-        {
-          src: fifaTeamImg,
+          src: canadianFifaTeamImg,
           alt: 'Canada\'s men\'s soccer team in white kits posing for a team photo on the pitch before a World Cup match',
+          credit: INBOX_CREDIT,
         },
         {
-          src: daviesSmilingImg,
+          src: alphonsoDaviesSmilingImg,
           alt: 'Alphonso Davies smiling with both hands raised, in a black Canada number 19 shirt',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Going for gold in Vancouver',
       facts: [
-        'Canada won **14 gold medals** at the 2010 Vancouver Olympics, a Winter Games record at the time.',
-        'That broke the old record of **13**, shared by the Soviet Union in 1976 and Norway in 2002; Norway has since taken it back.',
+        'Canada won **14 gold medals** at the 2010 Olympics in my hometown, Vancouver, a Winter Games record at the time.',
         'Alexandre Bilodeau\'s moguls win was the **first gold Canada ever won on home soil**, after hosting in 1976 and 1988.',
-        'Canada was the first host nation to top the Winter Olympic gold count since **Norway in 1952**.',
+        'Gold number 14 came last: Sidney Crosby\'s overtime **golden goal** against the United States.',
       ],
       images: [
         {
-          src: cauldronImg,
-          alt: 'The Vancouver 2010 Olympic cauldron burning in downtown Vancouver at dusk',
-          credit: commonsCredit('Anthonymaw', 'CC BY-SA 4.0'),
+          src: olympicCauldronImg,
+          alt: 'The Vancouver 2010 Olympic cauldron alight on the waterfront, mountains behind',
+          credit: INBOX_CREDIT,
         },
         {
-          src: bilodeauImg,
-          alt: 'Alexandre Bilodeau\'s gold medal ceremony shown on a large screen, captioned Gold Men\'s Moguls',
-          credit: commonsCredit('Michael Francis McCarthy', 'CC BY 2.0'),
+          src: crosbyGoldenGoalImg,
+          alt: 'Sidney Crosby in a white Canada jersey shouting with his arms spread after scoring the 2010 golden goal',
+          credit: INBOX_CREDIT,
         },
         {
-          src: olympicHockeyImg,
-          alt: 'Canadian and American players skating during an ice hockey game at the 2010 Winter Olympics',
-          credit: commonsCredit('Robert Scoble', 'CC BY 2.0'),
-        },
-        {
-          src: streetCelebrationImg,
-          alt: 'Crowds in hockey jerseys filling a Vancouver street at night to celebrate a gold medal',
-          credit: commonsCredit('Duncan Rawlinson', 'CC BY 2.0'),
-        },
-        {
-          src: olympicFansImg,
+          src: olympicFansCheeringImg,
           alt: 'A fan in a Canada hockey jersey holding a Canada scarf overhead in a cheering crowd dressed in red',
+          credit: INBOX_CREDIT,
         },
         {
           src: olympicCanadaTeamImg,
           alt: 'Team Canada athletes in red jackets and toques at an Olympic ceremony, one waving a large Canadian flag',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -113,37 +87,28 @@ export default defineSet({
       facts: [
         'Lacrosse is Canada\'s official national **summer** sport and hockey the official national **winter** sport, both set in law in 1994.',
         'Canada has won more Olympic ice hockey gold medals than any other country, **14** across the men\'s and women\'s tournaments.',
-        'Canada\'s men went **50 years** between Olympic hockey golds, from 1952 all the way to 2002.',
         'Canada\'s women won gold at every Olympics from **2002 through 2014**, then again in 2022.',
       ],
       images: [
         {
-          src: lacrosseImg,
-          alt: 'A goalie in a Canada national indoor lacrosse jersey guarding the net',
-          credit: commonsCredit('RicLaf', 'CC BY-SA 2.0'),
+          src: womenHockeyGoldImg,
+          alt: 'Canada\'s women\'s hockey team in red, cheering with their gold medals at the 2022 Olympics',
+          credit: INBOX_CREDIT,
         },
         {
           src: pondHockeyImg,
-          alt: 'Players skating on a cleared outdoor pond rink beside snow-covered houses',
-          credit: commonsCredit('Laslovarga', 'CC BY-SA 4.0'),
+          alt: 'Skaters playing pond hockey on frozen Lake Louise beneath snow-covered mountains',
+          credit: INBOX_CREDIT,
         },
         {
-          src: victoryCeremonyImg,
-          alt: 'Fans in red filling an arena for the Olympic ice hockey victory ceremony in Vancouver',
-          credit: commonsCredit('s.yume', 'CC BY 2.0'),
-        },
-        {
-          src: outdoorRinkImg,
-          alt: 'A black and white photo of a hockey game on an outdoor rink at Fort Chipewyan, Alberta',
-          credit: commonsCredit('Provincial Archives of Alberta', 'no known copyright restrictions'),
-        },
-        {
-          src: lacrosseTeamsImg,
+          src: lacrosseTeamsUsaVsCanadaImg,
           alt: 'Canadian players in red and American players in white battling for the ball in a box lacrosse game',
+          credit: INBOX_CREDIT,
         },
         {
-          src: hockeyWinImg,
+          src: canadianHockeyWinImg,
           alt: 'Team Canada hockey players in red celebrating on the ice, the captain lifting a trophy as fireworks go off',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -151,38 +116,29 @@ export default defineSet({
       heading: 'The Great One',
       facts: [
         'Wayne Gretzky has **more career assists** than any other player in NHL history has total points.',
-        'He retired in 1999 holding **61 NHL records**, including the only 200-point seasons ever played.',
         'His **99** is retired league-wide, the one number no NHL player is allowed to wear.',
         'He wanted **#9** for his hero Gordie Howe, but a junior teammate already had it, so he doubled up.',
       ],
       images: [
         {
-          src: gretzkyRangersImg,
-          alt: 'Wayne Gretzky skating in a New York Rangers jersey',
-          credit: commonsCredit('Håkan Dahlström', 'CC BY-SA 3.0'),
+          src: gretzkyOilersImg,
+          alt: 'Wayne Gretzky skating in a blue Edmonton Oilers jersey with the captain\'s C',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gretzkyStatueImg,
-          alt: 'A bronze statue of Wayne Gretzky raising the Stanley Cup outside the Wayne Gretzky Centre in Brantford',
-          credit: commonsCredit('Jfvoll', 'CC BY-SA 4.0'),
+          src: howeAndGretzkyImg,
+          alt: 'Gordie Howe playfully hooking a young Wayne Gretzky around the neck with a hockey stick',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gretzkyPortraitImg,
-          alt: 'A portrait of Wayne Gretzky wearing a black jacket and a Turin 2006 lanyard',
-          credit: commonsCredit('Kris Krüg', 'CC BY-SA 2.0'),
-        },
-        {
-          src: howeImg,
-          alt: 'Gordie Howe standing at a rink holding a paper cup',
-          credit: commonsCredit('Arnie Lee', 'CC BY 3.0'),
-        },
-        {
-          src: gretzkyPointsImg,
+          src: wayneGretzkyPointsImg,
           alt: 'A graphic ranking the players with the most points in NHL history, Gretzky first with 2857, beside a photo of him in an Oilers jersey',
+          credit: INBOX_CREDIT,
         },
         {
-          src: gretzkyNumberImg,
+          src: wayneGretzkyNumberImg,
           alt: 'Wayne Gretzky seen from behind in a blue New York Rangers jersey with his name and the number 99',
+          credit: INBOX_CREDIT,
         },
       ],
     },

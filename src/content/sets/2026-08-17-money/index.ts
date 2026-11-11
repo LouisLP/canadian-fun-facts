@@ -23,9 +23,8 @@ export default defineSet({
       facts: [
         'The last penny was struck on **4 May 2012**: each cost **1.6 cents** to make, and roughly 35 billion were pulled back and melted down.',
         'The nickel\'s beaver, the dime\'s Bluenose schooner and the quarter\'s caribou have all been there since **1937**; the nickel itself is now 94.5% steel.',
-        'A common loon is on our one-dollar coin (the Loonie), it has **11-sides** so nobody would mistake it for a quarter.',
-        'The toonie\'s polar bear has been struck since **1996** on two metals: a nickel ring around an aluminum-bronze centre.',
-        'US defence contractors filed espionage reports on Canada\'s 2004 coloured **poppy quarter**, calling it nanotechnology. It was just anti-scratch coating...',
+        'The **11-sided** loonie carries a common loon; the toonie\'s polar bear, struck since **1996**, sits on an aluminum-bronze centre inside a nickel ring.',
+        'US defence contractors filed espionage reports on Canada\'s 2004 coloured **poppy quarter**, suspecting nanotechnology; it was just an anti-scratch coating.',
       ],
       images: [
         {
@@ -63,11 +62,10 @@ export default defineSet({
     {
       heading: 'Your wallet is full of plastic',
       facts: [
-        'Canadian notes aren\'t paper: the polymer rolled out from 2011-2013 lasts at least **2.5x longer** than paper notes, and gets shredded into pellets and recycled.',
+        'Canadian notes aren\'t paper: the polymer rolled out from 2011 lasts at least **2.5x longer**, then gets shredded into pellets and recycled.',
         '**Fronts**: Wilfrid Laurier ($5), John A. Macdonald ($10), Elizabeth II ($20), Mackenzie King ($50), Robert Borden ($100).',
         '**Backs**: Canadarm2 and Dextre in orbit, The Canadian crossing the Rockies, the Vimy memorial, the icebreaker CCGS Amundsen, and a vial of insulin.',
         'The vertical **Viola Desmond** $10 arrived in 2018, the first Canadian woman on a circulating note, and was voted the world\'s best banknote that year.',
-        '**King Charles III** reached Canadian coins in December 2023 and reaches the $20 note in **early 2027**.',
       ],
       images: [
         {

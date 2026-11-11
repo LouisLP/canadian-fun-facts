@@ -45,7 +45,7 @@ export default defineSet({
         },
         {
           src: ketchupCloseupImg,
-          alt: 'A woman holding a large ridged ketchup chip up to the camera, the bag behind it',
+          alt: 'A bowl of red-dusted ketchup chips beside a bag of Lay\'s Ketchup',
           credit: INBOX_CREDIT,
         },
       ],
@@ -119,7 +119,7 @@ export default defineSet({
         },
         {
           src: milkBagPitcherImg,
-          alt: 'A 4-litre pack of Neilson milk next to a white pitcher holding one milk bag',
+          alt: 'A 4-litre pack of Neilson milk beside a loose milk bag and a pitcher holding another',
           credit: INBOX_CREDIT,
         },
         {

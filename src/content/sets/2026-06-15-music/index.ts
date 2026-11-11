@@ -1,28 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import arcadeFireImg from './arcade-fire.webp'
-import avrilLavigneImg from './avril-lavigne-complicated.webp'
+import celineDionImg from '../2025-11-10-filming-celebrities/celine-dion.webp'
+import drakeImg from '../2025-11-10-filming-celebrities/drake.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import avrilLavigneComplicatedImg from './avril-lavigne-complicated.webp'
 import bieberBabyEraImg from './bieber-baby-era.webp'
-import bieberImg from './bieber.webp'
-import celineConciertoImg from './celine-concierto.webp'
-import celinePortraitImg from './celine-im-alive.webp'
-import celineLaserImg from './celine-laser.webp'
-import celineTakingChancesImg from './celine-taking-chances.webp'
+import celineEurovisionImg from './celine-eurovision.webp'
 import deadmau5Img from './deadmau5.webp'
-import drakeImg from './drake.webp'
-import eurovisionImg from './eurovision-song-contest.webp'
-import kaytranadaImg from './kaytranada.webp'
-import michaelBubleImg from './michael-buble-portrait.webp'
-import nardwuar2019Img from './nardwuar-2019.webp'
-import nardwuarPortraitImg from './nardwuar-portrait.webp'
-import nardwuarSabrinaImg from './nardwuar-sabrina-carpenter.webp'
-import nardwuarTedx2Img from './nardwuar-tedx-2.webp'
-import nardwuarTedxImg from './nardwuar-tedx.webp'
-import nardwuarTimotheeImg from './nardwuar-timothee-chalamet.webp'
+import eurovisionSongContestImg from './eurovision-song-contest.webp'
+import michaelBublePortraitImg from './michael-buble-portrait.webp'
+import nardwuarRecordsImg from './nardwuar-records.webp'
+import nardwuarSabrinaCarpenterImg from './nardwuar-sabrina-carpenter.webp'
+import nardwuarSnoopImg from './nardwuar-snoop.webp'
+import nardwuarTimotheeChalametImg from './nardwuar-timothee-chalamet.webp'
 import shawnMendesImg from './shawn-mendes.webp'
 import sum41Img from './sum41.webp'
-import titanicImg from './titanic-bow-scene.webp'
+import titanicBowSceneImg from './titanic-bow-scene.webp'
 import weekndRedJacketImg from './weeknd-red-jacket.webp'
-import weekndImg from './weeknd.webp'
 
 export default defineSet({
   slug: 'music',
@@ -41,31 +33,23 @@ export default defineSet({
       images: [
         {
           src: drakeImg,
-          alt: 'Drake singing into a microphone on a dark stage, wearing a black jacket and gold chains',
-          credit: commonsCredit('The Come Up Show', 'CC BY 2.0'),
-        },
-        {
-          src: weekndImg,
-          alt: 'A packed Stade de France during a Weeknd stadium concert, the stage lit through smoke',
-          credit: commonsCredit('Zakarie Faibis', 'CC BY-SA 4.0'),
-        },
-        {
-          src: bieberImg,
-          alt: 'Justin Bieber in a purple cap leaning on a metal stage rig railing at a night concert',
-          credit: commonsCredit('Heather Sokol', 'CC BY-SA 2.0'),
-        },
-        {
-          src: shawnMendesImg,
-          alt: 'Shawn Mendes playing a black electric guitar and singing at a microphone under spotlights',
-          credit: commonsCredit('Josiah VanDien', 'CC BY-SA 4.0'),
-        },
-        {
-          src: bieberBabyEraImg,
-          alt: 'A young Justin Bieber with a side-swept fringe and a plaid shirt, leaning on a guitar',
+          alt: 'Drake on stage with his arms spread wide under red lights',
+          credit: INBOX_CREDIT,
         },
         {
           src: weekndRedJacketImg,
           alt: 'The Weeknd in profile wearing a red jacket and dark sunglasses, lit in warm gold light',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: bieberBabyEraImg,
+          alt: 'A young Justin Bieber with a side-swept fringe and a plaid shirt, leaning on a guitar',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: shawnMendesImg,
+          alt: 'Shawn Mendes laughing on stage with an acoustic guitar',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -74,37 +58,28 @@ export default defineSet({
       facts: [
         'Celine Dion won **Eurovision 1988** representing **Switzerland**, not Canada, with the French-language song Ne partez pas sans moi.',
         'The margin was **one point**: 137 for Switzerland against 136 for the United Kingdom, the closest finish since 1969.',
-        'She grew up in Charlemagne, Quebec, the youngest of **14 children**, and barely spoke English when she won.',
         'My Heart Will Go On, her **Titanic** theme, became one of the best-selling singles ever recorded.',
       ],
       images: [
         {
-          src: celinePortraitImg,
-          alt: 'Close portrait of Celine Dion on stage in a black top',
-          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
+          src: celineEurovisionImg,
+          alt: 'A young Celine Dion singing at Eurovision 1988 in a white jacket and tutu skirt',
+          credit: INBOX_CREDIT,
         },
         {
-          src: celineTakingChancesImg,
-          alt: 'Celine Dion singing into a handheld microphone with one arm raised, lit in blue and pink',
-          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
-        },
-        {
-          src: celineConciertoImg,
-          alt: 'Celine Dion performing on a bare stage against a deep blue backdrop',
-          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
-        },
-        {
-          src: celineLaserImg,
-          alt: 'A packed arena during a Celine Dion concert, green lasers sweeping above the stage',
-          credit: commonsCredit('Anirudh Koul', 'CC BY 2.0'),
-        },
-        {
-          src: eurovisionImg,
+          src: eurovisionSongContestImg,
           alt: 'The Eurovision Song Contest logo over a crowd in an arena lit with blue stage lights',
+          credit: INBOX_CREDIT,
         },
         {
-          src: titanicImg,
+          src: titanicBowSceneImg,
           alt: 'The bow scene from the film Titanic: a man holding a woman by the waist as she spreads her arms at the ship\'s railing at sunset',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: celineDionImg,
+          alt: 'Céline Dion singing on stage in a gold dress',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -113,77 +88,59 @@ export default defineSet({
       facts: [
         'Sum 41 formed in Ajax, Ontario, and named themselves for the day they started playing: **41 days** into summer break.',
         'Deadmau5, born Joel Zimmerman in Niagara Falls, Ontario, plays behind a giant illuminated **mouse helmet**.',
-        'Kaytranada, Haitian-born and raised near Montreal, won the **Polaris Prize** for 99.9% and a **Grammy** for Bubba.',
         'Arcade Fire took Album of the Year at the **2011 Grammys** for The Suburbs, beating Eminem, Katy Perry, and Lady Gaga.',
         'The roster runs deep: Alanis Morissette, Rush, Avril Lavigne, Nelly Furtado, Nickelback, Feist, and Michael Bublé.',
       ],
       images: [
         {
           src: sum41Img,
-          alt: 'A member of Sum 41 playing electric guitar and singing on an outdoor stage',
-          credit: commonsCredit('Dana Beveridge', 'CC BY 2.0'),
+          alt: 'Sum 41\'s Deryck Whibley on stage with a guitar, both arms raised',
+          credit: INBOX_CREDIT,
         },
         {
           src: deadmau5Img,
-          alt: 'Deadmau5 performing at a DJ console wearing his large mouse-head helmet',
-          credit: commonsCredit('GoatLordServant', 'CC BY 4.0'),
+          alt: 'Deadmau5 performing in his mouse-head helmet, its face lit with a green grin',
+          credit: INBOX_CREDIT,
         },
         {
-          src: kaytranadaImg,
-          alt: 'Kaytranada at a DJ booth in front of a large screen showing a black-and-white close-up of him',
-          credit: commonsCredit('ManoSolo13241324', 'CC0'),
-        },
-        {
-          src: arcadeFireImg,
-          alt: 'Arcade Fire performing in the round on a central arena stage under blue lights',
-          credit: commonsCredit('swimfinfan', 'CC BY-SA 2.0'),
-        },
-        {
-          src: avrilLavigneImg,
+          src: avrilLavigneComplicatedImg,
           alt: 'Avril Lavigne at a microphone in the Complicated music video, a drummer behind her',
+          credit: INBOX_CREDIT,
         },
         {
-          src: michaelBubleImg,
+          src: michaelBublePortraitImg,
           alt: 'Michael Bublé in a camel coat on a city rooftop, looking off to the side',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Doot doola doot doo',
       facts: [
-        'Nardwuar the Human Serviette, born John Ruskin, has hosted the same **CiTR** radio show in Vancouver since October **1987**.',
+        'Nardwuar the Human Serviette has hosted the same **CiTR** radio show in my hometown, Vancouver, since October **1987**.',
         'He opens interviews with obscure personal details his guests have often forgotten themselves, dug up through **deep research**.',
-        'Every guest gets **hand-picked gifts** tied to their own history, from rare records to local oddities.',
         'He closes each interview with a call and response: he sings "doot doola doot doo" and the guest answers **"doot doo!"**',
       ],
       images: [
         {
-          src: nardwuarPortraitImg,
-          alt: 'Studio portrait of Nardwuar in a tartan cap and green suit against a yellow background',
-          credit: commonsCredit('William Jans', 'CC BY-SA 3.0'),
+          src: nardwuarSnoopImg,
+          alt: 'Snoop Dogg in a Vancouver Canucks jersey beside Nardwuar in his tartan cap',
+          credit: INBOX_CREDIT,
         },
         {
-          src: nardwuarTedxImg,
-          alt: 'Nardwuar speaking into a microphone on a TEDx Vancouver stage in a red jacket and tartan trousers',
-          credit: commonsCredit('TEDx Vancouver', 'CC BY-SA 2.0'),
+          src: nardwuarRecordsImg,
+          alt: 'Nardwuar in a tartan cap holding up a record sleeve in front of shelves of vinyl',
+          credit: INBOX_CREDIT,
         },
         {
-          src: nardwuarTedx2Img,
-          alt: 'Nardwuar in a tartan cap and red jacket pointing towards the camera',
-          credit: commonsCredit('TEDx Vancouver', 'CC BY-SA 2.0'),
-        },
-        {
-          src: nardwuar2019Img,
-          alt: 'Nardwuar holding a microphone, wearing a tartan cap and a patterned sweater',
-          credit: commonsCredit('SUPA CINDY', 'CC BY 3.0'),
-        },
-        {
-          src: nardwuarSabrinaImg,
+          src: nardwuarSabrinaCarpenterImg,
           alt: 'Sabrina Carpenter and Nardwuar, in a tartan cap and polka-dot shirt, posing in a record shop',
+          credit: INBOX_CREDIT,
         },
         {
-          src: nardwuarTimotheeImg,
+          src: nardwuarTimotheeChalametImg,
           alt: 'A thumbnail reading "Nardwuar vs. Timothée Chalamet" beside the two of them pointing at the camera in a record shop',
+          credit: INBOX_CREDIT,
         },
       ],
     },

@@ -1,15 +1,14 @@
 import bantingBestImg from '../2025-10-06-inventions/banting-best.webp'
 import naismithImg from '../2025-10-06-inventions/naismith.webp'
-import syrupProductsImg from '../2025-10-27-maple/syrup-products.webp'
-import timHortonsCupImg from '../2025-12-15-language/tim-hortons-cup.webp'
-import auroraYukonImg from '../2026-01-05-cold/aurora-yukon.webp'
-import frozenYukonRiverImg from '../2026-01-05-cold/frozen-yukon-river.webp'
-import ratAtWaterImg from '../2026-03-16-weird-laws/rat-at-water.webp'
+import syrupProductsImg from '../2025-10-27-maple/leaf-bottles.webp'
+import timHortonsCupImg from '../2025-12-15-language/double-double.webp'
+import jellybeanRowImg from '../2025-12-15-language/jelly-bean-row.webp'
+import auroraYukonImg from '../2026-01-05-cold/aurora-cabin.webp'
+import yukonAuroraImg from '../2026-01-05-cold/aurora-teepees.webp'
+import frozenYukonRiverImg from '../2026-01-05-cold/yukon-winter.webp'
+import ratAtWaterImg from '../2026-03-16-weird-laws/brown-rat.webp'
 import ratPosterImg from '../2026-06-29-provinces-territories/alberta-rat-poster.webp'
-import jellybeanRowImg from '../2026-06-29-provinces-territories/jellybean-row.webp'
 import oldQuebecWinterImg from '../2026-06-29-provinces-territories/old-quebec-winter.webp'
-import torontoSkylineImg from '../2026-06-29-provinces-territories/toronto-skyline.webp'
-import yukonAuroraImg from '../2026-06-29-provinces-territories/yukon-aurora.webp'
 import parliamentHillImg from '../2026-07-27-multiculturalism/canada-day-parliament-hill.webp'
 import tojoImg from '../2026-07-27-multiculturalism/chef-tojo.webp'
 import sushiPlatterImg from '../2026-07-27-multiculturalism/sushi-platter.webp'
@@ -23,9 +22,10 @@ import lakeLouiseImg from '../2026-09-07-lakes/lake-louise.webp'
 import moraineLakeImg from '../2026-09-07-lakes/moraine-lake.webp'
 import robsonUmbrellasImg from '../2026-10-19-vancouver/robson-umbrellas.webp'
 import seawallSunsetImg from '../2026-10-19-vancouver/seawall-sunset.webp'
-import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import mapleSyrupLineupImg from './maple-syrup-lineup.webp'
 import markCarneyImg from './mark-carney.webp'
+import torontoSkylineImg from './toronto-skyline.webp'
 
 // A farewell quiz: every answer is a fact from an earlier set, so images are
 // imported from their original folders rather than duplicated.
@@ -47,8 +47,8 @@ export default defineSet({
       images: [
         {
           src: torontoSkylineImg,
-          alt: 'The Toronto skyline at dusk with the CN Tower lit above the lakefront',
-          credit: commonsCredit('Jchmrt', 'CC BY-SA 4.0'),
+          alt: 'The Toronto skyline at dusk with the CN Tower lit red',
+          credit: INBOX_CREDIT,
         },
         {
           src: oldQuebecWinterImg,
@@ -56,13 +56,13 @@ export default defineSet({
         },
         {
           src: jellybeanRowImg,
-          alt: 'Brightly painted row houses on a street corner in St. John\'s, Newfoundland',
-          credit: commonsCredit('miketnorton', 'CC BY 2.0'),
+          alt: 'Brightly painted row houses in St. John\'s, Newfoundland',
+          credit: INBOX_CREDIT,
         },
         {
           src: yukonAuroraImg,
-          alt: 'Green aurora borealis streaking across a dark sky above silhouetted spruce trees',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          alt: 'Green aurora over glowing teepees at Aurora Village near Yellowknife',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -77,8 +77,8 @@ export default defineSet({
       images: [
         {
           src: markCarneyImg,
-          alt: 'Portrait of Prime Minister Mark Carney in a dark suit and blue tie',
-          credit: commonsCredit('Simon Dawson / No 10 Downing Street', 'CC BY 2.0'),
+          alt: 'Prime Minister Mark Carney smiling in front of a large Canadian flag',
+          credit: INBOX_CREDIT,
         },
         {
           src: parliamentHillImg,
@@ -101,8 +101,8 @@ export default defineSet({
         },
         {
           src: ratAtWaterImg,
-          alt: 'A brown rat crouched at the edge of still water, its reflection visible below',
-          credit: commonsCredit('Charles J. Sharp', 'CC BY-SA 4.0'),
+          alt: 'A brown rat sniffing along a ledge, seen head-on',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -137,8 +137,8 @@ export default defineSet({
       images: [
         {
           src: naismithImg,
-          alt: 'James Naismith holding a ball and the original peach basket',
-          credit: 'public domain, via Wikimedia Commons',
+          alt: 'James Naismith holding an early basketball',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -169,8 +169,8 @@ export default defineSet({
       images: [
         {
           src: syrupProductsImg,
-          alt: 'Rows of bottled maple syrup for sale at a market stall',
-          credit: commonsCredit('Ross Dunn', 'CC BY-SA 2.0'),
+          alt: 'Three maple-leaf-shaped glass bottles of maple syrup',
+          credit: INBOX_CREDIT,
         },
         {
           src: mapleSyrupLineupImg,
@@ -190,13 +190,13 @@ export default defineSet({
       images: [
         {
           src: frozenYukonRiverImg,
-          alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: commonsCredit('Eric A. Hegg', 'public domain'),
+          alt: 'Snow-covered mountains above a frosted spruce forest in deep winter',
+          credit: INBOX_CREDIT,
         },
         {
           src: auroraYukonImg,
-          alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          alt: 'Bands of green aurora above a lit log cabin in a snowy forest',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -290,8 +290,8 @@ export default defineSet({
       images: [
         {
           src: timHortonsCupImg,
-          alt: 'A red Tim Hortons coffee cup with a Canada 150 design',
-          credit: commonsCredit('Coastal Elite', 'CC BY-SA 2.0'),
+          alt: 'A Tim Hortons coffee cup beside a plate of donuts',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -307,8 +307,8 @@ export default defineSet({
       images: [
         {
           src: robsonUmbrellasImg,
-          alt: 'Two people with umbrellas walking along a wet downtown Vancouver sidewalk past a bubble tea shop',
-          credit: 'Wikimedia Commons',
+          alt: 'People with umbrellas crossing a rain-soaked downtown Vancouver street',
+          credit: INBOX_CREDIT,
         },
         {
           src: seawallSunsetImg,

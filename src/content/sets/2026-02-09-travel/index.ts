@@ -1,20 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import canadaLineImg from './canada-line-train.webp'
-import timeZonesImg from './canada-time-zones.webp'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
+import canadaLineTrainImg from './canada-line-train.webp'
+import canadaTimeZonesImg from './canada-time-zones.webp'
 import capeSpearImg from './cape-spear.webp'
-import cathedralGroveImg from './cathedral-grove.webp'
-import steamClockImg from './gastown-steam-clock.webp'
-import jadeCanoePortImg from './jade-canoe-port-side.webp'
+import gastownSteamClockImg from './gastown-steam-clock.webp'
 import jadeCanoeImg from './jade-canoe.webp'
-import rowhousesImg from './st-johns-rowhouses.webp'
-import seawallImg from './stanley-park-seawall.webp'
-import skylineImg from './vancouver-skyline-mountains.webp'
-import aerialImg from './yvr-aerial-sunset.webp'
-import concourseImg from './yvr-concourse-d.webp'
-import terminalImg from './yvr-international-terminal.webp'
-import lufthansaImg from './yvr-lufthansa-747.webp'
-import totemTowerImg from './yvr-totem-control-tower.webp'
-import totemPoleImg from './yvr-totem-pole.webp'
+import lynnCanyonImg from './lynn-canyon.webp'
+import spindleWhorlImg from './spindle-whorl.webp'
+import stJohnsBatteryImg from './st-johns-battery.webp'
+import stanleyParkSeawallImg from './stanley-park-seawall.webp'
+import vancouverSkylineMountainsImg from './vancouver-skyline-mountains.webp'
+import welcomeFiguresImg from './welcome-figures.webp'
+import yvrAerialImg from './yvr-aerial.webp'
+import yvrAquariumImg from './yvr-aquarium.webp'
+import yvrCreekImg from './yvr-creek.webp'
+import yvrObservationImg from './yvr-observation.webp'
+import yvrTotemControlTowerImg from './yvr-totem-control-tower.webp'
 
 export default defineSet({
   slug: 'travel',
@@ -26,30 +26,29 @@ export default defineSet({
       heading: 'Landing on top',
       facts: [
         'Skytrax ranks YVR the **10th best airport in the world**, and the best in North America for a record **15th time**.',
-        'No airport has won Best in North America more often: Vancouver has taken it in **15 of the last 17 years**.',
         'A **free public observation area** on Level 4 of the domestic terminal lets people without a ticket watch planes take off and land.',
         'The international terminal holds a **114,000-litre aquarium** stocked with more than 5,000 sea creatures, plus indoor streams and waterfalls.',
       ],
       images: [
         {
-          src: aerialImg,
-          alt: 'Aerial view of Vancouver International Airport at sunset, seen from a passing aircraft window',
-          credit: commonsCredit('Shawn from Airdrie', 'CC BY-SA 2.0'),
+          src: yvrAerialImg,
+          alt: 'Aerial view of Vancouver International Airport\'s terminals and aprons at dusk, mountains on the horizon',
+          credit: INBOX_CREDIT,
         },
         {
-          src: terminalImg,
-          alt: 'An indoor landscape of rocks, logs and running water inside YVR\'s international terminal',
-          credit: commonsCredit('Wpcpey', 'CC BY-SA 4.0'),
+          src: yvrAquariumImg,
+          alt: 'Travellers at the tall aquarium in YVR\'s international terminal, a Northwest Coast carving above it',
+          credit: INBOX_CREDIT,
         },
         {
-          src: lufthansaImg,
-          alt: 'A Lufthansa Boeing 747 on the tarmac at YVR with snow-capped mountains behind it',
-          credit: commonsCredit('Shwangtianyuan', 'CC BY-SA 4.0'),
+          src: yvrCreekImg,
+          alt: 'YVR\'s international terminal from above, with an indoor creek and greenery among the shops',
+          credit: INBOX_CREDIT,
         },
         {
-          src: concourseImg,
-          alt: 'A moving walkway running down a wide, sunlit concourse at Vancouver International Airport',
-          credit: commonsCredit('Sunnya343', 'CC BY-SA 4.0'),
+          src: yvrObservationImg,
+          alt: 'Telescopes at the windows of YVR\'s public observation area, overlooking the apron',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -64,21 +63,21 @@ export default defineSet({
       images: [
         {
           src: jadeCanoeImg,
-          alt: 'The Spirit of Haida Gwaii bronze canoe sculpture filled with figures, in the airport terminal',
-          credit: commonsCredit('Tony Hisgett', 'CC BY 2.0'),
+          alt: 'The Spirit of Haida Gwaii bronze canoe sculpture, crowded with figures, in the airport terminal',
+          credit: INBOX_CREDIT,
         },
         {
-          src: jadeCanoePortImg,
-          alt: 'The port side of the Jade Canoe sculpture, with two visitors standing beside it for scale',
-          credit: commonsCredit('D. Gordon E. Robertson', 'CC BY-SA 3.0'),
+          src: spindleWhorlImg,
+          alt: 'Susan Point\'s carved red cedar Flight Spindle Whorl mounted on a stone wall at YVR',
+          credit: INBOX_CREDIT,
         },
         {
-          src: totemPoleImg,
-          alt: 'A tall carved pole rising through the glass-walled Graham Clarke Atrium at YVR',
-          credit: commonsCredit('FaysaLBinDaruL', 'CC BY 4.0'),
+          src: welcomeFiguresImg,
+          alt: 'Two carved cedar Musqueam welcome figures in the YVR arrivals hall',
+          credit: INBOX_CREDIT,
         },
         {
-          src: totemTowerImg,
+          src: yvrTotemControlTowerImg,
           alt: 'The winged top of a carved pole inside the airport atrium, with the control tower visible through the glass',
           credit: commonsCredit('Adam Jones', 'CC BY-SA 2.0'),
         },
@@ -89,29 +88,29 @@ export default defineSet({
       facts: [
         'Canada spans **six time zones**, so a domestic flight can hand out jet lag without ever crossing a border.',
         'Newfoundland sits **half an hour** off everyone else at UTC-3:30, the only active half-hour zone in the Americas.',
-        'Vancouver to St. John\'s means moving the clock **four and a half hours**.',
+        'Vancouver to St. John\'s moves the clock **4.5 hours**: half the nine that separate my hometown from Germany, where I live now.',
         '**Cape Spear**, Newfoundland is the easternmost point of North America and catches the sunrise before anywhere else in the country.',
       ],
       images: [
         {
-          src: timeZonesImg,
+          src: canadaTimeZonesImg,
           alt: 'Map of Canada shaded into its six time zones with UTC offsets labelled',
           credit: commonsCredit('Mappify', 'CC BY-SA 4.0'),
         },
         {
           src: capeSpearImg,
-          alt: 'The lighthouse at Cape Spear, Newfoundland, on a rocky headland above the Atlantic',
-          credit: commonsCredit('Tony Kocurko', 'CC BY 3.0'),
+          alt: 'The white Cape Spear lighthouse with the sun rising behind it',
+          credit: INBOX_CREDIT,
         },
         {
-          src: rowhousesImg,
-          alt: 'Brightly painted row houses on a street in St. John\'s, Newfoundland',
-          credit: commonsCredit('Mike from Vancouver', 'CC BY-SA 2.0'),
+          src: stJohnsBatteryImg,
+          alt: 'Colourful houses of the Battery clinging to the rock at the mouth of St. John\'s harbour',
+          credit: INBOX_CREDIT,
         },
         {
-          src: steamClockImg,
-          alt: 'The Gastown steam clock in Vancouver venting steam from its pipes',
-          credit: commonsCredit('Dietmar Rabich', 'CC BY-SA 4.0'),
+          src: gastownSteamClockImg,
+          alt: 'The Gastown steam clock in Vancouver venting steam at dusk, street lamps lit',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -121,28 +120,28 @@ export default defineSet({
         'From YVR, the Pacific Ocean, the North Shore mountains, and temperate rainforest all sit within about **45 minutes**.',
         'The **Canada Line** connects the airport to downtown Vancouver in roughly **25 minutes**.',
         'SkyTrain runs **fully driverless**, and once held the record for the world\'s longest automated rapid transit system.',
-        'Three SkyTrain lines and more than **50 stations** cover Metro Vancouver, though the network still trails most European cities.',
+        'Three SkyTrain lines and more than **50 stations** cover Metro Vancouver.',
       ],
       images: [
         {
-          src: skylineImg,
-          alt: 'Downtown Vancouver\'s towers with the snow-capped North Shore mountains rising behind',
-          credit: commonsCredit('Kyle Pearce', 'CC BY-SA 2.0'),
+          src: vancouverSkylineMountainsImg,
+          alt: 'Towers along Burrard Inlet beneath the snow-dusted North Shore mountains',
+          credit: INBOX_CREDIT,
         },
         {
-          src: seawallImg,
-          alt: 'Cyclists and walkers on the Stanley Park seawall beside a marina, with the city across the water',
-          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
+          src: stanleyParkSeawallImg,
+          alt: 'The Stanley Park seawall curving between forest and ocean, seen from above',
+          credit: INBOX_CREDIT,
         },
         {
-          src: cathedralGroveImg,
-          alt: 'Old-growth Douglas firs in Cathedral Grove on Vancouver Island',
-          credit: commonsCredit('Kevstan', 'CC BY-SA 3.0'),
+          src: lynnCanyonImg,
+          alt: 'A suspension bridge through the rainforest at Lynn Canyon in North Vancouver',
+          credit: INBOX_CREDIT,
         },
         {
-          src: canadaLineImg,
-          alt: 'A Canada Line SkyTrain crossing an elevated guideway with mountains in the distance',
-          credit: commonsCredit('Tim Wu', 'CC BY-SA 4.0'),
+          src: canadaLineTrainImg,
+          alt: 'A Canada Line train on its elevated guideway passing the YVR control tower',
+          credit: INBOX_CREDIT,
         },
       ],
     },

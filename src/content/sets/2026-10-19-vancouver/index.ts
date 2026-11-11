@@ -1,3 +1,5 @@
+import steamClockImg from '../2026-02-09-travel/gastown-steam-clock.webp'
+import stanleyParkAerialImg from '../2026-02-09-travel/stanley-park-seawall.webp'
 import { defineSet, INBOX_CREDIT } from '../../schema'
 import brocktonPointLighthouseImg from './brockton-point-lighthouse.webp'
 import coalHarbourNorthShoreImg from './coal-harbour-north-shore.webp'
@@ -12,8 +14,6 @@ import rainyStreetImg from './rainy-street.webp'
 import robsonUmbrellasImg from './robson-umbrellas.webp'
 import seawallSunsetImg from './seawall-sunset.webp'
 import snowySkylineImg from './snowy-skyline.webp'
-import stanleyParkAerialImg from './stanley-park-aerial.webp'
-import steamClockImg from './steam-clock.webp'
 import whistlerSkierImg from './whistler-skier.webp'
 import winterBeachImg from './winter-beach.webp'
 
@@ -34,8 +34,8 @@ export default defineSet({
       images: [
         {
           src: robsonUmbrellasImg,
-          alt: 'Two people with umbrellas walking along a wet downtown Vancouver sidewalk past a bubble tea shop',
-          credit: 'Wikimedia Commons',
+          alt: 'People with umbrellas crossing a rain-soaked downtown Vancouver street',
+          credit: INBOX_CREDIT,
         },
         {
           src: winterBeachImg,
@@ -44,18 +44,18 @@ export default defineSet({
         },
         {
           src: greyBeachImg,
-          alt: 'Black-and-white photo of a misty Vancouver beach with driftwood, freighters anchored offshore',
-          credit: 'Wikimedia Commons',
+          alt: 'Freighters at anchor in a hazy bay, mountains faint behind them',
+          credit: INBOX_CREDIT,
         },
         {
           src: rainyStreetImg,
-          alt: 'A rainy Vancouver street seen through a wet windshield, with buses and shops under grey skies',
-          credit: 'Wikimedia Commons',
+          alt: 'Neon theatre signs reflected in wet pavement on Granville Street at night',
+          credit: INBOX_CREDIT,
         },
         {
           src: snowySkylineImg,
-          alt: 'Downtown Vancouver towers and snow-dusted trees, with snowy North Shore mountains behind',
-          credit: 'Wikimedia Commons',
+          alt: 'Vancouver\'s West End towers beneath cloud-wrapped, snow-covered North Shore mountains',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -75,8 +75,8 @@ export default defineSet({
         },
         {
           src: stanleyParkAerialImg,
-          alt: 'Aerial view of Stanley Park\'s forest and Coal Harbour, with downtown Vancouver beyond',
-          credit: 'Wikimedia Commons',
+          alt: 'The Stanley Park seawall curving between forest and ocean, seen from above',
+          credit: INBOX_CREDIT,
         },
         {
           src: brocktonPointLighthouseImg,
@@ -85,8 +85,8 @@ export default defineSet({
         },
         {
           src: steamClockImg,
-          alt: 'The Gastown steam clock on a brick-paved corner, surrounded by tourists',
-          credit: 'Wikimedia Commons',
+          alt: 'The Gastown steam clock in Vancouver venting steam at dusk, street lamps lit',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -111,8 +111,8 @@ export default defineSet({
         },
         {
           src: englishBayInukshukImg,
-          alt: 'The Inukshuk at English Bay on a sunny day, with people on the grass and ships in the bay',
-          credit: 'Wikimedia Commons',
+          alt: 'The Inukshuk at English Bay silhouetted against a pink sunset',
+          credit: INBOX_CREDIT,
         },
         {
           src: duskBeachImg,
@@ -142,13 +142,13 @@ export default defineSet({
         },
         {
           src: grouseViewImg,
-          alt: 'View from Grouse Mountain over forest to Vancouver, Stanley Park and the Strait of Georgia',
-          credit: 'Wikimedia Commons',
+          alt: 'Skiers on a floodlit run at Grouse Mountain with the lights of Vancouver far below',
+          credit: INBOX_CREDIT,
         },
         {
           src: whistlerSkierImg,
-          alt: 'A skier in a red jacket on a wide open bowl at Whistler, with snowy peaks behind',
-          credit: 'Wikimedia Commons',
+          alt: 'A skier in a red jacket carving through powder, a gondola line overhead',
+          credit: INBOX_CREDIT,
         },
       ],
     },

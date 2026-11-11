@@ -30,12 +30,12 @@ export default defineSet({
         'Canada was the **first country in the world** to make multiculturalism official policy: Pierre Trudeau, House of Commons, **October 8, 1971**.',
         'Parliament went further in **1988** with the Canadian Multiculturalism Act, the first national multiculturalism law anywhere.',
         '**23% of Canadians** were born abroad in the 2021 census: the highest share since Confederation, and the highest in the G7.',
-        'That census counted more than **450 ethnic or cultural origins** and over **200 mother tongues**. Nearly half of Toronto was born outside the country.',
+        'That census counted more than **450 ethnic or cultural origins** and over **200 mother tongues**; nearly half of Toronto was born abroad.',
       ],
       images: [
         {
           src: trudeauImg,
-          alt: 'Black-and-white portrait of Pierre Elliott Trudeau speaking, seated in front of a map',
+          alt: 'Black-and-white portrait of Pierre Elliott Trudeau, seated, looking off to one side',
           credit: INBOX_CREDIT,
         },
         {
@@ -50,7 +50,7 @@ export default defineSet({
         },
         {
           src: citizenshipCrowdImg,
-          alt: 'A crowd of people of many backgrounds waving small Canadian flags at a citizenship ceremony',
+          alt: 'A crowd of new citizens waving small Canadian flags at an outdoor citizenship ceremony',
           credit: INBOX_CREDIT,
         },
         {
@@ -111,7 +111,7 @@ export default defineSet({
       facts: [
         '**Hawaiian pizza** was invented in **Chatham, Ontario, 1962**: a Greek immigrant putting Hawaiian-branded pineapple on an Italian dish in Canada.',
         '**Ginger beef** is Calgarian, not Chinese: chef George Wong battered it at the Silver Inn in **1975** for Albertans who wanted some crispy beef.',
-        'A love letter to **Asian food in Vancouver**: Chinese, Japanese, Thai, and Vietnamese restaurants are some of the best in the world.',
+        'A love letter to my hometown: Vancouver\'s Chinese, Japanese, Thai and Vietnamese restaurants are some of the **best in the world**.',
         'Vancouver chef **Hidekazu Tojo** says he invented the **California roll**, flipping the rice outside for diners who wanted the seaweed hidden.',
         'Montreal bagels are hand-rolled, boiled in **honey water**, and wood-fired. Fairmount has been turning them out since **1919**.',
       ],
@@ -138,7 +138,7 @@ export default defineSet({
         },
         {
           src: tojoImg,
-          alt: 'A sushi chef in whites and a headband plating fish behind a wooden counter',
+          alt: 'Chef Hidekazu Tojo in whites and a headband holding out a plate of sushi behind his counter',
           credit: INBOX_CREDIT,
         },
         {

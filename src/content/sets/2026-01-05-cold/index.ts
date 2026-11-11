@@ -1,20 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import auroraCampingImg from './aurora-camping.webp'
-import auroraYellowknifeGreenImg from './aurora-yellowknife-green.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import auroraCabinImg from './aurora-cabin.webp'
+import auroraLakeImg from './aurora-lake.webp'
+import auroraTeepeesImg from './aurora-teepees.webp'
 import auroraYellowknifeImg from './aurora-yellowknife.webp'
-import auroraYukonImg from './aurora-yukon.webp'
-import bonhommeSnowBathImg from './bonhomme-snow-bath.webp'
+import boilingWaterImg from './boiling-water.webp'
 import bonhommeImg from './bonhomme.webp'
-import downtownWhitehorseImg from './downtown-whitehorse.webp'
-import frostyFenceImg from './frosty-fence.webp'
-import frozenYukonRiverImg from './frozen-yukon-river.webp'
+import frozenEyelashesImg from './frozen-eyelashes.webp'
 import iceCanoeRaceImg from './ice-canoe-race.webp'
-import icePalaceImg from './ice-palace-1895.webp'
+import iceFogImg from './ice-fog.webp'
+import icePalaceDayImg from './ice-palace-day.webp'
+import icePalaceNightImg from './ice-palace-night.webp'
 import polarBearSwimImg from './polar-bear-swim.webp'
 import rideauCanalSkatingImg from './rideau-canal-skating.webp'
 import tireDerableImg from './tire-derable.webp'
-import vintageSkierImg from './vintage-skier.webp'
-import whitehorseWinterTreesImg from './whitehorse-winter-trees.webp'
+import yukonSignImg from './yukon-sign.webp'
+import yukonWinterImg from './yukon-winter.webp'
 
 export default defineSet({
   slug: 'cold',
@@ -33,54 +33,54 @@ export default defineSet({
       images: [
         {
           src: bonhommeImg,
-          alt: 'The Bonhomme Carnaval mascot, a snowman in a red tuque and a colourful woven sash, waving',
-          credit: commonsCredit('Jeangagnon', 'CC BY-SA 3.0'),
+          alt: 'Bonhomme Carnaval, a snowman mascot in a red tuque and arrow sash, hugging a visitor in front of the ice palace',
+          credit: INBOX_CREDIT,
         },
         {
-          src: icePalaceImg,
-          alt: 'A tall snow-and-ice palace with turrets at the 1895 Quebec winter carnival',
-          credit: commonsCredit('Bibliothèque et Archives nationales du Québec', 'public domain'),
+          src: icePalaceNightImg,
+          alt: 'The Carnaval ice palace glowing blue and green at night, with a crowd in front',
+          credit: INBOX_CREDIT,
         },
         {
           src: iceCanoeRaceImg,
-          alt: 'Two racers pushing an ice canoe over broken ice on the St. Lawrence River',
-          credit: commonsCredit('Cephas', 'CC BY-SA 4.0'),
+          alt: 'Teams pushing ice canoes across the frozen St. Lawrence at the start of a race',
+          credit: INBOX_CREDIT,
         },
         {
-          src: bonhommeSnowBathImg,
-          alt: 'The Bonhomme mascot with a crowd of cheering people taking a snow bath in swimwear',
-          credit: commonsCredit('Marc-Lautenbacher', 'CC BY-SA 4.0'),
+          src: icePalaceDayImg,
+          alt: 'Towers of the Carnaval ice palace in daylight, with a line of visitors',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Traditions worth freezing for',
       facts: [
-        'On New Year\'s Day, **polar bear dips** send crowds sprinting into water barely above freezing.',
+        'My hometown has charged into English Bay every New Year\'s Day since **1920**: Vancouver\'s **Polar Bear Swim** is Canada\'s oldest.',
         'Ottawa\'s **Rideau Canal** freezes into a 7.8 km skateway, and some locals genuinely skate it to work.',
         'Pour hot syrup onto clean snow and it stiffens into **tire d\'érable**, chewy maple taffy on a stick.',
-        'Canadians have a saying for all of it: **no bad weather, only bad clothes**.',
+        'Below about −30°C, breath freezes onto **eyelashes**, hair and scarves within minutes.',
       ],
       images: [
         {
           src: polarBearSwimImg,
-          alt: 'A swimmer emerging from cold ocean water with arms raised at a winter polar bear swim',
-          credit: commonsCredit('GoToVan', 'CC BY 2.0'),
+          alt: 'Hundreds of swimmers charging into English Bay at Vancouver\'s New Year\'s Day Polar Bear Swim',
+          credit: INBOX_CREDIT,
         },
         {
           src: rideauCanalSkatingImg,
-          alt: 'People skating along the frozen Rideau Canal in Ottawa under a grey winter sky',
-          credit: commonsCredit('Ahunt', 'CC0'),
+          alt: 'Crowds skating on the frozen Rideau Canal in Ottawa, the Château Laurier behind',
+          credit: INBOX_CREDIT,
         },
         {
           src: tireDerableImg,
-          alt: 'A ribbon of maple taffy wound onto a wooden stick held to a person\'s mouth',
-          credit: commonsCredit('Gachepi', 'CC BY-SA 3.0'),
+          alt: 'Maple taffy on wooden sticks set on snow',
+          credit: INBOX_CREDIT,
         },
         {
-          src: vintageSkierImg,
-          alt: 'A woman in 1940s winter clothing holding a pair of cross-country skis over her shoulder',
-          credit: commonsCredit('Conrad Poirier', 'public domain'),
+          src: frozenEyelashesImg,
+          alt: 'A woman in a white toque with frost-covered eyelashes and hair',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -94,24 +94,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: whitehorseWinterTreesImg,
-          alt: 'Bare snow-covered trees in a frozen woodland near Whitehorse, Yukon',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
+          src: boilingWaterImg,
+          alt: 'A person flinging boiling water into an arc of ice crystals in front of a low sun',
+          credit: INBOX_CREDIT,
         },
         {
-          src: frostyFenceImg,
-          alt: 'Trees and a fence thickly coated in white hoar frost on a cold prairie morning',
-          credit: commonsCredit('daryl_mitchell', 'CC BY-SA 2.0'),
+          src: iceFogImg,
+          alt: 'Ice fog hanging over a road in the Yukon, the sun a dim glow',
+          credit: INBOX_CREDIT,
         },
         {
-          src: frozenYukonRiverImg,
-          alt: 'A snow-covered river partly frozen over in the Yukon, photographed around 1898',
-          credit: commonsCredit('Eric A. Hegg', 'public domain'),
+          src: yukonSignImg,
+          alt: 'A YUKON sign caked in thick frost and snow',
+          credit: INBOX_CREDIT,
         },
         {
-          src: downtownWhitehorseImg,
-          alt: 'A snowy main street of downtown Whitehorse, Yukon, with parked cars and shopfronts',
-          credit: commonsCredit('US Mission Canada', 'CC BY 2.0'),
+          src: yukonWinterImg,
+          alt: 'Snow-covered mountains above a frosted spruce forest in deep winter',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -121,28 +121,27 @@ export default defineSet({
         'The **aurora borealis** glows across northern Canada when solar particles strike the upper atmosphere.',
         '**Yellowknife** sits beneath the auroral oval, making it one of Earth\'s best spots to catch the lights.',
         'The common green light comes from **oxygen**; rarer reds and purples appear higher up or from nitrogen.',
-        'Clear, dark winter nights in the North stretch the aurora **viewing season** to its longest.',
       ],
       images: [
         {
+          src: auroraTeepeesImg,
+          alt: 'Green aurora over glowing teepees at Aurora Village near Yellowknife',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: auroraCabinImg,
+          alt: 'Bands of green aurora above a lit log cabin in a snowy forest',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: auroraLakeImg,
+          alt: 'Green and purple aurora reflected in a mountain lake',
+          credit: INBOX_CREDIT,
+        },
+        {
           src: auroraYellowknifeImg,
-          alt: 'Green aurora borealis over silhouetted trees and watchers near Yellowknife',
-          credit: 'public domain, via Wikimedia Commons',
-        },
-        {
-          src: auroraYellowknifeGreenImg,
-          alt: 'Faint aurora and a field of stars in the night sky over Yellowknife',
-          credit: commonsCredit('TravelingOtter', 'CC BY-SA 2.0'),
-        },
-        {
-          src: auroraYukonImg,
-          alt: 'Green northern lights arcing over a lit wooden cabin in the Yukon',
-          credit: commonsCredit('Anthony DeLorenzo', 'CC BY 2.0'),
-        },
-        {
-          src: auroraCampingImg,
-          alt: 'Aurora over a lake with a glowing tent pitched on a lakeside dock',
-          credit: commonsCredit('Sebastian Schlaeger', 'CC BY-SA 2.0'),
+          alt: 'Green aurora arcs reflected in still water at Yellowknife',
+          credit: INBOX_CREDIT,
         },
       ],
     },

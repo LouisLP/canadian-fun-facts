@@ -1,15 +1,15 @@
-import { commonsCredit, defineSet } from '../../schema'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import bigHouseImg from './big-house.webp'
-import housePostImg from './house-post.webp'
+import haidaPolesImg from './haida-poles.webp'
 import inukshukImg from './inukshuk.webp'
 import metisSashImg from './metis-sash.webp'
 import moaGreatHallImg from './moa-great-hall.webp'
 import musqueamDrummerImg from './musqueam-drummer.webp'
+import musqueamviewSignImg from './musqueamview-sign.webp'
 import orcaImg from './orca.webp'
 import ravenImg from './raven.webp'
 import spiritBearImg from './spirit-bear.webp'
 import thunderbirdImg from './thunderbird.webp'
-import totemPoleImg from './totem-pole.webp'
 import welcomeFigureImg from './welcome-figure.webp'
 
 export default defineSet({
@@ -29,18 +29,18 @@ export default defineSet({
       images: [
         {
           src: inukshukImg,
-          alt: 'A stone inukshuk on a snowy shoreline in Sylvia Grinnell Territorial Park, Nunavut',
-          credit: commonsCredit('Films Oiseau de nuit', 'CC BY-SA 4.0'),
+          alt: 'A stone inukshuk on a rocky Arctic shore with sea ice behind',
+          credit: INBOX_CREDIT,
         },
         {
           src: metisSashImg,
-          alt: 'A finger-woven Métis arrowhead sash (ceinture fléchée) in orange, black, and white',
-          credit: commonsCredit('Wilfredor', 'CC0'),
+          alt: 'A woven red Métis sash tied at a person\'s waist',
+          credit: INBOX_CREDIT,
         },
         {
-          src: totemPoleImg,
-          alt: 'A weathered carved totem pole standing among evergreens in Stanley Park, Vancouver',
-          credit: commonsCredit('Another Believer', 'CC BY-SA 3.0'),
+          src: haidaPolesImg,
+          alt: 'Weathered Haida poles standing among spruce at SG̱ang Gwaay, Haida Gwaii',
+          credit: INBOX_CREDIT,
         },
         {
           src: bigHouseImg,
@@ -52,7 +52,7 @@ export default defineSet({
     {
       heading: 'On unceded ground',
       facts: [
-        'Vancouver sits on the **unceded** territory of the Musqueam, Squamish, and Tsleil-Waututh Nations, land never signed away by treaty.',
+        'Vancouver, where I was born and raised, sits on the **unceded** territory of the Musqueam, Squamish, and Tsleil-Waututh Nations, land never signed away by treaty.',
         'The Musqueam language, **hən̓q̓əmin̓əm̓**, is a Coast Salish tongue now endangered and kept alive through UBC and community classes.',
         'Many Coast Salish nations line the coast and rivers, among them the Musqueam, Squamish, and **Stó:lō**, the "people of the river."',
         'Vancouver\'s Trutch Street, named for an official hostile to First Nations, was renamed **šxʷməθkʷəy̓əmasəm** (Musqueamview) in a name gifted by Musqueam.',
@@ -60,23 +60,23 @@ export default defineSet({
       images: [
         {
           src: welcomeFigureImg,
-          alt: 'A tall carved Coast Salish welcome figure by artist Susan Point on the White Rock waterfront, BC',
-          credit: commonsCredit('Almccon', 'CC0'),
+          alt: 'A carved cedar Musqueam figure against a blue sky',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: musqueamviewSignImg,
+          alt: 'Street signs reading šxʷməθkʷəy̓əmasəm St and Musqueamview St in Vancouver',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: moaGreatHallImg,
+          alt: 'Totem poles and house frames in the glass-walled Great Hall of UBC\'s Museum of Anthropology',
+          credit: INBOX_CREDIT,
         },
         {
           src: musqueamDrummerImg,
           alt: 'A drummer in regalia performing at a Musqueam community gathering in Vancouver',
           credit: commonsCredit('Jeremy Board', 'CC BY 2.0'),
-        },
-        {
-          src: moaGreatHallImg,
-          alt: 'Carved house posts, feast dishes, and bentwood boxes in the Great Hall of UBC\'s Museum of Anthropology',
-          credit: commonsCredit('Daderot', 'public domain'),
-        },
-        {
-          src: housePostImg,
-          alt: 'A large weathered Northwest Coast house post on display at UBC\'s Museum of Anthropology',
-          credit: commonsCredit('Xicotencatl', 'CC BY-SA 4.0'),
         },
       ],
     },
@@ -91,18 +91,18 @@ export default defineSet({
       images: [
         {
           src: ravenImg,
-          alt: 'A common raven in flight with wings and tail fully spread against a pale sky',
-          credit: commonsCredit('Mykola Swarnyk', 'CC BY-SA 4.0'),
+          alt: 'Bill Reid\'s yellow cedar sculpture The Raven and the First Men, a raven perched on a clamshell of emerging figures',
+          credit: INBOX_CREDIT,
         },
         {
           src: orcaImg,
-          alt: 'The tall dorsal fin of a killer whale breaking calm water off Vancouver Island at dusk',
-          credit: commonsCredit('Buiobuione', 'CC BY-SA 4.0'),
+          alt: 'A pod of orcas surfacing along a forested British Columbia shoreline',
+          credit: INBOX_CREDIT,
         },
         {
           src: spiritBearImg,
-          alt: 'A cream-coloured Kermode spirit bear wading in a stream in British Columbia',
-          credit: commonsCredit('Maximilian Helm', 'CC BY 2.0'),
+          alt: 'A cream-coloured Kermode spirit bear crossing a rainforest stream',
+          credit: INBOX_CREDIT,
         },
         {
           src: thunderbirdImg,

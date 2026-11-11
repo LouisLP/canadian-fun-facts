@@ -21,7 +21,7 @@ export default defineSet({
     {
       heading: 'True north, strong and tipsy',
       facts: [
-        'Canada runs on cheap, easy-drinking lagers, but the craft beer scene is serious too, and surprisingly, there are **860 wineries** from the Okanagan to Niagara.',
+        'Canada runs on cheap, easy-drinking lagers, but craft beer is serious too, and **860 wineries** stretch from the Okanagan to Niagara.',
         '**Molson**, founded in Montreal in 1786, is North America\'s oldest brewery; **Moosehead** (1867) is Canada\'s oldest independent one.',
         'Canada\'s first craft brewery poured its first pint in **1982** at Horseshoe Bay, just outside Vancouver, where I was born and raised.',
         'The **Caesar** was invented in Calgary in **1969**: vodka, clam and tomato juice. Canadians now drink about 400 million a year.',
@@ -40,7 +40,7 @@ export default defineSet({
         },
         {
           src: craftBeerFlightsImg,
-          alt: 'People at a long table with wooden paddles of small craft beer tasting glasses and glasses of water',
+          alt: 'A wooden paddle of four craft beers, from dark to pale, on a bar top',
           credit: INBOX_CREDIT,
         },
         {

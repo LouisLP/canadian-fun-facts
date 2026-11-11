@@ -1,22 +1,16 @@
-import { commonsCredit, defineSet } from '../../schema'
-import bantingBestImg from './banting-and-best.webp'
-import bantingHouseImg from './banting-house.webp'
+import bantingAndBestImg from '../2025-10-06-inventions/banting-best.webp'
+import { commonsCredit, defineSet, INBOX_CREDIT } from '../../schema'
 import bantingInsulinImg from './banting-insulin.webp'
 import bondarInSpaceImg from './bondar-in-space.webp'
-import bondarImg from './bondar-portrait.webp'
-import cupolaImg from './hadfield-cupola.webp'
+import bondarPortraitImg from './bondar-portrait.webp'
+import desmondTenDollarImg from './desmond-ten-dollar.webp'
+import hadfieldCupolaImg from './hadfield-cupola.webp'
 import hadfieldGuitarImg from './hadfield-guitar.webp'
-import hadfieldImg from './hadfield-portrait.webp'
-import sts42Img from './sts-42-crew.webp'
-import suzukiImg from './suzuki-portrait.webp'
+import suzukiForestImg from './suzuki-forest.webp'
 import suzukiSpeakingCrowdImg from './suzuki-speaking-crowd.webp'
-import suzukiSpeakingImg from './suzuki-speaking.webp'
-import mileZeroImg from './terry-fox-mile-zero.webp'
-import monumentImg from './terry-fox-monument.webp'
 import terryFoxRunningImg from './terry-fox-running.webp'
-import clarionImg from './the-clarion.webp'
-import violaElderlyImg from './viola-desmond-elderly.webp'
-import violaImg from './viola-desmond-portrait.webp'
+import terryFoxStatuesImg from './terry-fox-statues.webp'
+import violaDesmondElderlyImg from './viola-desmond-elderly.webp'
 
 export default defineSet({
   slug: 'heroes',
@@ -32,32 +26,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: hadfieldImg,
-          alt: 'Official portrait of Chris Hadfield in a white spacesuit, holding his helmet beside a Canadian flag',
-          credit: commonsCredit('Robert Markowitz', 'public domain'),
+          src: hadfieldGuitarImg,
+          alt: 'Chris Hadfield in a red shirt playing an acoustic guitar while floating in the space station\'s cupola, Earth in the windows',
+          credit: INBOX_CREDIT,
         },
         {
-          src: cupolaImg,
+          src: hadfieldCupolaImg,
           alt: 'Chris Hadfield looking out at Earth through the windows of the International Space Station cupola',
           credit: commonsCredit('NASA', 'public domain'),
         },
         {
-          src: bondarImg,
-          alt: 'Official portrait of Roberta Bondar in an orange launch suit beside a Canadian flag',
-          credit: commonsCredit('NASA', 'public domain'),
-        },
-        {
-          src: sts42Img,
-          alt: 'The seven STS-42 crew members, including Roberta Bondar, in orange flight suits with a shuttle launch behind them',
-          credit: commonsCredit('NASA', 'public domain'),
-        },
-        {
-          src: hadfieldGuitarImg,
-          alt: 'Chris Hadfield in a red shirt playing an acoustic guitar while floating in the space station\'s cupola, Earth in the windows',
-        },
-        {
           src: bondarInSpaceImg,
           alt: 'Roberta Bondar floating inside a space shuttle cabin among equipment',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: bondarPortraitImg,
+          alt: 'Official portrait of Roberta Bondar in an orange launch suit beside a Canadian flag',
+          credit: commonsCredit('NASA', 'public domain'),
         },
       ],
     },
@@ -65,73 +51,57 @@ export default defineSet({
       heading: 'Nobel pursuits',
       facts: [
         'Frederick Banting co-discovered **insulin**, and at **32** he became the youngest person ever to win the Nobel Prize in medicine.',
-        'Geneticist David Suzuki hosted CBC\'s The Nature of Things for **44 years**, from 1979 until he stepped down in 2023.',
+        'Vancouver-born like me, geneticist David Suzuki hosted CBC\'s The Nature of Things for **44 years**, from 1979 to 2023.',
       ],
       images: [
         {
-          src: bantingBestImg,
-          alt: 'Frederick Banting and Charles Best standing with a laboratory dog on the roof of the University of Toronto Medical Building in 1921',
-          credit: commonsCredit('Thomas Fisher Rare Book Library', 'CC BY 2.0'),
-        },
-        {
-          src: bantingHouseImg,
-          alt: 'The yellow-brick Banting House museum in London, Ontario, with a statue in the front garden',
-          credit: commonsCredit('Adam Bishop', 'CC BY-SA 4.0'),
-        },
-        {
-          src: suzukiImg,
-          alt: 'Portrait of David Suzuki in a red shirt, smiling',
-          credit: commonsCredit('Stephen Barnett', 'CC BY 2.0'),
-        },
-        {
-          src: suzukiSpeakingImg,
-          alt: 'David Suzuki speaking at a podium microphone in a red shirt',
-          credit: commonsCredit('Stephen Michael Barnett', 'CC BY 2.0'),
+          src: bantingAndBestImg,
+          alt: 'Charles Best and Frederick Banting in their office, around 1924',
+          credit: 'public domain, via Wikimedia Commons',
         },
         {
           src: bantingInsulinImg,
           alt: 'A vial labelled insulin injection standing beside a syringe',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: suzukiForestImg,
+          alt: 'David Suzuki sitting among moss-covered logs in an old-growth forest',
+          credit: INBOX_CREDIT,
         },
         {
           src: suzukiSpeakingCrowdImg,
           alt: 'David Suzuki speaking at a glass lectern, wearing an embroidered vest over a black shirt',
+          credit: INBOX_CREDIT,
         },
       ],
     },
     {
       heading: 'Standing their ground',
       facts: [
-        'Running on one leg, Terry Fox covered **5,373 km** in 143 days in 1980; the run named for him has since raised over **C$1 billion**.',
+        'On one leg, Terry Fox, an SFU student decades before I was, covered **5,373 km** in 143 days; his run has raised over **C$1 billion**.',
         'Viola Desmond refused a whites-only cinema seat in 1946 and was convicted over a **one-cent** tax gap; she now fronts Canada\'s **$10 bill**.',
       ],
       images: [
         {
-          src: monumentImg,
-          alt: 'The bronze Terry Fox monument in Thunder Bay, Ontario, showing him mid-stride above a wall of provincial shields',
-          credit: commonsCredit('Guinevere Orvis', 'CC BY-SA 4.0'),
-        },
-        {
-          src: mileZeroImg,
-          alt: 'Bronze statue of Terry Fox running at the Mile 0 memorial in St. John\'s, Newfoundland',
-          credit: commonsCredit('Gordon Leggett', 'CC BY-SA 4.0'),
-        },
-        {
-          src: violaImg,
-          alt: 'Black and white portrait photograph of Viola Desmond',
-          credit: 'public domain, via Wikimedia Commons',
-        },
-        {
-          src: clarionImg,
-          alt: 'Front page of The Clarion newspaper from 1946 reporting Viola Desmond taking action against segregation',
-          credit: commonsCredit('Nova Scotia Archives', 'no known copyright restrictions'),
-        },
-        {
           src: terryFoxRunningImg,
           alt: 'Terry Fox running along a highway on his prosthetic leg, a police car following behind him',
+          credit: INBOX_CREDIT,
         },
         {
-          src: violaElderlyImg,
+          src: terryFoxStatuesImg,
+          alt: 'Bronze statues of Terry Fox running, outside BC Place in Vancouver',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: desmondTenDollarImg,
+          alt: 'Canada\'s purple $10 note with a portrait of Viola Desmond',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: violaDesmondElderlyImg,
           alt: 'An elderly woman raising her hands as she speaks in front of a banner showing a portrait of Viola Desmond',
+          credit: INBOX_CREDIT,
         },
       ],
     },

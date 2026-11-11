@@ -1,28 +1,20 @@
-import { commonsCredit, defineSet } from '../../schema'
-import algonquinImg from './algonquin-autumn.webp'
-import bacharachImg from './bacharach-germany.webp'
-import beerGardenImg from './beer-garden.webp'
-import cafeImg from './cafe-conversation.webp'
+import poutineImg from '../2025-10-06-inventions/poutine.webp'
+import { defineSet, INBOX_CREDIT } from '../../schema'
+import bacharachGermanyImg from './bacharach-germany.webp'
+import banffAvenueImg from './banff-avenue.webp'
 import canadianNatureImg from './canadian-nature.webp'
-import sushiImg from './canadian-sushi.webp'
-import cardTerminalImg from './card-terminal.webp'
+import canadianSushiImg from './canadian-sushi.webp'
+import cardTapImg from './card-tap.webp'
+import cashOnlySignImg from './cash-only-sign.webp'
 import coconutImg from './coconut.webp'
-import cologneImg from './cologne-station.webp'
-import countingImg from './counting-fingers.webp'
-import threeGlassesImg from './counting-three-glasses.webp'
-import dinnerTableImg from './dinner-table.webp'
-import euroCashImg from './euro-cash.webp'
-import farmersMarketImg from './farmers-market.webp'
-import departuresImg from './frankfurt-departures.webp'
+import countingThreeGlassesImg from './counting-three-glasses.webp'
 import germanTramImg from './german-tram.webp'
-import moraineImg from './moraine-lake.webp'
-import munichImg from './munich-pedestrian-zone.webp'
+import iceTrainImg from './ice-train.webp'
+import marienplatzImg from './marienplatz.webp'
 import peachImg from './peach.webp'
-import poutineImg from './poutine.webp'
-import smallTalkImg from './small-talk-drinks.webp'
-import staringImg from './staring-eye-contact.webp'
-import transitImg from './transit-interior.webp'
-import cambieImg from './vancouver-cambie-smalltalk.webp'
+import smallTalkDrinksImg from './small-talk-drinks.webp'
+import staringEyeContactImg from './staring-eye-contact.webp'
+import vancouverCambieSmalltalkImg from './vancouver-cambie-smalltalk.webp'
 
 export default defineSet({
   slug: 'canada-vs-germany',
@@ -40,32 +32,24 @@ export default defineSet({
       ],
       images: [
         {
-          src: countingImg,
-          alt: 'A hand with numbers inked on the finger segments, used for counting by hand',
-          credit: commonsCredit('Rhetos', 'CC0'),
-        },
-        {
-          src: transitImg,
-          alt: 'The interior of a Toronto subway car with empty seats',
-          credit: commonsCredit('Dillan Payne', 'CC BY-SA 4.0'),
-        },
-        {
-          src: euroCashImg,
-          alt: 'A scattered pile of euro banknotes',
-          credit: commonsCredit('Markus Spiske', 'CC BY 2.0'),
-        },
-        {
-          src: cardTerminalImg,
-          alt: 'A card payment terminal displaying a prompt to insert or tap a card',
-          credit: commonsCredit('Daylon124', 'CC0'),
-        },
-        {
-          src: threeGlassesImg,
+          src: countingThreeGlassesImg,
           alt: 'A film still of a uniformed German officer holding up three fingers beside a woman in a hat, subtitled "Three glasses."',
+          credit: INBOX_CREDIT,
         },
         {
-          src: staringImg,
+          src: staringEyeContactImg,
           alt: 'A film still of a grey-haired man in a white tank top staring wide-eyed straight at the camera',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: cashOnlySignImg,
+          alt: 'A handwritten sign in a German shop window reading "Nur Barzahlung möglich", cash only',
+          credit: INBOX_CREDIT,
+        },
+        {
+          src: cardTapImg,
+          alt: 'A phone held over a card terminal to pay by tap',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -73,38 +57,29 @@ export default defineSet({
       heading: 'Peaches and coconuts',
       facts: [
         'The old metaphor sorts them: Canadians as **peaches**, soft outside with a firm core; Germans as **coconuts**, hard shell around a soft centre.',
-        'Canadian conversation runs on polite back-and-forth; German conversation goes **straight to the point**, and rules carry weight.',
         '"We should hang out" can be a friendly nothing in Canada, while a German invitation is **literal** and comes with a date.',
         'Coconut friendships take longer to crack open and tend to last; peach friendliness arrives instantly and can stay light.',
       ],
       images: [
         {
           src: peachImg,
-          alt: 'A peach cut in half showing the soft flesh and the hard stone at its centre',
-          credit: commonsCredit('Jack Dykinga, USDA', 'public domain'),
+          alt: 'A halved peach beside its stone on a wooden board',
+          credit: INBOX_CREDIT,
         },
         {
           src: coconutImg,
-          alt: 'A whole coconut beside one cracked open to show the white flesh inside',
-          credit: commonsCredit('Ivar Leidus', 'CC BY-SA 4.0'),
+          alt: 'A hammer cracking a whole coconut along its middle',
+          credit: INBOX_CREDIT,
         },
         {
-          src: cafeImg,
-          alt: 'Two people sitting and talking at a table in a busy cafe',
-          credit: commonsCredit('W.carter', 'CC0'),
-        },
-        {
-          src: dinnerTableImg,
-          alt: 'A dining table set with plates, glasses, and crackers for a holiday meal',
-          credit: commonsCredit('daryl_mitchell', 'CC BY-SA 2.0'),
-        },
-        {
-          src: smallTalkImg,
+          src: smallTalkDrinksImg,
           alt: 'A bearded man and a woman chatting and smiling outside a café, each holding an iced drink',
+          credit: INBOX_CREDIT,
         },
         {
-          src: cambieImg,
+          src: vancouverCambieSmalltalkImg,
           alt: 'A busy Vancouver street with cars and pedestrians, downtown towers and snow-capped mountains behind',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -118,31 +93,23 @@ export default defineSet({
       images: [
         {
           src: poutineImg,
-          alt: 'A plate of poutine: fries topped with cheese curds and gravy',
-          credit: commonsCredit('Antonydstevens', 'CC0'),
+          alt: 'A plate of poutine: fries, cheese curds and gravy',
+          credit: INBOX_CREDIT,
         },
         {
-          src: moraineImg,
-          alt: 'A person sitting above the turquoise water of Moraine Lake below the Rocky Mountains',
-          credit: commonsCredit('David Zhang', 'CC BY-SA 2.0'),
+          src: banffAvenueImg,
+          alt: 'Banff Avenue at dusk, shops lit beneath snow-covered Cascade Mountain',
+          credit: INBOX_CREDIT,
         },
         {
-          src: algonquinImg,
-          alt: 'Mixed autumn forest in Algonquin Provincial Park, Ontario',
-          credit: commonsCredit('David Zhang', 'CC BY-SA 2.0'),
-        },
-        {
-          src: farmersMarketImg,
-          alt: 'Shoppers and a produce vendor inside the St. Jacobs Farmers Market in Ontario',
-          credit: commonsCredit('Allie_Caulfield', 'CC BY 2.0'),
-        },
-        {
-          src: sushiImg,
+          src: canadianSushiImg,
           alt: 'A slate platter of nigiri and sushi rolls with chopsticks, soy sauce and a cast-iron teapot, seen from above',
+          credit: INBOX_CREDIT,
         },
         {
           src: canadianNatureImg,
           alt: 'A red kayak on a turquoise mountain lake beneath rocky, snow-streaked peaks',
+          credit: INBOX_CREDIT,
         },
       ],
     },
@@ -152,36 +119,28 @@ export default defineSet({
         'German law caps working time and guarantees paid holiday, with a statutory floor of **20 days** on a five-day week.',
         'Public infrastructure goes to Germany: trains, trams, and city centres built around **walking** rather than driving.',
         'Neighbouring countries sit **hours away** by train, so international travel is a weekend plan instead of an expedition.',
-        'Neither country wins outright; the honest answer depends on whether **nature** or **infrastructure** matters more to you.',
+        'Neither wins outright: after years living in both, my answer depends on whether **nature** or **infrastructure** matters more that day.',
       ],
       images: [
         {
-          src: cologneImg,
-          alt: 'A train pulling through the vaulted train shed of Cologne main station',
-          credit: commonsCredit('Martin Falbisoner', 'CC BY-SA 4.0'),
+          src: iceTrainImg,
+          alt: 'White ICE high-speed trains under the arched glass roof of Cologne main station',
+          credit: INBOX_CREDIT,
         },
         {
-          src: munichImg,
-          alt: 'Crowds walking through a pedestrian shopping street in Munich',
-          credit: commonsCredit('Mattes', 'public domain'),
-        },
-        {
-          src: beerGardenImg,
-          alt: 'People at long tables in a Munich beer garden lit by string lights in the evening',
-          credit: commonsCredit('Flo Sorg', 'CC0'),
-        },
-        {
-          src: departuresImg,
-          alt: 'Travellers below the large departures board at Frankfurt Airport',
-          credit: commonsCredit('Erica Fischer', 'CC BY 2.0'),
+          src: marienplatzImg,
+          alt: 'Munich\'s neo-Gothic New Town Hall above a busy Marienplatz',
+          credit: INBOX_CREDIT,
         },
         {
           src: germanTramImg,
           alt: 'A yellow tram stopped at a glass-roofed platform on a German city street',
+          credit: INBOX_CREDIT,
         },
         {
-          src: bacharachImg,
+          src: bacharachGermanyImg,
           alt: 'The town of Bacharach, Germany from above: a red church tower among slate roofs, the Rhine and wooded hills beyond',
+          credit: INBOX_CREDIT,
         },
       ],
     },

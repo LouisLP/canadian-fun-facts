@@ -1,4 +1,4 @@
-import { commonsCredit, defineSet } from '../../schema'
+import { defineSet, INBOX_CREDIT } from '../../schema'
 import canadaDayImg from './beaver-canada-day-flag.webp'
 import carryingBranchImg from './beaver-carrying-branch.webp'
 import chewedTreeImg from './beaver-chewing.webp'
@@ -29,7 +29,6 @@ export default defineSet({
       heading: 'A national icon',
       facts: [
         'Francis cover your ears: in the fur trade, one prime pelt, a "**made beaver**", served as currency at Hudson\'s Bay Company posts.',
-        'Official **emblem of Canada** since March 24, 1975, under the National Symbol of Canada Act.',
         'On the **Canadian nickel since 1937**, one of the country\'s longest-running coin designs.',
         'Canada\'s first postage stamp, the **Three-Penny Beaver** of 1851, featured a rodent where other countries put a monarch.',
         'We even have a dessert named after them: the **beaver tail**, a fried dough pastry with sweet toppings.',
@@ -37,18 +36,18 @@ export default defineSet({
       images: [
         {
           src: nickelImg,
-          alt: 'Both sides of a 1937 Canadian five-cent coin, the beaver perched on its rock',
-          credit: commonsCredit('Awmcphee', 'CC0'),
+          alt: 'A 1937 Canadian five-cent coin, the beaver on its rock above the date',
+          credit: INBOX_CREDIT,
         },
         {
           src: peltImg,
-          alt: 'A beaver pelt stretched on a round willow frame',
-          credit: commonsCredit('Thomas Quine', 'CC BY 2.0'),
+          alt: 'A beaver pelt stretched on a round branch hoop',
+          credit: INBOX_CREDIT,
         },
         {
           src: stampImg,
           alt: 'The 1851 Three-Penny Beaver, Canada\'s first postage stamp',
-          credit: 'public domain, via Wikimedia Commons',
+          credit: INBOX_CREDIT,
         },
         {
           src: beavertailImg,
@@ -75,23 +74,23 @@ export default defineSet({
       images: [
         {
           src: treeCuttingImg,
-          alt: 'A beaver pressed against a half-gnawed tree trunk in the snow, mid-chew',
-          credit: commonsCredit('D. Gordon E. Robertson', 'CC BY-SA 3.0'),
+          alt: 'Close-up of a beaver biting into a tree trunk, orange teeth showing',
+          credit: INBOX_CREDIT,
         },
         {
           src: swimmingImg,
-          alt: 'A swimming beaver with its broad flat tail floating at the surface',
-          credit: commonsCredit('Bureau of Land Management Alaska', 'public domain'),
+          alt: 'A beaver diving with its flat tail raised out of the water, mid-slap',
+          credit: INBOX_CREDIT,
         },
         {
           src: cruisingImg,
-          alt: 'A beaver cruising low through still water at dusk, only head and back showing',
-          credit: commonsCredit('U.S. Fish and Wildlife Service', 'CC BY 2.0'),
+          alt: 'A beaver swimming underwater, webbed hind feet trailing',
+          credit: INBOX_CREDIT,
         },
         {
           src: chewedTreeImg,
-          alt: 'A large tree trunk chewed most of the way through by beaver teeth',
-          credit: commonsCredit('U.S. Fish and Wildlife Service', 'public domain'),
+          alt: 'A snowy tree trunk gnawed nearly through by beavers, wood chips at its base',
+          credit: INBOX_CREDIT,
         },
         {
           src: grippingLogImg,
@@ -109,24 +108,23 @@ export default defineSet({
         'World\'s longest beaver dam: **850 metres**, in Alberta\'s Wood Buffalo National Park, spotted via satellite in 2007.',
         'Beavers hate the sound of **running water**: play a recording of a trickle and they\'ll pile sticks on the speaker.',
         'Lodges have **underwater-only entrances**, a dry sleeping platform, and stay above freezing all winter.',
-        'Beaver wetlands filter water and shelter fish, frogs, and birds; ecologists call beavers a **keystone species**.',
         'Go watch "**Hoppers**"! A newer Disney movie about a girl who gets her consciousness transferred into a beaver\'s body.',
       ],
       images: [
         {
           src: damImg,
-          alt: 'A beaver dam of gnawed logs holding back a calm pond on a forest stream',
-          credit: commonsCredit('Jakub Hałun', 'CC BY 4.0'),
+          alt: 'A long beaver dam curving across a pond, autumn trees and mountains behind',
+          credit: INBOX_CREDIT,
         },
         {
           src: pondAerialImg,
-          alt: 'Aerial view of a beaver wetland strewn with dozens of felled tree trunks',
-          credit: commonsCredit('Ermell', 'CC BY-SA 4.0'),
+          alt: 'Aerial view of the world\'s longest beaver dam winding through wetland in Wood Buffalo National Park',
+          credit: INBOX_CREDIT,
         },
         {
           src: lodgeImg,
-          alt: 'A snow-dusted beaver lodge of piled sticks rising out of an icy marsh',
-          credit: commonsCredit('U.S. Fish and Wildlife Service', 'public domain'),
+          alt: 'Aerial view of a beaver lodge in a lily-covered pond ringed by autumn forest',
+          credit: INBOX_CREDIT,
         },
         {
           src: hoppersImg,
@@ -134,8 +132,8 @@ export default defineSet({
         },
         {
           src: carryingBranchImg,
-          alt: 'A beaver hauling a leafy branch across a pond',
-          credit: commonsCredit('Jeffery J. Nichols', 'CC BY-SA 4.0'),
+          alt: 'A beaver dragging a leafy branch across a grassy bank',
+          credit: INBOX_CREDIT,
         },
         {
           src: damBankImg,
