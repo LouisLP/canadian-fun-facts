@@ -52,6 +52,11 @@ export function commonsCredit(author: string, license: string): string {
   return `${author}, ${license}, via Wikimedia Commons`
 }
 
+/** Credit for an image found on the web: the site or photographer it came from. */
+export function webCredit(source: string): string {
+  return `via ${source}`
+}
+
 /** What a slide is called in a list: its heading, or its question. */
 export function slideHeading(slide: Slide): string {
   return slide.kind === 'quiz' ? slide.question : slide.heading

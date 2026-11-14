@@ -69,13 +69,13 @@ is known and which sets already used it. When he tells you something new, add it
 
 ## 4. Source images — two to four per slide
 
-Two sources, in order: **the inbox first, Commons for the gaps.**
+Two sources, in order: **the inbox first, then the best image you can find anywhere.**
 
 ### 4a. The inbox (`inbox/<slug>/`)
 
 Louis drops raw pictures into a gitignored `inbox/<slug>/` folder — see
 [inbox/README.md](../inbox/README.md). These are first-choice imagery and take precedence
-over anything on Commons.
+over anything found online.
 
 Work through them like this:
 
@@ -93,44 +93,35 @@ Work through them like this:
 Don't ask which to pick. Choose, then say in the summary which slides came from the inbox
 and which images were left out, so the call is reviewable.
 
-### 4b. Filling the gaps from Commons
+### 4b. Filling the gaps from the web
 
-When the inbox doesn't cover a slide, top it up. Only **Public Domain / CC / "no
-known copyright restrictions"** images qualify; [Wikimedia
-Commons](https://commons.wikimedia.org) is the source of record. Mixing inbox and Commons
-images within one slide is fine.
+When the inbox doesn't cover a slide, top it up with **the best image you can find,
+from anywhere**: Google or Bing image search, news sites, museums and archives, brand
+sites, Wikimedia Commons. The sets are for personal use, so licensing is not a filter;
+quality is. Mixing inbox and web images within one slide is fine.
 
-**Find candidates** via the Commons API — search and category listing both work:
+**Pick on quality.** Sharp, well-lit, on-subject, and **≥ ~1200 px** wide where possible
+(the optimizer caps at 1600 and never upscales, so a 400 px source stays soft). Prefer a
+striking photo over a merely adequate one; don't settle for the first hit.
 
-```sh
-UA="canadian-fun-facts-bot/1.0 (you@example.com)"   # Wikimedia wants a real UA
-# keyword search across File: namespace
-curl -s -H "User-Agent: $UA" \
-  "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=maple%20sap%20bucket&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=extmetadata|url|size&format=json" \
-  | jq -r '.query.pages[]? | "\(.title)\t\(.imageinfo[0].extmetadata.LicenseShortName.value)\t\((.imageinfo[0].extmetadata.Artist.value)|gsub("<[^>]*>";""))"'
-# browse a category instead: list=categorymembers&cmtitle=Category:Maple%20syrup%20production&cmtype=file
-```
+**Look at every image before using it**: captions and filenames lie. Download a candidate,
+open it, and confirm it shows what you'll claim in the alt text. Discard watermarked or
+stock-preview images.
 
-Prefer files **≥ ~1200 px** wide (the optimizer caps at 1600 and never upscales, so a
-400 px source stays soft). **Look at every image before using it** — filenames lie. Pull a
-thumbnail (`Special:FilePath/<name>?width=320`) and confirm it shows what you'll claim in
-the alt text.
+When a subject has no photo at all (there is none of the syrup reserve or the heist),
+illustrate with the closest concrete stand-in (the heist slide uses finished-syrup product
+shots). Note the substitution in the alt text honestly.
 
-When a subject has no dedicated free imagery (there is _no_ Commons photo of the syrup
-reserve or the heist), illustrate with the closest concrete stand-in — the heist slide uses
-finished-syrup product shots. Note the substitution in the alt text honestly.
-
-**Download** full-resolution originals straight into the set folder:
+**Download** the full-resolution original straight into the set folder (follow through to
+the source page's original file, not a search thumbnail):
 
 ```sh
-curl -sL -H "User-Agent: $UA" \
-  "https://commons.wikimedia.org/wiki/Special:FilePath/Traditional%20maple%20tap.jpg" \
-  -o src/content/sets/2025-10-27-maple/traditional-tap.jpg
+curl -sL -A "Mozilla/5.0" "<image url>" -o src/content/sets/<folder>/<subject>.jpg
 ```
 
 ## 5. Convert to WebP
 
-Once every chosen image — inbox copies and Commons downloads alike — is sitting in the set
+Once every chosen image — inbox copies and web downloads alike — is sitting in the set
 folder as `.jpg`/`.png`/`.heic`/`.webp`:
 
 ```sh
@@ -153,11 +144,9 @@ date and the folder name mirrors it by convention. Both are already set, so leav
   `FactPanel.vue` is commented out) — but fill it in on every image, since it's the only
   record of where a file came from. Both kinds come from `schema.ts`; never retype the
   strings. **Inbox images** get `INBOX_CREDIT` (many are web-sourced, not his own
-  photographs). **Commons images** get `commonsCredit(author, license)`, e.g.
-  `commonsCredit('Jomegat', 'CC BY-SA 4.0')`; the license is `'public domain'` or
-  `'no known copyright restrictions'` where that applies. A file with no named author is
-  the one literal: `'public domain, via Wikimedia Commons'`.
-  Take the author and license short-name from the same `extmetadata` the search returned.
+  photographs). **Web images** get `webCredit(source)`, where `source` is the site or
+  photographer it came from, e.g. `webCredit('Legion Magazine')`. Older sets use
+  `commonsCredit(author, license)` for Commons files; that still works.
 
 ## 6b. Voiceover (optional)
 

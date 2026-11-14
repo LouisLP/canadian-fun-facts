@@ -1,8 +1,8 @@
 # Canada at war
 
 Promoted from [future-topics](future-topics.md) (History). Slug `canada-at-war`, topic
-`history` (first History set), inbox `inbox/canada-at-war/`. Target date **2026-11-09**,
-the Monday before Remembrance Day (Wednesday 11 November 2026).
+`history` (first History set), inbox `inbox/canada-at-war/`. Published **2026-11-16**,
+the Monday after Remembrance Day (Wednesday 11 November 2026).
 
 Three slides, three facts each. Slide 3 is a family slide (first person, true).
 
