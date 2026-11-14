@@ -11,12 +11,30 @@ import mooseheadLagerImg from './moosehead-lager.webp'
 import superfastBrowniesImg from './superfast-brownies.webp'
 import tofinoBrewingFlightsImg from './tofino-brewing-flights.webp'
 import tofinoBrewingGrowlersImg from './tofino-brewing-growlers.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'drugs-and-alcohol',
   date: '2026-09-14',
   title: 'Booze & Bud: High Spirits',
   topic: 'culture',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 22.4, panel: 1 }, // "First of all … two camps"
+      { at: 53.9, panel: 1, image: 5 }, // "these like Cariboo"
+      { at: 55.2, panel: 1, image: 0 }, // "like Molson Canadian"
+      { at: 72.4, panel: 1, image: 2 }, // "good craft beer scene"
+      { at: 82.0, panel: 1, image: 3 }, // "a flight of beer"
+      { at: 103.6, panel: 1, image: 0 }, // "Molson had a huge factory"
+      { at: 121.8, panel: 1 }, // "also have a very good whiskey scene"
+      { at: 190.0, panel: 2 }, // "Next up, alcohol is widely accepted"
+      { at: 227.0, panel: 2, image: 0 }, // "cannabis … legalized in 2018"
+      { at: 237.7, panel: 2, image: 3 }, // "walk into a dispensary"
+      { at: 292.7, panel: 2, image: 1 }, // "I made a music video"
+      { at: 319.1, panel: 3 }, // "I hope you enjoyed this set"
+    ],
+  },
   slides: [
     {
       heading: 'True north, strong and tipsy',

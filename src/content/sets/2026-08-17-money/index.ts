@@ -11,12 +11,31 @@ import tenDollarNoteImg from './ten-dollar-note.webp'
 import toonieImg from './toonie.webp'
 import twentyDollarNoteImg from './twenty-dollar-note.webp'
 import violaDesmondImg from './viola-desmond.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'money',
   date: '2026-08-17',
   title: 'Money: Making Change',
   topic: 'business',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 24.1, panel: 1 }, // "First of all, let's talk about coins"
+      { at: 26.6, panel: 1, image: 5 }, // "Canada used to have a penny"
+      { at: 76.3, panel: 1, image: 0 }, // "the five cent coin … nickel"
+      { at: 82.8, panel: 1, image: 1 }, // "the 10 cent coin … dime"
+      { at: 95.0, panel: 1, image: 4 }, // "the 25 cent coin … quarter"
+      { at: 112.0, panel: 1, image: 2 }, // "The $1 coin is called a loonie"
+      { at: 115.9, panel: 1, image: 3 }, // "the $2 coin … polar bear"
+      { at: 125.1, panel: 1, image: 2 }, // "another fun fact about the loonie"
+      { at: 135.3, panel: 2 }, // "And next up for the bills"
+      { at: 202.2, panel: 2, image: 4 }, // "the $20 bill which is Queen Elizabeth II"
+      { at: 209.5, panel: 2, image: 1 }, // "the $10 bill which has John A. Macdonald"
+      { at: 219.5, panel: 2, image: 3 }, // "a vertical design with Viola Desmond"
+      { at: 233.1, panel: 3 }, // "Anyway that's it for today"
+    ],
+  },
   slides: [
     {
       heading: 'A zoo in your pocket',

@@ -14,6 +14,7 @@ import rainyStreetImg from './rainy-street.webp'
 import robsonUmbrellasImg from './robson-umbrellas.webp'
 import seawallSunsetImg from './seawall-sunset.webp'
 import snowySkylineImg from './snowy-skyline.webp'
+import voiceover from './voiceover.m4a'
 import whistlerSkierImg from './whistler-skier.webp'
 import winterBeachImg from './winter-beach.webp'
 
@@ -22,6 +23,26 @@ export default defineSet({
   date: '2026-10-19',
   title: 'Vancouver: Wet Coast, Best Coast',
   topic: 'travel',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 17.6, panel: 1 }, // "why is Vancouver so wet?"
+      { at: 20.7, panel: 1, image: 0 }, // "it rains all the time"
+      { at: 93.7, panel: 1, image: 4 }, // "we're surrounded by mountains"
+      { at: 107.8, panel: 2, image: 0 }, // "Next up, I grew up in Mount Pleasant"
+      { at: 167.1, panel: 2, image: 3 }, // "the steam clock of Gastown"
+      { at: 195.2, panel: 2, image: 1 }, // "towards Stanley Park and the Seawall"
+      { at: 249.9, panel: 3 }, // "Speaking of, the beaches"
+      { at: 277.2, panel: 3, image: 0 }, // "the beach in English Bay"
+      { at: 291.4, panel: 3 }, // "at the school I went to, UBC"
+      { at: 332.0, panel: 4 }, // "Mountains are also everywhere"
+      { at: 336.6, panel: 4, image: 0 }, // "look towards mountains"
+      { at: 343.0, panel: 4, image: 2 }, // "Grouse, Cypress and Seymour"
+      { at: 348.0, panel: 4, image: 3 }, // "there's also Whistler"
+      { at: 366.9, panel: 4 }, // "Speaking of Grouse … the Grouse Grind"
+      { at: 411.8, panel: 5 }, // "So yeah, that's all I got for you today"
+    ],
+  },
   slides: [
     {
       heading: 'Raincouver',

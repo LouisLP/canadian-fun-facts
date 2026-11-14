@@ -11,12 +11,27 @@ import lakeOntarioImg from './lake-ontario.webp'
 import lakeSuperiorImg from './lake-superior.webp'
 import moraineLakeImg from './moraine-lake.webp'
 import spottedLakeImg from './spotted-lake.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'lakes',
   date: '2026-09-07',
   title: 'Lakes: In Too Deep',
   topic: 'geography',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 14.3, panel: 1 }, // "First of all"
+      { at: 18.2, panel: 1, image: 0 }, // "the Great Lakes"
+      { at: 42.7, panel: 1, image: 3 }, // "Lake Ontario to Lake America"
+      { at: 58.4, panel: 1, image: 5 }, // "Lake Michigan is entirely American"
+      { at: 68.0, panel: 1, image: 1 }, // "Lake Superior is gigantic"
+      { at: 93.2, panel: 2 }, // "Next up, this is a pretty shocking statistic"
+      { at: 147.4, panel: 2, image: 0 }, // "Lake Louise"
+      { at: 182.7, panel: 2, image: 4 }, // "a lake called Spotted Lake"
+      { at: 197.8, panel: 3 }, // "But yeah, anyway, I hope you found this one interesting"
+    ],
+  },
   slides: [
     {
       heading: 'HOMES, or SHAME',
