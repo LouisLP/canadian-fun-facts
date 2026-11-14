@@ -7,6 +7,7 @@ import tombImg from './tomb-poppies.webp'
 import utrechtImg from './utrecht-liberation.webp'
 import vancouverImg from './vancouver-skyline.webp'
 import vimyImg from './vimy-memorial.webp'
+import voiceover from './voiceover.m4a'
 import winnipegImg from './winnipeg-skyline.webp'
 
 export default defineSet({
@@ -14,6 +15,25 @@ export default defineSet({
   date: '2026-11-16',
   title: 'Lest We Forget',
   topic: 'history',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 22.0, panel: 1 }, // "Remembrance Day is we have two minutes of silence"
+      { at: 50.8, panel: 1, image: 1 }, // "a Canadian army doctor named John McCrae"
+      { at: 65.0, panel: 1, image: 2 }, // "And he wrote this poem"
+      { at: 79.0, panel: 1 }, // "The Canadian Royal Legion"
+      { at: 113.0, panel: 1, image: 0 }, // "on November 11th, all these Canadians are out with their poppies"
+      { at: 123.0, panel: 2 }, // "Next up, there are some very well-known battles"
+      { at: 130.2, panel: 2, image: 0 }, // "Vimy Ridge"
+      { at: 132.0, panel: 2, image: 1 }, // "especially at Juno Beach"
+      { at: 139.0, panel: 2, image: 2 }, // "Canadians also led the liberation of the Netherlands"
+      { at: 150.5, panel: 2, image: 3 }, // "they still send every year to Ottawa … tulips"
+      { at: 171.0, panel: 3 }, // "Lastly, I wanted to talk a little bit about my heritage"
+      { at: 229.5, panel: 3, image: 0 }, // "Winnipeg, which is in Manitoba"
+      { at: 235.6, panel: 3, image: 1 }, // "he decided to move to Vancouver"
+      { at: 254.3, panel: 4 }, // "So yeah, I hope you learned something"
+    ],
+  },
   slides: [
     {
       heading: 'Poppy Culture',
