@@ -17,12 +17,36 @@ import heronStanleyParkImg from './heron-over-stanley-park.webp'
 import loonAndChickImg from './loon-and-chick.webp'
 import loonOnLakeImg from './loon-on-lake.webp'
 import snowyOwlLandingImg from './snowy-owl-landing.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'birds',
   date: '2026-08-10',
   title: 'Birds: Loonie Tunes',
   topic: 'wildlife',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 22.1, panel: 1, image: 0 }, // "First of all, loons"
+      { at: 78.6, panel: 1, image: 1 }, // "little loon ducklings or loonlings"
+      { at: 85.9, panel: 1, image: 2 }, // "Next up we got snowy owls"
+      { at: 111.0, panel: 1, image: 3 }, // "Next up we got eagles"
+      { at: 130.2, panel: 1, image: 5 }, // "shed a feather to be able to give a feather"
+      { at: 171.8, panel: 2 }, // "Next up oh my god geese are horrible"
+      { at: 188.4, panel: 2, image: 5 }, // "They hiss at you"
+      { at: 210.1, panel: 2, image: 0 }, // "you go around the seawall"
+      { at: 228.8, panel: 2, image: 2 }, // "not feeding them like I am in this picture"
+      { at: 234.3, panel: 2 }, // "but they are a symbol of Canada"
+      { at: 247.2, panel: 3 }, // "next up we have some of the … lesser interesting ones"
+      { at: 258.4, panel: 3, image: 0 }, // "Crows often commute in thousands"
+      { at: 288.5, panel: 3, image: 1 }, // "Canuck the Crow"
+      { at: 326.4, panel: 3, image: 2 }, // "Next up we got herons in Stanley Park"
+      { at: 340.8, panel: 3, image: 3 }, // "a heron nest"
+      { at: 369.8, panel: 3, image: 4 }, // "Lastly I want to talk about seagulls"
+      { at: 378.8, panel: 3, image: 5 }, // "This coastal bird is called a glaucous-winged gull"
+      { at: 404.7, panel: 4 }, // "Thank you very much guys"
+    ],
+  },
   slides: [
     {
       heading: 'Loonies, lemmings, and eagle feathers',

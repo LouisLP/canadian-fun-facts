@@ -10,6 +10,7 @@ import mcintoshAppleImg from './mcintosh-apple.webp'
 import naismithImg from './naismith.webp'
 import pacemakerImg from './pacemaker.webp'
 import poutineImg from './poutine.webp'
+import voiceover from './voiceover.m4a'
 import zipperImg from './zipper.webp'
 
 export default defineSet({
@@ -17,6 +18,28 @@ export default defineSet({
   date: '2025-10-06',
   title: 'Inventions: You\'re Welcome, World',
   topic: 'inventions',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 15.7, panel: 1 }, // "First of all, some foods"
+      { at: 37.1, panel: 1, image: 0 }, // "Hawaiian pizza"
+      { at: 53.3, panel: 1, image: 1 }, // "Next up, sushi"
+      { at: 82.5, panel: 1 }, // "I don't have a picture for it here … London Fog"
+      { at: 118.6, panel: 1, image: 2 }, // "Next up … poutine"
+      { at: 162.6, panel: 1, image: 3 }, // "Next up, apples"
+      { at: 188.9, panel: 2, image: 0 }, // "Next up, the telephone"
+      { at: 202.3, panel: 2, image: 1 }, // "the zipper is Canadian"
+      { at: 205.3, panel: 2, image: 2 }, // "the first voice transmission via radio"
+      { at: 215.6, panel: 2, image: 3 }, // "the BlackBerry"
+      { at: 221.4, panel: 2 }, // "we also created some other technological things"
+      { at: 233.7, panel: 3 }, // "Next up, some more very important ones"
+      { at: 237.0, panel: 3, image: 0 }, // "Insulin"
+      { at: 264.3, panel: 3, image: 1 }, // "The first forensic science lab"
+      { at: 278.5, panel: 3, image: 2 }, // "basketball was invented in Canada"
+      { at: 300.6, panel: 3, image: 3 }, // "the first artificial pacemaker"
+      { at: 314.7, panel: 4 }, // "Thank you very much, guys"
+    ],
+  },
   slides: [
     {
       heading: 'Invented it, ate it',
