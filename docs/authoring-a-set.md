@@ -215,6 +215,5 @@ The set then appears on the hub (newest-first) and at `/<slug>`.
 ## Date / cadence decision
 
 Cadence going forward is **one set per week**, `date` = the Monday it publishes, folder
-named `YYYY-MM-DD-<slug>`. `slug` (not date) is the permalink identity. A set tied to a specific day (Remembrance Day) can
-opt out: add its slug to `OFF_CADENCE_SLUGS` in `scripts/check-sets.ts`. `pnpm new-set`
+named `YYYY-MM-DD-<slug>`. `slug` (not date) is the permalink identity. `pnpm new-set`
 picks the next Monday with no set on it and no other backlog note targeting it.

@@ -11,7 +11,7 @@ import winnipegImg from './winnipeg-skyline.webp'
 
 export default defineSet({
   slug: 'canada-at-war',
-  date: '2026-11-11',
+  date: '2026-11-16',
   title: 'Lest We Forget',
   topic: 'history',
   slides: [
