@@ -26,6 +26,10 @@ const SETS_DIR = path.join(ROOT, SETS_PATH)
 const MAX_FACT_WORDS = 25
 const MAX_FACT_BOLDS = 2
 const MONDAY = 1
+// Sets pinned to a date that matters more than the weekly cadence.
+const OFF_CADENCE_SLUGS = new Set([
+  'canada-at-war', // Remembrance Day, 11 November
+])
 
 const FOLDER_PATTERN = /^(\d{4}-\d{2}-\d{2})-.+$/
 const EM_DASH = '—'
@@ -145,7 +149,7 @@ async function checkSet({ folder, set }: LoadedSet): Promise<string[]> {
   const day = new Date(`${set.date}T12:00:00Z`)
   if (Number.isNaN(day.getTime()))
     problems.push(`date "${set.date}" is not a real date`)
-  else if (day.getUTCDay() !== MONDAY)
+  else if (day.getUTCDay() !== MONDAY && !OFF_CADENCE_SLUGS.has(set.slug))
     problems.push(`date ${set.date} is not a Monday`)
 
   for (const problem of checkProse(set.title))
