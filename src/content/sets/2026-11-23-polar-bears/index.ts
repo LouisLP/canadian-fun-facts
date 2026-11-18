@@ -1,10 +1,13 @@
 import { commonsCredit, defineSet, webCredit } from '../../schema'
 import bearCrossingSignImg from './bear-crossing-sign.webp'
 import bearHelicopterLiftImg from './bear-helicopter-lift.webp'
+import bearLookingUpImg from './bear-looking-up.webp'
+import bearPeekingOverBuggyImg from './bear-peeking-over-buggy.webp'
 import bearUnderTundraBuggyImg from './bear-under-tundra-buggy.webp'
 import bearsSparringImg from './bears-sparring.webp'
 import motherAndCubsWalkingImg from './mother-and-cubs-walking.webp'
 import motherAndCubsImg from './mother-and-cubs.webp'
+import polarBearCloseUpImg from './polar-bear-close-up.webp'
 import polarBearJailImg from './polar-bear-jail.webp'
 
 export default defineSet({
@@ -12,6 +15,9 @@ export default defineSet({
   date: '2026-11-23',
   title: 'Polar Bears: Ice to Meet You',
   topic: 'wildlife',
+  // Last one sits on top of the title-panel fan. Credits: Dangerous Business (first two),
+  // Ansgar Walk on Wikimedia Commons, CC BY 2.5 (close-up).
+  covers: [bearLookingUpImg, bearPeekingOverBuggyImg, polarBearCloseUpImg],
   slides: [
     {
       heading: 'Bear Market',

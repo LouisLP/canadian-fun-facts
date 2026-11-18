@@ -58,9 +58,11 @@ day on land.
 All from the web; the inbox was empty.
 
 - Dangerous Business (travel blog, Churchill trip): bears sparring, mother and cubs walking,
-  bear under a Tundra Buggy, bear-crossing sign.
+  bear under a Tundra Buggy, bear-crossing sign, and two cover shots (bear looking up, bear
+  peeking over a buggy).
 - Churchill Polar Bears blog: helicopter hooking up a netted bear.
-- Wikimedia Commons: mother with cubs (Ansgar Walk, Wapusk NP), jail (Emma, Flickr).
+- Wikimedia Commons: mother with cubs and the close-up cover face (Ansgar Walk, Wapusk NP),
+  jail (Emma, Flickr).
 - Left out: portrait shots that cropped badly (bear at a buggy window, Polar Bear Alert
   sign, a bear dangling under a helicopter), Sherry Ott's Churchill Halloween and town shots
   (watermarked), the CBC and CTV news photos (too small or off-subject).
