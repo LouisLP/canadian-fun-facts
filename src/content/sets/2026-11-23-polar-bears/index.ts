@@ -9,12 +9,27 @@ import motherAndCubsWalkingImg from './mother-and-cubs-walking.webp'
 import motherAndCubsImg from './mother-and-cubs.webp'
 import polarBearCloseUpImg from './polar-bear-close-up.webp'
 import polarBearJailImg from './polar-bear-jail.webp'
+import voiceover from './voiceover.m4a'
 
 export default defineSet({
   slug: 'polar-bears',
   date: '2026-11-23',
   title: 'Polar Bears: Ice to Meet You',
   topic: 'wildlife',
+  voiceover: {
+    src: voiceover,
+    cues: [
+      { at: 7.8, panel: 1 }, // "Typically when you hear about bears"
+      { at: 56.1, panel: 1, image: 0 }, // "polar bear cubs are typically born in little dens"
+      { at: 74.9, panel: 2 }, // "the polar bear capital of the world … Churchill"
+      { at: 112.1, panel: 2, image: 1 }, // "big trucks called tundra buggies"
+      { at: 130.9, panel: 2 }, // "Don't know how I feel about the whole polar bear watching"
+      { at: 140.5, panel: 3 }, // "Another fun fact is that in the city of Churchill"
+      { at: 184.8, panel: 3, image: 1 }, // "polar bear jail"
+      { at: 204.5, panel: 3, image: 2 }, // "They get airlifted out"
+      { at: 213.9, panel: 4 }, // "But yeah. Thanks very much guys"
+    ],
+  },
   // Last one sits on top of the title-panel fan. Credits: Dangerous Business (first two),
   // Ansgar Walk on Wikimedia Commons, CC BY 2.5 (close-up).
   covers: [bearLookingUpImg, bearPeekingOverBuggyImg, polarBearCloseUpImg],
