@@ -6,10 +6,10 @@ import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
 import BrandMark from '../components/BrandMark.vue'
 import BadgeWall from '../components/hub/BadgeWall.vue'
-import MidiPlayer from '../components/hub/MidiPlayer.vue'
 import NewsTicker from '../components/hub/NewsTicker.vue'
 import SetCard from '../components/hub/SetCard.vue'
 import TopicFilter from '../components/hub/TopicFilter.vue'
+import PopupDesktop from '../components/popups/PopupDesktop.vue'
 import { useMapleCursor } from '../composables/useMapleCursor'
 import { ALL_SETS } from '../content/sets'
 import { retroGif } from '../lib/retro-gif'
@@ -45,10 +45,6 @@ useMapleCursor()
         your weekly dose of maple-flavoured knowledge
       </p>
     </header>
-
-    <div class="player-row">
-      <MidiPlayer />
-    </div>
 
     <TopicFilter v-model="activeTopic" />
     <NewsTicker />
@@ -88,6 +84,8 @@ useMapleCursor()
       </p>
       <p>~*~ made with zero design skill (on purpose) ~*~</p>
     </footer>
+
+    <PopupDesktop />
   </div>
 </template>
 
@@ -129,12 +127,6 @@ useMapleCursor()
 
 .mirrored {
   transform: scaleX(-1);
-}
-
-.player-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--space-lg);
 }
 
 .tagline {

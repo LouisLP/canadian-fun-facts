@@ -24,6 +24,7 @@
   --puck-050: #f4f4f4;
   --puck-100: #eeeeee;
   --puck-200: #e0e0e0;
+  --puck-250: #c0c0c0; /* the one true Windows 98 grey */
   --puck-300: #cccccc;
   --puck-400: #999999;
   --puck-500: #555555;
@@ -41,7 +42,9 @@
   /* Blue ramp — meltwater to the deep end of the lake. */
   --glacier-300: #3db9ff;
   --glacier-500: #4d7bff;
+  --glacier-600: #1084d0;
   --glacier-800: #003399;
+  --glacier-900: #000080;
 
   /* Warm ramp — butter tart filling through to podium gold. */
   --butter-tart-050: #fffbe6;
@@ -186,7 +189,6 @@
   --shadow-wordart-halo: 0 0 0.5em var(--scrim-heavy);
   --shadow-photo: 6px 6px 0 var(--scrim-soft);
   --shadow-photo-lift: 10px 10px 0 var(--scrim-medium);
-  --shadow-collage: 0 1vmin 2.4vmin rgb(0 0 0 / 55%);
 
   /* Interaction — a hovered thing lifts off the page and drops a hard shadow
      down-right; a pressed thing goes back down into the hole it came from.
@@ -215,8 +217,6 @@
 
   /* Motion — stepped and jittery, not smooth and tasteful. */
   --motion-blink: 0.9s;
-  --motion-sway: 1600ms;
-  --motion-sway-offset: -800ms;
 
   /* Retro furniture — the hub's ticker, MIDI player and 88×31 badge wall. */
   --ink-ticker: var(--ink-heading);
@@ -245,13 +245,36 @@
      the hub, where useMapleCursor turns it into the gold leaf (base.css). */
   --cursor-pointer: pointer;
 
+  /* Popup windows — the hub's gutters, done as a 1998 desktop. The bevels are
+     the Windows 98 recipe: two rings of light top-left, two of shade
+     bottom-right (sunken flips them). */
+  --surface-window: var(--puck-250);
+  --surface-titlebar: linear-gradient(90deg, var(--glacier-900), var(--glacier-600));
+  --surface-titlebar-idle: linear-gradient(90deg, var(--puck-500), var(--puck-400));
+  --ink-titlebar: var(--puck-000);
+  --bevel-raised:
+    inset -1px -1px var(--puck-950), inset 1px 1px var(--puck-000), inset -2px -2px var(--puck-500),
+    inset 2px 2px var(--puck-200);
+  --bevel-sunken:
+    inset -1px -1px var(--puck-000), inset 1px 1px var(--puck-500), inset -2px -2px var(--puck-200),
+    inset 2px 2px var(--puck-950);
+  --shadow-window: 4px 4px 0 var(--scrim-medium);
+  /* The title bars and buttons speak Windows; what's inside stays Comic Sans. */
+  --font-system: Tahoma, 'MS Sans Serif', Geneva, Verdana, sans-serif;
+  --text-system: 12px;
+  --surface-ad: var(--butter-tart-400);
+  --ink-ad: var(--maple-500);
+  --surface-paper: var(--puck-000);
+  --motion-popup: 220ms;
+
   /* Layout */
   --layout-hub-width: 46rem;
-  --layout-collage-inset: 5%;
 
   /* Layers */
   --layer-behind: -1;
   --layer-raised: 1;
+  /* Popup windows stack from here up, one step per window. */
+  --layer-popup: 100;
   --layer-overlay: 1000;
 }
 

@@ -1,4 +1,4 @@
-<!-- The banner's background-music deck, minus the autoplay: o_canada.mid only
+<!-- The background-music deck, in its own popup window, minus the autoplay: o_canada.mid only
      plays when asked. A bevelled play key beside a little green LCD with a
      bouncing equaliser, the track name, a progress bar and the clock. -->
 <script setup lang="ts">
