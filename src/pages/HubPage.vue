@@ -44,8 +44,11 @@ useMapleCursor()
       <p class="tagline">
         your weekly dose of maple-flavoured knowledge
       </p>
-      <MidiPlayer class="banner-player" />
     </header>
+
+    <div class="player-row">
+      <MidiPlayer />
+    </div>
 
     <TopicFilter v-model="activeTopic" />
     <NewsTicker />
@@ -128,8 +131,10 @@ useMapleCursor()
   transform: scaleX(-1);
 }
 
-.banner-player {
-  margin-top: var(--space-md);
+.player-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
 }
 
 .tagline {
