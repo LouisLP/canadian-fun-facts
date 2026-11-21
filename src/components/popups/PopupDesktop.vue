@@ -49,7 +49,8 @@ function track(id: string, ref: Element | ComponentPublicInstance | null) {
 }
 
 function width(spec: PopupSpec): number {
-  return Math.max(0, Math.min(spec.width, viewport.width - 2 * GUTTER_MARGIN_PX))
+  const room = wide.value ? gutter.value + spec.reach - GUTTER_MARGIN_PX : viewport.width - 2 * GUTTER_MARGIN_PX
+  return Math.max(0, Math.min(spec.width, room))
 }
 
 /** Where a window opens: in its gutter, or docked bottom-right when there are none. */

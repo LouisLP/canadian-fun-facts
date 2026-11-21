@@ -3,8 +3,9 @@
  *
  * `top` is a fraction of the viewport height. `along` places the window
  * across its gutter: 0 hugs the screen edge, 1 pushes it as far toward the
- * centre as `reach` allows. `reach` is how many px a window may spill over
- * the feed. Popups pile on top of each other and the content on purpose;
+ * centre as `reach` allows. `reach` caps how many px a window may spill over
+ * the feed's edge; a window too wide for that narrows instead. Popups pile on
+ * top of each other and nudge into the content on purpose;
  * readers drag, minimise and close them out of the way. Later entries pop in
  * later and land on top, so the ad goes last.
  */
@@ -20,7 +21,7 @@ interface PopupBase {
   side: 'left' | 'right'
   top: number
   along: number
-  /** Preferred width in px; narrowed only to fit the screen. */
+  /** Preferred width in px; narrowed so it never spills more than `reach`. */
   width: number
   reach: number
 }
@@ -49,8 +50,8 @@ export const POPUPS: PopupSpec[] = [
     side: 'left',
     top: 0.2,
     along: 0.2,
-    width: 340,
-    reach: 40,
+    width: 400,
+    reach: 30,
     photos: ['vancouver', 'tofino', 'vancouver-english-bay', 'musqueam-lookout', 'totem-poles', 'olympic-national-park', 'kayak', 'arcteryx-hiker'],
   },
   {
@@ -61,8 +62,8 @@ export const POPUPS: PopupSpec[] = [
     side: 'right',
     top: 0.24,
     along: 0.6,
-    width: 350,
-    reach: 60,
+    width: 410,
+    reach: 30,
     photos: ['poutine', 'tim-hortons', 'beer', 'loonie', 'canadiana', 'lululemon', 'canada-map-puzzle'],
   },
   {
@@ -74,7 +75,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.46,
     along: 1,
     width: 300,
-    reach: 130,
+    reach: 50,
   },
   {
     id: 'alert',
@@ -85,7 +86,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.5,
     along: 1,
     width: 310,
-    reach: 170,
+    reach: 60,
   },
   {
     id: 'wild',
@@ -95,7 +96,7 @@ export const POPUPS: PopupSpec[] = [
     side: 'left',
     top: 0.64,
     along: 0.4,
-    width: 300,
+    width: 360,
     reach: 20,
     photos: ['moose', 'beaver', 'loon', 'canadian-goose', 'lake-louise', 'canada-map'],
   },
@@ -107,8 +108,8 @@ export const POPUPS: PopupSpec[] = [
     side: 'right',
     top: 0.68,
     along: 0.7,
-    width: 290,
-    reach: 50,
+    width: 350,
+    reach: 30,
     photos: ['wayne-gretzky', 'terry-fox', 'chris-hadfield', 'hockey', 'hockey-player', 'toronto', 'quebec', 'quebec-landscape', 'quebec-flag'],
   },
   {
@@ -120,7 +121,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.06,
     along: 1,
     width: 320,
-    reach: 150,
+    reach: 60,
   },
 ]
 
