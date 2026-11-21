@@ -75,7 +75,7 @@ body::before {
 
 /* The hub's cursor (useHockeyCursor): a pixel hockey stick, wooden shaft and
    white-taped blade, that goes red-taped with a sparkle over anything
-   clickable. Hand-pixelled on a 16px grid and drawn at 2x so the pixels stay
+   clickable. Hand-pixelled on a 23px grid and drawn at 2x so the pixels stay
    chunky. The hotspot is the butt end of the knob. Plain PNGs first; crisp
    2x art where image-set() works here. */
 html.hockey-cursor {
