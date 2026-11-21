@@ -1,6 +1,7 @@
 <!-- The hub's gutters as a 1998 desktop: popup windows (photo viewers, an ad,
-     an alert, a notepad, the MIDI player) that pop in one by one and can be
-     dragged, minimised, closed and clicked to the front. Where the gutters are
+     an alert, a notepad, the MIDI player) that pop in one by one, pile over
+     each other and the feed's edges, and can be dragged, minimised, closed
+     and clicked to the front. Where the gutters are
      too narrow, only the MIDI player shows, minimised in the bottom corner.
      Closed windows stay closed until the page reloads, like real popups. -->
 <script setup lang="ts">
@@ -48,8 +49,7 @@ function track(id: string, ref: Element | ComponentPublicInstance | null) {
 }
 
 function width(spec: PopupSpec): number {
-  const room = wide.value ? gutter.value : viewport.width
-  return Math.max(0, Math.min(spec.width, room - 2 * GUTTER_MARGIN_PX))
+  return Math.max(0, Math.min(spec.width, viewport.width - 2 * GUTTER_MARGIN_PX))
 }
 
 /** Where a window opens: in its gutter, or docked bottom-right when there are none. */
@@ -57,7 +57,8 @@ function home(spec: PopupSpec): { x: number, y: number } {
   const w = width(spec)
   if (!wide.value)
     return { x: viewport.width - w - GUTTER_MARGIN_PX, y: viewport.height - TITLEBAR_PX - GUTTER_MARGIN_PX }
-  const slack = Math.max(0, gutter.value - 2 * GUTTER_MARGIN_PX - w)
+  // From the screen edge to as far over the feed as the window may reach.
+  const slack = Math.max(0, gutter.value + spec.reach - GUTTER_MARGIN_PX - w)
   const x = spec.side === 'left'
     ? GUTTER_MARGIN_PX + spec.along * slack
     : viewport.width - GUTTER_MARGIN_PX - w - spec.along * slack

@@ -1,10 +1,12 @@
 /**
- * The popup windows that fill the hub's gutters, and where each first opens.
+ * The popup windows that crowd the hub's gutters, and where each first opens.
  *
  * `top` is a fraction of the viewport height. `along` places the window
- * across its gutter: 0 hugs the screen edge, 1 hugs the feed. Windows may
- * overlap each other (that's the look) but start clear of the feed when the
- * gutter is wide enough. Readers can drag, minimise and close them after that.
+ * across its gutter: 0 hugs the screen edge, 1 pushes it as far toward the
+ * centre as `reach` allows. `reach` is how many px a window may spill over
+ * the feed. Popups pile on top of each other and the content on purpose;
+ * readers drag, minimise and close them out of the way. Later entries pop in
+ * later and land on top, so the ad goes last.
  */
 
 /** Basenames under `public/app-background/`, without the `.webp`. */
@@ -18,8 +20,9 @@ interface PopupBase {
   side: 'left' | 'right'
   top: number
   along: number
-  /** Preferred width in px; narrowed to fit the gutter. */
+  /** Preferred width in px; narrowed only to fit the screen. */
   width: number
+  reach: number
 }
 
 export type PopupSpec
@@ -35,17 +38,8 @@ export const POPUPS: PopupSpec[] = [
     side: 'left',
     top: 0.03,
     along: 0.5,
-    width: 300,
-  },
-  {
-    id: 'ad',
-    kind: 'ad',
-    title: '!!! YOU HAVE WON !!!',
-    icon: 'twemoji:wrapped-gift',
-    side: 'right',
-    top: 0.04,
-    along: 0.4,
-    width: 260,
+    width: 320,
+    reach: 0,
   },
   {
     id: 'west',
@@ -53,9 +47,10 @@ export const POPUPS: PopupSpec[] = [
     title: 'west_coast.jpg - Image Viewer',
     icon: 'twemoji:framed-picture',
     side: 'left',
-    top: 0.22,
-    along: 0.15,
-    width: 280,
+    top: 0.2,
+    along: 0.2,
+    width: 340,
+    reach: 40,
     photos: ['vancouver', 'tofino', 'vancouver-english-bay', 'musqueam-lookout', 'totem-poles', 'olympic-national-park', 'kayak', 'arcteryx-hiker'],
   },
   {
@@ -64,9 +59,10 @@ export const POPUPS: PopupSpec[] = [
     title: 'eh_snacks.jpg - Image Viewer',
     icon: 'twemoji:framed-picture',
     side: 'right',
-    top: 0.3,
-    along: 0.75,
-    width: 290,
+    top: 0.24,
+    along: 0.6,
+    width: 350,
+    reach: 60,
     photos: ['poutine', 'tim-hortons', 'beer', 'loonie', 'canadiana', 'lululemon', 'canada-map-puzzle'],
   },
   {
@@ -75,9 +71,10 @@ export const POPUPS: PopupSpec[] = [
     title: 'fun_fact.txt - Notepad',
     icon: 'twemoji:spiral-notepad',
     side: 'left',
-    top: 0.5,
-    along: 0.7,
-    width: 250,
+    top: 0.46,
+    along: 1,
+    width: 300,
+    reach: 130,
   },
   {
     id: 'alert',
@@ -85,9 +82,10 @@ export const POPUPS: PopupSpec[] = [
     title: 'Warning',
     icon: 'twemoji:warning',
     side: 'right',
-    top: 0.58,
-    along: 0.2,
-    width: 260,
+    top: 0.5,
+    along: 1,
+    width: 310,
+    reach: 170,
   },
   {
     id: 'wild',
@@ -95,9 +93,10 @@ export const POPUPS: PopupSpec[] = [
     title: 'wildlife.jpg - Image Viewer',
     icon: 'twemoji:framed-picture',
     side: 'left',
-    top: 0.7,
-    along: 0.3,
-    width: 230,
+    top: 0.64,
+    along: 0.4,
+    width: 300,
+    reach: 20,
     photos: ['moose', 'beaver', 'loon', 'canadian-goose', 'lake-louise', 'canada-map'],
   },
   {
@@ -106,14 +105,26 @@ export const POPUPS: PopupSpec[] = [
     title: 'legends.jpg - Image Viewer',
     icon: 'twemoji:framed-picture',
     side: 'right',
-    top: 0.76,
-    along: 0.6,
-    width: 220,
+    top: 0.68,
+    along: 0.7,
+    width: 290,
+    reach: 50,
     photos: ['wayne-gretzky', 'terry-fox', 'chris-hadfield', 'hockey', 'hockey-player', 'toronto', 'quebec', 'quebec-landscape', 'quebec-flag'],
+  },
+  {
+    id: 'ad',
+    kind: 'ad',
+    title: 'Congratulations!!',
+    icon: 'twemoji:wrapped-gift',
+    side: 'right',
+    top: 0.06,
+    along: 1,
+    width: 320,
+    reach: 150,
   },
 ]
 
 /** Narrower gutters than this get only the music player, docked minimised. */
 export const MIN_GUTTER_PX = 220
-/** The gap a window keeps from the screen edge and the feed. */
+/** The gap a window keeps from the screen edge. */
 export const GUTTER_MARGIN_PX = 8
