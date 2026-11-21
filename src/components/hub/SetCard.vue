@@ -5,6 +5,7 @@ import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 import { slideHeading } from '../../content/schema'
 import { TOPICS } from '../../content/topics'
+import { retroGif } from '../../lib/retro-gif'
 import TopicBadge from './TopicBadge.vue'
 
 const props = defineProps<{
@@ -19,7 +20,10 @@ const slideCount = computed(() => props.set.slides.length)
 <template>
   <article class="set-block" :style="{ borderColor: TOPICS[set.topic].color }">
     <div class="set-header">
-      <span v-if="isNewest" class="new-badge">NEW!!</span>
+      <template v-if="isNewest">
+        <img :src="retroGif('new-star')" alt="" width="40" height="30">
+        <span class="new-badge">NEW!!</span>
+      </template>
       <h2>{{ set.title }}</h2>
       <TopicBadge :topic="set.topic" />
     </div>

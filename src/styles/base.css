@@ -54,3 +54,21 @@ body::before {
     background-size: 260px 260px;
   }
 }
+
+/* The hub's cursor trail (useCursorTrail). Global because the leaves are
+   appended straight to <body>, outside any component. */
+.cursor-leaf {
+  position: fixed;
+  z-index: var(--layer-overlay);
+  pointer-events: none;
+  font-size: var(--text-sm);
+  translate: -50% -50%;
+  animation: cursor-leaf-fall var(--motion-leaf-fall) ease-in forwards;
+}
+
+@keyframes cursor-leaf-fall {
+  to {
+    transform: translate(var(--drift), 60px) rotate(180deg);
+    opacity: 0;
+  }
+}
