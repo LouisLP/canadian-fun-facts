@@ -44,10 +44,11 @@ useMapleCursor()
       <p class="tagline">
         your weekly dose of maple-flavoured knowledge
       </p>
+      <MidiPlayer class="banner-player" />
     </header>
 
-    <NewsTicker />
     <TopicFilter v-model="activeTopic" />
+    <NewsTicker />
 
     <main>
       <SetCard
@@ -68,7 +69,6 @@ useMapleCursor()
         <img :src="retroGif('under-construction')" alt="" width="96" height="66">
         <span>this site is <em>always</em> under construction!!</span>
       </p>
-      <MidiPlayer />
       <p>
         <a class="rss-link" :href="feedUrl">
           <Icon icon="lucide:rss" class="icon" /> subscribe by RSS
@@ -126,6 +126,10 @@ useMapleCursor()
 
 .mirrored {
   transform: scaleX(-1);
+}
+
+.banner-player {
+  margin-top: var(--space-md);
 }
 
 .tagline {

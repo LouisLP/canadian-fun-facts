@@ -29,12 +29,10 @@ const text = newest
 <style scoped>
 .ticker {
   overflow: hidden;
-  background: var(--surface-ticker);
   color: var(--ink-ticker);
-  border: var(--border-chrome);
   font-weight: bold;
   padding: var(--space-xs) 0;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .track {

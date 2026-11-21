@@ -46,16 +46,26 @@ function schedule(ctx: AudioContext, out: AudioNode, notes: readonly Note[], voi
 
 const endStep = Math.max(...Object.values(O_CANADA).flat().map(([start, length]) => start + length))
 
+/** The song's length in seconds. */
+export const O_CANADA_SECONDS = endStep * STEP_S
+
+const TICK_MS = 250
+
 export function useOCanada() {
   const playing = ref(false)
+  /** Seconds into the song; 0 when stopped. */
+  const elapsed = ref(0)
   let ctx: AudioContext | undefined
   let timer: ReturnType<typeof setTimeout> | undefined
+  let ticker: ReturnType<typeof setInterval> | undefined
 
   function stop() {
     clearTimeout(timer)
+    clearInterval(ticker)
     void ctx?.close()
     ctx = undefined
     playing.value = false
+    elapsed.value = 0
   }
 
   function play() {
@@ -65,12 +75,14 @@ export function useOCanada() {
     for (const part of Object.keys(O_CANADA) as (keyof typeof O_CANADA)[])
       schedule(ctx, ctx.destination, O_CANADA[part], VOICES[part], t0)
     playing.value = true
-    timer = setTimeout(stop, (LEAD_IN_S + endStep * STEP_S) * 1000 + 500)
+    const context = ctx
+    ticker = setInterval(() => (elapsed.value = Math.max(0, context.currentTime - t0)), TICK_MS)
+    timer = setTimeout(stop, (LEAD_IN_S + O_CANADA_SECONDS) * 1000 + 500)
   }
 
   const toggle = () => (playing.value ? stop() : play())
 
   onBeforeUnmount(stop)
 
-  return { playing: readonly(playing), toggle }
+  return { playing: readonly(playing), elapsed: readonly(elapsed), toggle }
 }

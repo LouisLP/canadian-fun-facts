@@ -219,8 +219,16 @@
   --motion-sway-offset: -800ms;
 
   /* Retro furniture — the hub's ticker, MIDI player and 88×31 badge wall. */
-  --surface-ticker: var(--glacier-800);
-  --ink-ticker: var(--butter-tart-400);
+  --ink-ticker: var(--ink-heading);
+  /* The MIDI player's display: a little LCD set into a grey plastic deck. */
+  --surface-deck: linear-gradient(180deg, var(--puck-100), var(--puck-300));
+  --border-deck: var(--border-hairline) outset var(--puck-300);
+  --surface-lcd: var(--puck-950);
+  --ink-lcd: var(--jersey-300);
+  --ink-lcd-dim: var(--jersey-900);
+  --border-lcd: 2px inset var(--puck-500);
+  --font-lcd: 'Courier New', Courier, monospace;
+  --motion-eq: 450ms;
   --border-badge-88: 1px solid var(--puck-999);
   --size-badge-88: 88px 31px;
   --surface-badge-syrup: var(--maple-600);
