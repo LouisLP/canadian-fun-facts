@@ -7,7 +7,8 @@ Candidates are grouped by [topic](../../src/content/topics.ts), each with three 
 candidate slide subjects. Image availability is no longer a scheduling constraint: Louis
 sources pictures himself and drops them in `inbox/<slug>/`, so subjects with no free
 imagery (film stills, celebrities, press photos) are fair game. Entries marked
-_(Vancouver)_ have an obvious hometown hook.
+_(Vancouver)_ have an obvious hometown hook; _(personal hook)_ means
+`docs/personal-hooks.md` has a match.
 
 Promote an entry by writing it up as its own `docs/backlog/<slug>.md` note, then follow the
 [recipe](../authoring-a-set.md). Delete the entry from this file once its set publishes.
@@ -16,19 +17,34 @@ Already published, do not re-propose: beavers, inventions, maple, filming & cele
 brands, language & slang, the cold, Indigenous peoples, travel, sports, weird laws,
 mythical creatures, industry & tech, Canada vs Germany, heroes, music, provinces &
 territories, birds, multiculturalism, weird place names, money, lakes, drugs & alcohol,
-Vancouver, trivia, the snack aisle.
+Vancouver, trivia, the snack aisle, Canada at war (Lest We Forget), polar bears.
 
 Already covered inside a published set, so dropped from here: the Great Lakes (lakes),
 aurora borealis and the Rideau Canal skateway (the cold), astronauts and Nobel laureates
-(heroes), poutine and the Caesar (inventions, drugs & alcohol).
+(heroes), poutine and the Caesar (inventions, drugs & alcohol), Montreal bagels and
+Fairmount (multiculturalism), the Kermode spirit bear (Indigenous peoples), insulin's $1
+patent (inventions, heroes, money), Gassy Jack and Vancouver-vs-Halifax rainfall
+(Vancouver), the double-double (language, trivia), lacrosse as national summer sport
+(sports), Bonhomme (the cold), time zones and Newfoundland's half hour (travel).
+
+## Calendar hooks
+
+Sets go out on Mondays. Dates worth aiming at:
+
+- **Late Oct – late Nov**: polar bear season in Churchill, bears waiting for Hudson Bay to
+  freeze.
+- **Mid-Nov – early Dec**: Nova Scotia cuts and ships the Boston Christmas tree; it's lit on
+  Boston Common in early December. **6 Dec**: Halifax Explosion anniversary.
+- **December**: Christmas in Canada, game night, snow records.
+- **Jan – Feb**: Winterlude, Quebec Winter Carnival, ice storms (the 1998 one hit 5–10 Jan).
+  **15 Feb**: Flag Day.
+- **Mid-Nov**: Grey Cup Sunday (15 Nov in 2026, so next aim is November 2027).
+- **1 Jul / summer**: Canada Day, Stampede (early July), salmon runs (Adams River in
+  October).
 
 ---
 
 ## Wildlife
-
-**Polar bears** — Churchill's tundra buggies; the bear jail that holds problem bears before
-release; how sea-ice loss shifts the hunting season. (Provinces set mentions Churchill in
-one fact; plenty left.)
 
 **Whales of three oceans** — the St. Lawrence beluga population stranded from the Arctic;
 Bay of Fundy right whales and the shipping-lane speed limits; resident orca pods off
@@ -37,9 +53,9 @@ Vancouver Island. _(Vancouver)_
 **Moose** — taller at the shoulder than most horses; moose–vehicle collisions and
 Newfoundland's introduced population; antlers shed and regrown every single year.
 
-**Bears, not just polar** — the Kermode spirit bear, a white black bear and BC's official
-mammal; Winnie-the-Pooh named after Winnipeg, a bear bought in White River, Ontario; Banff's
-wildlife overpasses built for grizzlies.
+**Bears, not just polar** — Winnie-the-Pooh named after Winnipeg, a bear bought in White
+River, Ontario; Banff's wildlife overpasses built for grizzlies; the North Shore black bears
+that raid garbage bins. _(Vancouver)_
 
 **Salmon** — five Pacific species and the Adams River sockeye run that peaks every four
 years; the 2019 Big Bar landslide that blocked the Fraser and the rescue that followed;
@@ -58,11 +74,12 @@ Nanaimo bars and their three-layer construction; the Beavertail.
 moratorium and the towns it emptied; PEI mussels and oyster farming.
 
 **Coffee and doughnuts** — Tim Hortons founded by an NHL defenceman; Roll Up the Rim; more
-doughnut shops per capita than anywhere; the "double-double" in the dictionary. (Language
-set mentions Tim's once.)
+doughnut shops per capita than anywhere. (Language and trivia sets already spent the
+double-double.)
 
-**Bagel wars** — Montreal's wood-fired, honey-water bagels; St-Viateur vs Fairmount; how they
-differ from New York's.
+**The Prairie table** — perogies from Ukrainian and Polish homesteaders and the giant
+perogy on a fork in Glendon, Alberta; Saskatoon berries; Manitoba's honey dill sauce.
+_(personal hook)_ (Multiculturalism has the Ukrainian-roots stat; stick to the food.)
 
 ## History
 
@@ -85,18 +102,18 @@ already staked.
 before the atomic bomb; the Christmas tree Nova Scotia still sends Boston every year in
 thanks; the train dispatcher who stayed at his post.
 
-**Canada at war** — Vimy Ridge; John McCrae's "In Flanders Fields" and the poppy; Juno
-Beach; the Canadian soldiers who liberated the Netherlands and the tulips Ottawa still
-gets for it.
-
 **Expo 67 and the Centennial** — Habitat 67; the Montreal Métro rushed open for it; the
 centennial projects every small town built (Alberta's UFO landing pad in St. Paul is one).
 
-**Vancouver, the early years** — Gassy Jack and the saloon that started Gastown; the Great
-Fire of 1886, weeks after incorporation; Expo 86. _(Vancouver)_
+**Vancouver, the early years** — the Great Fire of 1886, weeks after incorporation; the
+1907 anti-Asian riot and the Komagata Maru; Expo 86. _(Vancouver)_
+_(personal hook)_ (Gassy Jack is spent.)
 
 **The Underground Railroad** — the terminus in southern Ontario; Harriet Tubman's base in
 St. Catharines; the Chatham and Buxton settlements.
+
+**The Persons Case** — the Famous Five and the 1929 ruling that women were "persons" under
+the law; Agnes Macphail, the first woman MP; the senators who could not sit until then.
 
 ## Geography
 
@@ -136,16 +153,17 @@ the Prairies.
 **Heat and fire** — Lytton's 49.6 °C national record in 2021 and the fire that took the town
 the next day; the 2021 heat dome; the record 2023 wildfire season. _(Vancouver)_
 
-**The Wet Coast** — Vancouver's rain reputation versus its real numbers; Henderson Lake's
-national precipitation record; Prince Rupert as the rainiest city. _(Vancouver)_
+**The Wet Coast** — Henderson Lake's national precipitation record; Prince Rupert as the
+rainiest city; atmospheric rivers and the 2021 floods that cut Vancouver off by road.
+_(Vancouver)_ (Vancouver-vs-Halifax rainfall is spent.)
 
 **Chinooks** — the warm Prairie wind that can melt a winter in hours; the record
 temperature jumps in southern Alberta; the arch cloud over Calgary.
 
 ## Inventions
 
-**Medical breakthroughs** — insulin isolated in Toronto and the patent sold for a dollar;
-the pacemaker's Canadian prototype; the cobalt-60 cancer therapy unit.
+**Medical breakthroughs** — the pacemaker's Canadian prototype; the cobalt-60 cancer
+therapy unit; Norman Bethune's mobile blood bank. (Insulin is spent three times over.)
 
 **Communication** — the telephone's Brantford claim; the walkie-talkie; IMAX and its
 oversized film stock.
@@ -157,12 +175,17 @@ potato.
 making Canada the third nation with a satellite in orbit; the Avro Arrow's cancellation.
 
 **Game night** — Trivial Pursuit, dreamed up in Montreal in 1979; crokinole; Yahtzee's
-origin with a Canadian couple on their yacht; Balderdash.
+origin with a Canadian couple on their yacht; Balderdash. Good for December.
+
+**Winter machines** — Bombardier's snowmobile and the B7 snowcoach, built after roads kept
+him from getting his son to hospital; Arthur Sicard's snowblower, first sold to Montreal for its
+streets. (Brands mentions snowmobile suits only.)
 
 ## Culture
 
 **Québec** — language law and the sign rules; the two referendums and the 1995 margin;
-Carnaval and Bonhomme.
+Cirque du Soleil, started by street performers in Baie-Saint-Paul. _(personal hook)_
+(Bonhomme is spent.)
 
 **Screen** — the National Film Board's animation Oscars; the Vancouver and Toronto
 production booms; the CanCon quota that reshaped radio. (Check overlap with filming &
@@ -182,6 +205,10 @@ tours; why a democracy still has a monarch.
 
 **Christmas in Canada** — Santa's postal code H0H 0H0 and the volunteers who answer every
 letter; the Halifax tree for Boston; mummering in Newfoundland; réveillon and tourtière.
+
+**O Canada** — written in French in 1880 for a Saint-Jean-Baptiste banquet; the English
+words came in 1908 and the song only became official in 1980; the 2018 lyric change to
+"in all of us command".
 
 ## People
 
@@ -215,6 +242,9 @@ the Jamaican bobsled team; (Vancouver 2010 is in the sports set already).
 **The Stanley Cup** — each player's day with the Cup; the misspelled engravings; the
 Canadian-team drought since 1993; the Canucks' near-misses in 1994 and 2011. _(Vancouver)_
 
+**Hockey Night in Canada** — on the radio since 1931; the theme song that was sold to a rival
+network; Coach's Corner. _(Vancouver)_
+
 **Ski country** — Whistler Blackcomb's size; the Peak 2 Peak gondola; heli-skiing invented
 in BC; snowboarding's early Canadian Olympic gold and the drug-test drama. _(Vancouver)_
 
@@ -222,6 +252,10 @@ in BC; snowboarding's early Canadian Olympic gold and the drug-test drama. _(Van
 
 **National parks** — Banff created around a hot spring dispute; the park larger than
 Switzerland; Wood Buffalo's dark-sky preserve.
+
+**Winnipeg** — Slurpee capital of the world for two decades running; the Royal Canadian
+Mint plant that strikes coins for other countries; The Forks, a meeting place for 6,000
+years. _(personal hook)_
 
 **The road** — the Trans-Canada's length and its one-week driving reality; the Cabot Trail;
 the Dempster reaching the Arctic Ocean.
@@ -265,6 +299,9 @@ skating rink; the Sourtoe Cocktail in Dawson City.
 
 **Cold War Canada** — the Diefenbunker; the DEW Line radar stations across the Arctic;
 the Avro Arrow conspiracy theories; the fallout shelters under Ottawa.
+
+**Ghost towns** — Kitsault, a BC mining town built for 1,200 and emptied after 18 months;
+Val-Jalbert's preserved mill village in Québec; Barkerville's gold-rush main street.
 
 **Odd museums** — Torrington, Alberta's Gopher Hole Museum of stuffed gophers in costume;
 the Canadian Potato Museum in PEI; the Royal Tyrrell's dinosaurs in Drumheller.
