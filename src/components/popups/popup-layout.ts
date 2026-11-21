@@ -25,11 +25,13 @@ interface PopupBase {
   /** Preferred width in px; narrowed so it never spills more than `reach`. */
   width: number
   reach: number
+  /** Stays closed until something opens it (the lyrics wait for the song). */
+  startsClosed?: boolean
 }
 
 export type PopupSpec
   = | PopupBase & { kind: 'photos', photos: Photo[] }
-    | PopupBase & { kind: 'music' | 'ad' | 'alert' | 'fact' }
+    | PopupBase & { kind: 'music' | 'lyrics' | 'ad' | 'alert' | 'fact' }
 
 export const POPUPS: PopupSpec[] = [
   {
@@ -123,6 +125,18 @@ export const POPUPS: PopupSpec[] = [
     along: 0.45,
     width: 320,
     reach: 40,
+  },
+  {
+    id: 'lyrics',
+    kind: 'lyrics',
+    title: 'o_canada_lyrics.txt - Karaoke',
+    icon: 'twemoji:microphone',
+    side: 'left',
+    top: 0.14,
+    along: 0.5,
+    width: 330,
+    reach: 0,
+    startsClosed: true,
   },
 ]
 

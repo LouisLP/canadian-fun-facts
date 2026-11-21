@@ -146,7 +146,7 @@ const progress = computed(() => Math.min(1, elapsed.value / O_CANADA_SECONDS))
   background: currentColor;
   transform-origin: left;
   /* Matches useOCanada's clock tick, so the bar glides between updates. */
-  transition: transform 250ms linear;
+  transition: transform 100ms linear;
 }
 
 .clock {

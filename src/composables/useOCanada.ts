@@ -5,7 +5,11 @@ import { O_CANADA, O_CANADA_BPM, STEPS_PER_BEAT } from '../lib/o-canada'
 /**
  * Plays "O Canada" through Web Audio with bare oscillators, which is roughly
  * what a 1998 sound card's General MIDI did to it. Never autoplays: `toggle`
- * runs from a click. Stops on its own at the end, or when the caller unmounts.
+ * runs from a click. Stops on its own at the end, or when the player unmounts.
+ *
+ * There is one song playing at most, so the playback state is shared: the
+ * player owns it through `useOCanada`, and anything that follows along (the
+ * lyrics) reads `oCanadaPlayback`.
  */
 
 interface Voice { wave: OscillatorType, gain: number }
@@ -18,7 +22,8 @@ const VOICES: Record<keyof typeof O_CANADA, Voice> = {
   chords: { wave: 'sine', gain: 0.035 },
 }
 
-const STEP_S = 60 / O_CANADA_BPM / STEPS_PER_BEAT
+/** Seconds per step of the note data (a 32nd note). */
+export const STEP_S = 60 / O_CANADA_BPM / STEPS_PER_BEAT
 const ATTACK_S = 0.01
 const RELEASE_S = 0.04
 /** A gap before the first note, so it isn't clipped while the context wakes. */
@@ -49,40 +54,44 @@ const endStep = Math.max(...Object.values(O_CANADA).flat().map(([start, length])
 /** The song's length in seconds. */
 export const O_CANADA_SECONDS = endStep * STEP_S
 
-const TICK_MS = 250
+/** Often enough for the lyrics' sweep to look continuous. */
+export const TICK_MS = 100
 
+const playing = ref(false)
+/** Seconds into the song; 0 when stopped. */
+const elapsed = ref(0)
+let ctx: AudioContext | undefined
+let timer: ReturnType<typeof setTimeout> | undefined
+let ticker: ReturnType<typeof setInterval> | undefined
+
+/** Read-only view of the song, for anything that follows along. */
+export const oCanadaPlayback = { playing: readonly(playing), elapsed: readonly(elapsed) }
+
+function stop() {
+  clearTimeout(timer)
+  clearInterval(ticker)
+  void ctx?.close()
+  ctx = undefined
+  playing.value = false
+  elapsed.value = 0
+}
+
+function play() {
+  stop()
+  ctx = new AudioContext()
+  const t0 = ctx.currentTime + LEAD_IN_S
+  for (const part of Object.keys(O_CANADA) as (keyof typeof O_CANADA)[])
+    schedule(ctx, ctx.destination, O_CANADA[part], VOICES[part], t0)
+  playing.value = true
+  const context = ctx
+  ticker = setInterval(() => (elapsed.value = Math.max(0, context.currentTime - t0)), TICK_MS)
+  timer = setTimeout(stop, (LEAD_IN_S + O_CANADA_SECONDS) * 1000 + 500)
+}
+
+const toggle = () => (playing.value ? stop() : play())
+
+/** For the player itself: controls, and the song stops when it unmounts. */
 export function useOCanada() {
-  const playing = ref(false)
-  /** Seconds into the song; 0 when stopped. */
-  const elapsed = ref(0)
-  let ctx: AudioContext | undefined
-  let timer: ReturnType<typeof setTimeout> | undefined
-  let ticker: ReturnType<typeof setInterval> | undefined
-
-  function stop() {
-    clearTimeout(timer)
-    clearInterval(ticker)
-    void ctx?.close()
-    ctx = undefined
-    playing.value = false
-    elapsed.value = 0
-  }
-
-  function play() {
-    stop()
-    ctx = new AudioContext()
-    const t0 = ctx.currentTime + LEAD_IN_S
-    for (const part of Object.keys(O_CANADA) as (keyof typeof O_CANADA)[])
-      schedule(ctx, ctx.destination, O_CANADA[part], VOICES[part], t0)
-    playing.value = true
-    const context = ctx
-    ticker = setInterval(() => (elapsed.value = Math.max(0, context.currentTime - t0)), TICK_MS)
-    timer = setTimeout(stop, (LEAD_IN_S + O_CANADA_SECONDS) * 1000 + 500)
-  }
-
-  const toggle = () => (playing.value ? stop() : play())
-
   onBeforeUnmount(stop)
-
-  return { playing: readonly(playing), elapsed: readonly(elapsed), toggle }
+  return { ...oCanadaPlayback, toggle }
 }
