@@ -242,7 +242,7 @@
   --motion-beaver-rain: 4s;
 
   /* What a clickable thing shows under the mouse. A plain pointer, except on
-     the hub, where useMapleCursor turns it into the gold leaf (base.css). */
+     the hub, where useHockeyCursor turns it into the red-taped stick (base.css). */
   --cursor-pointer: pointer;
 
   /* Popup windows — the hub's gutters, done as a 1998 desktop. The bevels are

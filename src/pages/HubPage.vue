@@ -10,7 +10,7 @@ import NewsTicker from '../components/hub/NewsTicker.vue'
 import SetCard from '../components/hub/SetCard.vue'
 import TopicFilter from '../components/hub/TopicFilter.vue'
 import PopupDesktop from '../components/popups/PopupDesktop.vue'
-import { useMapleCursor } from '../composables/useMapleCursor'
+import { useHockeyCursor } from '../composables/useHockeyCursor'
 import { ALL_SETS } from '../content/sets'
 import { retroGif } from '../lib/retro-gif'
 
@@ -30,7 +30,7 @@ const feedUrl = `${import.meta.env.BASE_URL}feed.xml`
 const lastUpdated = ALL_SETS[0]?.date
 const thisYear = new Date().getFullYear()
 
-useMapleCursor()
+useHockeyCursor()
 </script>
 
 <template>

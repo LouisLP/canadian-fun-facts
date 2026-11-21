@@ -3,17 +3,18 @@ import { onBeforeUnmount, onMounted } from 'vue'
 const MIN_GAP_MS = 45
 const LEAVES = ['🍁', '🍂', '✨']
 
-/** On <html> while mounted; swaps the pointer for the maple leaf (base.css). */
-const CURSOR_CLASS = 'maple-cursor'
+/** On <html> while mounted; swaps the pointer for the hockey stick (base.css). */
+const CURSOR_CLASS = 'hockey-cursor'
 
 /**
- * The hub's mouse pointer while the calling component is mounted: a maple-leaf
- * cursor, gold over anything clickable, that sheds leaves as it moves. The
+ * The hub's mouse pointer while the calling component is mounted: a pixel
+ * hockey stick, red-taped over anything clickable, that sheds maple leaves as
+ * it moves. The
  * cursor shows for everyone; the falling leaves are mouse only and off for
  * reduced motion. Each falling leaf is a `.cursor-leaf` span on <body> that
  * removes itself when its fall ends.
  */
-export function useMapleCursor() {
+export function useHockeyCursor() {
   let last = 0
 
   function drop(event: PointerEvent) {

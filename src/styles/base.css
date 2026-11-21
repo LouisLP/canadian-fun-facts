@@ -73,28 +73,30 @@ body::before {
   }
 }
 
-/* The hub's maple-leaf cursor (useMapleCursor): red leaf by default, gold
-   leaf with a sparkle over anything clickable. Hand-pixelled on a 16px grid,
-   drawn at 2x so the pixels stay chunky. The hotspot is the leaf's top tip. Plain PNGs first; crisp 2x art where image-set() works here. */
-html.maple-cursor {
-  --cursor-pointer: url('/retro/cursor-leaf-pointer.png') 15 0, pointer;
+/* The hub's cursor (useHockeyCursor): a pixel hockey stick, wooden shaft and
+   white-taped blade, that goes red-taped with a sparkle over anything
+   clickable. Hand-pixelled on a 16px grid and drawn at 2x so the pixels stay
+   chunky. The hotspot is the butt end of the knob. Plain PNGs first; crisp
+   2x art where image-set() works here. */
+html.hockey-cursor {
+  --cursor-pointer: url('/retro/cursor-stick-pointer.png') 2 2, pointer;
 
   cursor:
-    url('/retro/cursor-leaf.png') 15 0,
+    url('/retro/cursor-stick.png') 2 2,
     auto;
 }
 
-@supports (cursor: image-set(url('/retro/cursor-leaf.png') 1x) 15 0, auto) {
-  html.maple-cursor {
+@supports (cursor: image-set(url('/retro/cursor-stick.png') 1x) 2 2, auto) {
+  html.hockey-cursor {
     --cursor-pointer:
-      image-set(url('/retro/cursor-leaf-pointer.png') 1x, url('/retro/cursor-leaf-pointer@2x.png') 2x) 15 0, pointer;
+      image-set(url('/retro/cursor-stick-pointer.png') 1x, url('/retro/cursor-stick-pointer@2x.png') 2x) 2 2, pointer;
 
     cursor:
-      image-set(url('/retro/cursor-leaf.png') 1x, url('/retro/cursor-leaf@2x.png') 2x) 15 0,
+      image-set(url('/retro/cursor-stick.png') 1x, url('/retro/cursor-stick@2x.png') 2x) 2 2,
       auto;
   }
 }
 
-html.maple-cursor :is(a, button, summary, label) {
+html.hockey-cursor :is(a, button, summary, label) {
   cursor: var(--cursor-pointer);
 }

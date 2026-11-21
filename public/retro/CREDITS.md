@@ -12,4 +12,4 @@ Animated GIFs from 1990s–2000s GeoCities pages, found through
 | `netscape-now.gif`       | geocities.com/Paris/Opera/3521/Link/netscape1.gif (2000)               |
 | `maple-leaf-spin.gif`    | geocities.com/aepibx/SpinningMaple.gif (2009)                          |
 
-The cursors (`cursor-leaf*.png`) are pixel art hand-drawn for this site.
+The cursors (`cursor-stick*.png`) are pixel art hand-drawn for this site.
