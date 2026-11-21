@@ -35,7 +35,7 @@ const formatDate = (iso: string) => dateFormat.format(new Date(iso))
       fetching the chatter...
     </p>
     <p v-else-if="comments.length === 0 && !commentsError" class="note">
-      nobody's signed the guestbook yet, be the first eh?
+      nobody's said anything yet, be the first eh?
     </p>
 
     <ol v-else class="comments">
@@ -72,12 +72,12 @@ const formatDate = (iso: string) => dateFormat.format(new Date(iso))
         v-model="draft"
         rows="2"
         :maxlength="COMMENT_MAX_LENGTH"
-        placeholder="sign the guestbook! say something nice"
+        placeholder="say something nice"
         required
       />
       <div class="actions">
         <button type="submit" class="button go" :disabled="posting">
-          sign it
+          post it
         </button>
         <button type="button" class="button" @click="signOut">
           sign out

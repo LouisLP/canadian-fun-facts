@@ -47,7 +47,7 @@ function toggle(topic: Topic) {
   padding: var(--space-sm) var(--space-md);
   border: var(--border-button);
   background: var(--surface-button);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition:
     transform var(--motion-hover),
     box-shadow var(--motion-hover),

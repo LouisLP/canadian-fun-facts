@@ -72,3 +72,29 @@ body::before {
     opacity: 0;
   }
 }
+
+/* The hub's maple-leaf cursor (useMapleCursor): red leaf by default, gold
+   leaf with a sparkle over anything clickable. The hotspot is the leaf's
+   top tip. Plain PNGs first; crisp 2x art where image-set() works here. */
+html.maple-cursor {
+  --cursor-pointer: url('/retro/cursor-leaf-pointer.png') 6 3, pointer;
+
+  cursor:
+    url('/retro/cursor-leaf.png') 6 3,
+    auto;
+}
+
+@supports (cursor: image-set(url('/retro/cursor-leaf.png') 1x) 6 3, auto) {
+  html.maple-cursor {
+    --cursor-pointer:
+      image-set(url('/retro/cursor-leaf-pointer.png') 1x, url('/retro/cursor-leaf-pointer@2x.png') 2x) 6 3, pointer;
+
+    cursor:
+      image-set(url('/retro/cursor-leaf.png') 1x, url('/retro/cursor-leaf@2x.png') 2x) 6 3,
+      auto;
+  }
+}
+
+html.maple-cursor :is(a, button, summary, label) {
+  cursor: var(--cursor-pointer);
+}

@@ -3,13 +3,17 @@ import { onBeforeUnmount, onMounted } from 'vue'
 const MIN_GAP_MS = 45
 const LEAVES = ['🍁', '🍂', '✨']
 
+/** On <html> while mounted; swaps the pointer for the maple leaf (base.css). */
+const CURSOR_CLASS = 'maple-cursor'
+
 /**
- * Maple leaves that fall off the mouse pointer while the calling component is
- * mounted. Mouse only, and off entirely for reduced motion. Each leaf is a
- * `.cursor-leaf` span on <body> (styled in base.css) that removes itself when
- * its fall ends.
+ * The hub's mouse pointer while the calling component is mounted: a maple-leaf
+ * cursor, gold over anything clickable, that sheds leaves as it moves. The
+ * cursor shows for everyone; the falling leaves are mouse only and off for
+ * reduced motion. Each falling leaf is a `.cursor-leaf` span on <body> that
+ * removes itself when its fall ends.
  */
-export function useCursorTrail() {
+export function useMapleCursor() {
   let last = 0
 
   function drop(event: PointerEvent) {
@@ -27,9 +31,13 @@ export function useCursorTrail() {
   }
 
   onMounted(() => {
+    document.documentElement.classList.add(CURSOR_CLASS)
     if (matchMedia('(prefers-reduced-motion: no-preference) and (pointer: fine)').matches)
       window.addEventListener('pointermove', drop, { passive: true })
   })
 
-  onBeforeUnmount(() => window.removeEventListener('pointermove', drop))
+  onBeforeUnmount(() => {
+    document.documentElement.classList.remove(CURSOR_CLASS)
+    window.removeEventListener('pointermove', drop)
+  })
 }

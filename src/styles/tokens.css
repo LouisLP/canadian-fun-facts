@@ -218,14 +218,9 @@
   --motion-sway: 1600ms;
   --motion-sway-offset: -800ms;
 
-  /* Retro furniture — the hub's ticker, hit counter and 88×31 badge wall. */
+  /* Retro furniture — the hub's ticker, MIDI player and 88×31 badge wall. */
   --surface-ticker: var(--glacier-800);
   --ink-ticker: var(--butter-tart-400);
-  --surface-counter: var(--puck-999);
-  --ink-counter: var(--jersey-300);
-  /* The one break from Comic Sans: an odometer has to look mechanical. */
-  --font-counter: 'Courier New', Courier, monospace;
-  --border-counter: var(--border-hairline) inset var(--puck-400);
   --border-badge-88: 1px solid var(--puck-999);
   --size-badge-88: 88px 31px;
   --surface-badge-syrup: var(--maple-600);
@@ -237,6 +232,10 @@
   --motion-ticker: 40s;
   --motion-leaf-fall: 1.2s;
   --motion-beaver-rain: 4s;
+
+  /* What a clickable thing shows under the mouse. A plain pointer, except on
+     the hub, where useMapleCursor turns it into the gold leaf (base.css). */
+  --cursor-pointer: pointer;
 
   /* Layout */
   --layout-hub-width: 46rem;

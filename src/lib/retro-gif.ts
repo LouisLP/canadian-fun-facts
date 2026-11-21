@@ -6,11 +6,9 @@
 export type RetroGif
   = | 'beaver'
     | 'flag-waving'
-    | 'guestbook'
     | 'maple-leaf-spin'
     | 'moose-flag'
     | 'netscape-now'
-    | 'new-star'
     | 'under-construction'
 
 export function retroGif(name: RetroGif): string {

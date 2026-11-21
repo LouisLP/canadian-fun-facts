@@ -6,11 +6,11 @@ import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
 import BrandMark from '../components/BrandMark.vue'
 import BadgeWall from '../components/hub/BadgeWall.vue'
+import MidiPlayer from '../components/hub/MidiPlayer.vue'
 import NewsTicker from '../components/hub/NewsTicker.vue'
 import SetCard from '../components/hub/SetCard.vue'
 import TopicFilter from '../components/hub/TopicFilter.vue'
-import VisitorCounter from '../components/hub/VisitorCounter.vue'
-import { useCursorTrail } from '../composables/useCursorTrail'
+import { useMapleCursor } from '../composables/useMapleCursor'
 import { ALL_SETS } from '../content/sets'
 import { retroGif } from '../lib/retro-gif'
 
@@ -30,7 +30,7 @@ const feedUrl = `${import.meta.env.BASE_URL}feed.xml`
 const lastUpdated = ALL_SETS[0]?.date
 const thisYear = new Date().getFullYear()
 
-useCursorTrail()
+useMapleCursor()
 </script>
 
 <template>
@@ -38,7 +38,7 @@ useCursorTrail()
     <header class="banner">
       <div class="banner-row">
         <img :src="retroGif('flag-waving')" alt="" class="flag" width="132" height="95">
-        <BrandMark as="h1" class="banner-title" />
+        <BrandMark as="h1" class="banner-title" :leaves="false" />
         <img :src="retroGif('flag-waving')" alt="" class="flag mirrored" width="132" height="95">
       </div>
       <p class="tagline">
@@ -68,7 +68,7 @@ useCursorTrail()
         <img :src="retroGif('under-construction')" alt="" width="96" height="66">
         <span>this site is <em>always</em> under construction!!</span>
       </p>
-      <VisitorCounter />
+      <MidiPlayer />
       <p>
         <a class="rss-link" :href="feedUrl">
           <Icon icon="lucide:rss" class="icon" /> subscribe by RSS
@@ -76,7 +76,7 @@ useCursorTrail()
       </p>
       <BadgeWall />
       <p v-if="lastUpdated" class="small-print">
-        last updated: {{ lastUpdated }} &nbsp;|&nbsp; © 2001–{{ thisYear }}
+        last updated: {{ lastUpdated }} &nbsp;|&nbsp; © 1996–{{ thisYear }}
       </p>
       <p>
         <a class="to-top" href="#">
