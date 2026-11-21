@@ -4,14 +4,20 @@
 
      Two variants of the same mark: `colour` (red, gold shadow, emoji leaves)
      for light backgrounds, `mono` (all white, regular weight) for the dark
-     presentation stage, where the red and gold turn to mud. -->
+     presentation stage, where the red and gold turn to mud. `leaves: false`
+     drops the leaves where something else already flanks the name. -->
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { computed } from 'vue'
 
-const props = withDefaults(defineProps<{ as?: 'h1' | 'p', variant?: 'colour' | 'mono' }>(), {
+const props = withDefaults(defineProps<{
+  as?: 'h1' | 'p'
+  variant?: 'colour' | 'mono'
+  leaves?: boolean
+}>(), {
   as: 'p',
   variant: 'colour',
+  leaves: true,
 })
 
 // The emoji leaf carries its own red; the mono leaf is a plain glyph that
@@ -21,7 +27,12 @@ const leaf = computed(() => props.variant === 'mono' ? 'mdi:leaf-maple' : 'twemo
 
 <template>
   <component :is="as" class="brand-mark" :class="variant">
-    <Icon :icon="leaf" class="icon" /> Canadian Fun Facts <Icon :icon="leaf" class="icon" />
+    <template v-if="leaves">
+      <Icon :icon="leaf" class="icon" /> Canadian Fun Facts <Icon :icon="leaf" class="icon" />
+    </template>
+    <template v-else>
+      Canadian Fun Facts
+    </template>
   </component>
 </template>
 

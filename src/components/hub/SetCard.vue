@@ -47,7 +47,7 @@ const slideCount = computed(() => props.set.slides.length)
   border: var(--border-card);
   padding: var(--space-lg);
   margin-bottom: var(--space-xl);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition:
     transform var(--motion-hover),
     box-shadow var(--motion-hover),

@@ -54,3 +54,55 @@ body::before {
     background-size: 260px 260px;
   }
 }
+
+/* The hub's cursor trail (useCursorTrail). Global because the leaves are
+   appended straight to <body>, outside any component. */
+.cursor-leaf {
+  position: fixed;
+  z-index: var(--layer-overlay);
+  pointer-events: none;
+  font-size: var(--text-sm);
+  translate: -50% -50%;
+  animation: cursor-leaf-fall var(--motion-leaf-fall) ease-in forwards;
+}
+
+@keyframes cursor-leaf-fall {
+  to {
+    transform: translate(var(--drift), 60px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* The hub's cursor (useHockeyCursor): a pixel hockey stick, wooden shaft and
+   white-taped blade, that goes red-taped with a sparkle over anything
+   clickable. Hand-pixelled on a 22px grid and drawn at 2x so the pixels stay
+   chunky. The hotspot is the butt end of the knob. Plain PNGs first; crisp
+   2x art where image-set() works here. The PNGs live in src/assets so Vite
+   gives them hashed URLs: a redraw never hides behind a cached cursor. */
+html.hockey-cursor {
+  --cursor-pointer: url('../assets/cursors/cursor-stick-pointer.png') 2 2, pointer;
+
+  cursor:
+    url('../assets/cursors/cursor-stick.png') 2 2,
+    auto;
+}
+
+@supports (cursor: image-set(url('../assets/cursors/cursor-stick.png') 1x) 2 2, auto) {
+  html.hockey-cursor {
+    --cursor-pointer:
+      image-set(
+          url('../assets/cursors/cursor-stick-pointer.png') 1x,
+          url('../assets/cursors/cursor-stick-pointer@2x.png') 2x
+        )
+        2 2,
+      pointer;
+
+    cursor:
+      image-set(url('../assets/cursors/cursor-stick.png') 1x, url('../assets/cursors/cursor-stick@2x.png') 2x) 2 2,
+      auto;
+  }
+}
+
+html.hockey-cursor :is(a, button, summary, label) {
+  cursor: var(--cursor-pointer);
+}
