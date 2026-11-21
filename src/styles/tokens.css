@@ -265,7 +265,7 @@
   --surface-ad: var(--butter-tart-400);
   --ink-ad: var(--maple-500);
   --surface-paper: var(--puck-000);
-  --motion-popup: 220ms;
+  --motion-popup: 90ms;
 
   /* Layout */
   --layout-hub-width: 46rem;

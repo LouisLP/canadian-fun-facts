@@ -90,7 +90,7 @@ function drop() {
   font-family: var(--font-system);
   font-size: var(--text-system);
   color: var(--ink-body);
-  animation: pop var(--motion-popup) steps(3, end) both;
+  animation: pop var(--motion-popup) steps(2, end) both;
 }
 
 @keyframes pop {

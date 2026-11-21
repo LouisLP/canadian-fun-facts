@@ -7,7 +7,8 @@
  * the feed's edge; a window too wide for that narrows instead. Popups pile on
  * top of each other and nudge into the content on purpose;
  * readers drag, minimise and close them out of the way. Later entries pop in
- * later and land on top, so the ad goes last.
+ * later and land on top, so the alert and the ad go last. The feed's left edge is where
+ * every line of text starts, so left-side windows barely reach over it.
  */
 
 /** Basenames under `public/app-background/`, without the `.webp`. */
@@ -51,7 +52,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.2,
     along: 0.2,
     width: 400,
-    reach: 30,
+    reach: 10,
     photos: ['vancouver', 'tofino', 'vancouver-english-bay', 'musqueam-lookout', 'totem-poles', 'olympic-national-park', 'kayak', 'arcteryx-hiker'],
   },
   {
@@ -75,18 +76,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.46,
     along: 1,
     width: 300,
-    reach: 50,
-  },
-  {
-    id: 'alert',
-    kind: 'alert',
-    title: 'Warning',
-    icon: 'twemoji:warning',
-    side: 'right',
-    top: 0.5,
-    along: 1,
-    width: 310,
-    reach: 60,
+    reach: 10,
   },
   {
     id: 'wild',
@@ -97,7 +87,7 @@ export const POPUPS: PopupSpec[] = [
     top: 0.64,
     along: 0.4,
     width: 360,
-    reach: 20,
+    reach: 0,
     photos: ['moose', 'beaver', 'loon', 'canadian-goose', 'lake-louise', 'canada-map'],
   },
   {
@@ -106,11 +96,22 @@ export const POPUPS: PopupSpec[] = [
     title: 'legends.jpg - Image Viewer',
     icon: 'twemoji:framed-picture',
     side: 'right',
-    top: 0.68,
+    top: 0.72,
     along: 0.7,
     width: 350,
     reach: 30,
     photos: ['wayne-gretzky', 'terry-fox', 'chris-hadfield', 'hockey', 'hockey-player', 'toronto', 'quebec', 'quebec-landscape', 'quebec-flag'],
+  },
+  {
+    id: 'alert',
+    kind: 'alert',
+    title: 'Warning',
+    icon: 'twemoji:warning',
+    side: 'right',
+    top: 0.6,
+    along: 0.6,
+    width: 310,
+    reach: 60,
   },
   {
     id: 'ad',

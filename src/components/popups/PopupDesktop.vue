@@ -16,8 +16,8 @@ import PopupWindow from './PopupWindow.vue'
 import PrizeAd from './PrizeAd.vue'
 import SorryAlert from './SorryAlert.vue'
 
-const POP_IN_START_MS = 400
-const POP_IN_STEP_MS = 350
+const POP_IN_START_MS = 150
+const POP_IN_STEP_MS = 110
 const SLIDE_MS = 5000
 const SLIDE_STAGGER_MS = 1300
 /** How much of a dragged window must stay on screen to grab it back. */
